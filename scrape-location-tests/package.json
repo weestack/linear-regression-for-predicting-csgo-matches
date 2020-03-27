@@ -1,0 +1,14 @@
+{
+  "name": "scrape-location-tests",
+  "version": "1.0.0",
+  "description": "Tests for locations of data",
+  "main": "cors-anywhere.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors-anywhere": "^0.4.1"
+  }
+}
