@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
 
 async function runTests() {
-	let allTests = [testD1, testD2, testD3, testD5, testD6, testD7, testD8, testD9, testD10, testD11, testE1, testE2];
+	let allTests = [testD1, testD2, testD3, testD4, testD5, testD6, testD7, testD8, testD9, testD10];
 
 	for (let test of allTests) {
 		let result = await test();
@@ -116,7 +116,7 @@ async function testD3() {
 	return makeTestResult("D3", expected, actual);
 }
 
-async function testD5(){
+async function testD4(){
 	let link = "https://www.hltv.org/stats/players/weapon/7938/XANTARES";
 	let wrapperLocation = "div.stats-row";
 	let wrapperElems = await scrapeLinkLocation(link, wrapperLocation, true);
@@ -132,10 +132,10 @@ async function testD5(){
 	}
 
 	let expected = [{"weapon":" ak47","uses":"11868"},{"weapon":" m4a1","uses":"5944"},{"weapon":" deagle","uses":"1076"}];
-	return makeTestResult("D5", expected, actual);
+	return makeTestResult("D4", expected, actual);
 }
 
-async function testD6(){
+async function testD5(){
 	let link = "https://www.hltv.org/stats/matches/heatmap/mapstatsid/100738/big-chillin-vs-prospects";
 	let wrapperLocation = "div.players";
 	let wrapperElems = await scrapeLinkLocation(link, wrapperLocation, true);
@@ -158,50 +158,54 @@ async function testD6(){
 	}
 
 	let expected = [[["m4a1 (1)","sg556 (4)","mp9 (1)"],["ak47 (4)","m4a1 (6)","sg556 (13)","mp9 (1)","awp (2)"],["deagle (1)","m4a1 (10)","sg556 (7)","glock (2)","mp9 (5)"],["mac10 (1)","m4a1 (6)","sg556 (9)","usp_silencer (2)","p250 (1)","famas (1)"],["deagle (3)","m4a1 (1)","sg556 (4)","usp_silencer (4)","glock (1)","p250 (1)","awp (6)"]],[["ak47 (2)","mac10 (1)","sg556 (1)","p250 (1)","famas (1)"],["ak47 (7)","deagle (2)","m4a1 (2)","sg556 (21)","usp_silencer (2)","glock (1)","tec9 (3)","mp9 (1)"],["ak47 (3)","hegrenade (1)","m4a1 (2)","sg556 (5)","m4a1_silencer (1)","p250 (1)","mp9 (2)","inferno (1)"],["ak47 (8)","m4a1 (7)","usp_silencer (3)","mp9 (2)"],["deagle (1)","mac10 (2)","sg556 (3)","usp_silencer (2)","famas (3)","awp (10)"]]];
-	return makeTestResult("D6", expected, actual);
+	return makeTestResult("D5", expected, actual);
 }
 
-async function testD7(){
+async function testD6(){
 	let link = "https://www.hltv.org/stats/players/13776/Jame";
 	let location = "div.stats-rows:nth-child(1) > div.stats-row:nth-child(2) >span:nth-child(2)";
 	let elem = await scrapeLinkLocation(link, location, false);
 
 	let actual = elem.textContent;
 	let expected = "25.7%";
-	return makeTestResult("D7", expected, actual);
+	return makeTestResult("D6", expected, actual);
 }
 
-async function testD8(){
+async function testD7(){
 	let link = "https://www.hltv.org/stats/matches/mapstatsid/100731/serac-vs-rise";
 	let location = "div.match-info-row:nth-child(6) > div.right";
 	let elem = await scrapeLinkLocation(link, location, false);
 
 	let actual = elem.textContent;
 	let expected = "25 : 23";
-	return makeTestResult("D8", expected, actual);
+	return makeTestResult("D7", expected, actual);
 }
 
-async function testD9(){
+async function testD8(){
 	let link = "https://www.hltv.org/results?team=9996";
 	let location = "div.results-sublist:nth-child(1) > .standard-headline";
 	let elem = await scrapeLinkLocation(link, location, false);
 	let actual = elem.textContent;
 	let expected = "Results for March 29th 2020";
+	return makeTestResult("D8", expected, actual);
+}
+
+async function testD9(){
+	let link = "https://www.hltv.org/player/11586/dapr#tab-teamsBox";
+	let location = "div.tab-content > div.highlighted-stats-box > div.highlighted-stat:nth-child(2) > div.stat";
+	let elem = await scrapeLinkLocation(link, location, false);
+	let actual = elem.textContent;
+	let expected = "16";
+
 	return makeTestResult("D9", expected, actual);
 }
 
 async function testD10(){
-	return makeTestResult("D8", "not implemented", "Not implemented");
-}
+	let link = "https://www.hltv.org/stats/players/8944/Benkai";
+	let location = "div.stats-rows:nth-child(1) > div.stats-row:nth-child(4) >span:nth-child(2)";
+	let elem = await scrapeLinkLocation(link, location, false);
+	let actual = elem.textContent;
+	let expected = "1.21";
 
-async function testD11(){
-	return makeTestResult("D8", "not implemented", "Not implemented");
-}
-
-async function testE1(){
-	return makeTestResult("D8", "not implemented", "Not implemented");
-}
-
-async function testE2(){
-	return makeTestResult("D8", "not implemented", "Not implemented");
+	return makeTestResult("D10", expected, actual);
 }
