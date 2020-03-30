@@ -182,7 +182,12 @@ async function testD8(){
 }
 
 async function testD9(){
-	return makeTestResult("D8", "not implemented", "Not implemented");
+	let link = "https://www.hltv.org/results?team=9996";
+	let location = "div.results-sublist:nth-child(1) > .standard-headline";
+	let elem = await scrapeLinkLocation(link, location, false);
+	let actual = elem.textContent;
+	let expected = "Results for March 29th 2020";
+	return makeTestResult("D9", expected, actual);
 }
 
 async function testD10(){
