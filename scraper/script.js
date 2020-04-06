@@ -1,22 +1,32 @@
 "use strict";
 
-
+/* Returns the win/loose ratio for the team */
 function D1(team_id, team_name) {
     return {
         url: "https://www.hltv.org/stats/teams/" + team_id + "/" + team_name,
         location: "div.columns:nth-child(5) > div.col:nth-child(2) > div.large-strong",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            let textParts = element.textContent.split(" / ");
+            let wins = parseInt(textParts[0]);
+            let losses = parseInt(textParts[2]);
+            return wins/losses;
+        },
     };
 }
 
+/* Returns the name of the team's best map */
 function D2(team_id, team_name) {
     return {
         url: "https://www.hltv.org/stats/teams/maps/" + team_id + "/" + team_name,
         location: "a.map-stats > div.map-pool-map-name",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            let mapName = element.textContent.split(" ")[0];
+            return mapName;
+        },
     };
 }
 
+/* returns the last 100 matches (team1 team2 winner link) for team1 */
 function D3(team_id) {
     return{
         url: "https://www.hltv.org/results?team=" + team_id,
@@ -35,11 +45,18 @@ function D3(team_id) {
                 location: "div.team-won",
                 handle: element => {return element.textContent},
             },
+            link: {
+                location: "a",
+                handle: element => {return element.href},
+            },
         },
-        handle: element => {console.log(element)},
+        handle: element => {
+            return element;
+        },
     };
 }
 
+/* Returns an object with weapons as keys, and uses as values */
 function D4(player_id, player_name) {
     return {
         url: "https://www.hltv.org/stats/players/weapon/" + player_id + "/" + player_name,
@@ -48,17 +65,30 @@ function D4(player_id, player_name) {
         sub_scrapers: {
             weapon: {
                 location: "div > span:nth-child(2)",
-                handle: element => {return element.textContent},
+                handle: element => {
+                    return element.textContent.trim();
+                },
             },
             uses: {
                 location: ":scope > span",
-                handle: element => {return element.textContent},
+                handle: element => {
+                    return parseInt(element.textContent);
+                },
             }
         },
-        handle: element => {console.log(element)},
+        handle: element => {
+            let result = {};
+            for (let i in element) {
+                let weapon = element[i].weapon;
+                let uses = element[i].uses;
+                result[weapon] = uses;
+            }
+            return result;
+        },
     }
 }
 
+/* Returns the number of kills each team has made and which weapons they used */
 function D5(match_id, match_name) {
     return {
         url: "https://www.hltv.org/stats/matches/heatmap/mapstatsid/" + match_id + "/" + match_name,
@@ -108,49 +138,88 @@ function D5(match_id, match_name) {
                 team1: e[0].teams,
                 team2: e[1].teams,
             };
-            console.log(output);
             return output;
         }
     }
 }
 
+/* Returns the percentage of headshots that the player made */
 function D6(player_id, player_name) {
     return {
         url: "https://www.hltv.org/stats/players/" + player_id + "/" + player_name,
         location: "div.stats-rows:nth-child(1) > div.stats-row:nth-child(2) >span:nth-child(2)",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            return parseFloat(element.textContent)
+        },
     }
 }
 
+/* Returns the number of first kills that each team got */
 function D7(match_id, match_name) {
     return {
         url: "https://www.hltv.org/stats/matches/mapstatsid/" + match_id + "/" + match_name,
         location: "div.match-info-row:nth-child(6) > div.right",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            let textParts = element.textContent.split(" : ");
+            let result = {
+                team1: parseInt(textParts[0]),
+                team2: parseInt(textParts[1]),
+            };
+            return result;
+        },
     }
 }
 
+/* Returns the date of the team's last match as a Date object */
 function D8(team_id) {
     return {
         url: "https://www.hltv.org/results?team=" + team_id,
         location: "div.results-sublist:nth-child(1) > .standard-headline",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            let dateString = element.textContent.slice(12);
+            let parts = dateString.split(" ");
+            let monthString = parts[0];
+            let month = null;
+            switch (monthString) {
+                case "January": month = 0; break;
+                case "February": month = 1; break;
+                case "March": month = 2; break;
+                case "April": month = 3; break;
+                case "May": month = 4; break;
+                case "June": month = 5; break;
+                case "July": month = 6; break;
+                case "August": month = 7; break;
+                case "September": month = 8; break;
+                case "October": month = 9; break;
+                case "November": month = 10; break;
+                case "December": month = 11; break;
+            }
+            let day = parseInt(parts[1].slice(0,-2));
+            let year = parseInt(parts[2]);
+            return new Date(year, month, day);
+        },
     }
 }
 
+/* Returns the number of days that the player has been his the current team */
 function D9(player_id, player_name) {
     return {
         url: "https://www.hltv.org/player/" + player_id + "/" + player_name + "#tab-teamsBox",
         location: "div.tab-content > div.highlighted-stats-box >div.highlighted-stat:nth-child(2) > div.stat",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            return parseInt(element.textContent);
+        },
     }
 }
 
+/* Returns the kill to death ratio of the player */
 function D10(player_id, player_name) {
     return {
         url: "https://www.hltv.org/stats/players/" + player_id + "/" + player_name,
         location: "div.stats-rows:nth-child(1) > div.stats-row:nth-child(4) >span:nth-child(2)",
-        handle: element => {console.log(element.textContent)},
+        handle: element => {
+            return parseFloat(element.textContent);
+        },
     }
 }
 
