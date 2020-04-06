@@ -1,13 +1,21 @@
 "use strict";
 
 console.log("Scraper");
-let test ={
+let D1 ={
     url: "https://www.hltv.org/stats/teams/6665/Astralis",
     location: "div.columns:nth-child(5) > div.col:nth-child(2) > div.large-strong",
     handle: element => {console.log(element.textContent)},
 }
 
-let test2 ={
+let D2 ={
+    
+}
+
+let D3 ={
+    
+}
+
+let D4 ={
     url: "https://www.hltv.org/results?team=6665",
     location: "div.result-con",
     scrape_many: true,
@@ -27,6 +35,31 @@ let test2 ={
     },
     handle: element => {console.log(element)},
 }
+
+let D5 ={
+    
+}
+
+let D6 ={
+    
+}
+
+let D7 ={
+    
+}
+
+let D8 ={
+    
+}
+
+let D9 ={
+    
+}
+
+let D10 ={
+    
+}
+
 
 async function run_scraper(scraper, dom){
     let elements = [];
