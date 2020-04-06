@@ -39,8 +39,8 @@ class Regression {
         let min = Math.min.apply(Math, column);
         let max = Math.max.apply(Math, column);
 
-        for (value in column) {
-            new_column.push( (value-min)/(max-min) )
+        for (let i = 0; i < column.length; i++) {
+            new_column.push( (column[i]-min)/(max-min) )
         }
 
         return new_column
@@ -55,6 +55,7 @@ class Regression {
 
 
 const Linear_regression = () => {
+    /* equation to expect from object Y_i = b_0 + b_1*x_i + ... b_n*x_i */
     /* TODO: mean should be calculated 1 place only! */
 
 
@@ -78,6 +79,10 @@ const Linear_regression = () => {
         /* slope corrosponds to B_0 nad intercept corrosponds to B_1 */
         return [slope, intercept]
 
+
+    }
+
+    const cost_function = () => {
 
     }
 
