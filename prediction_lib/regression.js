@@ -1,13 +1,3 @@
-
-let array = [
-    [1, 3, 5, 7, 9, 11, 13, 15, 17],
-    [0, 1, 2, 3,4,5,6,7,8]
-];
-
-
-
-
-
 const mean = (array) => {
     // TODO: add type checking later
     let sum = 0;
@@ -130,6 +120,7 @@ const Linear_regression = () => {
 
 
 };
+
 
 
 const estimate_best_coeficcient = (y, x) => {
