@@ -14,22 +14,28 @@ function D1(team_id, team_name) {
     };
 }
 
-/* Returns the name of the team's best map */
+/* Returns the teams best maps and win ratio */
 function D2(team_id, team_name) {
     return {
         url: "https://www.hltv.org/stats/teams/maps/" + team_id + "/" + team_name,
         location: "a.map-stats > div.map-pool-map-name",
-        handle: element => {
-            let mapName = element.textContent.split(" ")[0];
-            return mapName;
+        scrape_many: true,
+        handle: elements => {
+            let result = {};
+            for(let i in elements){
+                let textParts = elements[i].textContent.split(" ");
+                let mapName = textParts[0];
+                result[mapName] = parseFloat(textParts[2]);
+            }
+            return result;
         },
     };
 }
 
-/* returns the last 100 matches (team1 team2 winner link) for team1 */
-function D3(team_id) {
+/* Returns the last 100 matches from offset (team1 team2 winner link) for team1 */
+function D3(team_id, offset) {
     return{
-        url: "https://www.hltv.org/results?team=" + team_id,
+        url: "https://www.hltv.org/results?team=" + team_id + "&offset=" + offset,
         location: "div.result-con",
         scrape_many: true,
         sub_scrapers: {
@@ -134,10 +140,9 @@ function D5(match_id, match_name) {
             }
         },
         handle: e => {
-            let output = {
-                team1: e[0].teams,
-                team2: e[1].teams,
-            };
+            let output = {};
+            output.team1 = e[0].teams;
+            output.team2 = e[1].teams;
             return output;
         }
     }
@@ -154,7 +159,7 @@ function D6(player_id, player_name) {
     }
 }
 
-/* Returns the number of first kills that each team got */
+/* Returns the number of first kills that each team got in a match*/
 function D7(match_id, match_name) {
     return {
         url: "https://www.hltv.org/stats/matches/mapstatsid/" + match_id + "/" + match_name,
@@ -223,12 +228,57 @@ function D10(player_id, player_name) {
     }
 }
 
+/*Scraper players in teams*/
+function team_players(team_id, team_name){
+    return {
+        url: "https://www.hltv.org/team/" + team_id + "/" + team_name,
+        location: "a.col-custom",
+        scrape_many: true,
+        handle: elements => {
+            let players = {};
+            for(let i in elements){
+                let link = elements[i].href
+                let linkParts = link.split("/").reverse();
+                let name = linkParts[0];
+                let id = linkParts[1];
+                players[id] = name;
+            }
+            return players;
+        }
+    }
+}
+
+/*Scrape which teams played in a specific match*/
+function match_teams(match_id, match_name){
+    return {
+        url: "https://www.hltv.org/stats/matches/mapstatsid/" + match_id + "/" + match_name,
+        location: "div.team-left > a,div.team-right > a",
+        scrape_many: true,
+        handle: elements => {
+            let teams = {};
+            for(let i in elements){
+                let link = elements[i].href
+                let linkParts = link.split("/").reverse();
+                let name = linkParts[0];
+                let id = linkParts[1];
+                teams[i] = {name, id};
+            }
+            return teams;
+        }
+    }
+}
+
+function sleep(milliseconds){
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
 
 async function run_scraper(scraper, dom){
     let elements = [];
     let results = [];
     if(dom == undefined){
         let proxy = "http://localhost:8080/";
+        console.log("Scraaaaaping " + scraper.url);
+        await sleep(500);
         let response = await fetch(proxy + scraper.url);
         if (response.status == 200){
             let html = await response.text();
@@ -272,4 +322,125 @@ async function run_scraper(scraper, dom){
         console.log(e);
         return null;
     }
+}
+
+/*Team info used in D1, D2, D3, D8*/
+async function scrape_team(team_id, team_name){
+    let win_lose_ratio = await run_scraper(D1(team_id, team_name));
+    let best_maps = await run_scraper(D2(team_id, team_name));
+    let last_matches = [];
+    let done = false;
+    for(let offset = 0; done == false; offset += 100){
+        let matches = await run_scraper(D3(team_id, offset));
+        if(matches.length == 0){
+            done = true;
+        }
+        else {
+            last_matches = last_matches.concat(matches);
+        }
+    }
+    let last_match_date = await run_scraper(D8(team_id));
+    let players = await run_scraper(team_players(team_id, team_name));
+    let player_data = {};
+    for(let player_id in players){
+        player_data[player_id] = await scrape_player(player_id, players[player_id]);
+    }
+    return {
+        win_lose_ratio,
+        best_maps,
+        last_matches,
+        last_match_date,
+        player_data
+    };
+}
+
+/*Match info used in D5, D7*/
+async function scrape_match(match_id, match_name){
+    let teams = await run_scraper(match_teams(match_id, match_name));
+    let team_kills = await run_scraper(D5(match_id, match_name));
+    let first_kills = await run_scraper(D7(match_id, match_name));
+    teams[0].kills = team_kills.team1;
+    teams[1].kills = team_kills.team2;
+    teams[0].first_kills = first_kills.team1;
+    teams[1].first_kills = first_kills.team2;
+    return teams;
+}
+
+
+/*Player info used in D4, D6, D9, D10. KDA = Kills/Deaths/Assist*/ 
+async function scrape_player(player_id, player_name){
+    let most_used_weapons = await run_scraper(D4(player_id, player_name));
+    let headshots = await run_scraper(D6(player_id, player_name));
+    let days_in_team = await run_scraper(D9(player_id, player_name));
+    let kda = await run_scraper(D10(player_id, player_name));
+    return {most_used_weapons, headshots, days_in_team, kda};
+}
+
+function scrape_match_list(offset) {
+    return{
+        url: "https://www.hltv.org/stats/matches?offset=" + offset,
+        location: "td.date-col",
+        scrape_many: true,
+        sub_scrapers: {
+            match: {
+                location: "a",
+                handle: element => {
+                    let link = element.href
+                    let linkParts = link.split("/").reverse();
+                    let matchName = linkParts[0];
+                    let matchId = linkParts[1];
+                    return {matchName, matchId};
+                },
+            },
+        },
+        handle: elements => {
+            let result = [];
+            for(let i in elements){
+                let match = elements[i].match;
+                result[i] = {matchId: match.matchId, matchName: match.matchName};
+            }
+            return result;
+        },
+    };
+}
+
+async function scrape_n_matches(amount_of_matches){
+    let matchList = [];
+    let done = false;
+    let resultList = [];
+    for(let offset = 0; done == false; offset += 50){
+        let matches = await run_scraper(scrape_match_list(offset));
+        matchList = matchList.concat(matches);
+        if(matchList.length >= amount_of_matches){
+            done = true;
+            matchList = matchList.slice(0, amount_of_matches);
+        }
+    }
+    let teams = {};
+    for(let i in matchList){
+        let matchId = matchList[i].matchId;
+        let matchName = matchList[i].matchName;
+        let matchTeams = await run_scraper(match_teams(matchId, matchName));
+        matchList[i].teams = matchTeams;
+        for(let index in matchTeams){
+            let teamId = matchTeams[index].id;
+            let teamName = matchTeams[index].name;
+            if(!(teamId in teams)){
+                teams[teamId] = await scrape_team(teamId, teamName);
+            }
+        }
+    }
+    for(let i in matchList){
+        let matchId = matchList[i].matchId;
+        let matchName = matchList[i].matchName;
+        resultList[i] = await scrape_match(matchId, matchName);
+        let matchTeams = matchList[i].teams;
+        for(let t = 0; t < 2; t++){
+            let teamData = teams[matchTeams[t].id];
+            for(let dataName in teamData){
+                resultList[i][t][dataName] = teamData[dataName];
+            }
+        }
+    }
+    return resultList;
 }
