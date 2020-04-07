@@ -178,27 +178,25 @@ function get_multiple_independent_varialbes(x, y){
 
     //console.log("This is transpose:", transpose_independent);
     
-    let independent_times_transpose_ind = math_js.multiply(transpose_independent, independent);
+    let independent_times_transpose_ind = math_js.multiply(independent, transpose_independent);
     
     //console.log("this is long name:", independent_times_transpose_ind);
 
     let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
     //console.log("This is inverse:", inverse_times_trans_ind);
 
-    // Her er en fejl:
-    let temp = math_js.multiply(transpose_independent, independent);
-    console.log("ind:", math_js.multiply(inverse_times_trans_ind, temp));
+    let temp = math_js.multiply(independent, transpose_independent);
+    console.log("ind:", math_js.multiply(temp, inverse_times_trans_ind));
 
-    // let x_y = math_js.multiply(transpose_independent, prediction);
+     let x_y = math_js.multiply(prediction, transpose_independent);
 
-    // let curificents = math_js.multiply(inverse_times_trans_ind, x_y);
+    let curificents = math_js.multiply(x_y, inverse_times_trans_ind);
 
-    // console.log(curificents);
+    console.log(curificents);
 }
 
 get_multiple_independent_varialbes(2,3);
 
-let slope;
 let intercapt;
 let _rss;
 
