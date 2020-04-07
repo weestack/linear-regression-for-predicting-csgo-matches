@@ -273,3 +273,23 @@ async function run_scraper(scraper, dom){
         return null;
     }
 }
+
+/*Team info used in D1, D2, D3, D8*/
+function scrape_team(team_id, team_name){
+
+}
+
+/*Match info used in D5, D7*/
+function scrape_match(match_id, match_name){
+
+}
+
+
+/*Player info used in D4, D6, D9, D10. KDA = Kills/Deaths/Assist*/ 
+async function scrape_player(player_id, player_name){
+    let most_used_weapons = await run_scraper(D4(player_id, player_name));
+    let headshots = await run_scraper(D6(player_id, player_name));
+    let days_in_team = await run_scraper(D9(player_id, player_name));
+    let kda = await run_scraper(D10(player_id, player_name));
+    return {most_used_weapons, headshots, days_in_team, kda};
+}
