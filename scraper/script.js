@@ -229,12 +229,37 @@ function D10(player_id, player_name) {
     }
 }
 
+/*Scraper players in teams*/
+function team_players(team_id, team_name){
+    return {
+        url: "https://www.hltv.org/team/" + team_id + "/" + team_name,
+        location: "a.col-custom",
+        scrape_many: true,
+        handle: elements => {
+            let players = {};
+            for(let i in elements){
+                let link = elements[i].href
+                let linkParts = link.split("/").reverse();
+                let name = linkParts[0];
+                let id = linkParts[1];
+                players[id] = name;
+            }
+            return players;
+        }
+    }
+}
+
+function sleep(milliseconds){
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
 
 async function run_scraper(scraper, dom){
     let elements = [];
     let results = [];
     if(dom == undefined){
         let proxy = "http://localhost:8080/";
+        console.log("Scraaaaaping " + scraper.url);
+        await sleep(1000);
         let response = await fetch(proxy + scraper.url);
         if (response.status == 200){
             let html = await response.text();
@@ -296,11 +321,17 @@ async function scrape_team(team_id, team_name){
         }
     }
     let last_match_date = await run_scraper(D8(team_id));
+    let players = await run_scraper(team_players(team_id, team_name));
+    let player_data = {};
+    for(let player_id in players){
+        player_data[player_id] = await scrape_player(player_id, players[player_id]);
+    }
     return {
         win_lose_ratio,
         best_maps,
         last_matches,
-        last_match_date
+        last_match_date,
+        player_data
     };
 }
 
@@ -318,3 +349,4 @@ async function scrape_player(player_id, player_name){
     let kda = await run_scraper(D10(player_id, player_name));
     return {most_used_weapons, headshots, days_in_team, kda};
 }
+
