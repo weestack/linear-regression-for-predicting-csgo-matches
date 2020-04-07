@@ -1,3 +1,13 @@
+
+let array = [
+    [1, 3, 5, 7, 9, 11, 13, 15, 17],
+    [0, 1, 2, 3,4,5,6,7,8]
+];
+
+
+
+
+
 const mean = (array) => {
     // TODO: add type checking later
     let sum = 0;
@@ -22,6 +32,21 @@ const cross_deviation = (x, mean_x, y, mean_y) => {
     return sum_multiply - (x.length * mean_x * mean_y);
 
 };
+
+
+function rss(coe0, coe1, x, y ){
+    let sum = 0;
+    for (let i = 0; i < y.length; i++){
+        sum += (y[i] - (coe0 + coe1*x[i]))**2
+    }
+    return sum;
+
+
+
+}
+
+
+
 
 class Regression {
     constructor( ...dataset ) {
@@ -73,11 +98,28 @@ const Linear_regression = () => {
         let ssxy = ss_xy(x, x_mean, y, y_mean);
         let ssxx = ss_xy(x, x_mean, x, x_mean);
 
+        let ssyy = ss_xy(y, y_mean, y, y_mean);
+
+        /* sdx_square */
+        let sdx_square = ssxx/( len -1 );
+        let sdx = Math.sqrt(sdx_square);
+
+        let sdy_squre = ssyy/( len -1 );
+        let sdy = Math.sqrt(sdx_square);
+
+        let sample_covariance = ssxy/(len - 1);
+        let sample_corrolation = sample_covariance / ( sdx * sdy );
+
+
+
+
+
         let intercept = ssxy / ssxx;
         let slope = y_mean - intercept * x_mean;
+        let _rss = rss(slope, intercept, x, y);
 
         /* slope corrosponds to B_0 nad intercept corrosponds to B_1 */
-        return [slope, intercept]
+        return [slope, intercept, _rss]
 
 
     }
@@ -90,4 +132,55 @@ const Linear_regression = () => {
 };
 
 
-export default Linear_regression;
+const estimate_best_coeficcient = (x, y) => {
+
+    /* numeric Length of dataset */
+    let len = y.length;
+
+    /* Mean of both y and x */
+    let x_mean = mean(x);
+    let y_mean = mean(y);
+
+    /* Cross_deviation and deviation */
+    let ssxy = cross_deviation(x, x_mean, y, y_mean);
+    let ssxx = cross_deviation(x, x_mean, x, x_mean);
+
+    let ssyy = cross_deviation(y, y_mean, y, y_mean);
+
+    /* sdx_square */
+    let sdx_square = ssxx/( len -1 );
+    let sdx = Math.sqrt(sdx_square);
+
+    let sdy_squre = ssyy/( len -1 );
+    let sdy = Math.sqrt(sdx_square);
+
+    let sample_covariance = ssxy/(len - 1);
+    let sample_corrolation = sample_covariance / ( sdx * sdy );
+
+
+
+
+
+    let intercept = ssxy / ssxx;
+    let slope = y_mean - intercept * x_mean;
+    let _rss = rss(slope, intercept, x, y);
+
+    /* slope corrosponds to B_0 nad intercept corrosponds to B_1 */
+    return [slope, intercept, _rss]
+
+
+}
+
+let slope;
+let intercapt;
+let _rss;
+[slope, intercapt, _rss] = estimate_best_coeficcient(array[1], array[0]);
+
+console.log(slope);
+console.log(intercapt);
+console.log(_rss);
+
+
+
+
+//export default Linear_regression;
