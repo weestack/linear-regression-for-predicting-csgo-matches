@@ -234,6 +234,9 @@ async function run_scraper(scraper, dom){
             let html = await response.text();
             let domparser = new DOMParser();
             dom = domparser.parseFromString(html, "text/html");
+            let base = dom.createElement("base");
+            base.href = "https://hltv.org"
+            dom.head.appendChild(base);
         }
     }
     if (scraper.scrape_many){
