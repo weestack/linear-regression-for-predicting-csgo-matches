@@ -14,22 +14,28 @@ function D1(team_id, team_name) {
     };
 }
 
-/* Returns the name of the team's best map */
+/* Returns the teams best maps and win ratio */
 function D2(team_id, team_name) {
     return {
         url: "https://www.hltv.org/stats/teams/maps/" + team_id + "/" + team_name,
         location: "a.map-stats > div.map-pool-map-name",
-        handle: element => {
-            let mapName = element.textContent.split(" ")[0];
-            return mapName;
+        scrape_many: true,
+        handle: elements => {
+            let result = {};
+            for(let i in elements){
+                let textParts = elements[i].textContent.split(" ");
+                let mapName = textParts[0];
+                result[mapName] = parseFloat(textParts[2]);
+            }
+            return result;
         },
     };
 }
 
-/* returns the last 100 matches (team1 team2 winner link) for team1 */
-function D3(team_id) {
+/* Returns the last 100 matches from offset (team1 team2 winner link) for team1 */
+function D3(team_id, offset) {
     return{
-        url: "https://www.hltv.org/results?team=" + team_id,
+        url: "https://www.hltv.org/results?team=" + team_id + "&offset=" + offset,
         location: "div.result-con",
         scrape_many: true,
         sub_scrapers: {
@@ -275,8 +281,27 @@ async function run_scraper(scraper, dom){
 }
 
 /*Team info used in D1, D2, D3, D8*/
-function scrape_team(team_id, team_name){
-
+async function scrape_team(team_id, team_name){
+    let win_lose_ratio = await run_scraper(D1(team_id, team_name));
+    let best_maps = await run_scraper(D2(team_id, team_name));
+    let last_matches = [];
+    let done = false;
+    for(let offset = 0; done == false; offset += 100){
+        let matches = await run_scraper(D3(team_id, offset));
+        if(matches.length == 0){
+            done = true;
+        }
+        else {
+            last_matches = last_matches.concat(matches);
+        }
+    }
+    let last_match_date = await run_scraper(D8(team_id));
+    return {
+        win_lose_ratio,
+        best_maps,
+        last_matches,
+        last_match_date
+    };
 }
 
 /*Match info used in D5, D7*/
