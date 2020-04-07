@@ -1,3 +1,5 @@
+const math_js = require("mathjs");
+
 const mean = (array) => {
     // TODO: add type checking later
     let sum = 0;
@@ -123,6 +125,7 @@ const Linear_regression = () => {
 
 
 
+
 const estimate_best_coeficcient = (y, x) => {
 
     /* numeric Length of dataset */
@@ -162,12 +165,46 @@ const estimate_best_coeficcient = (y, x) => {
 
 }
 
+/* x = vector & y = matrix */
+function get_multiple_independent_varialbes(x, y){
+    let array = [[-3.7, 3.5, 2.5, 11.5, 5.7], [3, 4, 5, 6, 2], [8, 5, 7, 3, 1]];
+
+    let prediction = math_js.matrix(array[0]);
+    let independent = math_js.matrix([array[1], array[2]]);
+    
+    //console.log("THis is prediction:", prediction, "this is independent:", independent)
+
+    let transpose_independent = math_js.transpose(independent);
+
+    //console.log("This is transpose:", transpose_independent);
+    
+    let independent_times_transpose_ind = math_js.multiply(transpose_independent, independent);
+    
+    //console.log("this is long name:", independent_times_transpose_ind);
+
+    let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
+    //console.log("This is inverse:", inverse_times_trans_ind);
+
+    // Her er en fejl:
+    let temp = math_js.multiply(transpose_independent, independent);
+    console.log("ind:", math_js.multiply(inverse_times_trans_ind, temp));
+
+    // let x_y = math_js.multiply(transpose_independent, prediction);
+
+    // let curificents = math_js.multiply(inverse_times_trans_ind, x_y);
+
+    // console.log(curificents);
+}
+
+get_multiple_independent_varialbes(2,3);
+
 let slope;
 let intercapt;
 let _rss;
 
 const fs = require("fs");
 
+/*
 let rawdata = fs.readFileSync("sample_data/forbes.json");
 raw = JSON.parse(rawdata);
 console.log(raw)
@@ -190,7 +227,7 @@ console.log(slope);
 console.log(intercapt);
 console.log(_rss);
 
-
+*/
 
 
 //export default Linear_regression;
