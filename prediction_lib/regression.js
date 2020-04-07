@@ -132,7 +132,7 @@ const Linear_regression = () => {
 };
 
 
-const estimate_best_coeficcient = (x, y) => {
+const estimate_best_coeficcient = (y, x) => {
 
     /* numeric Length of dataset */
     let len = y.length;
@@ -174,7 +174,26 @@ const estimate_best_coeficcient = (x, y) => {
 let slope;
 let intercapt;
 let _rss;
-[slope, intercapt, _rss] = estimate_best_coeficcient(array[1], array[0]);
+
+const fs = require("fs");
+
+let rawdata = fs.readFileSync("sample_data/forbes.json");
+raw = JSON.parse(rawdata);
+console.log(raw)
+let new_array = Array( Array(), Array(), Array() );
+
+for (let i=1; i < raw.length; i++){
+    new_array[0].push( raw[i][0].replace(/\\n/g, "") );
+    new_array[1].push(  raw[i][1].replace(/\\n/g, "") );
+    new_array[2].push( parseFloat( raw[i][2].replace(/\\n/g, "")) / 100 );
+
+
+}
+console.log(new_array);
+
+
+
+[slope, intercapt, _rss] = estimate_best_coeficcient(new_array[2], new_array[0]);
 
 console.log(slope);
 console.log(intercapt);
