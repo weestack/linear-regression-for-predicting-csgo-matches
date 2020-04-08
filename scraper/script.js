@@ -268,18 +268,12 @@ function match_teams(match_id, match_name){
     }
 }
 
-function sleep(milliseconds){
-    return new Promise(resolve => setTimeout(resolve, milliseconds));
-}
-
 async function run_scraper(scraper, dom){
     let elements = [];
     let results = [];
     if(dom == undefined){
-        let proxy = "http://localhost:8080/";
+        let response = await fetch_link(scraper.url);
         console.log("Scraaaaaping " + scraper.url);
-        await sleep(500);
-        let response = await fetch(proxy + scraper.url);
         if (response.status == 200){
             let html = await response.text();
             let domparser = new DOMParser();
@@ -455,6 +449,12 @@ async function save_data(match_data){
         },
         body: JSON.stringify(match_data, undefined, 4),
     })
-    let text = await result.text();
-    console.log(text);
+}
+
+async function fetch_link(link){
+    let result = await fetch("http://localhost:8090/fetch", {
+        method: "POST",
+        body: link
+    })
+    return result;
 }
