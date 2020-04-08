@@ -1,49 +1,25 @@
 const math_js = require("mathjs");
 
-const mean = (array) => {
-    // TODO: add type checking later
-    let sum = 0;
-    for (let i = 0; i < array.length; i++) {
-        sum += parseFloat(array[i])
-    }
-    return sum / array.length
-};
-
-const cross_deviation = (x, mean_x, y, mean_y) => {
-    /* Formula sum(x*y) - n*mean(x)*mean(y) */
-    if (x.length !== y.length) {
-        throw "x, and y should be of same length, error!"
-    }
-
-    let sum_multiply = 0;
-
-    for (let i = 0; i < x.length; i++) {
-        sum_multiply += (x[i] * y[i])
-    }
-
-    return sum_multiply - (x.length * mean_x * mean_y);
-
-};
-
-
-function rss(coe0, coe1, x, y ){
-    let sum = 0;
-    for (let i = 0; i < y.length; i++){
-        sum += (y[i] - (coe0 + coe1*x[i]))**2
-    }
-    return sum;
-
-
-
-}
-
 
 
 
 class Regression {
-    constructor( ...dataset ) {
-        /* y should be the first array, and the independent variables should come after  */
-        this.dataset = dataset;
+    /*
+    * Base object, packed with methods both for:
+    * Linear regression
+    * Multi variable regression
+    */
+
+
+    rss(coe0, coe1, x, y ){
+        let sum = 0;
+        for (let i = 0; i < y.length; i++){
+            sum += (y[i] - (coe0 + coe1*x[i]))**2
+        }
+        return sum;
+
+
+
     }
 
     standardize () {
@@ -63,6 +39,33 @@ class Regression {
         return new_column
 
 
+    }
+
+
+    cross_deviation (x, mean_x, y, mean_y) {
+        /* Formula sum(x*y) - n*mean(x)*mean(y) */
+        if (x.length !== y.length) {
+            throw "x, and y should be of same length, error!"
+        }
+
+        let sum_multiply = 0;
+
+        for (let i = 0; i < x.length; i++) {
+            sum_multiply += (x[i] * y[i])
+        }
+
+        return sum_multiply - (x.length * mean_x * mean_y);
+
+    };
+
+
+    mean( column ) {
+        // TODO: add type checking later
+        let sum = 0;
+        for (let i = 0; i < array.length; i++) {
+            sum += parseFloat(array[i])
+        }
+        return sum / array.length
     }
 
 
@@ -190,10 +193,6 @@ function get_multiple_independent_varialbes(x, y){
     return ceoficcients
 }
 
-//get_multiple_independent_varialbes(2,3);
-
-let intercapt;
-let _rss;
 
 const fs = require("fs");
 
@@ -212,38 +211,3 @@ for (let i=1; i < raw.length; i++){
 //console.log(independt);
 
 let coeffi = get_multiple_independent_varialbes(independt, prediction);
-console.log(coeffi)
-
-//[slope, intercapt, _rss] = estimate_best_coeficcient(new_array[2], new_array[0]);
-
-//console.log(slope);
-//console.log(intercapt);
-//console.log(_rss);
-
-
-
-
-//export default Linear_regression;
-
-function calculate(x) {
-
-    let array = [
-        0.29407914407861035,
-        4.6066482564712254,
-        -0.1379441753077959,
-        0.5766293455485538,
-        28.64294058575833,
-        -0.41253077777508995,
-        -0.07516514834536503,
-        1.1772752998365448,
-        0.7211992899652921,
-        0.02891327513624742,
-        -0.00029569245801042143
-    ]
-
-    return math_js.multiply(array, x);
-
-}
-
-console.log(calculate([8, 8, 4.6, 0, 1.2, 55, 4.99, 12, 10, 1, 4.58]))
-
