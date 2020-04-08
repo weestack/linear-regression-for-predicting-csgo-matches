@@ -1,7 +1,5 @@
+"use strict";
 const math_js = require("mathjs");
-
-
-
 
 class Regression {
     /*
@@ -73,27 +71,23 @@ class Regression {
 
 }
 
+class Simple_Linear_regression extends Regression {
+    /* equation to expect from object Y_i = b_0 + b_1*x_i  */
+    estimate_best_coeficcient (x, y) {
 
-const Linear_regression = () => {
-    /* equation to expect from object Y_i = b_0 + b_1*x_i + ... b_n*x_i */
-    /* TODO: mean should be calculated 1 place only! */
-
-
-
-    const estimate_best_coeficcient = (x, y) => {
 
         /* numeric Length of dataset */
         let len = y.length;
 
         /* Mean of both y and x */
-        let x_mean = mean(x);
-        let y_mean = mean(y);
+        let x_mean = this.mean(x);
+        let y_mean = this.mean(y);
 
         /* Cross_deviation and deviation */
-        let ssxy = ss_xy(x, x_mean, y, y_mean);
-        let ssxx = ss_xy(x, x_mean, x, x_mean);
+        let ssxy = this.cross_deviation(x, x_mean, y, y_mean);
+        let ssxx = this.cross_deviation(x, x_mean, x, x_mean);
 
-        let ssyy = ss_xy(y, y_mean, y, y_mean);
+        let ssyy = this.cross_deviation(y, y_mean, y, y_mean);
 
         /* sdx_square */
         let sdx_square = ssxx/( len -1 );
@@ -105,13 +99,9 @@ const Linear_regression = () => {
         let sample_covariance = ssxy/(len - 1);
         let sample_corrolation = sample_covariance / ( sdx * sdy );
 
-
-
-
-
         let intercept = ssxy / ssxx;
         let slope = y_mean - intercept * x_mean;
-        let _rss = rss(slope, intercept, x, y);
+        let _rss = this.rss(slope, intercept, x, y);
 
         /* slope corrosponds to B_0 nad intercept corrosponds to B_1 */
         return [slope, intercept, _rss]
@@ -119,79 +109,51 @@ const Linear_regression = () => {
 
     }
 
-    const cost_function = () => {
+    estimate_cost() {
+
+    }
+}
+
+class Multi_Linear_Regression extends Regression {
+    /* equation to expect from object Y_i = b_0 + b_1*x_i + ... b_n*x_i */
+    estimate_best_coeficcients(x, y){
+
+        let prediction = math_js.matrix(y);
+        let independent = math_js.matrix(x);
+
+        //console.log("THis is prediction:", prediction, "this is independent:", independent)
+
+        let transpose_independent = math_js.transpose(independent);
+
+        //console.log("This is transpose:", transpose_independent);
+
+        let independent_times_transpose_ind = math_js.multiply(independent, transpose_independent);
+
+        //console.log("this is long name:", independent_times_transpose_ind);
+
+        let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
+        //console.log("This is inverse:", inverse_times_trans_ind);
+        let x_y = math_js.multiply(prediction, transpose_independent);
+
+        let ceoficcients = math_js.multiply(x_y, inverse_times_trans_ind);
+
+        return ceoficcients
+    }
+
+    Ordenary_Least_Squares(coeficcients, output_dots ){
+        let variables = Array();
+        for (let i = 1; i < coeficcients.length; i++){
+
+        }
+
 
     }
 
-
-};
-
-
-
-
-const estimate_best_coeficcient = (y, x) => {
-
-    /* numeric Length of dataset */
-    let len = y.length;
-
-    /* Mean of both y and x */
-    let x_mean = mean(x);
-    let y_mean = mean(y);
-
-    /* Cross_deviation and deviation */
-    let ssxy = cross_deviation(x, x_mean, y, y_mean);
-    let ssxx = cross_deviation(x, x_mean, x, x_mean);
-
-    let ssyy = cross_deviation(y, y_mean, y, y_mean);
-
-    /* sdx_square */
-    let sdx_square = ssxx/( len -1 );
-    let sdx = Math.sqrt(sdx_square);
-
-    let sdy_squre = ssyy/( len -1 );
-    let sdy = Math.sqrt(sdx_square);
-
-    let sample_covariance = ssxy/(len - 1);
-    let sample_corrolation = sample_covariance / ( sdx * sdy );
-
-
-
-
-
-    let intercept = ssxy / ssxx;
-    let slope = y_mean - intercept * x_mean;
-    let _rss = rss(slope, intercept, x, y);
-
-    /* slope corrosponds to B_0 nad intercept corrosponds to B_1 */
-    return [slope, intercept, _rss]
-
-
+    test_function(coeficcients, point){
+        return math_js.multiply(point, coeficcients);
+    }
 }
 
-/* x = vector & y = matrix */
-function get_multiple_independent_varialbes(x, y){
-
-    let prediction = math_js.matrix(y);
-    let independent = math_js.matrix(x);
-    
-    //console.log("THis is prediction:", prediction, "this is independent:", independent)
-
-    let transpose_independent = math_js.transpose(independent);
-
-    //console.log("This is transpose:", transpose_independent);
-    
-    let independent_times_transpose_ind = math_js.multiply(independent, transpose_independent);
-    
-    //console.log("this is long name:", independent_times_transpose_ind);
-
-    let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
-    //console.log("This is inverse:", inverse_times_trans_ind);
-     let x_y = math_js.multiply(prediction, transpose_independent);
-
-    let ceoficcients = math_js.multiply(x_y, inverse_times_trans_ind);
-
-    return ceoficcients
-}
 
 
 const fs = require("fs");
