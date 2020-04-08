@@ -435,12 +435,26 @@ async function scrape_n_matches(amount_of_matches){
         let matchName = matchList[i].matchName;
         resultList[i] = await scrape_match(matchId, matchName);
         let matchTeams = matchList[i].teams;
+        resultList[i].id = matchId;
         for(let t = 0; t < 2; t++){
             let teamData = teams[matchTeams[t].id];
             for(let dataName in teamData){
                 resultList[i][t][dataName] = teamData[dataName];
             }
         }
+        save_data(resultList[i]);
     }
     return resultList;
+}
+
+async function save_data(match_data){
+    let result = await fetch("http://localhost:8090/store", {
+        method: "PUT",
+        headers: {
+            "content-type": "application/json",
+        },
+        body: JSON.stringify(match_data, undefined, 4),
+    })
+    let text = await result.text();
+    console.log(text);
 }
