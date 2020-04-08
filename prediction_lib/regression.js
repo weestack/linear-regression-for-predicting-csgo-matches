@@ -146,7 +146,12 @@ class Multi_Linear_Regression extends Regression {
 
         }
 
+    }
 
+    rss(coeficcients, independent, prediction){
+        let difference = math_js.subtract(prediction, math_js.multiply(coeficcients, independt));
+
+        return math_js.multiply(math_js.transpose(difference), difference);
     }
 
     test_function(coeficcients, point){
@@ -159,7 +164,7 @@ class Multi_Linear_Regression extends Regression {
 const fs = require("fs");
 
 let rawdata = fs.readFileSync("sample_data/highway.json");
-raw = JSON.parse(rawdata);
+let raw = JSON.parse(rawdata);
 let independt = Array( Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array() );
 let prediction = Array();
 for (let i=1; i < raw.length; i++){
@@ -172,4 +177,13 @@ for (let i=1; i < raw.length; i++){
 }
 //console.log(independt);
 
-let coeffi = get_multiple_independent_varialbes(independt, prediction);
+independt = [[12, 13, 15, 16, 18], [32, 35, 45, 50, 65]];
+prediction = [241132, 261035, 301065, 321050, 361065];
+
+let multiple = new Multi_Linear_Regression;
+
+let coeffi = multiple.estimate_best_coeficcients(independt, prediction);
+let __rss  = multiple.rss(coeffi, independt, prediction);
+
+console.log(coeffi);
+console.log(__rss);
