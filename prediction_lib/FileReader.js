@@ -1,5 +1,4 @@
-"use strinct";
-
+"use strict";
 const fs = require("fs"); 
 
 
@@ -20,6 +19,9 @@ class file_sanatiser {
 }
 
 class match_data extends file_sanatiser {
+    /*
+    * Factory class that should prepare CS:GO data for regression
+    * */
     constructor(path){
         super();
         this.path = path;
@@ -37,7 +39,3 @@ class match_data extends file_sanatiser {
     }
 
 }
-
-const data = new match_data("./sample_data/forbes.json");
-
-console.log(data);

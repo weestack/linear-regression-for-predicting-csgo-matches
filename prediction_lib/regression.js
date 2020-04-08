@@ -167,10 +167,9 @@ const estimate_best_coeficcient = (y, x) => {
 
 /* x = vector & y = matrix */
 function get_multiple_independent_varialbes(x, y){
-    let array = [[-3.7, 3.5, 2.5, 11.5, 5.7], [3, 4, 5, 6, 2], [8, 5, 7, 3, 1]];
 
-    let prediction = math_js.matrix(array[0]);
-    let independent = math_js.matrix([array[1], array[2]]);
+    let prediction = math_js.matrix(y);
+    let independent = math_js.matrix(x);
     
     //console.log("THis is prediction:", prediction, "this is independent:", independent)
 
@@ -184,48 +183,67 @@ function get_multiple_independent_varialbes(x, y){
 
     let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
     //console.log("This is inverse:", inverse_times_trans_ind);
-
-    let temp = math_js.multiply(independent, transpose_independent);
-    console.log("ind:", math_js.multiply(temp, inverse_times_trans_ind));
-
      let x_y = math_js.multiply(prediction, transpose_independent);
 
-    let curificents = math_js.multiply(x_y, inverse_times_trans_ind);
+    let ceoficcients = math_js.multiply(x_y, inverse_times_trans_ind);
 
-    console.log(curificents);
+    return ceoficcients
 }
 
-get_multiple_independent_varialbes(2,3);
+//get_multiple_independent_varialbes(2,3);
 
 let intercapt;
 let _rss;
 
 const fs = require("fs");
 
-/*
-let rawdata = fs.readFileSync("sample_data/forbes.json");
+let rawdata = fs.readFileSync("sample_data/highway.json");
 raw = JSON.parse(rawdata);
-console.log(raw)
-let new_array = Array( Array(), Array(), Array() );
-
+let independt = Array( Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array() );
+let prediction = Array();
 for (let i=1; i < raw.length; i++){
-    new_array[0].push( raw[i][0].replace(/\\n/g, "") );
-    new_array[1].push(  raw[i][1].replace(/\\n/g, "") );
-    new_array[2].push( parseFloat( raw[i][2].replace(/\\n/g, "")) / 100 );
+    prediction.push(raw[i][0].replace(/\\n/g, ""));
 
+    for (let j=1; j < 12; j++){
+        independt[j-1].push( raw[i][j].replace(/\\n/g, "" ));
+    }
 
 }
-console.log(new_array);
+//console.log(independt);
+
+let coeffi = get_multiple_independent_varialbes(independt, prediction);
+console.log(coeffi)
+
+//[slope, intercapt, _rss] = estimate_best_coeficcient(new_array[2], new_array[0]);
+
+//console.log(slope);
+//console.log(intercapt);
+//console.log(_rss);
 
 
-
-[slope, intercapt, _rss] = estimate_best_coeficcient(new_array[2], new_array[0]);
-
-console.log(slope);
-console.log(intercapt);
-console.log(_rss);
-
-*/
 
 
 //export default Linear_regression;
+
+function calculate(x) {
+
+    let array = [
+        0.29407914407861035,
+        4.6066482564712254,
+        -0.1379441753077959,
+        0.5766293455485538,
+        28.64294058575833,
+        -0.41253077777508995,
+        -0.07516514834536503,
+        1.1772752998365448,
+        0.7211992899652921,
+        0.02891327513624742,
+        -0.00029569245801042143
+    ]
+
+    return math_js.multiply(array, x);
+
+}
+
+console.log(calculate([8, 8, 4.6, 0, 1.2, 55, 4.99, 12, 10, 1, 4.58]))
+
