@@ -219,36 +219,22 @@ class Multi_Linear_Regression extends Regression {
     }
 
 
-    rss(SYY, coeficcients, points){
+    rss(SYY, SXX, coeficcients){
+        /* convert to array, to remove B_0 */
+        let coe = coeficcients.toArray();
+        coe.shift();
+        /* beta star */
+        coe =  math_js.matrix(coe);
+        /* transposed beta star */
+        let transpose_coe = math_js.transpose( coe  );
+
+        /* trans posed beta star * SXX */
+        let b_ssx = math_js.multiply(transpose_coe, SXX);
+        /* b_ssx * beta */
+        let b_b = math_js.multiply(b_ssx, coe);
+
+        return math_js.subtract(SYY, b_b);
         
-    }
-
-
-    /*rss(SYY, coeficcients, points, prediction){
-        let trans_coefi = math_js.transpose(coeficcients);
-
-        let trans_points = math_js.transpose(points);
-
-        let [number_points, _] = points.size();
-
-        let mean_predic = this.mean(prediction);
-
-        let trans_points_points = math_js.multiply(trans_points, points);
-
-        console.log("THis is trans_coe:", trans_coefi, "This is trans_points_points:", trans_points_points);
-
-        let trans_coefi_points_timed = math_js.multiply(trans_coefi, trans_points_points);
-        console.log(trans_coefi_points_timed);
-        
-        let trans_coefi_points_timed_coefi = math_js.multiply(trans_coefi_points_timed, coeficcients);
-        */
-        /*
-        let number_points_timed_mean_square = number_points * mean_predic**2;
-
-        let right_side_addition = math_js.add(number_points_timed_mean_square, trans_coefi_points_timed_coefi);
-
-        return math_js.subtract(SYY, right_side_addition);
-        */
     }
 
     test_function(coeficcients, point){
@@ -288,23 +274,23 @@ for (let i=1; i < raw.length; i++){
 
 
 
-let simple = new Simple_Linear_regression;
-let [slope, intercept, simple_rss] = simple.estimate_best_coeficcient(prediction[0], prediction[1]);
+
+
+//let simple = new Simple_Linear_regression;
+//let [slope, intercept, simple_rss] = simple.estimate_best_coeficcient(prediction[0], prediction[1]);
 //console.log(multiple.estimate_best_coeficcients(prediction[0], prediction[1]));
-console.log(slope)
-console.log(intercept)
-console.log(simple_rss)
+//console.log(slope)
+//console.log(intercept)
+//console.log(simple_rss)
 
 //console.log(independt);
 
 
 let multiple = new Multi_Linear_Regression;
 
-let independent = math_js.matrix(prediction)
+let X = math_js.matrix(independent)
+let Y = math_js.matrix(prediction)
 
-independent = math_js.transpose( independent );
-//console.log(independent)
-//console.log(math_js.column(independent, 1))
 
 let out_put = multiple.summary_statictis(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
 
@@ -312,15 +298,6 @@ let coeficcients = multiple.estimate_best_coeficcients(math_js.column(independen
 
 let points = math_js.column(independent, 1);
 
-let rss_ = multiple.rss(out_put.subset(math_js.index(1,1)), coeficcients, points, math_js.column(independent, 0 ));
+let rss_ = multiple.rss(out_put.subset(math_js.index(1,1)), out_put.subset(math_js.index(0,0)), coeficcients);
 
 console.log(rss_);
-
-//let test = math_js.matrix(prediction[0])
-
-
-//let coeffi = multiple.estimate_best_coeficcients(prediction[0], prediction[1]);
-//let __rss  = multiple.rss(coeffi, prediction[0], prediction[1]);
-
-//console.log(coeffi)
-//console.log(__rss)
