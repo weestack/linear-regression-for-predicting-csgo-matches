@@ -60,10 +60,10 @@ class Regression {
     mean( column ) {
         // TODO: add type checking later
         let sum = 0;
-        for (let i = 0; i < array.length; i++) {
-            sum += parseFloat(array[i])
+        for (let i = 0; i < column.length; i++) {
+            sum += parseFloat(column[i])
         }
-        return sum / array.length
+        return sum / column.length
     }
 
 
@@ -116,28 +116,76 @@ class Simple_Linear_regression extends Regression {
 
 class Multi_Linear_Regression extends Regression {
     /* equation to expect from object Y_i = b_0 + b_1*x_i + ... b_n*x_i */
+
+    mean(matrix_column) {
+        let matrix = math_js.matrix(matrix_column);
+        let sum = 0;
+        let length = 0;
+        matrix.map( (value) => {sum += value; length++} )
+
+        return sum / length
+
+
+    }
+    mean_vector( matrix ) {
+        let [rows, columns] = matrix.size();
+        let means = math_js.matrix();
+        for (let i=0; i < columns; i++) {
+            means.subset(
+                math_js.index(i), // grap the value at the i'th place
+                this.mean( math_js.column( matrix, i ) ) // pass in the i'th column to the mean function
+            )
+        }
+        return means;
+    }
+
+
+    decomposition( matrix) {
+        //let _ma = math_js.matrix(matrix);
+        //console.log(matrix)
+        let [rows, columns ] = matrix.size();
+        if (columns === "undefined"){
+            columns = 1;
+        }
+        let means = [];
+        /* get all the means */
+        for (let column = 0; column < columns; column++){
+            means[column] = this.mean(math_js.column(matrix, column))
+        }
+        /* compute the new column values */
+        let new_matrix = math_js.matrix();
+        for (let column = 0; column < columns; column++){
+            for (let row = 0; row < rows; row ++){
+                let ij_val = matrix.subset(math_js.index( row,column  ))
+                ij_val = ij_val - [means[column]];
+                new_matrix.subset(math_js.index(row, column),   ij_val)
+            }
+        }
+
+
+        return new_matrix;
+
+    }
     estimate_best_coeficcients(x, y){
+        let decomp_prediction = this.decomposition(y);
 
-        let prediction = math_js.matrix(y);
-        let independent = math_js.matrix(x);
+        let decomp_independent =  this.decomposition(x);
 
-        //console.log("THis is prediction:", prediction, "this is independent:", independent)
-
-        let transpose_independent = math_js.transpose(independent);
-
-        //console.log("This is transpose:", transpose_independent);
-
-        let independent_times_transpose_ind = math_js.multiply(independent, transpose_independent);
-
-        //console.log("this is long name:", independent_times_transpose_ind);
-
+        /* block for calculating b_1 ... b_n coeficcients */
+        let transpose_independent = math_js.transpose(decomp_independent);
+        let independent_times_transpose_ind = math_js.multiply(transpose_independent, decomp_independent);
         let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
-        //console.log("This is inverse:", inverse_times_trans_ind);
-        let x_y = math_js.multiply(prediction, transpose_independent);
-
+        let x_y = math_js.multiply(transpose_independent, decomp_prediction);
         let ceoficcients = math_js.multiply(x_y, inverse_times_trans_ind);
+        /* block to calculate B_0 */
+        /* formula mean_y - transpose(ceoficcients)* mean_x_vec */
+        let mean_y = this.mean(y);
+        let means_x = this.mean_vector(x);
+        let placeholder = math_js.multiply( math_js.transpose(ceoficcients), means_x  )
+        let intercept = math_js.subtract( mean_y,  placeholder)
 
-        return ceoficcients
+
+        return [intercept, ceoficcients]
     }
 
     Ordenary_Least_Squares(coeficcients, output_dots ){
@@ -149,9 +197,11 @@ class Multi_Linear_Regression extends Regression {
     }
 
     rss(coeficcients, independent, prediction){
-        let difference = math_js.subtract(prediction, math_js.multiply(coeficcients, independt));
+        /*(Y − Xβ) * (Y − Xβ)*/
+        let difference_trans = math_js.transpose( math_js.subtract(prediction, math_js.multiply(coeficcients, independent ))  );
+        let difference = math_js.subtract(prediction, math_js.multiply(coeficcients, independent));
 
-        return math_js.multiply(math_js.transpose(difference), difference);
+        return math_js.multiply(difference_trans, difference);
     }
 
     test_function(coeficcients, point){
@@ -179,27 +229,44 @@ class Multi_Linear_Regression extends Regression {
 
 const fs = require("fs");
 
-let rawdata = fs.readFileSync("sample_data/highway.json");
+let rawdata = fs.readFileSync("sample_data/heights.json");
 let raw = JSON.parse(rawdata);
-let independt = Array( Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array() );
-let prediction = Array();
+/*let independt = Array( Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array() );*/
+let prediction = Array( Array(), Array() );
 for (let i=1; i < raw.length; i++){
-    prediction.push(raw[i][0].replace(/\\n/g, ""));
-
-    for (let j=1; j < 12; j++){
-        independt[j-1].push( raw[i][j].replace(/\\n/g, "" ));
-    }
+    prediction[0].push(parseFloat(raw[i][0].replace(/\\n/g, "")));
+    prediction[1].push(parseFloat(raw[i][1].replace(/\\n/g, "")));
 
 }
+
+
+
+let simple = new Simple_Linear_regression;
+let [slope, intercept, simple_rss] = simple.estimate_best_coeficcient(prediction[0], prediction[1]);
+//console.log(multiple.estimate_best_coeficcients(prediction[0], prediction[1]));
+console.log(slope)
+console.log(intercept)
+console.log(simple_rss)
+
 //console.log(independt);
 
-independt = [[12, 13, 15, 16, 18], [32, 35, 45, 50, 65]];
-prediction = [241132, 261035, 301065, 321050, 361065];
 
 let multiple = new Multi_Linear_Regression;
 
-let coeffi = multiple.estimate_best_coeficcients(independt, prediction);
-let __rss  = multiple.rss(coeffi, independt, prediction);
+let independent = math_js.matrix(prediction)
 
-console.log(coeffi);
-console.log(__rss);
+independent = math_js.transpose( independent );
+//console.log(independent)
+//console.log(math_js.column(independent, 1))
+
+let [_intercept, terms] = multiple.estimate_best_coeficcients(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
+console.log(_intercept, terms)
+
+//let test = math_js.matrix(prediction[0])
+
+
+//let coeffi = multiple.estimate_best_coeficcients(prediction[0], prediction[1]);
+//let __rss  = multiple.rss(coeffi, prediction[0], prediction[1]);
+
+//console.log(coeffi)
+//console.log(__rss)
