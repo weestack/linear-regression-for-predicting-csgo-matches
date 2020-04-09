@@ -196,12 +196,25 @@ class Multi_Linear_Regression extends Regression {
 
     }
 
-    rss(coeficcients, independent, prediction){
-        /*(Y − Xβ) * (Y − Xβ)*/
-        let difference_trans = math_js.transpose( math_js.subtract(prediction, math_js.multiply(coeficcients, independent ))  );
-        let difference = math_js.subtract(prediction, math_js.multiply(coeficcients, independent));
+    summary_statictis(independent, prediction){
+        let [number_of_points, _] = independent.size()
 
-        return math_js.multiply(difference_trans, difference);
+        let decomp_independent = this.decomposition(independent);
+        let decomp_prediction  = this.decomposition(prediction);
+
+        let point_one_one_raw = math_js.multiply(math_js.transpose(decomp_independent), decomp_independent);
+        let point_one_two_raw = math_js.multiply(math_js.transpose(decomp_independent), decomp_prediction);
+        let point_two_one_raw = math_js.multiply(math_js.transpose(decomp_prediction), decomp_independent);
+        let point_two_two_raw = math_js.multiply(math_js.transpose(decomp_prediction), decomp_prediction);
+
+        let array = [[point_one_one_raw.subset(math_js.index(0, 0)),point_one_two_raw.subset(math_js.index(0, 0))], [point_two_one_raw.subset(math_js.index(0, 0)), point_two_two_raw.subset(math_js.index(0, 0))]];
+
+        return math_js.matrix(array);
+        /*
+        let scalar = (1/(number_of_points - 1));
+        
+        return math_js.multiply(scalar, output_matrix);
+        */ 
     }
 
     test_function(coeficcients, point){
@@ -213,8 +226,8 @@ class Multi_Linear_Regression extends Regression {
     }
 
     variance(sigmoid_squared, independent){
-        indepen_trans = math_js.transpose(independent);
-        inde_times_inde_trans = math_js.multiply(indepen_trans, independt);
+        let indepen_trans = math_js.transpose(independent);
+        let inde_times_inde_trans = math_js.multiply(indepen_trans, independt);
 
         return math_js.multiply(sigmoid_squared, math_js.inv(inde_times_inde_trans));
     }
@@ -259,8 +272,8 @@ independent = math_js.transpose( independent );
 //console.log(independent)
 //console.log(math_js.column(independent, 1))
 
-let [_intercept, terms] = multiple.estimate_best_coeficcients(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
-console.log(_intercept, terms)
+let out_put = multiple.summary_statictis(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
+console.log(out_put);
 
 //let test = math_js.matrix(prediction[0])
 
