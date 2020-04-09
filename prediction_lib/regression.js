@@ -181,11 +181,12 @@ class Multi_Linear_Regression extends Regression {
         /* formula mean_y - transpose(ceoficcients)* mean_x_vec */
         let mean_y = this.mean(y);
         let means_x = this.mean_vector(x);
-        let placeholder = math_js.multiply( math_js.transpose(ceoficcients), means_x  )
-        let intercept = math_js.subtract( mean_y,  placeholder)
+        let placeholder = math_js.multiply( math_js.transpose(ceoficcients), means_x  );
+        let intercept = math_js.subtract( mean_y,  placeholder);
 
+        let coefi = math_js.matrix([intercept.toArray(), ... ceoficcients.toArray()]);
 
-        return [intercept, ceoficcients]
+        return coefi;
     }
 
     Ordenary_Least_Squares(coeficcients, output_dots ){
@@ -215,6 +216,39 @@ class Multi_Linear_Regression extends Regression {
         
         return math_js.multiply(scalar, output_matrix);
         */ 
+    }
+
+
+    rss(SYY, coeficcients, points){
+        
+    }
+
+
+    /*rss(SYY, coeficcients, points, prediction){
+        let trans_coefi = math_js.transpose(coeficcients);
+
+        let trans_points = math_js.transpose(points);
+
+        let [number_points, _] = points.size();
+
+        let mean_predic = this.mean(prediction);
+
+        let trans_points_points = math_js.multiply(trans_points, points);
+
+        console.log("THis is trans_coe:", trans_coefi, "This is trans_points_points:", trans_points_points);
+
+        let trans_coefi_points_timed = math_js.multiply(trans_coefi, trans_points_points);
+        console.log(trans_coefi_points_timed);
+        
+        let trans_coefi_points_timed_coefi = math_js.multiply(trans_coefi_points_timed, coeficcients);
+        */
+        /*
+        let number_points_timed_mean_square = number_points * mean_predic**2;
+
+        let right_side_addition = math_js.add(number_points_timed_mean_square, trans_coefi_points_timed_coefi);
+
+        return math_js.subtract(SYY, right_side_addition);
+        */
     }
 
     test_function(coeficcients, point){
@@ -273,7 +307,14 @@ independent = math_js.transpose( independent );
 //console.log(math_js.column(independent, 1))
 
 let out_put = multiple.summary_statictis(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
-console.log(out_put);
+
+let coeficcients = multiple.estimate_best_coeficcients(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
+
+let points = math_js.column(independent, 1);
+
+let rss_ = multiple.rss(out_put.subset(math_js.index(1,1)), coeficcients, points, math_js.column(independent, 0 ));
+
+console.log(rss_);
 
 //let test = math_js.matrix(prediction[0])
 
