@@ -168,7 +168,6 @@ class Multi_Linear_Regression extends Regression {
     }
     estimate_best_coeficcients(x, y){
         let decomp_prediction = this.decomposition(y);
-
         let decomp_independent =  this.decomposition(x);
 
         /* block for calculating b_1 ... b_n coeficcients */
@@ -176,7 +175,7 @@ class Multi_Linear_Regression extends Regression {
         let independent_times_transpose_ind = math_js.multiply(transpose_independent, decomp_independent);
         let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
         let x_y = math_js.multiply(transpose_independent, decomp_prediction);
-        let ceoficcients = math_js.multiply(x_y, inverse_times_trans_ind);
+        let ceoficcients = math_js.multiply(inverse_times_trans_ind, x_y);
         /* block to calculate B_0 */
         /* formula mean_y - transpose(ceoficcients)* mean_x_vec */
         let mean_y = this.mean(y);
@@ -185,7 +184,6 @@ class Multi_Linear_Regression extends Regression {
         let intercept = math_js.subtract( mean_y,  placeholder);
 
         let coefi = math_js.matrix([intercept.toArray(), ... ceoficcients.toArray()]);
-
         return coefi;
     }
 
@@ -247,7 +245,7 @@ class Multi_Linear_Regression extends Regression {
 
     variance(sigmoid_squared, independent){
         let indepen_trans = math_js.transpose(independent);
-        let inde_times_inde_trans = math_js.multiply(indepen_trans, independt);
+        let inde_times_inde_trans = math_js.multiply(indepen_trans, independent);
 
         return math_js.multiply(sigmoid_squared, math_js.inv(inde_times_inde_trans));
     }
@@ -271,7 +269,7 @@ let placeholder = [];
 
 
 for (let j = 1; j < raw.length; j++) {
-    prediction[j-1] = parseFloat( raw[j][0].replace( /\\n/g, ""));
+    prediction[j-1] = [parseFloat( raw[j][0].replace( /\\n/g, ""))];
     independt[j-1] = Array()
     for (let i = 1; i < raw[j].length; i++){
         independt[j-1][i-1] = parseFloat( raw[j][i].replace( /\\n/g, "") );
@@ -280,9 +278,26 @@ for (let j = 1; j < raw.length; j++) {
 
 
 prediction = math_js.matrix(prediction);
+
+
 independt = math_js.matrix(independt);
 console.log(prediction)
-//console.log(independt)
+//console.log( math_js.transpose( independt))
+
+let multiple = new Multi_Linear_Regression;
+let coefficients = multiple.estimate_best_coeficcients(independt, prediction)
+console.log("coefficients ", coefficients);
+let summary_statics = multiple.summary_statictis(independt, prediction)
+console.log("summary statics ", summary_statics);
+let rss = multiple.rss(summary_statics.subset(math_js.index(1,1)), summary_statics.subset(math_js.index(0,0)), coefficients);
+console.log("rss ", rss);
+let r_squared = multiple.r_squared(rss.subset(math_js.index(0,0)), summary_statics.subset(math_js.index(1,1)));
+console.log("r**2 ", r_squared);
+let sigmond = multiple.sigmoid_squared(rss.subset(math_js.index(0,0)), independt);
+console.log("sigmonds ", sigmond);
+let varians = multiple.variance(sigmond, independt);
+console.log("varians ",varians)
+
 //independt = math_js.matrix( placeholder );
 
 
@@ -308,7 +323,6 @@ console.log(prediction)
 //console.log(independt);
 
 
-let multiple = new Multi_Linear_Regression;
 
 //let X = math_js.matrix(independent)
 //let Y = math_js.matrix(prediction)
