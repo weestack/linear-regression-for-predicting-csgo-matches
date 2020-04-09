@@ -157,8 +157,24 @@ class Multi_Linear_Regression extends Regression {
     test_function(coeficcients, point){
         return math_js.multiply(point, coeficcients);
     }
-}
 
+    r_squared(rss, syy){
+        return 1 - rss/syy;
+    }
+
+    variance(sigmoid_squared, independent){
+        indepen_trans = math_js.transpose(independent);
+        inde_times_inde_trans = math_js.multiply(indepen_trans, independt);
+
+        return math_js.multiply(sigmoid_squared, math_js.inv(inde_times_inde_trans));
+    }
+
+    sigmoid_squared(rss, independent){
+        let [length_of_cases, amount_of_independent_variables] = independent.size();
+
+        return rss/(length_of_cases - amount_of_independent_variables);
+    }
+}
 
 
 const fs = require("fs");
