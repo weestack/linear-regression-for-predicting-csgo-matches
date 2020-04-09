@@ -270,14 +270,22 @@ let independt = Array();
 let placeholder = [];
 
 
-for (let row in raw) {
-    placeholder[placeholder.length - 1] = Array()
-    for (let i = 0; i < row.length; i++){
-        placeholderp[placeholder.length -1][i] = row[i];
+for (let j = 1; j < raw.length; j++) {
+    prediction[j-1] = parseFloat( raw[j][0].replace( /\\n/g, ""));
+    independt[j-1] = Array()
+    for (let i = 1; i < raw[j].length; i++){
+        independt[j-1][i-1] = parseFloat( raw[j][i].replace( /\\n/g, "") );
     }
 }
 
-console.log(placeholder)
+
+prediction = math_js.matrix(prediction);
+independt = math_js.matrix(independt);
+console.log(prediction)
+//console.log(independt)
+//independt = math_js.matrix( placeholder );
+
+
 
 /*for (let i=1; i < raw.length; i++){
 
