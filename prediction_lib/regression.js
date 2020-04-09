@@ -262,15 +262,29 @@ class Multi_Linear_Regression extends Regression {
 
 const fs = require("fs");
 
-let rawdata = fs.readFileSync("sample_data/heights.json");
+let rawdata = fs.readFileSync("sample_data/highway.json");
 let raw = JSON.parse(rawdata);
 /*let independt = Array( Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array() );*/
-let prediction = Array( Array(), Array() );
-for (let i=1; i < raw.length; i++){
+let prediction = Array();
+let independt = Array();
+let placeholder = [];
+
+
+for (let row in raw) {
+    placeholder[placeholder.length - 1] = Array()
+    for (let i = 0; i < row.length; i++){
+        placeholderp[placeholder.length -1][i] = row[i];
+    }
+}
+
+console.log(placeholder)
+
+/*for (let i=1; i < raw.length; i++){
+
     prediction[0].push(parseFloat(raw[i][0].replace(/\\n/g, "")));
     prediction[1].push(parseFloat(raw[i][1].replace(/\\n/g, "")));
 
-}
+}*/
 
 
 
@@ -288,16 +302,9 @@ for (let i=1; i < raw.length; i++){
 
 let multiple = new Multi_Linear_Regression;
 
-let X = math_js.matrix(independent)
-let Y = math_js.matrix(prediction)
+//let X = math_js.matrix(independent)
+//let Y = math_js.matrix(prediction)
 
 
-let out_put = multiple.summary_statictis(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
 
-let coeficcients = multiple.estimate_best_coeficcients(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
 
-let points = math_js.column(independent, 1);
-
-let rss_ = multiple.rss(out_put.subset(math_js.index(1,1)), out_put.subset(math_js.index(0,0)), coeficcients);
-
-console.log(rss_);
