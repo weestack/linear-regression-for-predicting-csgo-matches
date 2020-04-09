@@ -153,21 +153,20 @@ class Multi_Linear_Regression extends Regression {
             means[column] = this.mean(math_js.column(matrix, column))
         }
         /* compute the new column values */
-        console.log(means)
+        let new_matrix = math_js.matrix();
         for (let column = 0; column < columns; column++){
             for (let row = 0; row < rows; row ++){
                 let ij_val = matrix.subset(math_js.index( row,column  ))
                 ij_val = ij_val - [means[column]];
-                matrix.subset(math_js.index(row, column),   ij_val)
+                new_matrix.subset(math_js.index(row, column),   ij_val)
             }
         }
 
 
-        return matrix;
+        return new_matrix;
 
     }
     estimate_best_coeficcients(x, y){
-        console.log(y)
         let decomp_prediction = this.decomposition(y);
 
         let decomp_independent =  this.decomposition(x);
@@ -178,18 +177,15 @@ class Multi_Linear_Regression extends Regression {
         let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
         let x_y = math_js.multiply(transpose_independent, decomp_prediction);
         let ceoficcients = math_js.multiply(x_y, inverse_times_trans_ind);
-        console.log("coe", ceoficcients);
         /* block to calculate B_0 */
         /* formula mean_y - transpose(ceoficcients)* mean_x_vec */
         let mean_y = this.mean(y);
         let means_x = this.mean_vector(x);
         let placeholder = math_js.multiply( math_js.transpose(ceoficcients), means_x  )
-        console.log("place", placeholder)
         let intercept = math_js.subtract( mean_y,  placeholder)
-        console.log("mean here", intercept);
 
 
-        return ceoficcients
+        return [intercept, ceoficcients]
     }
 
     Ordenary_Least_Squares(coeficcients, output_dots ){
@@ -247,8 +243,8 @@ independent = math_js.transpose( independent );
 //console.log(independent)
 //console.log(math_js.column(independent, 1))
 
-let coe = multiple.estimate_best_coeficcients(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
-console.log(coe)
+let [_intercept, terms] = multiple.estimate_best_coeficcients(math_js.column(independent, 0 ),math_js.column(independent, 1 ));
+console.log(_intercept, terms)
 
 //let test = math_js.matrix(prediction[0])
 
