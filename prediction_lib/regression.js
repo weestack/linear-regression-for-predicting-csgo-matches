@@ -235,7 +235,7 @@ class Multi_Linear_Regression extends Regression {
         
     }
 
-    test_function(coeficcients, point){
+    calculate_yi(coeficcients, point){
         let coe = coeficcients.toArray();
 
         let b_0 = coe.shift()[0];
@@ -255,10 +255,8 @@ class Multi_Linear_Regression extends Regression {
         let sum_our_prediction = 0;
         let total_sum = 0;
 
-        console.log(y_array);
-
         for(let i = 0; i < y_array.length; i++){
-            y_current_guess = this.test_function(coefficients, math_js.row(independent, i));
+            y_current_guess = this.calculate_yi(coefficients, math_js.row(independent, i));
 
             sum_our_prediction += (y_array[i][0] - y_current_guess)**2;
 
@@ -302,11 +300,42 @@ for (let j = 1; j < raw.length; j++) {
 }
 
 
+
+prediction = [
+    [1],
+    [3],
+    [5],
+    [7],
+    [9],
+    [11],
+    [13],
+    [15],
+    [17],
+    [19],
+    [21],
+    [23],
+]
+
+independt = [
+    [1],
+    [2],
+    [3],
+    [4],
+    [5],
+    [6],
+    [7],
+    [8],
+    [9],
+    [10],
+    [11],
+    [12],
+]
+
+
 prediction = math_js.matrix(prediction);
 
 
 independt = math_js.matrix(independt);
-console.log(prediction)
 //console.log( math_js.transpose( independt))
 
 let multiple = new Multi_Linear_Regression;

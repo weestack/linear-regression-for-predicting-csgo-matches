@@ -38,4 +38,51 @@ class match_data extends file_sanatiser {
         return data;
     }
 
+
+
+    filter_for_type(name, datarow){
+
+    }
+
+    win_loose_for_team(name="win_loose", datarow){
+        /* D1 */
+    }
+
+
+    best_n_worst_map_per_team(){
+        /* D2 */
+    }
+
+    win_loose_between_team_and_current_opponent(){
+        /* D3 */
+    }
+
+    most_used_weapons(){
+        /* D4 */
+    }
+
+    most_deaths_to_weapons(){
+        /* D5 */
+    }
+
+    mean_headshots(){
+        /* D6 */
+    }
+
+    first_kill(){
+        /* D7 */
+    }
+
+    time_sine_last_match(){
+        /* D8 */
+    }
+
+
+    time_players_has_played_together_in_teams(){
+        /* D9 */
+    }
+
+    mean_death_kill_ratio(){
+        /* D10 */
+    }
 }

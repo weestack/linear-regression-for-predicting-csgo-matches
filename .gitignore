@@ -3,3 +3,4 @@ node_modules/
 package-lock.json
 scraper/cache/*
 scraper/data/*
+/prediction_lib/actual_data
