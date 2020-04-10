@@ -236,11 +236,36 @@ class Multi_Linear_Regression extends Regression {
     }
 
     test_function(coeficcients, point){
-        return math_js.multiply(point, coeficcients);
+        let coe = coeficcients.toArray();
+
+        let b_0 = coe.shift()[0];
+
+        let coeffi = math_js.matrix(coe);
+
+        let value_without_b0 = math_js.multiply(point, coeffi).toArray()[0][0];
+
+        return b_0 + value_without_b0;
     }
 
-    r_squared(rss, syy){
-        return 1 - rss/syy;
+    r_squared(coefficients, independent, prediction){
+        let mean_y = this.mean(prediction);
+        let y_array = prediction.toArray();
+
+        let y_current_guess;
+        let sum_our_prediction = 0;
+        let total_sum = 0;
+
+        console.log(y_array);
+
+        for(let i = 0; i < y_array.length; i++){
+            y_current_guess = this.test_function(coefficients, math_js.row(independent, i));
+
+            sum_our_prediction += (y_array[i][0] - y_current_guess)**2;
+
+            total_sum += (y_array[i][0] - mean_y)**2;
+        }
+        
+        return (total_sum - sum_our_prediction) / total_sum;
     }
 
     variance(sigmoid_squared, independent){
@@ -270,7 +295,7 @@ let placeholder = [];
 
 for (let j = 1; j < raw.length; j++) {
     prediction[j-1] = [parseFloat( raw[j][0].replace( /\\n/g, ""))];
-    independt[j-1] = Array()
+    independt[j-1] = Array();
     for (let i = 1; i < raw[j].length; i++){
         independt[j-1][i-1] = parseFloat( raw[j][i].replace( /\\n/g, "") );
     }
@@ -291,12 +316,13 @@ let summary_statics = multiple.summary_statictis(independt, prediction)
 console.log("summary statics ", summary_statics);
 let rss = multiple.rss(summary_statics.subset(math_js.index(1,1)), summary_statics.subset(math_js.index(0,0)), coefficients);
 console.log("rss ", rss);
-let r_squared = multiple.r_squared(rss.subset(math_js.index(0,0)), summary_statics.subset(math_js.index(1,1)));
+let r_squared = multiple.r_squared(coefficients, independt, prediction);
 console.log("r**2 ", r_squared);
 let sigmond = multiple.sigmoid_squared(rss.subset(math_js.index(0,0)), independt);
 console.log("sigmonds ", sigmond);
 let varians = multiple.variance(sigmond, independt);
-console.log("varians ",varians)
+console.log("varians ",varians);
+
 
 //independt = math_js.matrix( placeholder );
 
