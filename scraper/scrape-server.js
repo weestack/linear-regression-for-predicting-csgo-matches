@@ -7,30 +7,18 @@ let http = require('http');
 let server = http.createServer((request, response) => {
     console.log(request.method);
     console.log(request.url);
-    if(request.url == "/store"){
-        if(request.method == "OPTIONS"){
-            response.writeHead(200, {
-                "Access-Control-Allow-Methods": "PUT",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "content-type"
-            });
-            response.end();
-        }
-        if(request.method == "PUT"){
-            store_data(request, response);
-        }
+    if(request.url == "/store" && request.method == "PUT"){
+        store_data(request, response);
     }
-    else if(request.url == "/fetch"){
-        if(request.method == "OPTIONS"){
-            response.writeHead(200, {
-                "Access-Control-Allow-Methods": "POST",
-                "Access-Control-Allow-Origin": "*",
-            });
-            response.end();
-        }
-        if(request.method == "POST"){
-            fetch_website(request, response);
-        }
+    else if(request.url == "/fetch" && request.method == "POST"){
+        fetch_website(request, response);
+    }
+    else if(request.method == "GET"){
+        serve_file(request, response)
+    }
+    else {
+        response.writeHead(404);
+        response.end();
     }
 })
 
@@ -52,9 +40,7 @@ function store_data(request, response){
                 console.log(error);
             }
         });
-        response.writeHead(200, {
-            "Access-Control-Allow-Origin": "*"
-        });
+        response.writeHead(200);
         response.end();
     })
 }
@@ -67,9 +53,7 @@ function fetch_website(request, response){
     request.on("end", async () => {
         body = Buffer.concat(body).toString();
         let result = await get(body);
-        response.writeHead(200, {
-            "Access-Control-Allow-Origin": "*"
-        });
+        response.writeHead(200);
         response.write(result);
         response.end();
     });
@@ -137,4 +121,22 @@ function cache_filename(link){
 
 function sleep(milliseconds){
     return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+function serve_file(request, response){
+    let filePath = "static" + request.url;
+    if(filePath == "static/"){
+        filePath = "static/index.html";
+    }
+    if(fs.existsSync(filePath)){
+        let stats = fs.statSync(filePath);
+        if(stats.isFile()){
+            let content = fs.readFileSync(filePath).toString();
+            response.write(content);
+            response.end();
+            return;
+        }
+    }
+    response.writeHead(404);
+    response.end(); 
 }

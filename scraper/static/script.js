@@ -491,6 +491,6 @@ async function fetch_link(link){
     let result = await fetch("http://localhost:8090/fetch", {
         method: "POST",
         body: link
-    })
+    });
     return result;
 }
