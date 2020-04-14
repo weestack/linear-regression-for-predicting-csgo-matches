@@ -268,6 +268,21 @@ function match_teams(match_id, match_name){
     }
 }
 
+function match_winner(match_id, match_name){
+    return {
+        url: "https://www.hltv.org/stats/matches/mapstatsid/" + match_id + "/" + match_name,
+        location: ".team-left > .bold, .team-right > .bold",
+        scrape_many: true,
+        handle: elements => {
+            let score1 = parseInt(elements[0].textContent);
+            let score2 = parseInt(elements[1].textContent);
+            let winner = (score1 > score2) ? 0: 1;
+            return winner;
+        }
+
+    }
+}
+
 async function run_scraper(scraper, dom){
     let elements = [];
     let results = [];
@@ -376,6 +391,20 @@ function scrape_match_list(offset) {
         location: "td.date-col",
         scrape_many: true,
         sub_scrapers: {
+            date: {
+                location: "a > div.time",
+                handle: element => {
+                    
+                    let dateText = element.textContent;
+                    let parts = dateText.split("/");
+                    let year = parseInt("20" + parts[2]);
+                    let month = parseInt(parts[1]);
+                    let day = parseInt(parts[0]);
+                    let date = new Date(year, month, day);
+                    console.log(date);
+                    return new Date(year, month, day);
+                }
+            },
             match: {
                 location: "a",
                 handle: element => {
@@ -391,8 +420,9 @@ function scrape_match_list(offset) {
             let result = [];
             for(let i in elements){
                 let match = elements[i].match;
-                result[i] = {matchId: match.matchId, matchName: match.matchName};
+                result[i] = {matchId: match.matchId, matchName: match.matchName, date: elements[i].date};
             }
+            console.log(result);
             return result;
         },
     };
@@ -449,6 +479,8 @@ async function scrape_n_matches(amount_of_matches){
         let matchName = matchList[i].matchName;
         resultList[i] = await scrape_match(matchId, matchName);
         let matchTeams = matchList[i].teams;
+        resultList[i].winner = await run_scraper(match_winner(matchId, matchName));
+        resultList[i].date = matchList[i].date;
         resultList[i].id = matchId;
         for(let t = 0; t < 2; t++){
             let teamData = teams[matchTeams[t].id];
