@@ -2,12 +2,56 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <script src="scrape-script.js"></script>
+    <script src="web-script.js"></script>
     <link rel="stylesheet" href="stylesheet.css"></link>
 </head>
 <body>
-	<h1 id="matches">Matches</h1>
-	<h1 id="teams">Teams</h1>
-	<h1 id="current_job">Job</h1>
+    <header>
+        Aalborg uni gruppe DAT2 C1-20 yeee
+    </header>
+    <div id="mainContent">
+        <nav>
+            <ul>
+                <li>
+                    Scraper
+                    <ul>
+                        <li class="viewSwitcher" data-view="main1">
+                                Start scraper
+                        </li>
+                        <li class="viewSwitcher" data-view="main2">
+                            Data status
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Prediction
+                    <ul>
+                        <li class="viewSwitcher" data-view="main3">
+                            Team vs team
+                        </li>
+                        <li class="viewSwitcher" data-view="main4">
+                            Statistics
+                        </li>
+                    </ul>
+                </li>
+    
+            </ul>
+        </nav>
+        <main id="main1">
+            <label for="matchAmount">Amount of matches</label>
+            <input id="matchAmount" type="number" min="1"></input>
+            <button id="startScraper">Start scraper</button>
+        </main>
+        <main id="main2">
+            <p>heyy2</p>
+        </main>
+        <main id="main3">
+            <p>heyy3</p>
+        </main>
+        <main id="main4">
+            <p>heyy4</p>
+        </main>
+    </div>
 </body>
 </html>
