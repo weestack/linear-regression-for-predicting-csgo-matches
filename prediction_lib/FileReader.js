@@ -20,7 +20,11 @@ class file_sanatiser {
 }
 
 
-
+class match_obect {
+    constructor(first_kills, win_lose_ratio, last_match_date, matches, mean_time_in_team, mean_kda, mean_headshots) {
+        this.first_kills = first_kills;
+    }
+}
 
 
 
@@ -49,16 +53,16 @@ class match_data extends file_sanatiser {
         let vector_data = [];
         fs.readdir(directory, (error, files) => {
 
-            for (let i = 0; i < 1; i++){
+            /*for (let i = 0; i < 1; i++){*/
                 //console.log(files[i])
-                let data = fs.readFileSync(this.path+"/"+files[i]);
+                //let data = fs.readFileSync(this.path+"/"+files[i]);
+                let data = fs.readFileSync(this.path+"/"+"97687.json");
                 let parsed_data = JSON.parse(data)
                 //console.log(parsed_data[0].last_matches)
                 let team_id = parsed_data["id"];
                 delete parsed_data["id"];
-                console.log(team_id)
                 vector_data[team_id] = this.filter_file(parsed_data);
-            }
+            /*}*/
 
         })
         return vector_data;
@@ -81,26 +85,61 @@ class match_data extends file_sanatiser {
 
 
         ]
-        let team_one = parsed_data[0];
-        let team_two = parsed_data[1];
+        let teams = [parsed_data[0], parsed_data[1]]
 
-        console.log("test ",current_row)
-        for (let D_object in parsed_data[current_row]){
-            for (let m in methods){
-                console.log("d ",parsed_data[current_row])
-                let method_data = this[methods[m]](parsed_data[current_row][D_object], parsed_data[current_row]);
-                console.log("method data",method_data);
-                if (method_data !== undefined){
-                    data.push(method_data);
-                }
-            }
+        for (let team_id in teams) {
+            console.log(team_id)
+            data[teams[team_id].id] = Array();
+            console.log("first_kills ",teams[team_id].first_kills)
+            console.log("win loose ratio ",teams[team_id].win_lose_ratio)
+            console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
+
+
+
+
+            console.log("mean time in team", ) // carefull not to devide by 0
+            console.log("headshots ", ) // carefull not to devide by 0
+            console.log("kda ", ) // carefull not to devide by 0
+
+            let [a, b, c] = this.extract_mean_values_from_players(teams[team_id].player_data);
+            console.log(a,b,c)
+
+
         }
+
 
 
 
         return data;
     }
 
+
+    extract_mean_values_from_players(players_object) {
+        let mean_time_in_team = 0.00;
+        let mean_tit_count = 0;
+
+        let mean_headshots = 0.00;
+        let mean_head_count = 0;
+
+        let sum_kda = 0.00
+        for (let id in players_object) {
+            /* days in team */
+            if (players_object[id].days_in_team != null ) {
+                mean_time_in_team += players_object[id].days_in_team
+                mean_tit_count++;
+            }
+            /* Headshot */
+            if (players_object[id].headshots != null ) {
+                mean_headshots += players_object[id].headshots
+                mean_head_count++;
+            }
+            /* KDA */
+            if (players_object[id].kda != null ) {
+                sum_kda += players_object[id].kda
+            }
+        }
+        return  [mean_time_in_team/mean_tit_count, mean_headshots/mean_head_count, sum_kda]
+    }
 
 
     filter_for_type(name, datarow){
