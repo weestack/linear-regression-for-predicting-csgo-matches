@@ -94,7 +94,7 @@ class match_data extends file_sanatiser {
             console.log("win loose ratio ",teams[team_id].win_lose_ratio)
             console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
 
-
+            console.log(this.convert_date_to_hours(teams[team_id].last_match_date));
 
 
             console.log("mean time in team", ) // carefull not to devide by 0
@@ -104,13 +104,14 @@ class match_data extends file_sanatiser {
             let [a, b, c] = this.extract_mean_values_from_players(teams[team_id].player_data);
             console.log(a,b,c)
 
-
         }
 
-
-
-
         return data;
+    }
+
+    convert_date_to_hours(date){
+        let date_object = new Date(date);
+        return (Date.now() - date_object.getTime()) / (1000 * 60 * 60);
     }
 
 
