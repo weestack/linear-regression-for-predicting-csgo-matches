@@ -13,6 +13,9 @@ let server = http.createServer((request, response) => {
     else if(request.url == "/fetch" && request.method == "POST"){
         fetch_website(request, response);
     }
+    else if(request.url == "/dataStatus" && request.method == "GET"){
+        data_status(request, response);
+    }
     else if(request.method == "GET"){
         serve_file(request, response)
     }
@@ -23,6 +26,51 @@ let server = http.createServer((request, response) => {
 })
 
 server.listen(8090);
+
+function data_status(request, response){
+    let dataFiles = fs.readdirSync("data/").filter(name => {
+        return name.endsWith(".json");
+    });
+    let teams = new Set();
+    let dataFolderSize = 0;
+    let newestMatch = new Date(2000);
+    let oldestMatch = new Date();
+    for(let i in dataFiles){
+        let fileStats = fs.statSync("data/" + dataFiles[i]);
+        dataFolderSize += fileStats.size;
+        let matchData = fs.readFileSync("data/" + dataFiles[i]);
+        let matchJSON = JSON.parse(matchData);
+        teams.add(matchJSON[0].name);
+        teams.add(matchJSON[1].name);
+        let matchDate = new Date(matchJSON.date);
+        if(matchDate.getTime() > newestMatch.getTime()){
+            newestMatch = matchDate;
+        }
+        if(matchDate.getTime() < oldestMatch.getTime()){
+            oldestMatch = matchDate;
+        }
+    }
+    let cacheFiles = fs.readdirSync("cache/");
+    let cacheFolderSize = 0;
+    for(let i in cacheFiles){
+        let fileStats = fs.statSync("cache/" + cacheFiles[i]);
+        cacheFolderSize += fileStats.size;
+    }
+    
+    let data = {
+        amountOfMatches: dataFiles.length,
+        amountOfTeams: teams.size,
+        teams: Array.from(teams),
+        dataFolderSize: (dataFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
+        newestMatch,
+        oldestMatch,
+        cacheFolderSize: (cacheFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
+    }
+    let result = JSON.stringify(data, undefined, 4);
+    response.write(result);
+    response.end();
+}
+
 
 function store_data(request, response){
     let body = [];

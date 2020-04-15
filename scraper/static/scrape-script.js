@@ -32,34 +32,73 @@ function D2(team_id, team_name) {
     };
 }
 
-/* Returns the last 100 matches from offset (team1 team2 winner link) for team1 */
-function D3(team_id, offset) {
-    return{
+function D3(team_id, offset){
+    return {
         url: "https://www.hltv.org/results?team=" + team_id + "&offset=" + offset,
-        location: "div.result-con",
+        location: "div.results-sublist",
         scrape_many: true,
         sub_scrapers: {
-            team1: {
-                location: "div.team1 > div.team",
-                handle: element => {return element.textContent},
+            date: {
+                location: "div.results-sublist > .standard-headline",
+                handle: element => {
+                    let dateString = element.textContent.slice(12);
+                    let parts = dateString.split(" ");
+                    let monthString = parts[0];
+                    let month = null;
+                    switch (monthString) {
+                        case "January": month = 0; break;
+                        case "February": month = 1; break;
+                        case "March": month = 2; break;
+                        case "April": month = 3; break;
+                        case "May": month = 4; break;
+                        case "June": month = 5; break;
+                        case "July": month = 6; break;
+                        case "August": month = 7; break;
+                        case "September": month = 8; break;
+                        case "October": month = 9; break;
+                        case "November": month = 10; break;
+                        case "December": month = 11; break;
+                    }
+                    let day = parseInt(parts[1].slice(0,-2));
+                    let year = parseInt(parts[2]);
+                    return new Date(year, month, day);
+                },
             },
-            team2: {
-                location: "div.team2 > div.team",
-                handle: element => {return element.textContent},
-            },
-            winner: {
-                location: "div.team-won",
-                handle: element => {return element.textContent},
-            },
-            link: {
-                location: "a",
-                handle: element => {return element.href},
-            },
+            matches: {
+                location: "div.result-con",
+                scrape_many: true,
+                sub_scrapers: {
+                    team1: {
+                        location: "div.team1 > div.team",
+                        handle: element => {return element.textContent},
+                    },
+                    team2: {
+                        location: "div.team2 > div.team",
+                        handle: element => {return element.textContent},
+                    },
+                    winner: {
+                        location: "div.team-won",
+                        handle: element => {return element.textContent},
+                    },
+                },
+                handle: element => {
+                    return element;
+                },
+            }
         },
-        handle: element => {
-            return element;
-        },
-    };
+        handle: elements => {
+            let results = [];
+            for(let i in elements){
+                let date = elements[i].date;
+                for(let t in elements[i].matches){
+                    let match = elements[i].matches[t];
+                    match.date = date;
+                    results.push(match);
+                }
+            }
+            return results;
+        }
+    }
 }
 
 /* Returns an object with weapons as keys, and uses as values */
@@ -259,7 +298,7 @@ function match_teams(match_id, match_name){
             for(let i in elements){
                 let link = elements[i].href
                 let linkParts = link.split("/").reverse();
-                let name = linkParts[0];
+                let name = elements[i].textContent;
                 let id = linkParts[1];
                 teams[i] = {name, id};
             }
@@ -394,15 +433,13 @@ function scrape_match_list(offset) {
             date: {
                 location: "a > div.time",
                 handle: element => {
-                    
                     let dateText = element.textContent;
                     let parts = dateText.split("/");
                     let year = parseInt("20" + parts[2]);
                     let month = parseInt(parts[1]);
                     let day = parseInt(parts[0]);
-                    let date = new Date(year, month, day);
-                    console.log(date);
-                    return new Date(year, month, day);
+                    let date = new Date(year, month - 1, day);
+                    return date;
                 }
             },
             match: {
