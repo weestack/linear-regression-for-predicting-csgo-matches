@@ -36,10 +36,10 @@ class match_data extends file_sanatiser {
         /* path is expected to be folder for all data */
         super();
         this.path = absolute_path;
-
+        this.data = Array();
         //let files = fs.
+        this.filter_all_files();
 
-        this.data = this.filter_all_files();
 
 
         /*let file = this.openfile();
@@ -50,26 +50,26 @@ class match_data extends file_sanatiser {
 
     filter_all_files(){
         let directory = path.join(__dirname, this.path);
-        let vector_data = [];
+        let vector_data = Array(); 
         fs.readdir(directory, (error, files) => {
-
-            /*for (let i = 0; i < 1; i++){*/
+            let vector_data_2 = Array();
+            for (let i = 0; i < files.length; i++){
                 //console.log(files[i])
-                //let data = fs.readFileSync(this.path+"/"+files[i]);
-                let data = fs.readFileSync(this.path+"/"+"101394.json");
+                let data = fs.readFileSync(this.path+"/"+files[i]);
+                //let data = fs.readFileSync(this.path+"/"+"101394.json");
                 let parsed_data = JSON.parse(data)
                 //console.log(parsed_data[0].last_matches)
-                let team_id = parsed_data["id"];
                 delete parsed_data["id"];
-                vector_data[team_id] = this.filter_file(parsed_data);
-            /*}*/
+                vector_data_2[i] = this.filter_file(parsed_data);
+            }
+            
+            vector_data = vector_data_2;
 
         })
-        return vector_data;
+        this.data = vector_data;
     }
 
     filter_file(parsed_data){
-        let data = Array();
         let methods = [
             "win_loose_for_team",
             /*"best_n_worst_map_per_team",
@@ -81,37 +81,53 @@ class match_data extends file_sanatiser {
             "time_sine_last_match",
             "time_players_has_played_together_in_teams",
             "mean_death_kill_ratio"*/
-
-
-
         ]
+
+        /* [0] = win or loose, [1] = first_kills, [2] = win_lost_raio, 
+         * [3] = wins_last 20 matches, [4] = win_streak, [5] = mean time on team,
+         * [6] = mean headshots, [7] = sum_kda,
+         * 
+         */
+        let data = Array(15);
+
         let teams = [parsed_data[0], parsed_data[1]]
-        console.log(parsed_data.winner)
-        let victor = parsed_data.winner;
+        //console.log(parsed_data.winner)
+        let victor = (parsed_data.winner == 1) ? 0.5 : 1;
+        data[0] = victor;
         let date  = parsed_data.date;
-        console.log("victor",victor)
-        console.log("date",date)
+        let date_hours = this.convert_date_to_hours(date);
+        //console.log("victor",victor)
+        //console.log("date",date)
 
         for (let team_id in teams) {
+            let epsilon = 7*team_id;
+
+            data[1+epsilon] = teams[team_id].first_kills;
+            data[2+epsilon] = teams[team_id].win_lose_ratio;
+
             //console.log(team_id)
-            data[teams[team_id].id] = Array();
-            console.log(teams[team_id].last_matches)
+            //console.log(teams[team_id].last_matches) 
             //console.log("first_kills ",teams[team_id].first_kills)
             //console.log("win loose ratio ",teams[team_id].win_lose_ratio)
             //console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
 
-            console.log(this.convert_date_to_hours(teams[team_id].last_match_date));
+            let last_20 = this.last_x_matches(teams[team_id], 20);
+            [data[4+epsilon], data[3+epsilon]] = this.current_winstreak(last_20);
 
-            console.log(this.last_x_matches(teams[team_id], 5));
+            //console.log(this.convert_date_to_hours(teams[team_id].last_match_date));
             //console.log("mean time in team", ) // carefull not to devide by 0
             //console.log("headshots ", ) // carefull not to devide by 0
             //console.log("kda ", ) // carefull not to devide by 0
 
-            let [a, b, c] = this.extract_mean_values_from_players(teams[team_id].player_data);
+            let [mean_time_in_team, mean_headshots, sum_kda] = this.extract_mean_values_from_players(teams[team_id].player_data);
+            data[5 + epsilon] = mean_time_in_team;
+            data[6 + epsilon] = mean_headshots;
+            data[7 + epsilon] = sum_kda;
             //console.log(a,b,c)
             //console.log(a,b,c)
 
         }
+        //console.log(data);
 
         return data;
     }
@@ -119,6 +135,24 @@ class match_data extends file_sanatiser {
     convert_date_to_hours(date){
         let date_object = new Date(date);
         return (Date.now() - date_object.getTime()) / (1000 * 60 * 60);
+    }
+
+    current_winstreak(matches){
+        let winning = 1;
+        let in_row = 0;
+        let wins_all = 0;
+        for(let i = 0; i < matches.length; i++){
+            if(matches[i][0] == 0){
+                wins_all++;
+
+                if(winning == 1){
+                    in_row++;
+                }
+            } else {
+                winning = 0;
+            }
+        }
+        return [in_row, wins_all];
     }
 
 
@@ -159,7 +193,7 @@ class match_data extends file_sanatiser {
                 sum_kda += players_object[id].kda
             }
         }
-        return  [mean_time_in_team/mean_tit_count, mean_headshots/mean_head_count, sum_kda]
+        return  [(mean_tit_count == 0) ? 0 : mean_time_in_team/mean_tit_count, (mean_head_count == 0)? 0 : mean_headshots/mean_head_count, sum_kda]
     }
 
 
@@ -212,4 +246,5 @@ class match_data extends file_sanatiser {
 
 }
 
-new match_data("actual_data")
+let data = new match_data("actual_data")
+console.log("This is me being weird:",data.data);
