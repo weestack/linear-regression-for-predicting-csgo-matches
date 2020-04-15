@@ -138,7 +138,10 @@ async function get(link){
                         resolve(body);
                     }
                 });
-            })
+            }).on("error", error => {
+            	console.log("Error in fetching " + link + " so it is skipped...");
+            	resolve(null);
+            });
         });
             
     }
