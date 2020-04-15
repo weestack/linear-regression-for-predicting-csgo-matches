@@ -298,7 +298,7 @@ function match_teams(match_id, match_name){
             for(let i in elements){
                 let link = elements[i].href
                 let linkParts = link.split("/").reverse();
-                let name = linkParts[0];
+                let name = elements[i].textContent;
                 let id = linkParts[1];
                 teams[i] = {name, id};
             }

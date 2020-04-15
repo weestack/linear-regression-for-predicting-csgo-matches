@@ -32,12 +32,12 @@ function data_status(request, response){
         return name.endsWith(".json");
     });
     let teams = new Set();
-    let totalFolderSize = 0;
+    let dataFolderSize = 0;
     let newestMatch = new Date(2000);
     let oldestMatch = new Date();
     for(let i in dataFiles){
         let fileStats = fs.statSync("data/" + dataFiles[i]);
-        totalFolderSize += fileStats.size;
+        dataFolderSize += fileStats.size;
         let matchData = fs.readFileSync("data/" + dataFiles[i]);
         let matchJSON = JSON.parse(matchData);
         teams.add(matchJSON[0].name);
@@ -50,20 +50,27 @@ function data_status(request, response){
             oldestMatch = matchDate;
         }
     }
+    let cacheFiles = fs.readdirSync("cache/");
+    let cacheFolderSize = 0;
+    for(let i in cacheFiles){
+        let fileStats = fs.statSync("cache/" + cacheFiles[i]);
+        cacheFolderSize += fileStats.size;
+    }
+    
     let data = {
         amountOfMatches: dataFiles.length,
         amountOfTeams: teams.size,
         teams: Array.from(teams),
-        folderSize: (totalFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
+        dataFolderSize: (dataFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
         newestMatch,
         oldestMatch,
+        cacheFolderSize: (cacheFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
     }
     let result = JSON.stringify(data, undefined, 4);
     response.write(result);
     response.end();
 }
 
-/*Antal kampe, antal hold, størrelsen på mappen, dato for nyeste og ældste kamp*/
 
 function store_data(request, response){
     let body = [];
