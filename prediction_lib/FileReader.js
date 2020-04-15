@@ -56,7 +56,7 @@ class match_data extends file_sanatiser {
             /*for (let i = 0; i < 1; i++){*/
                 //console.log(files[i])
                 //let data = fs.readFileSync(this.path+"/"+files[i]);
-                let data = fs.readFileSync(this.path+"/"+"97687.json");
+                let data = fs.readFileSync(this.path+"/"+"101394.json");
                 let parsed_data = JSON.parse(data)
                 //console.log(parsed_data[0].last_matches)
                 let team_id = parsed_data["id"];
@@ -86,23 +86,28 @@ class match_data extends file_sanatiser {
 
         ]
         let teams = [parsed_data[0], parsed_data[1]]
-
+        console.log(parsed_data.winner)
+        let victor = parsed_data.winner;
+        let date  = parsed_data.date;
+        console.log("victor",victor)
+        console.log("date",date)
         for (let team_id in teams) {
-            console.log(team_id)
+            //console.log(team_id)
             data[teams[team_id].id] = Array();
-            console.log("first_kills ",teams[team_id].first_kills)
-            console.log("win loose ratio ",teams[team_id].win_lose_ratio)
-            console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
+            //console.log("first_kills ",teams[team_id].first_kills)
+            //console.log("win loose ratio ",teams[team_id].win_lose_ratio)
+            //console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
 
 
 
 
-            console.log("mean time in team", ) // carefull not to devide by 0
-            console.log("headshots ", ) // carefull not to devide by 0
-            console.log("kda ", ) // carefull not to devide by 0
+            //console.log("mean time in team", ) // carefull not to devide by 0
+            //console.log("headshots ", ) // carefull not to devide by 0
+            //console.log("kda ", ) // carefull not to devide by 0
 
             let [a, b, c] = this.extract_mean_values_from_players(teams[team_id].player_data);
-            console.log(a,b,c)
+            //console.log(a,b,c)
+            //console.log(a,b,c)
 
 
         }
@@ -188,6 +193,7 @@ class match_data extends file_sanatiser {
     mean_death_kill_ratio(){
         /* D10 */
     }
+
 }
 
 new match_data("actual_data")
