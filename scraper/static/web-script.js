@@ -55,9 +55,16 @@ async function render_data_status(){
     while(teamsList.firstChild){
         teamsList.removeChild(teamsList.lastChild);
     }
-    let teams = data.teams.sort();
+    
     let dropDownMenu1 = document.getElementById("team1Select");
+    while (dropDownMenu1.firstChild) {
+    	dropDownMenu1.removeChild(dropDownMenu1.lastChild);
+    }
     let dropDownMenu2 = document.getElementById("team2Select");
+    while (dropDownMenu2.firstChild) {
+    	dropDownMenu2.removeChild(dropDownMenu2.lastChild);
+    }
+    let teams = data.teams.sort(); 
     for(let i in teams){
         let li = document.createElement("li");
         li.textContent = teams[i];
