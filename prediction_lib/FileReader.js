@@ -36,11 +36,6 @@ class match_data extends file_sanatiser {
         /* path is expected to be folder for all data */
         super();
         this.path = absolute_path;
-        this.data = Array();
-        //let files = fs.
-        this.filter_all_files();
-
-
 
         /*let file = this.openfile();
         file = this.filter_file(file);
@@ -50,23 +45,20 @@ class match_data extends file_sanatiser {
 
     filter_all_files(){
         let directory = path.join(__dirname, this.path);
-        let vector_data = Array(); 
-        fs.readdir(directory, (error, files) => {
-            let vector_data_2 = Array();
-            for (let i = 0; i < files.length; i++){
-                //console.log(files[i])
-                let data = fs.readFileSync(this.path+"/"+files[i]);
-                //let data = fs.readFileSync(this.path+"/"+"101394.json");
-                let parsed_data = JSON.parse(data)
-                //console.log(parsed_data[0].last_matches)
-                delete parsed_data["id"];
-                vector_data_2[i] = this.filter_file(parsed_data);
-            }
-            
-            vector_data = vector_data_2;
 
-        })
-        this.data = vector_data;
+        let files = fs.readdirSync(directory, {"encoding":"utf-8"});
+        let vector_data = Array();
+        for (let i = 0; i < files.length; i++){
+            //console.log(files[i])
+            let data = fs.readFileSync(this.path+"/"+files[i]);
+            //let data = fs.readFileSync(this.path+"/"+"101394.json");
+            let parsed_data = JSON.parse(data)
+            //console.log(parsed_data[0].last_matches)
+            delete parsed_data["id"];
+            vector_data[i] = this.filter_file(parsed_data);
+        }
+        console.log(vector_data);
+        this.data = vector_data
     }
 
     filter_file(parsed_data){
@@ -247,4 +239,5 @@ class match_data extends file_sanatiser {
 }
 
 let data = new match_data("actual_data")
+data.filter_all_files();
 console.log("This is me being weird:",data.data);
