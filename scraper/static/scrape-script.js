@@ -466,8 +466,8 @@ function scrape_match_list(offset) {
 }
 
 async function scrape_n_matches(amount_of_matches){
-    total_matches = amount_of_matches; /* DEBUGGING */
-    current_job = "finding matches" /* DEBUGGING */
+    status_total_matches = 0; /* DEBUGGING */
+    status_current_job = "finding matches" /* DEBUGGING */
     update_html_status(); /* DEBUGGING */
     let matchList = [];
     let done = false;
@@ -479,9 +479,13 @@ async function scrape_n_matches(amount_of_matches){
             done = true;
             matchList = matchList.slice(0, amount_of_matches);
         }
+        status_total_matches = matchList.length;
+        update_html_status();
     }
 
-    current_job = "finding teams"; /* DEBUGGING */
+    status_current_job = "finding teams"; /* DEBUGGING */
+    status_total_teams = 0;
+    status_checked_teams = 0;
     let teamsToScrape = {}
     for(let i in matchList){
         let matchId = matchList[i].matchId;
@@ -493,24 +497,25 @@ async function scrape_n_matches(amount_of_matches){
             let teamName = matchTeams[index].name;
             if (!(teamId in teamsToScrape)) {
                 teamsToScrape[teamId] = teamName;
-                total_teams++; /* DEBUGGING */
-                update_html_status(); /* DEBUGGING */
+                status_total_teams++; /* DEBUGGING */
             }
         }
+        status_checked_teams += 2;
+        update_html_status();
     }
 
-    current_job = "scraping teams"; /* DEBUGGING */
+    status_current_job = "scraping teams"; /* DEBUGGING */
     let teams = {};
     for (let teamId in teamsToScrape) {
         if(!(teamId in teams)){
             let teamName = teamsToScrape[teamId];
             teams[teamId] = await scrape_team(teamId, teamName);
-            done_teams++ /* DEBUGGING */
+            status_done_teams++ /* DEBUGGING */
             update_html_status(); /* DEBUGGING */
         }
     }
 
-    current_job = "scraping matches"; /* DEBUGGING */
+    status_current_job = "scraping matches"; /* DEBUGGING */
     for(let i in matchList){
         let matchId = matchList[i].matchId;
         let matchName = matchList[i].matchName;
@@ -526,24 +531,12 @@ async function scrape_n_matches(amount_of_matches){
             }
         }
         save_data(resultList[i]);
-        done_matches++; /* DEBUGGING */
+        status_done_matches++; /* DEBUGGING */
         update_html_status();
     }
-    current_job = "nothing :)"; /* DEBUGGING */
+    status_current_job = "doing nothing :)"; /* DEBUGGING */
     update_html_status(); /* DEBUGGING */
     return resultList;
-}
-
-/* This is mostly intended for debugging and should be removed later. */
-let total_matches = 0;
-let done_matches = 0;
-let total_teams = 0;
-let done_teams = 0;
-let current_job = "nothing";
-function update_html_status() {
-	document.getElementById("matches").textContent = `Scraping ${total_matches} matches (done with ${done_matches})`;
-	document.getElementById("teams").textContent = `Scraping ${total_teams} teams (done with ${done_teams})`;
-	document.getElementById("current_job").textContent = "The scraper is currently doing: " + current_job;
 }
 
 async function save_data(match_data){

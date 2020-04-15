@@ -1,4 +1,13 @@
 "use strict"
+let scraperIsRunning = false;
+
+window.addEventListener("beforeunload", (event) => {
+    if(scraperIsRunning == true){
+       event.preventDefault();
+       event.returnValue = "";
+    }
+})
+
 document.addEventListener("DOMContentLoaded", () => {
     switch_view("main1");
     render_data_status();
@@ -13,9 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let startScraperButton = document.getElementById("startScraper");
     startScraperButton.addEventListener("click", async () => {
         let matches = document.getElementById("matchAmount").value;
+        scraperIsRunning = true;
         startScraperButton.disabled = true;
         await scrape_n_matches(matches);
         startScraperButton.disabled = false;
+        scraperIsRunning = false;
     })
     let refreshDataStatus = document.getElementById("dataStatusRefresh");
     refreshDataStatus.addEventListener("click", render_data_status);
@@ -44,11 +55,20 @@ async function render_data_status(){
     while(teamsList.firstChild){
         teamsList.removeChild(teamsList.lastChild);
     }
-    for(let i in data.teams){
+    let teams = data.teams.sort();
+    let dropDownMenu1 = document.getElementById("team1Select");
+    let dropDownMenu2 = document.getElementById("team2Select");
+    for(let i in teams){
         let li = document.createElement("li");
-        li.textContent = data.teams[i];
+        li.textContent = teams[i];
         teamsList.appendChild(li);
+        let option = document.createElement("option");
+        option.value = teams[i];
+        option.textContent = teams[i];
+        dropDownMenu1.appendChild(option);
+        dropDownMenu2.appendChild(option.cloneNode(true));
     }
+
 }
 
 function switch_view(id){
@@ -59,4 +79,19 @@ function switch_view(id){
     }
     let active = document.getElementById(id);
     active.style.display = "block";
+}
+
+
+/*Global variables to update the HTML status site*/
+let status_checked_teams = 0;
+let status_total_matches = 0;
+let status_done_matches = 0;
+let status_total_teams = 0;
+let status_done_teams = 0;
+let status_current_job = "doing nothing";
+function update_html_status() {
+    
+	document.getElementById("matches").textContent = `Scraping ${status_total_matches} matches (done with ${status_done_matches})`;
+	document.getElementById("teams").textContent = `Scraping ${status_total_teams} teams (done with ${status_done_teams}) (${status_checked_teams} teams checked)`;
+	document.getElementById("current_job").textContent = "The scraper is currently: " + status_current_job;
 }
