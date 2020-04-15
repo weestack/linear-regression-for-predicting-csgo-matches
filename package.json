@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/weestack/linear-regression-for-predicting-csgo-matches#readme",
   "dependencies": {
+    "d3": "^5.15.1",
+    "jsdom": "^16.2.2",
     "mathjs": "^6.6.2"
   },
   "devDependencies": {

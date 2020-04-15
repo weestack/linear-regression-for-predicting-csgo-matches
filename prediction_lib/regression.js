@@ -57,7 +57,7 @@ class Regression {
     };
 
 
-    mean( column ) {
+    mean_simple( column ) {
         // TODO: add type checking later
         let sum = 0;
         for (let i = 0; i < column.length; i++) {
@@ -66,6 +66,39 @@ class Regression {
         return sum / column.length
     }
 
+
+    pearson_corrolations(X, Y) {
+        /*
+        * p = -1 stærk, negativ graf, (linear afhængig)
+        * -1 < p < 0 - Nogen lunde linear sammenhæng, jo tættere på 0, jo dårligere sammenhæng.
+        * 0 < p < 1 - Jo tættere på 1 jo bedre sammenhæng, hvis p=0, er der 100% inden lineære sammenhæng
+        * p = 1 100% lineære sammenhæng
+        * p= 0 ingen lineære sammenhæng!
+        * */
+
+
+        let pearson_coeficcient = 0;
+        X = X.toArray()
+        Y = Y.toArray()
+        if ( X.length !== Y.length ) {
+            return 0;
+        }
+
+        let denomenator = 0;
+        let delta_x_square = 0;
+        let delta_y_square = 0;
+
+        let mean_x = this.mean_simple(X);
+        let mean_y = this.mean_simple(Y);
+
+        for (let i =0; i < X.length; i++){
+            denomenator += (X[i] - mean_x) * (Y[i] - mean_y );
+            delta_x_square += (X[i] - mean_x)**2
+            delta_y_square += (Y[i] - mean_y)**2
+        }
+
+        return (denomenator) / (Math.sqrt(delta_x_square) * Math.sqrt(delta_y_square) )
+    }
 
 
 
@@ -185,13 +218,6 @@ class Multi_Linear_Regression extends Regression {
 
         let coefi = math_js.matrix([intercept.toArray(), ... ceoficcients.toArray()]);
         return coefi;
-    }
-
-    Ordenary_Least_Squares(coeficcients, output_dots ){
-        let variables = Array();
-        for (let i = 1; i < coeficcients.length; i++){
-
-        }
 
     }
 
@@ -300,7 +326,7 @@ for (let j = 1; j < raw.length; j++) {
 }
 
 
-
+/*
 prediction = [
     [1],
     [3],
@@ -321,7 +347,7 @@ independt = [
     [2],
     [3],
     [4],
-    [5],
+    [231],
     [6],
     [7],
     [8],
@@ -330,13 +356,33 @@ independt = [
     [11],
     [12],
 ]
-
+*/
 
 prediction = math_js.matrix(prediction);
 
 
 independt = math_js.matrix(independt);
 //console.log( math_js.transpose( independt))
+independt = math_js.transpose(independt);
+
+independt = independt.toArray()
+let new_array = [independt[1], independt[4]];
+let test = independt.shift();
+console.log(test);
+
+independt = math_js.transpose(math_js.matrix(new_array));
+// pearson xx  -0.22397976406802955 - index -1
+// pearson xx  -0.22397976406802955 - index 1
+// pearson xx  0.14547471879860624 - Index 2
+// pearson xx  0.24415658960451783 - index 4
+// pearson xx  -0.27156858160118486 - index 5
+// pearson xx  0.12787838271344057 - index 6
+// pearson xx  0.4573067748408908 - index 7
+// pearson xx  -0.46255977167703427 - index 8
+// pearson xx  -0.028569805298589743 - index 9
+
+
+
 
 let multiple = new Multi_Linear_Regression;
 let coefficients = multiple.estimate_best_coeficcients(independt, prediction)
@@ -350,8 +396,9 @@ console.log("r**2 ", r_squared);
 let sigmond = multiple.sigmoid_squared(rss.subset(math_js.index(0,0)), independt);
 console.log("sigmonds ", sigmond);
 let varians = multiple.variance(sigmond, independt);
-console.log("varians ",varians);
+//console.log("varians ",varians);
 
+console.log("pearson xx ", multiple.pearson_corrolations(math_js.column(independt, 1), prediction ))
 
 //independt = math_js.matrix( placeholder );
 
@@ -365,6 +412,29 @@ console.log("varians ",varians);
 }*/
 
 
+function calculate_yi(coeficcients, point){
+    let coe = coeficcients.toArray();
+
+    let b_0 = coe.shift()[0];
+
+    let coeffi = math_js.matrix(coe);
+
+    let value_without_b0 = math_js.multiply(point, coeffi).toArray()[0][0];
+
+    return b_0 + value_without_b0;
+}
+
+let [rows, columsn] = independt.size();
+let sum = 0;
+for (let i=0; i < rows; i++){
+    let our_pred = calculate_yi(coefficients, math_js.row(independt, i));
+    let delta = prediction.subset(math_js.index(i, 0)) - our_pred**2;
+    //console.log("our", our_pred)
+    //console.log("actual", prediction.subset(math_js.index(i, 0)))
+    //console.log("delta", delta)
+    sum += delta;
+}
+console.log(sum)
 
 
 
@@ -381,7 +451,3 @@ console.log("varians ",varians);
 
 //let X = math_js.matrix(independent)
 //let Y = math_js.matrix(prediction)
-
-
-
-
