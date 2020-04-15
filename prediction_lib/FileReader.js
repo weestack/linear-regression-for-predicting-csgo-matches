@@ -91,16 +91,18 @@ class match_data extends file_sanatiser {
         let date  = parsed_data.date;
         console.log("victor",victor)
         console.log("date",date)
+
         for (let team_id in teams) {
             //console.log(team_id)
             data[teams[team_id].id] = Array();
+            console.log(teams[team_id].last_matches)
             //console.log("first_kills ",teams[team_id].first_kills)
             //console.log("win loose ratio ",teams[team_id].win_lose_ratio)
             //console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
 
             console.log(this.convert_date_to_hours(teams[team_id].last_match_date));
 
-
+            console.log(this.last_x_matches(teams[team_id], 5));
             //console.log("mean time in team", ) // carefull not to devide by 0
             //console.log("headshots ", ) // carefull not to devide by 0
             //console.log("kda ", ) // carefull not to devide by 0
@@ -119,6 +121,19 @@ class match_data extends file_sanatiser {
         return (Date.now() - date_object.getTime()) / (1000 * 60 * 60);
     }
 
+
+    last_x_matches(team, limit){
+        let arr = [];
+        let length = (team.last_matches.length > limit) ? limit: team.last_matches.length;
+        for(let i=0; i < length; i++){
+
+            arr.push([
+                (team.last_matches[i].winner == team.last_matches[i].team1) ? 0: 1, // log the winner
+                team.last_matches[i].date
+            ])
+        }
+        return arr;
+    }
 
     extract_mean_values_from_players(players_object) {
         let mean_time_in_team = 0.00;
