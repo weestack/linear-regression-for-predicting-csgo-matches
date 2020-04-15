@@ -42,3 +42,15 @@ li {
 li.viewSwitcher:hover {
     text-decoration: underline;
 }
+
+.progress-bar {
+    border: 1px solid black;
+    height: 1em;
+}
+
+.progress-bar-content {
+    height: 100%;
+    width: 0%;
+    background-color: #999946;
+    border-right: 1px solid black;
+}

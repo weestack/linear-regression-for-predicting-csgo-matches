@@ -467,7 +467,7 @@ function scrape_match_list(offset) {
 }
 
 async function scrape_n_matches(amount_of_matches){
-    status_total_matches = 0; /* DEBUGGING */
+    reset_html_status_variables();
     status_current_job = "finding matches" /* DEBUGGING */
     update_html_status(); /* DEBUGGING */
     let matchList = [];
@@ -484,10 +484,6 @@ async function scrape_n_matches(amount_of_matches){
         update_html_status();
     }
 
-    status_current_job = "finding teams"; /* DEBUGGING */
-    status_total_teams = 0;
-    status_checked_teams = 0;
-    status_done_teams = 0;
     let teamsToScrape = {}
     for(let i in matchList){
         let matchId = matchList[i].matchId;

@@ -96,9 +96,30 @@ let status_done_matches = 0;
 let status_total_teams = 0;
 let status_done_teams = 0;
 let status_current_job = "doing nothing";
+
+function reset_html_status_variables() {
+    status_checked_teams = 0;
+    status_total_matches = 0;
+    status_done_matches = 0;
+    status_total_teams = 0;
+    status_done_teams = 0;
+    status_current_job = "doing nothing";
+}
+
 function update_html_status() {
     
-	document.getElementById("matches").textContent = `Scraping ${status_total_matches} matches (done with ${status_done_matches})`;
-	document.getElementById("teams").textContent = `Scraping ${status_total_teams} teams (done with ${status_done_teams}) (${status_checked_teams} teams checked)`;
-	document.getElementById("current_job").textContent = "The scraper is currently: " + status_current_job;
+	document.getElementById("matches").textContent = status_total_matches;
+	document.getElementById("done_matches").textContent = status_done_matches;
+	document.getElementById("potential_teams").textContent = status_total_matches * 2;
+	document.getElementById("checked_teams").textContent = status_checked_teams;
+	document.getElementById("unique_teams").textContent = status_total_teams;
+	document.getElementById("done_teams").textContent = status_done_teams;
+	document.getElementById("current_job").textContent = status_current_job;
+	
+	let match_progress = 100 * status_done_matches / status_total_matches;
+	let team_discover_progress = 100 * status_checked_teams / (2 * status_total_matches);
+	let team_progress = 100 * status_done_teams / status_total_teams;
+	document.getElementById("match_progress").style.width = `${match_progress}%`;
+	document.getElementById("team_discover_progress").style.width = `${team_discover_progress}%`;
+	document.getElementById("team_progress").style.width = `${team_progress}%`;
 }
