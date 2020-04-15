@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
             switch_view(name);
         })
     }
+    let startScraperButton = document.getElementById("startScraper");
+    startScraperButton.addEventListener("click", async () => {
+        let matches = document.getElementById("matchAmount").value;
+        startScraperButton.disabled = true;
+        await scrape_n_matches(matches);
+        startScraperButton.disabled = false;
+    })
 })
 
 

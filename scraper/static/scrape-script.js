@@ -438,9 +438,8 @@ function scrape_match_list(offset) {
                     let year = parseInt("20" + parts[2]);
                     let month = parseInt(parts[1]);
                     let day = parseInt(parts[0]);
-                    let date = new Date(year, month, day);
-                    console.log(date);
-                    return new Date(year, month, day);
+                    let date = new Date(year, month - 1, day);
+                    return date;
                 }
             },
             match: {
