@@ -32,6 +32,7 @@ function D2(team_id, team_name) {
     };
 }
 
+/* Returns a list of all matches the specific team has played and the date and who played in all matches.*/
 function D3(team_id, offset){
     return {
         url: "https://www.hltv.org/results?team=" + team_id + "&offset=" + offset,
@@ -486,6 +487,7 @@ async function scrape_n_matches(amount_of_matches){
     status_current_job = "finding teams"; /* DEBUGGING */
     status_total_teams = 0;
     status_checked_teams = 0;
+    status_done_teams = 0;
     let teamsToScrape = {}
     for(let i in matchList){
         let matchId = matchList[i].matchId;
