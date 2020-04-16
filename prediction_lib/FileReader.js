@@ -75,9 +75,11 @@ class match_data extends file_sanatiser {
             "mean_death_kill_ratio"*/
         ]
 
-        /* [0] = win or loose, [1] = first_kills, [2] = win_lost_raio, 
-         * [3] = wins_last 20 matches, [4] = win_streak, [5] = mean time on team,
-         * [6] = mean headshots, [7] = sum_kda,
+        /* ak47, p250, ssg08, awp, tec9, inferno, hegrenade, m4a1, sg556, famas, usp_silencer, deagle, glock, m4a1_silencer, mp9, ump45, aug, galilar, cz75a, p90, mac10, p250*/
+        /* [0] = win or loose, [1/8] = first_kills, [2/9] = win_lost_raio, 
+         * [3/10] = wins_last 20 matches, [4/11] = win_streak, [5/12] = mean time on team,
+         * [6/13] = mean headshots, [7/14] = sum_kda, [15] How many matches have the team played in the
+         * last 50 days, [16] Win / loose ratio between the two teams, [17-37] The 21 weapons, which is in the game
          * 
          */
         let data = Array(15);
