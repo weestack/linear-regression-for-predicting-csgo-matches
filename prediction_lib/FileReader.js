@@ -255,4 +255,4 @@ class match_data extends file_sanatiser {
 }
 
 
-module.exports = match_data;
+module.exports = {match_data:match_data};
