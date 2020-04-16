@@ -48,7 +48,7 @@ class match_data extends file_sanatiser {
 
         let files = fs.readdirSync(directory, {"encoding":"utf-8"});
         let vector_data = Array();
-        for (let i = 0; i < files.length; i++){
+        for (let i = 0; i < 3; i++){
             //console.log(files[i])
             let data = fs.readFileSync(this.path+"/"+files[i]);
             //let data = fs.readFileSync(this.path+"/"+"101394.json");
@@ -75,14 +75,17 @@ class match_data extends file_sanatiser {
             "mean_death_kill_ratio"*/
         ]
 
-        /* ak47, p250, ssg08, awp, tec9, inferno, hegrenade, m4a1, sg556, famas, usp_silencer, deagle, glock, m4a1_silencer, mp9, ump45, aug, galilar, cz75a, p90, mac10, p250*/
         /* [0] = win or loose, [1/8] = first_kills, [2/9] = win_lost_raio, 
          * [3/10] = wins_last 20 matches, [4/11] = win_streak, [5/12] = mean time on team,
-         * [6/13] = mean headshots, [7/14] = sum_kda, [15] How many matches have the team played in the
-         * last 50 days, [16] Win / loose ratio between the two teams, [17-37] The 21 weapons, which is in the game
+         * [6/13] = mean headshots, [7/14] = sum_kda, 
+         * [15/16] How many matches have the team played in the last 50 days eller 30? 100?, 
+         * [17 /20] Win / loose ratio between the two teams (In the last 50 / 150 / 370 / all time), 
+         * [21 / 22] time since last game
+         * ******
+         * [x / ...] All the weapons, 
          * 
          */
-        let data = Array(15);
+        let data = Array(23);
 
         let teams = [parsed_data[0], parsed_data[1]]
         //console.log(parsed_data.winner)
@@ -90,14 +93,17 @@ class match_data extends file_sanatiser {
         data[0] = victor;
         let date  = parsed_data.date;
         let date_hours = this.convert_date_to_hours(date);
+        [data[17], data[18], data[19], data[20]] = this.win_lose_ratio_between_teams(50, 150, 370, teams);
         //console.log("victor",victor)
         //console.log("date",date)
 
         for (let team_id in teams) {
             let epsilon = 7*team_id;
 
-            data[1+epsilon] = teams[team_id].first_kills;
-            data[2+epsilon] = teams[team_id].win_lose_ratio;
+            data[15+parseInt(team_id)] = this.matches_played_since(teams[team_id].last_matches, 50);
+            data[21+parseInt(team_id)] = this.convert_date_to_hours(teams[team_id].last_match_date);
+            data[1+epsilon] = (teams[team_id].first_kills != null) ? teams[team_id].first_kills : 0;
+            data[2+epsilon] = (teams[team_id].win_lose_ratio != null) ? teams[team_id].win_lose_ratio : 0;
 
             //console.log(team_id)
             //console.log(teams[team_id].last_matches) 
@@ -124,6 +130,63 @@ class match_data extends file_sanatiser {
         //console.log(data);
 
         return data;
+    }
+
+    win_lose_ratio_between_teams(first_quator, second_quator, third_quator, teams){
+        /* Numbers of wins for hold1, and overall matches between the two teams. */
+        let all_time = [0, 0];
+        let first_quator_counter = [0, 0];
+        let second_quator_counter = [0, 0];
+        let third_quator_counter = [0, 0];
+
+        let [matches, team1, team2, team_id_team_one] = (teams[0].last_matches.length > teams[1].last_matches.length) ? [teams[1].last_matches, teams[1].name, teams[0].name, 1] : [teams[0].last_matches, teams[0].name, teams[1].name, 0]
+        let team_one_winner;
+
+        for(let i = 0; i < matches.length; i++){
+            if(matches[i].team1 == team1 && matches[i].team2 == team2){
+                all_time[1]++;
+                
+                team_one_winner = (matches[i].winner == team1) ? 1 : 0;
+
+                all_time[0] += team_one_winner;
+                first_quator_counter = (first_quator * 24 <= this.convert_date_to_hours(matches[i].date)) ? [first_quator_counter[0] + team_one_winner, first_quator_counter[1] + 1] : first_quator_counter;
+                second_quator_counter = (second_quator * 24 <= this.convert_date_to_hours(matches[i].date)) ? [second_quator_counter[0] + team_one_winner, second_quator_counter[1] + 1] : second_quator_counter;
+                third_quator_counter = (third_quator * 24 <= this.convert_date_to_hours(matches[i].date)) ? [third_quator_counter[0] + team_one_winner, third_quator_counter[1] + 1] : third_quator_counter;
+            }
+        }
+        if(team_id_team_one != 0){
+            first_quator_counter[0] = first_quator_counter[1] - first_quator_counter[0];
+            second_quator_counter[0] = second_quator_counter[1] - second_quator_counter[0];
+            third_quator_counter[0] = third_quator_counter[1] - third_quator_counter[0];
+            all_time[0] = all_time[1] - all_time[0];
+        }
+
+        let sub_one = (first_quator_counter[1] - first_quator_counter[0] == 0) ? 1 : first_quator_counter[1] - first_quator_counter[0];
+        let sub_two = (second_quator_counter[1] - second_quator_counter[0] == 0) ? 1 : second_quator_counter[1] - second_quator_counter[0];
+        let sub_three = (third_quator_counter[1] - third_quator_counter[0] == 0) ? 1 : third_quator_counter[1] - third_quator_counter[0];
+        let sub_all = (all_time[1] - all_time[0] == 0) ? 1 : all_time[1] - all_time[0];
+
+        let return_first =  (first_quator_counter[0]  / sub_one   == 0) ? 1 : first_quator_counter[0]  / sub_one;
+        let return_second = (second_quator_counter[0] / sub_two   == 0) ? 1 : second_quator_counter[0] / sub_two;
+        let return_third =  (third_quator_counter[0]  / sub_three == 0) ? 1 : third_quator_counter[0]  / sub_three;
+        let return_all =    (all_time[0]              / sub_all   == 0) ? 1 : all_time[0]              / sub_all;
+
+        
+        return [return_first, return_second, return_third, return_all];
+    }
+
+    matches_played_since(matches, days){
+        let hours = days * 24;
+        let number_of_matches = 0;
+        for(let i = 0; i < matches.length; i++){
+            if(this.convert_date_to_hours(matches[i].date) < hours){
+                number_of_matches++;
+            } else {
+                break;
+            }
+        }
+
+        return number_of_matches;
     }
 
     convert_date_to_hours(date){
