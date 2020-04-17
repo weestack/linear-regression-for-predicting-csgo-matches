@@ -318,14 +318,19 @@ function match_winner(match_id, match_name){
         handle: elements => {
             let score1 = parseInt(elements[0].textContent);
             let score2 = parseInt(elements[1].textContent);
+            let winner = null;
             /* It is assumed that there was a winner. */
             if (score1 > score2) {
-            	return 0;
+            	winner = 0;
             } else {
-            	return 1;
+            	winner = 1;
+            }
+            return {
+                score1,
+                score2, 
+                winner
             }
         }
-
     }
 }
 
@@ -578,7 +583,10 @@ async function scrape_n_matches(amount_of_matches){
         let matchName = matchList[i].matchName;
         resultList[i] = await scrape_match(matchId, matchName);
         let matchTeams = matchList[i].teams;
-        resultList[i].winner = await run_scraper(match_winner(matchId, matchName));
+        let winnerData = await run_scraper(match_winner(matchId, matchName));
+        resultList[i].team1Rounds = winnerData.score1;
+        resultList[i].team2Rounds = winnerData.score2;
+        resultList[i].winner = winnerData.winner;
         resultList[i].date = matchList[i].date;
         resultList[i].id = matchId;
         /* loop over the teams and add in the team data */

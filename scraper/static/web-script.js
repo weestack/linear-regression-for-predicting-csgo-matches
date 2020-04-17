@@ -167,5 +167,4 @@ async function run_prediction(){
         method: "POST",
         body: "heyy"
     });
-
 }
