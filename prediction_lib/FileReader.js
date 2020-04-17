@@ -44,7 +44,7 @@ class match_data extends file_sanatiser {
     }
 
     filter_all_files(){
-        let directory = path.join(__dirname, this.path);
+        let directory = this.path;
 
         let files = fs.readdirSync(directory, {"encoding":"utf-8"});
         let test = Math.floor(files.length/4);
@@ -67,7 +67,7 @@ class match_data extends file_sanatiser {
             //console.log(files[i])
             let data = fs.readFileSync(this.path+"/"+files[i]);
             //let data = fs.readFileSync(this.path+"/"+"101394.json");
-            let parsed_data = JSON.parse(data)
+            let parsed_data = JSON.parse(data);
             //console.log(parsed_data[0].last_matches)
             delete parsed_data["id"];
             test_matrix[i % fit] = this.filter_file(parsed_data);

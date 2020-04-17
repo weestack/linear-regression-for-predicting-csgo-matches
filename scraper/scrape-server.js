@@ -16,6 +16,15 @@ let url = require('url');
 let fs = require('fs');
 let https = require('https');
 let http = require('http');
+let mathjs = require("mathjs");
+
+/* Import the required javascript*/
+let filereader = require("../prediction_lib/FileReader.js");
+let regression = require("../prediction_lib/regression.js");
+let match_data = filereader.match_data;
+let linearRegression = new regression.Multi_Linear_Regression;
+
+
 
 /* Create the http server itself, which will handle incomming HTTP requests on port 8090 */
 let server = http.createServer((request, response) => {
@@ -31,6 +40,9 @@ let server = http.createServer((request, response) => {
     }
     else if(request.url == "/dataStatus" && request.method == "GET"){
         data_status(request, response);
+    }
+    else if(request.url == "/prediction" && request.method == "POST"){
+        do_prediction(request, response);
     }
     /* If none of the specific cases matched, we try to serve a file from the static folder */
     else if(request.method == "GET"){
@@ -244,4 +256,26 @@ function cache_filename(link){
 /* sleep is a promise which resolves after some milliseconds. It allows us to sleep in async code. */
 function sleep(milliseconds){
     return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+/* Prediction code starts here. Revisit when its ready*/
+
+function do_prediction(request, response){
+    
+    let data = new match_data("data");
+    let [all, test] = data.filter_all_files();
+    all = mathjs.matrix(all);
+    let prediction = mathjs.column(all, 0);
+    all = mathjs.transpose(all).toArray();
+    all.shift();
+    let independt = mathjs.transpose(mathjs.matrix(all));
+    let coefficients = linearRegression.estimate_best_coeficcients(independt, prediction);
+    let coe = coeficcients.toArray();
+    let b_0 = coe.shift()[0];
+    let coeffi = mathjs.matrix(coe);
+    let value_without_b0 = mathjs.multiply(point, coeffi).toArray()[0][0];
+    let result = b_0 + value_without_b0;
+    response.writeHead(200);
+    response.end();
+
 }

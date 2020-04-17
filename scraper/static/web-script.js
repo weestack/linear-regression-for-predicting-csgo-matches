@@ -161,3 +161,11 @@ function update_html_status() {
     document.getElementById("TeamDiscoveryProgressProcent").textContent = `${team_discover_progress.toFixed(2)}%`;
     document.getElementById("TeamScrapingProgressProcent").textContent = `${team_progress.toFixed(2)}%`;
 }
+
+async function run_prediction(){
+    await fetch("http://localhost:8090/prediction", {
+        method: "POST",
+        body: "heyy"
+    });
+
+}
