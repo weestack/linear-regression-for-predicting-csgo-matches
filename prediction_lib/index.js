@@ -167,3 +167,20 @@ console.log("rows ",rows, " count", count)
 
 //let X = math_js.matrix(independent)
 //let Y = math_js.matrix(prediction)
+
+
+
+/*
+ * Creating a CSV file to store the data.
+ */
+
+ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+ const csvWriter = createCsvWriter({
+    path: 'out.csv',
+    header: [
+      {id: 'name', title: 'Name'},
+      {id: 'surname', title: 'Surname'},
+      {id: 'age', title: 'Age'},
+      {id: 'gender', title: 'Gender'},
+    ]
+  });

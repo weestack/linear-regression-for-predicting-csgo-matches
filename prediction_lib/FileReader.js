@@ -90,21 +90,18 @@ class match_data extends file_sanatiser {
             "mean_death_kill_ratio"*/
         ]
 
-        /* [0] = win or loose, [1] = first_kills, [2] = win_lost_raio,
-         * [3] = wins_last 20 matches, [4] = win_streak, [5] = mean time on team,
-         * [6] = mean headshots, [7] = sum_kda,
-         * [0] = win or loose, [1/8] = first_kills, [2/9] = win_lost_raio, 
+
+        /* */
+        /* [0] = win or loose, [1 / 8] time since last game, [2/9] = win_lost_raio, 
          * [3/10] = wins_last 20 matches, [4/11] = win_streak, [5/12] = mean time on team,
          * [6/13] = mean headshots, [7/14] = sum_kda, 
-         * [15/16] How many matches have the team played in the last 50 days eller 30? 100?, 
+         * [15/16] How many matches have the team played in the last 50 days, 
          * [17 /20] Win / loose ratio between the two teams (In the last 50 / 150 / 370 / all time), 
-         * [21 / 22] time since last game
          * ******
          * [x / ...] All the weapons, 
-         * [Weapons most efficient against tema]
+         * [Weapons most efficient against team]
          */
-        let data = Array(23);
-
+        let data = Array(21);
         let teams = [parsed_data[0], parsed_data[1]]
         //console.log(parsed_data.winner)
         let victor = (parsed_data.winner == 1) ? 0.5 : 1;
@@ -119,8 +116,7 @@ class match_data extends file_sanatiser {
             let epsilon = 7*team_id;
 
             data[15+parseInt(team_id)] = this.matches_played_since(teams[team_id].last_matches, 50);
-            data[21+parseInt(team_id)] = this.convert_date_to_hours(teams[team_id].last_match_date);
-            data[1+epsilon] = (teams[team_id].first_kills != null) ? teams[team_id].first_kills : 0;
+            data[1+epsilon] = this.convert_date_to_hours(teams[team_id].last_match_date);
             data[2+epsilon] = (teams[team_id].win_lose_ratio != null) ? teams[team_id].win_lose_ratio : 0;
 
             //console.log(team_id)
