@@ -156,5 +156,8 @@ function update_html_status() {
 	let team_progress = 100 * status_done_teams / status_total_teams;
 	document.getElementById("match_progress").style.width = `${match_progress}%`;
 	document.getElementById("team_discover_progress").style.width = `${team_discover_progress}%`;
-	document.getElementById("team_progress").style.width = `${team_progress}%`;
+    document.getElementById("team_progress").style.width = `${team_progress}%`;
+    document.getElementById("MatchProgressProcent").textContent = `${match_progress.toFixed(2)}%`;
+    document.getElementById("TeamDiscoveryProgressProcent").textContent = `${team_discover_progress.toFixed(2)}%`;
+    document.getElementById("TeamScrapingProgressProcent").textContent = `${team_progress.toFixed(2)}%`;
 }
