@@ -1,24 +1,29 @@
 "use strict"
+
+/* This file contains the code that adds functionality to the website. */
+
 let scraperIsRunning = false;
 
-window.addEventListener("beforeunload", (event) => {
-    if(scraperIsRunning == true){
-       event.preventDefault();
-       event.returnValue = "";
-    }
-})
-
+/* This is the entrypoint which is run when the side is fully loaded. */
 document.addEventListener("DOMContentLoaded", () => {
+    /* We start by switching to the first main view and render the data status page */
     switch_view("main1");
     render_data_status();
+
+    /* Here we add actions to all the page links on the left. They don't actually goto a new page,
+     * they just switch the view
+     */
     let viewLinks = document.querySelectorAll(".viewSwitcher");
     for(let i = 0; i < viewLinks.length; i++){
         viewLinks[i].addEventListener("click", () => {
             let name = viewLinks[i].getAttribute("data-view");
             switch_view(name);
-            
         })
     }
+
+    /* When the start scraper button is pressed, the scraper is started and the button is disabled.
+     * The button becomes re-enabled when the scraper finishes. This handler is async so it doesn't hang the
+     * entire page while the scraper runs (which might take very long time). */
     let startScraperButton = document.getElementById("startScraper");
     startScraperButton.addEventListener("click", async () => {
         let matches = document.getElementById("matchAmount").value;
@@ -28,10 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
         startScraperButton.disabled = false;
         scraperIsRunning = false;
     })
+
+    /* The refresh button is setup so that it renders the data status again */
     let refreshDataStatus = document.getElementById("dataStatusRefresh");
     refreshDataStatus.addEventListener("click", render_data_status);
 })
 
+/* Try to warn the user when he tries to exit the page while the scraper is running. */
+window.addEventListener("beforeunload", (event) => {
+    if(scraperIsRunning == true){
+       event.preventDefault();
+       event.returnValue = "";
+    }
+})
+
+/* This function fetches the data status from the backend. Note that this function takes a while to run on the backend
+ * so the result takes a while to come back.
+ */
 async function data_status(){
     let response = await fetch("http://localhost:8090/dataStatus");
     if(response.status == 200){
@@ -43,7 +61,16 @@ async function data_status(){
     }
 }
 
+/* This function fetches the data status using data_status(), and then it updates all the relevent DOM elements.
+ * Since it waits for data_status() to finish, it can also take a while to execute, and therefore the user might experience a
+ * noticeable delay on the page, which is why it also sets a "refreshing" text. */
 async function render_data_status(){
+    /* Change the button text to "refreshing..." and disable it */
+    let refreshButton = document.getElementById("dataStatusRefresh");
+    let originalText = refreshButton.textContent;
+    refreshButton.textContent = "refreshing...";
+    refreshButton.disabled = true;
+
     let data = await data_status();
     document.getElementById("status_matchAmount").textContent = `Amount of matches: ${data.amountOfMatches}`;
     document.getElementById("status_teamAmount").textContent = `Amount of teams: ${data.amountOfTeams}`;
@@ -55,7 +82,8 @@ async function render_data_status(){
     while(teamsList.firstChild){
         teamsList.removeChild(teamsList.lastChild);
     }
-    
+
+    /* Clear the drop down menus so they contain no elements */
     let dropDownMenu1 = document.getElementById("team1Select");
     while (dropDownMenu1.firstChild) {
     	dropDownMenu1.removeChild(dropDownMenu1.lastChild);
@@ -64,7 +92,9 @@ async function render_data_status(){
     while (dropDownMenu2.firstChild) {
     	dropDownMenu2.removeChild(dropDownMenu2.lastChild);
     }
-    let teams = data.teams.sort(); 
+
+    /* Add all the teams as options to both drop down menus.*/
+    let teams = data.teams.sort();
     for(let i in teams){
         let li = document.createElement("li");
         li.textContent = teams[i];
@@ -76,8 +106,12 @@ async function render_data_status(){
         dropDownMenu2.appendChild(option.cloneNode(true));
     }
 
+    /* re-enable the refresh button and restore the original text */
+    refreshButton.disabled = false;
+    refreshButton.textContent = originalText;
 }
 
+/* This function switches the view between the main elements by unhiding all mains except the one given as input */
 function switch_view(id){
     let mains = document.querySelectorAll("main");
     for(let i = 0; i < mains.length; i++){
@@ -97,6 +131,7 @@ let status_total_teams = 0;
 let status_done_teams = 0;
 let status_current_job = "doing nothing";
 
+/* Reset all the global status variables to their defaults. */
 function reset_html_status_variables() {
     status_checked_teams = 0;
     status_total_matches = 0;
@@ -106,8 +141,8 @@ function reset_html_status_variables() {
     status_current_job = "doing nothing";
 }
 
+/* This function updates the relevant elements with the status_ variables.*/
 function update_html_status() {
-    
 	document.getElementById("matches").textContent = status_total_matches;
 	document.getElementById("done_matches").textContent = status_done_matches;
 	document.getElementById("potential_teams").textContent = status_total_matches * 2;
@@ -115,7 +150,7 @@ function update_html_status() {
 	document.getElementById("unique_teams").textContent = status_total_teams;
 	document.getElementById("done_teams").textContent = status_done_teams;
 	document.getElementById("current_job").textContent = status_current_job;
-	
+
 	let match_progress = 100 * status_done_matches / status_total_matches;
 	let team_discover_progress = 100 * status_checked_teams / (2 * status_total_matches);
 	let team_progress = 100 * status_done_teams / status_total_teams;

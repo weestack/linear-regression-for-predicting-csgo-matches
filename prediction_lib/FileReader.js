@@ -39,7 +39,7 @@ class match_data extends file_sanatiser {
 
         /*let file = this.openfile();
         file = this.filter_file(file);
-        
+
         this.data = file;*/
     }
 
@@ -47,18 +47,34 @@ class match_data extends file_sanatiser {
         let directory = path.join(__dirname, this.path);
 
         let files = fs.readdirSync(directory, {"encoding":"utf-8"});
-        let vector_data = Array();
-        for (let i = 0; i < files.length; i++){
+
+        let test = Math.floor(files.length/4);
+        let fit = files.length - test;
+        let fit_matrix = Array();
+
+        for (let i = 0; i < fit; i++){
             //console.log(files[i])
             let data = fs.readFileSync(this.path+"/"+files[i]);
             //let data = fs.readFileSync(this.path+"/"+"101394.json");
             let parsed_data = JSON.parse(data)
             //console.log(parsed_data[0].last_matches)
             delete parsed_data["id"];
-            vector_data[i] = this.filter_file(parsed_data);
+            fit_matrix[i] = this.filter_file(parsed_data);
         }
-        console.log(vector_data);
-        this.data = vector_data
+
+
+        let test_matrix = Array();
+        for (let i = fit; i < files.length; i++){
+            //console.log(files[i])
+            let data = fs.readFileSync(this.path+"/"+files[i]);
+            //let data = fs.readFileSync(this.path+"/"+"101394.json");
+            let parsed_data = JSON.parse(data)
+            //console.log(parsed_data[0].last_matches)
+            delete parsed_data["id"];
+            test_matrix[i % fit] = this.filter_file(parsed_data);
+        }
+
+        return [fit_matrix, test_matrix];
     }
 
     filter_file(parsed_data){
@@ -75,12 +91,10 @@ class match_data extends file_sanatiser {
             "mean_death_kill_ratio"*/
         ]
 
-        /* ak47, p250, ssg08, awp, tec9, inferno, hegrenade, m4a1, sg556, famas, usp_silencer, deagle, glock, m4a1_silencer, mp9, ump45, aug, galilar, cz75a, p90, mac10, p250*/
-        /* [0] = win or loose, [1/8] = first_kills, [2/9] = win_lost_raio, 
-         * [3/10] = wins_last 20 matches, [4/11] = win_streak, [5/12] = mean time on team,
-         * [6/13] = mean headshots, [7/14] = sum_kda, [15] How many matches have the team played in the
-         * last 50 days, [16] Win / loose ratio between the two teams, [17-37] The 21 weapons, which is in the game
-         * 
+        /* [0] = win or loose, [1] = first_kills, [2] = win_lost_raio,
+         * [3] = wins_last 20 matches, [4] = win_streak, [5] = mean time on team,
+         * [6] = mean headshots, [7] = sum_kda,
+         *
          */
         let data = Array(15);
 
@@ -97,10 +111,10 @@ class match_data extends file_sanatiser {
             let epsilon = 7*team_id;
 
             data[1+epsilon] = teams[team_id].first_kills;
-            data[2+epsilon] = teams[team_id].win_lose_ratio;
+            data[2+epsilon] = (teams[team_id].win_lose_ratio !== null) ?teams[team_id].win_lose_ratio:0 ;
 
             //console.log(team_id)
-            //console.log(teams[team_id].last_matches) 
+            //console.log(teams[team_id].last_matches)
             //console.log("first_kills ",teams[team_id].first_kills)
             //console.log("win loose ratio ",teams[team_id].win_lose_ratio)
             //console.log("last match date",teams[team_id].last_match_date) // Rewrite to hours since last match
@@ -240,6 +254,5 @@ class match_data extends file_sanatiser {
 
 }
 
-let data = new match_data("actual_data")
-data.filter_all_files();
-console.log("This is me being weird:",data.data);
+
+module.exports = {match_data:match_data};

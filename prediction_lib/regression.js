@@ -307,10 +307,9 @@ class Multi_Linear_Regression extends Regression {
 }
 
 
-/*const fs = require("fs");
 
 let rawdata = fs.readFileSync("sample_data/highway.json");
-let raw = JSON.parse(rawdata);*/
+let raw = JSON.parse(rawdata);
 /*let independt = Array( Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array(), Array(),Array(), Array() );*/
 /*let prediction = Array();
 let independt = Array();
@@ -780,3 +779,7 @@ console.log("rows ",rows, " count", count)
 
 //let X = math_js.matrix(independent)
 //let Y = math_js.matrix(prediction)
+module.exports = {
+    Multi_Linear_Regression: Multi_Linear_Regression,
+}
+
