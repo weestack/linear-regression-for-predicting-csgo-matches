@@ -8,6 +8,30 @@ let match_data = filereader.match_data;
 let regression = require(path.resolve(__dirname, "./regression.js" ));
 let Multi_Linear_Regression = regression.Multi_Linear_Regression;
 
+class Regressor {
+
+    constructor(path_to_data_folder) {
+        /* Load in matches */
+        let matches = this.load_matches(path_to_data_folder);
+        /* Train with the loaded matches */
+        let regression = this.train_regressor(matches);
+        /* bind prediction */
+        this.prediction = this.get_prediction(matches);
+        /* Bind independt */
+        this.independent = this.get_independt(matches);
+        /* Init statistics */
+        this.bind_statistics();
+        this.coeficcients = regression;
+    }
+
+    predict_winner(team_1, team_2){
+        /* Team_1 and Team_2 are supposed to be the string names of the teams competing */
+        return null;
+    }
+
+
+
+}
 /*const fs = require("fs");
 
 let rawdata = fs.readFileSync("sample_data/highway.json");
