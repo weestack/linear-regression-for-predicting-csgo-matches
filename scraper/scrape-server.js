@@ -173,7 +173,7 @@ async function get(link){
     else{
     	/* Sleep to be nice the the external website */
         await sleep(1000);
-        let url = new Url(link);
+        let url = new URL(link);
         let path = url.pathname + url.search + url.hash
         console.log(path + " was not found in the cache.");
 
