@@ -161,5 +161,5 @@ for(let i = 0; i < csv_rows; i++){
 csvWriter.writeRecords(csv_data).then(() => console.log('The CSV file was written successfully'));
 
 */
-let regressor = new Regressor("actual_data");
+//let regressor = new Regressor("actual_data");
 module.exports = {Regressor:Regressor};
