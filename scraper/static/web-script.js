@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     /* The refresh button is setup so that it renders the data status again */
     let refreshDataStatus = document.getElementById("dataStatusRefresh");
     refreshDataStatus.addEventListener("click", render_data_status);
+
+    /* The prediction button is setup so that the prediction runs when clicked*/ 
+    let predictionButton = document.getElementById("team1vsteam2");
+    predictionButton.addEventListener("click", run_prediction);
 })
 
 /* Try to warn the user when he tries to exit the page while the scraper is running. */
@@ -163,8 +167,13 @@ function update_html_status() {
 }
 
 async function run_prediction(){
-    await fetch("http://localhost:8090/prediction", {
+    let team1 = document.getElementById("team1Select").value;
+    let team2 = document.getElementById("team2Select").value;
+    console.log("Predicting the winner", team1, team2);
+    /*await fetch("http://localhost:8090/prediction", {
         method: "POST",
         body: "heyy"
-    });
+    });*/
+    let result = team1;
+    document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result}`;
 }
