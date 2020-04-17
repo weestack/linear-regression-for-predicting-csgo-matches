@@ -1,5 +1,8 @@
 "use strict";
 
+/* The following global variable functions as a cache for the scraped teams */
+let team_cache = {};
+
 /*
  * This file contains the code which performs the actual webscraping. It
  * must be used from a browser, since it depends on the fetch api and
@@ -15,7 +18,9 @@
  *
  * The next part of the file contains the code which uses those scrapers to collect
  * and combine all the needed information. The main entrypoint in this file is
- * the scrape_n_matches function.
+ * the scrape_n_matches function. Some of the functions in this file sets
+ * some status variables which have the name status_xxxxx, and they are used to update
+ * some status text on the website. The call to update_html_status() triggers the update.
  */
 
 /* Returns the win/loose ratio for the team */
@@ -327,7 +332,7 @@ function match_winner(match_id, match_name){
             }
             return {
                 score1,
-                score2, 
+                score2,
                 winner
             }
         }
@@ -408,6 +413,9 @@ async function run_scraper(scraper, dom){
             let base = dom.createElement("base");
             base.href = "https://hltv.org"
             dom.head.appendChild(base);
+        } else {
+            /* If the response was not a success, fail the function by throwing an error (the same as rejecting the promise) */
+            throw new Error("Fetch status was not success");
         }
     }
 
@@ -427,7 +435,12 @@ async function run_scraper(scraper, dom){
         for(let i in elements){
             let result = {};
             for(let s in scrapers){
-                result[s] = await run_scraper(scrapers[s], elements[i]);
+                try {
+                    result[s] = await run_scraper(scrapers[s], elements[i]);
+                } catch (error) {
+                    console.log(error);
+                    result[s] = null;
+                }
             }
             results.push(result);
         }
@@ -455,157 +468,151 @@ async function run_scraper(scraper, dom){
 }
 
 /* Team info used in D1, D2, D3, D8 */
-async function scrape_team(team_id, team_name){
-    let win_lose_ratio = await run_scraper(D1(team_id, team_name));
-    let best_maps = await run_scraper(D2(team_id, team_name));
+async function scrape_team(team_id, team_name) {
+    try {
+        if (team_id in team_cache) {
+            return team_cache[team_id]; /* Return early if the team has already been scraped */
+        }
 
-    /* Run D3 in a loop to get all the last matches. */
-    let last_matches = [];
-    let done = false;
-    for(let offset = 0; done == false; offset += 100){
-        let matches = await run_scraper(D3(team_id, offset));
-        if(matches.length == 0){
-        	/* If no new matches was found we are done */
-            done = true;
+        let win_lose_ratio = await run_scraper(D1(team_id, team_name));
+        let best_maps = await run_scraper(D2(team_id, team_name));
+
+        /* Run D3 in a loop to get all the last matches. */
+        let last_matches = [];
+        let done = false;
+        for(let offset = 0; done == false; offset += 100){
+            let matches = await run_scraper(D3(team_id, offset));
+            if(matches.length == 0){
+            	/* If no new matches was found we are done */
+                done = true;
+            }
+            else {
+                last_matches = last_matches.concat(matches);
+            }
         }
-        else {
-            last_matches = last_matches.concat(matches);
+        let last_match_date = await run_scraper(D8(team_id));
+        let players = await run_scraper(team_players(team_id, team_name));
+        let player_data = {};
+        for(let player_id in players){
+            status_current_job = "scraping player " + players[player_id] + " from team " + team_name;
+            update_html_status();
+            player_data[player_id] = await scrape_player(player_id, players[player_id]);
         }
+        let teamData = {
+            win_lose_ratio,
+            best_maps,
+            last_matches,
+            last_match_date,
+            player_data
+        };
+        team_cache[team_id] = teamData;
+        return teamData;
+    } catch (error) {
+        throw error; /* Resend the error so the caller knows that this function failed */
     }
-    let last_match_date = await run_scraper(D8(team_id));
-    let players = await run_scraper(team_players(team_id, team_name));
-    let player_data = {};
-    for(let player_id in players){
-        player_data[player_id] = await scrape_player(player_id, players[player_id]);
-    }
-    return {
-        win_lose_ratio,
-        best_maps,
-        last_matches,
-        last_match_date,
-        player_data
-    };
 }
 
 /* Match info used in D5, D7 */
-async function scrape_match(match_id, match_name){
-    let teams = await run_scraper(match_teams(match_id, match_name));
-    let team_kills = await run_scraper(D5(match_id, match_name));
-    let first_kills = await run_scraper(D7(match_id, match_name));
+async function scrape_match(match_id, match_name) {
+    try {
+        status_current_job = "scraping match " + match_name;
+        update_html_status();
+        let teams = await run_scraper(match_teams(match_id, match_name));
+        let team_kills = await run_scraper(D5(match_id, match_name));
+        let first_kills = await run_scraper(D7(match_id, match_name));
+        let winnerData = await run_scraper(match_winner(match_id, match_name));
 
-    /* The data from team_kills and first_kills is combined with the team names and returned. */
-    teams[0].kills = team_kills.team1;
-    teams[1].kills = team_kills.team2;
-    teams[0].first_kills = first_kills.team1;
-    teams[1].first_kills = first_kills.team2;
-    return teams;
+        /* The data for both of the teams is added. */
+        for (let teamNumber in teams) {
+            let teamId = teams[teamNumber].id;
+            let teamName = teams[teamNumber].name;
+            status_current_job = "scraping team " + teamName;
+            update_html_status();
+            let teamData = await scrape_team(teamId, teamName);
+            for (let dataName in teamData) {
+                teams[teamNumber][dataName] = teamData[dataName];
+            }
+        }
+
+        /* The data from team_kills and first_kills is combined with the team names. */
+        teams[0].kills = team_kills.team1;
+        teams[1].kills = team_kills.team2;
+        teams[0].first_kills = first_kills.team1;
+        teams[1].first_kills = first_kills.team2;
+
+        /* The winner data is also added. */
+        teams.winner = winnerData.winner;
+        teams.team1Rounds = winnerData.score1;
+        teams.team2Rounds = winnerData.score2;
+
+        teams.id = match_id;
+        return teams;
+    } catch (error) {
+        /* Resend the error so the caller knows that this function failed. */
+        throw error;
+    }
 }
-
 
 /* Player info used in D4, D6, D9, D10. KDA = Kills/Deaths/Assist */
 async function scrape_player(player_id, player_name){
-    let most_used_weapons = await run_scraper(D4(player_id, player_name));
-    let headshots = await run_scraper(D6(player_id, player_name));
-    let days_in_team = await run_scraper(D9(player_id, player_name));
-    let kda = await run_scraper(D10(player_id, player_name));
-    return {
-        most_used_weapons,
-        headshots,
-        days_in_team,
-        kda
-    };
+    try {
+        let most_used_weapons = await run_scraper(D4(player_id, player_name));
+        let headshots = await run_scraper(D6(player_id, player_name));
+        let days_in_team = await run_scraper(D9(player_id, player_name));
+        let kda = await run_scraper(D10(player_id, player_name));
+        return {
+            most_used_weapons,
+            headshots,
+            days_in_team,
+            kda
+        };
+    } catch (error) {
+        /* resend the error so the caller knows that this function failed. */
+        throw error;
+    }
 }
 
-/* The scrape_n_matches function scrapes n matches and stores their result on the backend.
- * It tries to be smart and looks at all the matches to find the unique teams which played.
- * This allows it to avoid scraping two teams for each match, and just scrape the unique teams
- * instead, which is much faster (see the report).
- *
- * To show live information on the website it sets some global status_xxxxx variables defined in
- * web-script.js and calls the update_html_status() function to trigger an update.
- */
-async function scrape_n_matches(amount_of_matches){
+/* The scrape_n_matches function scrapes n matches and stores their result on the backend. */
+async function scrape_n_matches(amount_of_matches) {
     reset_html_status_variables();
-    status_current_job = "finding matches";
+    status_total_matches = amount_of_matches;
     update_html_status();
 
-    let matchList = [];
-    let done = false;
-    let resultList = [];
-    /* First we find the ids and names of the wanted amount of matches */
-    for(let offset = 0; done == false; offset += 50){
-        let matches = await run_scraper(scrape_match_list(offset));
-        matchList = matchList.concat(matches);
-        if(matchList.length >= amount_of_matches){
-            done = true;
-            matchList = matchList.slice(0, amount_of_matches);
+    let results = [];
+    for (let offset = 0; ;offset += 50) {
+        let matches = []; /* The new matches found by scraping the match list at the current offset */
+        try {
+            matches = await run_scraper(scrape_match_list(offset));
+        } catch (error) {
+            /* The offset scrape failed, so the current round of the loop is skipped. */
+            console.log("No matches were found at offset " + offset + " so the scraper moves forward...");
+            continue;
         }
-        status_total_matches = matchList.length;
-        update_html_status();
-    }
-
-
-    let teamsToScrape = {};
-    for(let i in matchList){
-        let matchId = matchList[i].matchId;
-        let matchName = matchList[i].matchName;
-        let matchTeams = await run_scraper(match_teams(matchId, matchName));
-        matchList[i].teams = matchTeams;
-        for(let teamNumber in matchTeams){
-            let teamId = matchTeams[teamNumber].id;
-            let teamName = matchTeams[teamNumber].name;
-            /* We should only store the team if is not already stored. */
-            if (!(teamId in teamsToScrape)) {
-                teamsToScrape[teamId] = teamName;
-                status_total_teams++; /* DEBUGGING */
+        for (let i in matches) {
+            let matchId = matches[i].matchId;
+            let matchName = matches[i].matchName;
+            let matchDate = matches[i].date;
+            try {
+                let matchData = await scrape_match(matchId, matchName);
+                matchData.date = matchDate;
+                results.push(matchData);
+                status_done_matches++;
+                save_data(matchData);
+                update_html_status();
+            } catch (error) {
+                /* If the match could not be scraped for some reason, the loop must skip it. */
+                status_skipped_matches++;
+                update_html_status;
+                console.log("Skipped a match..");
+                continue;
+            }
+            if (results.length == amount_of_matches) {
+                status_current_job = "done";
+                update_html_status;
+                return results;
             }
         }
-        status_checked_teams += 2;
-        update_html_status();
     }
-
-	/* Now all the unique teams have been found, and they can be scraped */
-    status_current_job = "scraping teams"; /* DEBUGGING */
-    let teams = {};
-    for (let teamId in teamsToScrape) {
-        if(!(teamId in teams)){
-            let teamName = teamsToScrape[teamId];
-            teams[teamId] = await scrape_team(teamId, teamName);
-            status_done_teams++ /* DEBUGGING */
-            update_html_status(); /* DEBUGGING */
-        }
-    }
-
-	/* Now all the team data is ready, so the final match data can be scraped and combined. */
-    status_current_job = "scraping matches"; /* DEBUGGING */
-    for(let i in matchList){
-        let matchId = matchList[i].matchId;
-        let matchName = matchList[i].matchName;
-        resultList[i] = await scrape_match(matchId, matchName);
-        let matchTeams = matchList[i].teams;
-        let winnerData = await run_scraper(match_winner(matchId, matchName));
-        resultList[i].team1Rounds = winnerData.score1;
-        resultList[i].team2Rounds = winnerData.score2;
-        resultList[i].winner = winnerData.winner;
-        resultList[i].date = matchList[i].date;
-        resultList[i].id = matchId;
-        /* loop over the teams and add in the team data */
-        for(let t = 0; t < 2; t++){
-            let teamData = teams[matchTeams[t].id];
-            /* Here all the data fields from the team data are copied over to the result. */
-            for(let dataName in teamData){
-                resultList[i][t][dataName] = teamData[dataName];
-            }
-        }
-
-        /* The result data is stored on the backend. */
-        save_data(resultList[i]);
-        status_done_matches++;
-        update_html_status();
-    }
-    status_current_job = "doing nothing";
-    update_html_status();
-    return resultList;
 }
 
 /* This functions performs a PUT request to store the match on the backend */
