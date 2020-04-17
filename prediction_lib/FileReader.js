@@ -93,8 +93,7 @@ class match_data extends file_sanatiser {
         /* [0] = win or loose, [1] = first_kills, [2] = win_lost_raio,
          * [3] = wins_last 20 matches, [4] = win_streak, [5] = mean time on team,
          * [6] = mean headshots, [7] = sum_kda,
-         *
-        /* [0] = win or loose, [1/8] = first_kills, [2/9] = win_lost_raio, 
+         * [0] = win or loose, [1/8] = first_kills, [2/9] = win_lost_raio, 
          * [3/10] = wins_last 20 matches, [4/11] = win_streak, [5/12] = mean time on team,
          * [6/13] = mean headshots, [7/14] = sum_kda, 
          * [15/16] How many matches have the team played in the last 50 days eller 30? 100?, 
@@ -102,7 +101,7 @@ class match_data extends file_sanatiser {
          * [21 / 22] time since last game
          * ******
          * [x / ...] All the weapons, 
-         * 
+         * [Weapons most efficient against tema]
          */
         let data = Array(23);
 
