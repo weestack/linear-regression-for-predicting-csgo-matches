@@ -104,7 +104,7 @@ class match_data extends file_sanatiser {
         let data = Array(21);
         let teams = [parsed_data[0], parsed_data[1]]
         //console.log(parsed_data.winner)
-        let victor = (parsed_data.winner == 1) ? 0.5 : 1;
+        let victor = (parsed_data.winner == 1) ? 0 : 1;
         data[0] = victor;
         let date  = parsed_data.date;
         let date_hours = this.convert_date_to_hours(date);
