@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     /* The refresh button is setup so that it renders the data status again */
     let refreshDataStatus = document.getElementById("dataStatusRefresh");
     refreshDataStatus.addEventListener("click", render_data_status);
+
+    /* The prediction button is setup so that the prediction runs when clicked*/
+    let predictionButton = document.getElementById("team1vsteam2");
+    predictionButton.addEventListener("click", run_prediction);
 })
 
 /* Try to warn the user when he tries to exit the page while the scraper is running. */
@@ -124,48 +128,39 @@ function switch_view(id){
 
 
 /*Global variables to update the HTML status site*/
-let status_checked_teams = 0;
 let status_total_matches = 0;
 let status_done_matches = 0;
-let status_total_teams = 0;
+let status_skipped_matches = 0;
 let status_done_teams = 0;
 let status_current_job = "doing nothing";
 
 /* Reset all the global status variables to their defaults. */
 function reset_html_status_variables() {
-    status_checked_teams = 0;
     status_total_matches = 0;
     status_done_matches = 0;
-    status_total_teams = 0;
-    status_done_teams = 0;
+    status_skipped_matches = 0;
     status_current_job = "doing nothing";
 }
 
 /* This function updates the relevant elements with the status_ variables.*/
 function update_html_status() {
-	document.getElementById("matches").textContent = status_total_matches;
-	document.getElementById("done_matches").textContent = status_done_matches;
-	document.getElementById("potential_teams").textContent = status_total_matches * 2;
-	document.getElementById("checked_teams").textContent = status_checked_teams;
-	document.getElementById("unique_teams").textContent = status_total_teams;
-	document.getElementById("done_teams").textContent = status_done_teams;
-	document.getElementById("current_job").textContent = status_current_job;
-
-	let match_progress = 100 * status_done_matches / status_total_matches;
-	let team_discover_progress = 100 * status_checked_teams / (2 * status_total_matches);
-	let team_progress = 100 * status_done_teams / status_total_teams;
-	document.getElementById("match_progress").style.width = `${match_progress}%`;
-	document.getElementById("team_discover_progress").style.width = `${team_discover_progress}%`;
-    document.getElementById("team_progress").style.width = `${team_progress}%`;
+    document.getElementById("matches").textContent = status_total_matches;
+    document.getElementById("done_matches").textContent = status_done_matches;
+    document.getElementById("current_job").textContent = status_current_job;
+    document.getElementById("skipped_matches").textContent = status_skipped_matches;
+    let match_progress = 100 * status_done_matches / status_total_matches;
+    document.getElementById("match_progress").style.width = `${match_progress}%`;
     document.getElementById("MatchProgressProcent").textContent = `${match_progress.toFixed(2)}%`;
-    document.getElementById("TeamDiscoveryProgressProcent").textContent = `${team_discover_progress.toFixed(2)}%`;
-    document.getElementById("TeamScrapingProgressProcent").textContent = `${team_progress.toFixed(2)}%`;
 }
 
 async function run_prediction(){
-    await fetch("http://localhost:8090/prediction", {
+    let team1 = document.getElementById("team1Select").value;
+    let team2 = document.getElementById("team2Select").value;
+    console.log("Predicting the winner", team1, team2);
+    /*await fetch("http://localhost:8090/prediction", {
         method: "POST",
         body: "heyy"
-    });
-
+    });*/
+    let result = team1;
+    document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result}`;
 }

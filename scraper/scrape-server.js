@@ -147,7 +147,11 @@ function fetch_website(request, response){
         body = Buffer.concat(body).toString();
         /* The actual data from the website is fetched using the get function. */
         let result = await get(body);
-        response.write(result);
+        if (result == null) {
+        	response.writeHead(404);
+        } else {
+        	response.write(result);
+        }
         response.end();
     });
 }
@@ -261,7 +265,7 @@ function sleep(milliseconds){
 /* Prediction code starts here. Revisit when its ready*/
 
 function do_prediction(request, response){
-    
+
     let data = new match_data("data");
     let [all, test] = data.filter_all_files();
     all = mathjs.matrix(all);
