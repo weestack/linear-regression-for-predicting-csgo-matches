@@ -194,9 +194,9 @@ async function render_statistics(){
     let syy = document.getElementById("stats_syy");
     rSquared.textContent = stats.r_squared.toFixed(3);
     pearson.textContent = stats.pearsons_coeficcient.toFixed(3);
-    rss.textContent = stats.rss.data[0][0].toFixed(3);
-    sigma.textContent = stats.sigmond.toFixed(3);
-    sxx.textContent = stats.summary_statics.data[0][0].toFixed(3);
-    sxy.textContent = stats.summary_statics.data[0][1].toFixed(3);
-    syy.textContent = stats.summary_statics.data[1][1].toFixed(3);
+    rss.textContent = stats.rss.toFixed(3);
+    sigma.textContent = stats.sigma.toFixed(3);
+    sxx.textContent = stats.summary_statics.sxx.toFixed(3);
+    sxy.textContent = stats.summary_statics.sxy.toFixed(3);
+    syy.textContent = stats.summary_statics.syy.toFixed(3);
 }
