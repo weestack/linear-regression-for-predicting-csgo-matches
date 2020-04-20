@@ -14,10 +14,7 @@ class match_data {
 
         /* devide the files so 3/4 is used for fitting and 1/4 is used for testing */
         let [fitting_files, test_files] = this.devide_files_for_test_and_fitting(files);
-        console.log(fitting_files)
-        console.log(test_files)
         let [raw_fitting_data, raw_testing_data] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
-        console.log(raw_fitting_data)
         let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
         this.fitting = filtered_fitting_data;
         this.testing = filtered_testing_data;
@@ -57,6 +54,7 @@ class match_data {
     }
 
     filter_for_D_data(data_array) {
+        /* Filter all the data by D rules to fetch for */
         let filtered_data = Array();
         for (let i = 0; i < data_array.length; i++){
             filtered_data[i] = this.filter_file(data_array[i]);
@@ -65,30 +63,23 @@ class match_data {
     }
 
     filter_file(parsed_data){
+        /* Methods is a reference to the classifiers used */
         let methods = [
-            "win_loose_for_team",
-            /*"best_n_worst_map_per_team",
-            "win_loose_between_team_and_current_opponent",
-            "most_used_weapons",
-            "most_deaths_to_weapons",
-            "mean_headshots",
-            "first_kill",
-            "time_sine_last_match",
-            "time_players_has_played_together_in_teams",
-            "mean_death_kill_ratio"*/
-        ]
+            "powerscore",
+            "skillset",
+            "winstreak",
+            "prefered_map"
+            /* power_score */
+            /* skillset */
+            /* winstreak */
+            /* prefered_map */
+        ];
 
+        for (let method in methods) {
+            //console.log(method)
 
-        /* */
-        /* [0] = win or loose, [1 / 8] time since last game, [2/9] = win_lost_raio, 
-         * [3/10] = wins_last 20 matches, [4/11] = win_streak, [5/12] = mean time on team,
-         * [6/13] = mean headshots, [7/14] = sum_kda, 
-         * [15/16] How many matches have the team played in the last 50 days, 
-         * [17 /20] Win / loose ratio between the two teams (In the last 50 / 150 / 370 / all time), 
-         * ******
-         * [x / ...] All the weapons, 
-         * [Weapons most efficient against team]
-         */
+        }
+
         let data = Array(21);
         let teams = [parsed_data[0], parsed_data[1]]
         //console.log(parsed_data.winner)
@@ -126,10 +117,8 @@ class match_data {
             data[6 + epsilon] = mean_headshots;
             data[7 + epsilon] = sum_kda;
             //console.log(a,b,c)
-            //console.log(a,b,c)
 
         }
-        //console.log(data);
 
         return data;
     }
@@ -304,5 +293,7 @@ class match_data {
     }
 
 }
+
+new match_data("actual_data");
 
 module.exports = {match_data:match_data};
