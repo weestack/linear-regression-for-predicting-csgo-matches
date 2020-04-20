@@ -157,10 +157,15 @@ async function run_prediction(){
     let team1 = document.getElementById("team1Select").value;
     let team2 = document.getElementById("team2Select").value;
     console.log("Predicting the winner", team1, team2);
-    /*await fetch("http://localhost:8090/prediction", {
+    let bodyObject = {
+        team1,
+        team2
+    }
+    let bodyjson = JSON.stringify(bodyObject, undefined, 4);
+    let resultText = await fetch("http://localhost:8090/prediction", {
         method: "POST",
-        body: "heyy"
-    });*/
-    let result = team1;
-    document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result}`;
+        body: bodyjson
+    });
+    let result = JSON.parse(resultText);
+    document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
 }

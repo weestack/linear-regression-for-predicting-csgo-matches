@@ -19,10 +19,7 @@ let http = require('http');
 let mathjs = require("mathjs");
 
 /* Import the required javascript*/
-let filereader = require("../prediction_lib/FileReader.js");
-let regression = require("../prediction_lib/regression.js");
-let match_data = filereader.match_data;
-let linearRegression = new regression.Multi_Linear_Regression;
+let regression = require("../prediction_lib/index.js");
 
 
 
@@ -142,7 +139,7 @@ function fetch_website(request, response){
     let body = [];
     request.on("data", chunk => {
         body.push(chunk);
-    })
+    });
     request.on("end", async () => {
         body = Buffer.concat(body).toString();
         /* The actual data from the website is fetched using the get function. */
@@ -265,21 +262,24 @@ function sleep(milliseconds){
 /* Prediction code starts here. Revisit when its ready*/
 
 function do_prediction(request, response){
-
-    let data = new match_data("data");
-    let [all, test] = data.filter_all_files();
-    all = mathjs.matrix(all);
-    let prediction = mathjs.column(all, 0);
-    all = mathjs.transpose(all).toArray();
-    all.shift();
-    let independt = mathjs.transpose(mathjs.matrix(all));
-    let coefficients = linearRegression.estimate_best_coeficcients(independt, prediction);
-    let coe = coeficcients.toArray();
-    let b_0 = coe.shift()[0];
-    let coeffi = mathjs.matrix(coe);
-    let value_without_b0 = mathjs.multiply(point, coeffi).toArray()[0][0];
-    let result = b_0 + value_without_b0;
-    response.writeHead(200);
-    response.end();
-
+    let regressor = new regressor.Regressor("data/");
+    console.log(regressor);
+    let body = [];
+    request.on("data", chunk => {
+        body.push(chunk);
+    });
+    request.on("end", () => {
+        body = Buffer.concat(body).toString();
+        let bodyjson = JSON.parse(body);
+        let team1 = bodyjson.team1;
+        let team2 = bodyjson.team2;
+        let [prediction, probability] = regressor.predict_winner(team1, team2);
+        let responseobject = {
+            winner: prediction,
+            probability,
+        }
+        let responsejson = JSON.stringify(responseobject, undefined, 4);
+        response.write(responsejson);
+        response.end();
+    });
 }
