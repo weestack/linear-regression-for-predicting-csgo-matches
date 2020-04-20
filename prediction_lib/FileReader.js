@@ -15,9 +15,10 @@ class match_data {
         /* devide the files so 3/4 is used for fitting and 1/4 is used for testing */
         let [fitting_files, test_files] = this.devide_files_for_test_and_fitting(files);
         let [raw_fitting_data, raw_testing_data] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
-        /*let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
+        let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
         this.fitting = filtered_fitting_data;
-        this.testing = filtered_testing_data;*/
+        this.testing = filtered_testing_data;
+        console.log(this.testing)
 
     }
 
@@ -32,7 +33,7 @@ class match_data {
         let fitting_files = files
         let testing_files = Array();
         let three_fourth = files.length - Math.floor( files.length / 4 );
-        for(var i = fitting_files.length-1; i >= three_fourth; i--){
+        for(let i = fitting_files.length-1; i >= three_fourth; i--){
             let randomn_index = Math.floor(Math.random()*fitting_files.length)
             testing_files.push(fitting_files[randomn_index])
             fitting_files.splice(randomn_index, 1);
@@ -53,8 +54,12 @@ class match_data {
         return data;
     }
 
-    filter_for_D_data(data_obj) {
-
+    filter_for_D_data(data_array) {
+        let filtered_data = Array();
+        for (let i = 0; i < files.data_array; i++){
+            filtered_data[i] = this.filter_file(data_array[i]);
+        }
+        return filtered_data
     }
 
     filter_file(parsed_data){
