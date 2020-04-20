@@ -162,10 +162,24 @@ async function run_prediction(){
         team2
     }
     let bodyjson = JSON.stringify(bodyObject, undefined, 4);
-    let resultText = await fetch("http://localhost:8090/prediction", {
+    let response = await fetch("http://localhost:8090/prediction", {
         method: "POST",
         body: bodyjson
     });
-    let result = JSON.parse(resultText);
-    document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
+    if(response.status == 200){
+        let result = response.json();
+        document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
+    }
+}    
+
+async function statistics(){
+    let response = await fetch("http://localhost:8090/statistics");
+    if(response.status == 200){
+        let data = await response.json();
+        return data;
+    }
+    else{
+        return null;
+    }
 }
+

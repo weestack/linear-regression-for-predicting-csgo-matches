@@ -41,6 +41,9 @@ let server = http.createServer((request, response) => {
     else if(request.url == "/prediction" && request.method == "POST"){
         do_prediction(request, response);
     }
+    else if(request.url == "/statistics" && request.method == "GET"){
+        do_statistics(request, response);
+    }
     /* If none of the specific cases matched, we try to serve a file from the static folder */
     else if(request.method == "GET"){
         serve_file(request, response)
@@ -282,4 +285,12 @@ function do_prediction(request, response){
         response.write(responsejson);
         response.end();
     });
+}
+
+function do_statistics(request, response){
+    let regressor = new regressor.Regressor("data/");
+    let statistics = regressor.statistics;
+    let statisticsjson = JSON.stringify(statistics, undefined, 4);
+    response.write(statisticsjson);
+    response.end();
 }
