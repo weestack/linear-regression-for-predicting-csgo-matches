@@ -265,7 +265,7 @@ function sleep(milliseconds){
 /* Prediction code starts here. Revisit when its ready*/
 
 function do_prediction(request, response){
-    let regressor = new regressor.Regressor("data/");
+    let regressor = new regression.Regressor("data/");
     console.log(regressor);
     let body = [];
     request.on("data", chunk => {
@@ -288,7 +288,7 @@ function do_prediction(request, response){
 }
 
 function do_statistics(request, response){
-    let regressor = new regressor.Regressor("data/");
+    let regressor = new regression.Regressor("data/");
     let statistics = regressor.statistics;
     let statisticsjson = JSON.stringify(statistics, undefined, 4);
     response.write(statisticsjson);

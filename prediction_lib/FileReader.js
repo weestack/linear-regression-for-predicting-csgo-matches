@@ -7,6 +7,7 @@ class match_data {
     * Factory class that should prepare CS:GO data for regression
     */
     constructor(absolute_path){
+        
         /* path is expected to be folder for all data */
         this.path = absolute_path;
         /* get a List of all files in the path folder */
@@ -18,6 +19,7 @@ class match_data {
         let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
         this.fitting = filtered_fitting_data;
         this.testing = filtered_testing_data;
+        console.log(this.fitting);
     }
 
     read_in_files() {
@@ -294,6 +296,6 @@ class match_data {
 
 }
 
-new match_data("actual_data");
+/* new match_data(""); */
 
 module.exports = {match_data:match_data};
