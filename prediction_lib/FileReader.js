@@ -41,7 +41,16 @@ class match_data {
     }
 
     read_in_data(files){
-
+        /* in in and store each file in memory, according to this.path + filename */
+        let data = Array();
+        for (let i = 0; i < files.length; i++) {
+            let data = fs.readFileSync(this.path + "/" + files[i]);
+            let parsed_data = JSON.parse(data);
+            /* ID is not used at the moment, so deleting to avoid wasting memory */
+            delete parsed_data["id"];
+            data[i] = parsed_data;
+        }
+        return data;
     }
 
     filter_for_D_data(data_obj) {
