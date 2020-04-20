@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* We start by switching to the first main view and render the data status page */
     switch_view("main1");
     render_data_status();
+    render_statistics();
 
     /* Here we add actions to all the page links on the left. They don't actually goto a new page,
      * they just switch the view
@@ -32,11 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
         await scrape_n_matches(matches);
         startScraperButton.disabled = false;
         scraperIsRunning = false;
-    })
+    });
 
-    /* The refresh button is setup so that it renders the data status again */
+    /* The data status refresh button is setup so that it renders the data status again */
     let refreshDataStatus = document.getElementById("dataStatusRefresh");
     refreshDataStatus.addEventListener("click", render_data_status);
+
+    /*The statistics refresh button is setup so that it renders the statistics status again*/
+    let refreshStatistics = document.getElementById("statisticsRefresh");
+    refreshStatistics.addEventListener("click", render_statistics);
 
     /* The prediction button is setup so that the prediction runs when clicked*/
     let predictionButton = document.getElementById("team1vsteam2");
@@ -184,6 +189,12 @@ async function statistics(){
 }
 
 async function render_statistics(){
+    /* Change the button text to "refreshing..." and disable it */
+    let refreshButton = document.getElementById("statisticsRefresh");
+    let originalText = refreshButton.textContent;
+    refreshButton.textContent = "refreshing...";
+    refreshButton.disabled = true;
+
     let stats = await statistics();
     let rSquared = document.getElementById("stats_rSquared");
     let pearson = document.getElementById("stats_pearson");
@@ -199,4 +210,7 @@ async function render_statistics(){
     sxx.textContent = stats.summary_statics.sxx.toFixed(3);
     sxy.textContent = stats.summary_statics.sxy.toFixed(3);
     syy.textContent = stats.summary_statics.syy.toFixed(3);
+
+    refreshButton.textContent = originalText;
+    refreshButton.disabled = false;
 }

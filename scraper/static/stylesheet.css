@@ -5,7 +5,11 @@ html {
 table, td, th{
     border: 2px solid black;
     border-collapse: collapse;
-    padding: 3px;
+    padding: 1em;
+}
+
+table{
+    margin-top: 1em;
 }
 
 main {
