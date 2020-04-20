@@ -61,11 +61,12 @@ class Regressor {
         let rss = this.regression_obj.rss(summary_statics.subset(math_js.index(1,1)), summary_statics.subset(math_js.index(0,0)), this.coefficients);
         let r_squared = this.regression_obj.r_squared(this.coefficients, independt, prediction);
         let sigma = this.regression_obj.sigma_squared(rss.subset(math_js.index(0,0)), independt);
-        let varians = this.regression_obj.variance(sigmond, independt);
+        let varians = this.regression_obj.variance(sigma, independt);
         let pearsons_coeficcient = this.regression_obj.pearson_corrolations(math_js.column(independt, 1), prediction );
 
         /* bind the raw value rather than matrix obj */
         rss = rss.subset(math_js.index(0,0))
+        console.log("rss", rss)
         /* bind the raw values of summary, ranther than using matrix obj */
         summary_statics = {
             sxx: summary_statics.subset(math_js.index(0,0)),
@@ -98,12 +99,12 @@ class Regressor {
     }
 
 }
-let regressor = new Regressor("../scraper/data");
+/*let regressor = new Regressor("../scraper/data");
 console.log("coeficcients",regressor.cleaned_coeficcients)
 //console.log("statistics".regressor.statistics)
 console.log("sumary ",regressor.statistics.summary_statics)
-console.log("rss,",regressor.rss)
+console.log("rss,",regressor.statistics.rss)
 
 console.log("r**",regressor.statistics.r_squared)
-console.log("pearson ",regressor.statistics.pearsons_coeficcient)
+console.log("pearson ",regressor.statistics.pearsons_coeficcient)*/
 module.exports = {Regressor:Regressor};
