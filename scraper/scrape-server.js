@@ -254,7 +254,7 @@ function cache_lookup(link){
  * In theory there might be collisions, but in practice there is not.
  */
 function cache_filename(link){
-    return link.replace(/\//g, "_").replace(/:/g, ".").replace(/\?/g, "q").replace(/&/g, "AND")
+    return link.replace(/\//g, "_").replace(/:/g, ".").replace(/\?/g, "q").replace(/&/g, "AND").trim();
 }
 
 /* sleep is a promise which resolves after some milliseconds. It allows us to sleep in async code. */
