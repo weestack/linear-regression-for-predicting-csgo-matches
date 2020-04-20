@@ -9,15 +9,15 @@ class match_data {
     constructor(absolute_path){
         /* path is expected to be folder for all data */
         this.path = absolute_path;
-
-        /*let file = this.openfile();
-        file = this.filter_file(file);
-
-        this.data = file;*/
+        /* get a List of all files in the path folder */
         let files = this.read_in_files();
+
+        /* devide the files so 3/4 is used for fitting and 1/4 is used for testing */
         let [fitting_files, test_files] = this.devide_files_for_test_and_fitting(files);
-        [this.fitting, this.testing] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
-        [this.fitting, this.testing] = [this.filter_for_D_data(this.fitting), this.filter_for_D_data(this.testing)]
+        let [raw_fitting_data, raw_testing_data] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
+        /*let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
+        this.fitting = filtered_fitting_data;
+        this.testing = filtered_testing_data;*/
 
     }
 
@@ -29,43 +29,23 @@ class match_data {
     devide_files_for_test_and_fitting( files ){
         /* fitting data, is meant to be used for fitting the regression
         * Test_data is meant for testing the accuracy of the prediction */
-
-        let test = Math.floor(files.length/4);
-        let fit = files.length - test;
-        let fitting_data = Array();
-
-        for (let i = 0; i < fit; i++){
-            //console.log(files[i])
-            let data = fs.readFileSync(this.path+"/"+files[i]);
-            //let data = fs.readFileSync(this.path+"/"+"101394.json");
-            let parsed_data = JSON.parse(data)
-            //console.log(parsed_data[0].last_matches)
-            delete parsed_data["id"];
-            fitting_data[i] = this.filter_file(parsed_data);
+        let fitting_files = files
+        let testing_files = Array();
+        let three_fourth = files.length - Math.floor( files.length / 4 );
+        for(var i = fitting_files.length-1; i >= three_fourth; i--){
+            let randomn_index = Math.floor(Math.random()*fitting_files.length)
+            testing_files.push(fitting_files[randomn_index])
+            fitting_files.splice(randomn_index, 1);
         }
-
-
-        let test_data = Array();
-        for (let i = fit; i < files.length; i++){
-            //console.log(files[i])
-            let data = fs.readFileSync(this.path+"/"+files[i]);
-            //let data = fs.readFileSync(this.path+"/"+"101394.json");
-            let parsed_data = JSON.parse(data);
-            //console.log(parsed_data[0].last_matches)
-            delete parsed_data["id"];
-            test_data[i % fit] = this.filter_file(parsed_data);
-        }
-
-
-        return [fitting_data, test_data]
+        return [fitting_files, testing_files];
     }
 
     read_in_data(files){
 
     }
 
-    filter_for_D_data() {
-        if ()
+    filter_for_D_data(data_obj) {
+
     }
 
     filter_file(parsed_data){
@@ -309,5 +289,7 @@ class match_data {
 
 }
 
+let mdata = new match_data("actual_data")
+console.log(mdata.path)
 
 module.exports = {match_data:match_data};
