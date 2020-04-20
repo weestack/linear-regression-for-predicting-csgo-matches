@@ -157,10 +157,29 @@ async function run_prediction(){
     let team1 = document.getElementById("team1Select").value;
     let team2 = document.getElementById("team2Select").value;
     console.log("Predicting the winner", team1, team2);
-    /*await fetch("http://localhost:8090/prediction", {
+    let bodyObject = {
+        team1,
+        team2
+    }
+    let bodyjson = JSON.stringify(bodyObject, undefined, 4);
+    let response = await fetch("http://localhost:8090/prediction", {
         method: "POST",
-        body: "heyy"
-    });*/
-    let result = team1;
-    document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result}`;
+        body: bodyjson
+    });
+    if(response.status == 200){
+        let result = response.json();
+        document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
+    }
+}    
+
+async function statistics(){
+    let response = await fetch("http://localhost:8090/statistics");
+    if(response.status == 200){
+        let data = await response.json();
+        return data;
+    }
+    else{
+        return null;
+    }
 }
+

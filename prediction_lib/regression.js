@@ -222,6 +222,7 @@ class Multi_Linear_Regression extends Regression {
     }
 
     summary_statictis(independent, prediction){
+        /* reference page 57 apllied linear algebra */
         let [number_of_points, _] = independent.size()
 
         let decomp_independent = this.decomposition(independent);
