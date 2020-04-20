@@ -26,7 +26,8 @@ class Regressor {
 
     load_matches(path) {
         let mdata = new match_data(path)
-        let [data, _] = mdata.filter_all_files();
+
+        let data = mdata.fitting;
 
         data = math_js.matrix(data);
         return data;

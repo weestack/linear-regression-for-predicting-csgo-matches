@@ -305,7 +305,4 @@ class match_data {
 
 }
 
-let mdata = new match_data("actual_data")
-console.log(mdata.path)
-
 module.exports = {match_data:match_data};
