@@ -60,7 +60,7 @@ class Regressor {
         /* rss returns singular value */
         let rss = this.regression_obj.rss(summary_statics.subset(math_js.index(1,1)), summary_statics.subset(math_js.index(0,0)), this.coefficients);
         let r_squared = this.regression_obj.r_squared(this.coefficients, independt, prediction);
-        let sigmond = this.regression_obj.sigma_squared(rss.subset(math_js.index(0,0)), independt);
+        let sigma = this.regression_obj.sigma_squared(rss.subset(math_js.index(0,0)), independt);
         let varians = this.regression_obj.variance(sigmond, independt);
         let pearsons_coeficcient = this.regression_obj.pearson_corrolations(math_js.column(independt, 1), prediction );
 
@@ -76,7 +76,7 @@ class Regressor {
             summary_statics: summary_statics,
             rss: rss,
             r_squared: r_squared,
-            sigmond: sigmond,
+            sigma: sigma,
             varians: varians,
             pearsons_coeficcient:pearsons_coeficcient
         };
