@@ -17,29 +17,6 @@ class Regression {
         return sum;
 
 
-
-    }
-
-    standardize () {
-        /*  standardization (or Z-score normalization) means centering the variable at zero and standardizing the variance at 1. */
-    }
-
-    normalize ( column ) {
-        /* normalize = (x - x_min)/(x_max-x_min) */
-        let new_column = Array();
-        let min = Math.min.apply(Math, column);
-        let max = Math.max.apply(Math, column);
-
-        for (let i = 0; i < column.length; i++) {
-            new_column.push( (column[i]-min)/(max-min) )
-        }
-
-        return new_column
-
-
-    }
-
-
     cross_deviation (x, mean_x, y, mean_y) {
         /* Formula sum(x*y) - n*mean(x)*mean(y) */
         if (x.length !== y.length) {
