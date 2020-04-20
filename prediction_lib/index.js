@@ -47,7 +47,7 @@ class Regressor {
     }
     predict_winner(team_1, team_2){
         /* Team_1 and Team_2 are supposed to be the string names of the teams competing */
-        return team_1;
+        return [team_1, 1];
     }
     bind_statistics(matches, independt, prediction) {
         if (this.coefficients === undefined){
@@ -70,7 +70,6 @@ class Regressor {
             varians: varians,
             pearsons_coeficcient:pearsons_coeficcient
         };
-
         return 1;
 
     }
@@ -161,5 +160,11 @@ for(let i = 0; i < csv_rows; i++){
 csvWriter.writeRecords(csv_data).then(() => console.log('The CSV file was written successfully'));
 
 */
-//let regressor = new Regressor("actual_data");
+let regressor = new Regressor("actual_data");
+console.log(regressor.coefficients)
+console.log(regressor.statistics)
+console.log(regressor.statistics.rss)
+console.log(regressor.statistics.r_squared)
+console.log(regressor.statistics.pearsons_coeficcient)
+console.log(regressor.statistics.summary_statics)
 module.exports = {Regressor:Regressor};

@@ -2,54 +2,37 @@
 const fs = require("fs");
 const path = require("path");
 
-
-class file_sanatiser {
-    openfile(){
-        // This is just used as a normal file opener function.
-
-        let file = fs.readFileSync(this.path);
-
-        return file;
-    }
-
-    json_converter(json_data){
-        return JSON.parse(json_data);
-    }
-
-
-}
-
-
-class match_obect {
-    constructor(first_kills, win_lose_ratio, last_match_date, matches, mean_time_in_team, mean_kda, mean_headshots) {
-        this.first_kills = first_kills;
-    }
-}
-
-
-
-class match_data extends file_sanatiser {
+class match_data {
     /*
     * Factory class that should prepare CS:GO data for regression
     */
     constructor(absolute_path){
         /* path is expected to be folder for all data */
-        super();
         this.path = absolute_path;
 
         /*let file = this.openfile();
         file = this.filter_file(file);
 
         this.data = file;*/
+        let files = this.read_in_files();
+        let [fitting_files, test_files] = this.devide_files_for_test_and_fitting(files);
+        [this.fitting, this.testing] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
+        [this.fitting, this.testing] = [this.filter_for_D_data(this.fitting), this.filter_for_D_data(this.testing)]
+
     }
 
-    filter_all_files(){
+    read_in_files() {
         let directory = this.path;
+        return fs.readdirSync(directory, {"encoding":"utf-8"});
+    }
 
-        let files = fs.readdirSync(directory, {"encoding":"utf-8"});
+    devide_files_for_test_and_fitting( files ){
+        /* fitting data, is meant to be used for fitting the regression
+        * Test_data is meant for testing the accuracy of the prediction */
+
         let test = Math.floor(files.length/4);
         let fit = files.length - test;
-        let fit_matrix = Array();
+        let fitting_data = Array();
 
         for (let i = 0; i < fit; i++){
             //console.log(files[i])
@@ -58,11 +41,11 @@ class match_data extends file_sanatiser {
             let parsed_data = JSON.parse(data)
             //console.log(parsed_data[0].last_matches)
             delete parsed_data["id"];
-            fit_matrix[i] = this.filter_file(parsed_data);
+            fitting_data[i] = this.filter_file(parsed_data);
         }
 
 
-        let test_matrix = Array();
+        let test_data = Array();
         for (let i = fit; i < files.length; i++){
             //console.log(files[i])
             let data = fs.readFileSync(this.path+"/"+files[i]);
@@ -70,10 +53,19 @@ class match_data extends file_sanatiser {
             let parsed_data = JSON.parse(data);
             //console.log(parsed_data[0].last_matches)
             delete parsed_data["id"];
-            test_matrix[i % fit] = this.filter_file(parsed_data);
+            test_data[i % fit] = this.filter_file(parsed_data);
         }
 
-        return [fit_matrix, test_matrix];
+
+        return [fitting_data, test_data]
+    }
+
+    read_in_data(files){
+
+    }
+
+    filter_for_D_data() {
+        if ()
     }
 
     filter_file(parsed_data){
