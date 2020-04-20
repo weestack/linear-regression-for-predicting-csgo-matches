@@ -14,12 +14,13 @@ class match_data {
 
         /* devide the files so 3/4 is used for fitting and 1/4 is used for testing */
         let [fitting_files, test_files] = this.devide_files_for_test_and_fitting(files);
+        console.log(fitting_files)
+        console.log(test_files)
         let [raw_fitting_data, raw_testing_data] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
+        console.log(raw_fitting_data)
         let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
         this.fitting = filtered_fitting_data;
         this.testing = filtered_testing_data;
-        console.log(this.testing)
-
     }
 
     read_in_files() {
@@ -45,8 +46,9 @@ class match_data {
         /* in in and store each file in memory, according to this.path + filename */
         let data = Array();
         for (let i = 0; i < files.length; i++) {
-            let data = fs.readFileSync(this.path + "/" + files[i]);
-            let parsed_data = JSON.parse(data);
+            let _data = fs.readFileSync(this.path + "/" + files[i]);
+
+            let parsed_data = JSON.parse(_data);
             /* ID is not used at the moment, so deleting to avoid wasting memory */
             delete parsed_data["id"];
             data[i] = parsed_data;
@@ -56,7 +58,7 @@ class match_data {
 
     filter_for_D_data(data_array) {
         let filtered_data = Array();
-        for (let i = 0; i < files.data_array; i++){
+        for (let i = 0; i < data_array.length; i++){
             filtered_data[i] = this.filter_file(data_array[i]);
         }
         return filtered_data
