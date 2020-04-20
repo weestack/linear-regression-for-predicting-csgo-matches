@@ -19,7 +19,6 @@ class match_data {
         let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
         this.fitting = filtered_fitting_data;
         this.testing = filtered_testing_data;
-        console.log(this.fitting);
     }
 
     read_in_files() {
