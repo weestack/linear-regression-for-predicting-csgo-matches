@@ -125,6 +125,24 @@ class match_data {
         return data;
     }
 
+
+
+
+    power_score(){
+        /* powerscore is calculated from number of matches played, along with the mean player stats */
+
+    }
+    skillset(){
+        /* Calculated from kill_death ratio, time team has been together */
+    }
+    winstreak(matches){
+        return this.current_winstreak(matches)
+    }
+    prefered_map(){
+        /* is the team playing on a prefered map? */
+
+    }
+
     win_lose_ratio_between_teams(first_quator, second_quator, third_quator, teams){
         /* Numbers of wins for hold1, and overall matches between the two teams. */
         let all_time = [0, 0];
