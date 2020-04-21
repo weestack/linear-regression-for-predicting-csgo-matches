@@ -18,11 +18,23 @@ let https = require('https');
 let http = require('http');
 let mathjs = require("mathjs");
 
-/* Import the required javascript*/
+/* Import the required javascript for the regression */
 let regression = require("../prediction_lib/index.js");
 
 /* Global variable which stores the regressor object */
 let regressor = null;
+
+/* Create the data/ and cache/ folders if they dont exist. */
+fs.mkdirSync("./data", {recursive: true}, err => {
+    if(err) {
+        console.log(err);
+    }
+});
+fs.mkdirSync("./cache", {recursive: true}, err => {
+    if(err) {
+        console.log(err);
+    }
+});
 
 /* Create the http server itself, which will handle incomming HTTP requests on port 8090 */
 let server = http.createServer((request, response) => {
@@ -159,6 +171,7 @@ function fetch_website(request, response){
         response.end();
     });
 }
+
 /* The serve file function handles all other endpoints by trying to lookup the resource
  * named by the url in the static/ folder. If no file is found, a 404 is returned. */
 function serve_file(request, response){
@@ -266,8 +279,9 @@ function sleep(milliseconds){
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-/* Prediction code starts here. Revisit when its ready*/
-
+/* The do_prediction function handles requests on /prediction, and it tries to predict the winner of two matches
+ * which are given in the request body.
+ */
 function do_prediction(request, response){
     if (regressor == null) {
         regressor = new regression.Regressor("data/");
@@ -292,6 +306,8 @@ function do_prediction(request, response){
     });
 }
 
+/* The do_statistics function returns the statistics object from the current regressor as JSON.
+ */
 function do_statistics(request, response){
     if (regressor == null) {
         regressor = new regression.Regressor("data/");
@@ -302,6 +318,7 @@ function do_statistics(request, response){
     response.end();
 }
 
+/* Refresh regressor refreshes the regressor :D */
 function refresh_regressor(request, response){
     regressor = new regression.Regressor("data/");
     response.writeHead(200);

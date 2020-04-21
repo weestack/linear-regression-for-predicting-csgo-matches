@@ -169,10 +169,12 @@ function update_html_status() {
     document.getElementById("MatchProgressProcent").textContent = `${match_progress.toFixed(2)}%`;
 }
 
+/* Run_prediction takes the team names from the two drop-down menus, and asks the backend to run prediction on them.
+ * It then shows the result on the page
+ */
 async function run_prediction(){
     let team1 = document.getElementById("team1Select").value;
     let team2 = document.getElementById("team2Select").value;
-    console.log("Predicting the winner", team1, team2);
     let bodyObject = {
         team1,
         team2
@@ -188,6 +190,7 @@ async function run_prediction(){
     }
 }
 
+/* The statistics function fetches information about the statistics from the current regressor on the backend */
 async function statistics(){
     let response = await fetch("/statistics");
     if(response.status == 200){
@@ -199,6 +202,7 @@ async function statistics(){
     }
 }
 
+/* Render_statistics renders the statistics on the website. */
 async function render_statistics(){
     /* Change the button text to "refreshing..." and disable it */
     await refresh_regressor();
@@ -227,6 +231,7 @@ async function render_statistics(){
     refreshButton.disabled = false;
 }
 
+/* This function triggers a refresh of the regressor object on the backend. */
 async function refresh_regressor(){
     await fetch("/refreshRegressor", {
         method: "POST"
