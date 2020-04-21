@@ -2,24 +2,25 @@
 const fs = require("fs");
 const path = require("path");
 
+
+
 class match_data {
     /*
     * Factory class that should prepare CS:GO data for regression
     */
     constructor(absolute_path){
-        
+        this.cached_team = {};
         /* path is expected to be folder for all data */
         this.path = absolute_path;
         /* get a List of all files in the path folder */
         let files = this.read_in_files();
-
         /* devide the files so 3/4 is used for fitting and 1/4 is used for testing */
-        let [fitting_files, test_files] = this.devide_files_for_test_and_fitting(files);
-        let [raw_fitting_data, raw_testing_data] = [this.read_in_data(fitting_files), this.read_in_data(test_files) ];
-        let [filtered_fitting_data, filtered_testing_data] =  [this.filter_for_D_data(raw_fitting_data), this.filter_for_D_data(raw_testing_data)]
+
+        //let [_, test_files] = this.devide_files_for_test_and_fitting(files);
+        let raw_fitting_dat = this.read_in_data(files);
+        let filtered_fitting_data =  this.filter_for_D_data(raw_fitting_dat);
         this.fitting = filtered_fitting_data;
-        this.testing = filtered_testing_data;
-        console.log(this.fitting);
+        //this.testing = filtered_testing_data;
     }
 
     read_in_files() {
@@ -49,7 +50,6 @@ class match_data {
 
             let parsed_data = JSON.parse(_data);
             /* ID is not used at the moment, so deleting to avoid wasting memory */
-            delete parsed_data["id"];
             data[i] = parsed_data;
         }
         return data;
@@ -59,12 +59,49 @@ class match_data {
         /* Filter all the data by D rules to fetch for */
         let filtered_data = Array();
         for (let i = 0; i < data_array.length; i++){
-            filtered_data[i] = this.filter_file(data_array[i]);
+            let team_1_id = data_array[i][0]['id'];
+            let team_2_id = data_array[i][1]['id'];
+            if (! (team_1_id in this.cached_team)){
+                this.cached_team[team_1_id] = this.get_team_info(data_array[i][0])
+            }
+
+            if (! (team_2_id in this.cached_team)){
+                this.cached_team[team_2_id] = this.get_team_info(data_array[i][1])
+            }
+                filtered_data.push( this.filter_file(data_array[i]));
+
         }
         return filtered_data
     }
 
-    filter_file(parsed_data){
+    filter_file(match){
+        return [
+            match[match.winner]['id'],
+            match[(match.winner === '1')? 1: 0 ]['id'],
+            match.winner];
+    }
+
+    get_team_info(team){
+        /* Methods is a reference to the classifiers used */
+        let methods = [
+            "powerscore",
+            "skillset",
+            "winstreak",
+            //"prefered_map"
+            /* power_score */
+            /* skillset */
+            /* winstreak */
+            /* prefered_map */
+        ];
+        let data = Array(1);
+
+        data[0] = this.power_score(team);
+        data[1] = this.skillset(team)
+        data[2] = this.win_loose_delta(team);
+        return data
+    }
+
+    filter_file_old(parsed_data){
         /* Methods is a reference to the classifiers used */
         let methods = [
             "powerscore",
@@ -128,13 +165,58 @@ class match_data {
 
 
 
-    power_score(){
+    power_score(team_info){
         /* powerscore is calculated from number of matches played, along with the mean player stats */
+        /* Perhaps, latest world ranking? */
+        /* Number og matches in the last year */
+        /* Number og matches won, delta matches lost, times some constant */
+        let score = 0;
 
+        for (let i = 0; i < team_info.last_matches.length; i++){
+            score += 10 // experince
+        }
+        return score;
     }
-    skillset(){
+
+    win_loose_delta(team_info){
+        let score = 0;
+        let wins = 0;
+        let looses = 0;
+        for (let i = 0; i < team_info.last_matches.length; i++){
+            if (team_info.name === team_info.last_matches[i].winner ) {
+                wins += 1;
+            }else if (team_info.name !== team_info.last_matches[i].winner && team_info.last_matches[i].winner !== null){
+                looses += 1;
+            }
+        }
+
+        /* matches win, compared to lost gets a score of 100 * delta */
+        score += (wins - looses)
+        return score;
+    }
+
+    skillset(team){
         /* Calculated from kill_death ratio, time team has been together */
+        let [time_in_team, head_shots, kill_death_ratio] = this.extract_mean_values_from_players(team.player_data);
+        let score = 0;
+
+        /* score for time in team */
+        if (time_in_team < 14) {
+            score -= 100;
+        }else if (time_in_team > 50 && time_in_team < 100){
+            score += 100
+        }else {
+            score += 150;
+        }
+        /* headshots mean */
+        score += head_shots * 5;
+
+        /* kda */
+        score += kill_death_ratio * 100;
+
+        return score;
     }
+
     winstreak(matches){
         return this.current_winstreak(matches)
     }
@@ -261,7 +343,11 @@ class match_data {
                 sum_kda += players_object[id].kda
             }
         }
-        return  [(mean_tit_count == 0) ? 0 : mean_time_in_team/mean_tit_count, (mean_head_count == 0)? 0 : mean_headshots/mean_head_count, sum_kda]
+        return  [
+            (mean_tit_count == 0) ? 0 : mean_time_in_team/mean_tit_count, // mean time in team
+            (mean_head_count == 0)? 0 : mean_headshots/mean_head_count, // mean headshots
+            sum_kda // mean kda
+        ]
     }
 
 
@@ -314,6 +400,6 @@ class match_data {
 
 }
 
-/* new match_data(""); */
-
+//let match_obj = new match_data("../scraper/data");
+//console.log(match_obj.fitting)
 module.exports = {match_data:match_data};

@@ -200,6 +200,7 @@ class Multi_Linear_Regression extends Regression {
 
     }
     estimate_best_coeficcients(x, y){
+        /* Estimated least squares */
         let decomp_prediction = this.decomposition(y);
         let decomp_independent =  this.decomposition(x);
 
