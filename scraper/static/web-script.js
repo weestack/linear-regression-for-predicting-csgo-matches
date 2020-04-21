@@ -71,7 +71,7 @@ window.addEventListener("beforeunload", (event) => {
  * so the result takes a while to come back.
  */
 async function data_status(){
-    let response = await fetch("http://localhost:8090/dataStatus");
+    let response = await fetch("/dataStatus");
     if(response.status == 200){
         let data = await response.json();
         return data;
@@ -178,7 +178,7 @@ async function run_prediction(){
         team2
     }
     let bodyjson = JSON.stringify(bodyObject, undefined, 4);
-    let response = await fetch("http://localhost:8090/prediction", {
+    let response = await fetch("/prediction", {
         method: "POST",
         body: bodyjson
     });
@@ -189,7 +189,7 @@ async function run_prediction(){
 }
 
 async function statistics(){
-    let response = await fetch("http://localhost:8090/statistics");
+    let response = await fetch("/statistics");
     if(response.status == 200){
         let data = await response.json();
         return data;
@@ -228,7 +228,7 @@ async function render_statistics(){
 }
 
 async function refresh_regressor(){
-    await fetch("http://localhost:8090/refreshRegressor", {
+    await fetch("/refreshRegressor", {
         method: "POST"
     });
 }
