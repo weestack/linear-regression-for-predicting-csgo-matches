@@ -26,13 +26,11 @@ class Regressor {
 
     load_matches(path) {
         let mdata = new match_data(path)
-
         let data = mdata.fitting;
+        this.prediction = Array();
+        this.independent = Array();
 
-        this.prediction = Array(data.length);
-        this.independent = Array(data.length);
-
-        for (let i = 0; i < data.length; i++) {
+        for (let i = data.length-1; i >= 0; i--) {
             let [winner, looser, index] = data[i];
             this.prediction[i] = [index];
             let datapoints = mdata.cached_team[winner].length
@@ -40,9 +38,12 @@ class Regressor {
 
             for (let j = 0; j < datapoints; j++) {
                 this.independent[i][j] = mdata.cached_team[winner][j] - mdata.cached_team[looser][j];
+                //console.log("j ", j, "; i ", i, "; winner ", mdata.cached_team[winner][j], "winner_index ",winner, " ;looser ", mdata.cached_team[looser][j],"looser_index ",looser, "; independent ",this.independent[i][j]);
             }
 
         }
+        //console.log(this.prediction)
+        //console.log(this.independent)
         this.prediction = math_js.matrix(this.prediction);
         this.independent = math_js.matrix(this.independent);
 
@@ -85,7 +86,6 @@ class Regressor {
 
         /* bind the raw value rather than matrix obj */
         rss = rss.subset(math_js.index(0, 0))
-        console.log("rss", rss)
         /* bind the raw values of summary, ranther than using matrix obj */
         summary_statics = {
             sxx: summary_statics.subset(math_js.index(0, 0)),
@@ -121,7 +121,6 @@ class Regressor {
 
 let regressor = new Regressor("../scraper/data");
 console.log("coeficcients", regressor.cleaned_coeficcients)
-//console.log("statistics".regressor.statistics)
 console.log("sumary ", regressor.statistics.summary_statics)
 console.log("rss,", regressor.statistics.rss)
 

@@ -70,13 +70,21 @@ class match_data {
                 filtered_data.push( this.filter_file(data_array[i]));
 
         }
+        console.log(filtered_data)
         return filtered_data
     }
 
     filter_file(match){
+        let looser_id = 0;
+        if (match[match.winner]['id'] === match[0]['id']){
+            looser_id = match[1]['id'];
+        }else {
+            looser_id = match[0]['id'];
+        }
+
         return [
             match[match.winner]['id'],
-            match[(match.winner === '1')? 1: 0 ]['id'],
+            looser_id,
             match.winner];
     }
 
