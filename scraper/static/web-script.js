@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* We start by switching to the first main view and render the data status page */
     switch_view("main1");
     render_data_status();
+    render_statistics();
 
     /* Here we add actions to all the page links on the left. They don't actually goto a new page,
      * they just switch the view
@@ -32,13 +33,28 @@ document.addEventListener("DOMContentLoaded", () => {
         await scrape_n_matches(matches);
         startScraperButton.disabled = false;
         scraperIsRunning = false;
-    })
+    });
 
-    /* The refresh button is setup so that it renders the data status again */
+    /* The data status refresh button is setup so that it renders the data status again */
     let refreshDataStatus = document.getElementById("dataStatusRefresh");
     refreshDataStatus.addEventListener("click", render_data_status);
 
-    /* The prediction button is setup so that the prediction runs when clicked*/
+    /*The statistics refresh button is setup so that it renders the statistics status again*/
+    let refreshStatistics = document.getElementById("statisticsRefresh");
+    refreshStatistics.addEventListener("click", render_statistics);
+
+    /* The refresh regressor button triggers a refresh of the regressor object on the server */
+    let refreshRegressor = document.getElementById("refreshRegressor");
+    refreshRegressor.addEventListener("click", async () => {
+        let originalText = refreshRegressor.textContent;
+        refreshRegressor.textContent = "Refreshing...";
+        refreshRegressor.disable = true;
+        await refresh_regressor();
+        refreshRegressor.textContent = originalText;
+        refreshRegressor.disable = false;
+    });
+
+    /* The prediction button is setup so that the prediction runs when clicked */
     let predictionButton = document.getElementById("team1vsteam2");
     predictionButton.addEventListener("click", run_prediction);
 })
@@ -55,7 +71,7 @@ window.addEventListener("beforeunload", (event) => {
  * so the result takes a while to come back.
  */
 async function data_status(){
-    let response = await fetch("http://localhost:8090/dataStatus");
+    let response = await fetch("/dataStatus");
     if(response.status == 200){
         let data = await response.json();
         return data;
@@ -153,16 +169,18 @@ function update_html_status() {
     document.getElementById("MatchProgressProcent").textContent = `${match_progress.toFixed(2)}%`;
 }
 
+/* Run_prediction takes the team names from the two drop-down menus, and asks the backend to run prediction on them.
+ * It then shows the result on the page
+ */
 async function run_prediction(){
     let team1 = document.getElementById("team1Select").value;
     let team2 = document.getElementById("team2Select").value;
-    console.log("Predicting the winner", team1, team2);
     let bodyObject = {
         team1,
         team2
     }
     let bodyjson = JSON.stringify(bodyObject, undefined, 4);
-    let response = await fetch("http://localhost:8090/prediction", {
+    let response = await fetch("/prediction", {
         method: "POST",
         body: bodyjson
     });
@@ -170,10 +188,14 @@ async function run_prediction(){
         let result = response.json();
         document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
     }
-}    
+    else{
+        document.getElementById("predictionWinner").textContent = "Prediction could not be run. More data may be needed";
+    }
+}
 
+/* The statistics function fetches information about the statistics from the current regressor on the backend */
 async function statistics(){
-    let response = await fetch("http://localhost:8090/statistics");
+    let response = await fetch("/statistics");
     if(response.status == 200){
         let data = await response.json();
         return data;
@@ -183,3 +205,42 @@ async function statistics(){
     }
 }
 
+/* Render_statistics renders the statistics on the website. */
+async function render_statistics(){
+    /* Change the button text to "refreshing..." and disable it */
+    await refresh_regressor();
+    let refreshButton = document.getElementById("statisticsRefresh");
+    let originalText = refreshButton.textContent;
+    refreshButton.textContent = "refreshing...";
+    refreshButton.disabled = true;
+
+    let stats = await statistics();
+    if(stats != null){
+        let rSquared = document.getElementById("stats_rSquared");
+        let pearson = document.getElementById("stats_pearson");
+        let rss = document.getElementById("stats_rss");
+        let sigma = document.getElementById("stats_sigma");
+        let sxx = document.getElementById("stats_sxx");
+        let sxy = document.getElementById("stats_sxy");
+        let syy = document.getElementById("stats_syy");
+        rSquared.textContent = stats.r_squared.toFixed(3);
+        pearson.textContent = stats.pearsons_coeficcient.toFixed(3);
+        rss.textContent = stats.rss.toFixed(3);
+        sigma.textContent = stats.sigma.toFixed(3);
+        sxx.textContent = stats.summary_statics.sxx.toFixed(3);
+        sxy.textContent = stats.summary_statics.sxy.toFixed(3);
+        syy.textContent = stats.summary_statics.syy.toFixed(3);
+    }
+    else{
+        document.getElementById("statisticsError").textContent = "Not enough data";
+    }
+    refreshButton.textContent = originalText;
+    refreshButton.disabled = false;
+}
+
+/* This function triggers a refresh of the regressor object on the backend. */
+async function refresh_regressor(){
+    await fetch("/refreshRegressor", {
+        method: "POST"
+    });
+}

@@ -617,7 +617,7 @@ async function scrape_n_matches(amount_of_matches) {
 
 /* This functions performs a PUT request to store the match on the backend */
 async function save_data(match_data){
-    let result = await fetch("http://localhost:8090/store", {
+    let result = await fetch("/store", {
         method: "PUT",
         headers: {
             "content-type": "application/json",
@@ -631,7 +631,7 @@ async function save_data(match_data){
  * being rate limited
  */
 async function fetch_link(link){
-    let result = await fetch("http://localhost:8090/fetch", {
+    let result = await fetch("/fetch", {
         method: "POST",
         body: link
     });

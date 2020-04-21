@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        Aalborg uni gruppe DAT2 C1-20 yeee
+        CS:GO scraper and match predictor
     </header>
     <div id="mainContent">
         <nav>
@@ -75,11 +75,58 @@
             <label for="team2Select">Team 2</label>
             <select id="team2Select"></select>
             <button id="team1vsteam2">Predict winner</button>
+            <button id="refreshRegressor">Refresh the regression model &#x27f2; &#8634; &#x1f5d8;</button>
             <h2 id="predictionWinner"></h2>
         </main>
         <main id="main4">
-            <p>heyy4</p>
+            <button id="statisticsRefresh">Refresh &#x27f2; &#8634; &#x1f5d8;</button>
+            <b id="statisticsError"></b>
+            <table id="statisticsTable">
+                <tr>
+                    <th>Statistics</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>R&sup2;</td>
+                    <td id="stats_rSquared"></td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Pearsons-coefficient</td>
+                    <td id="stats_pearson"></td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>RSS</td>
+                    <td id="stats_rss"></td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Sigma &sigma;</td>
+                    <td id="stats_sigma"></td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Summary SXX</td>
+                    <td id="stats_sxx"></td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Summary SXY</td>
+                    <td id="stats_sxy"></td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Summary SYY</td>
+                    <td id="stats_syy"></td>
+                    <td>Description</td>
+                </tr>
+            </table>
         </main>
     </div>
+    <footer>
+            Aalborg university group DAT2 C1-20 ©
+    </footer>
 </body>
 </html>

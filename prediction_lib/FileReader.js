@@ -20,7 +20,6 @@ class match_data {
         let raw_fitting_dat = this.read_in_data(files);
         let filtered_fitting_data =  this.filter_for_D_data(raw_fitting_dat);
         this.fitting = filtered_fitting_data;
-        //this.testing = filtered_testing_data;
     }
 
     read_in_files() {

@@ -18,10 +18,23 @@ let https = require('https');
 let http = require('http');
 let mathjs = require("mathjs");
 
-/* Import the required javascript*/
+/* Import the required javascript for the regression */
 let regression = require("../prediction_lib/index.js");
 
+/* Global variable which stores the regressor object */
+let regressor = null;
 
+/* Create the data/ and cache/ folders if they dont exist. */
+fs.mkdirSync("./data", {recursive: true}, err => {
+    if(err) {
+        console.log(err);
+    }
+});
+fs.mkdirSync("./cache", {recursive: true}, err => {
+    if(err) {
+        console.log(err);
+    }
+});
 
 /* Create the http server itself, which will handle incomming HTTP requests on port 8090 */
 let server = http.createServer((request, response) => {
@@ -43,6 +56,9 @@ let server = http.createServer((request, response) => {
     }
     else if(request.url == "/statistics" && request.method == "GET"){
         do_statistics(request, response);
+    }
+    else if(request.url == "/regressorRefresh" && request.method == "POST"){
+        refresh_regressor(request, response);
     }
     /* If none of the specific cases matched, we try to serve a file from the static folder */
     else if(request.method == "GET"){
@@ -155,6 +171,7 @@ function fetch_website(request, response){
         response.end();
     });
 }
+
 /* The serve file function handles all other endpoints by trying to lookup the resource
  * named by the url in the static/ folder. If no file is found, a 404 is returned. */
 function serve_file(request, response){
@@ -262,11 +279,18 @@ function sleep(milliseconds){
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-/* Prediction code starts here. Revisit when its ready*/
-
+/* The do_prediction function handles requests on /prediction, and it tries to predict the winner of two matches
+ * which are given in the request body.
+ */
 function do_prediction(request, response){
-    let regressor = new regression.Regressor("data/");
-    console.log(regressor);
+    if (regressor == null) {
+        regressor = make_regressor();
+        if(regressor == null){
+            response.writeHead(500);
+            response.end();
+            return;
+        }
+    }
     let body = [];
     request.on("data", chunk => {
         body.push(chunk);
@@ -287,10 +311,42 @@ function do_prediction(request, response){
     });
 }
 
+/* The do_statistics function returns the statistics object from the current regressor as JSON.
+ */
 function do_statistics(request, response){
-    let regressor = new regression.Regressor("data/");
+    if (regressor == null) {
+        regressor = make_regressor();
+        if(regressor == null){
+            response.writeHead(500);
+            response.end();
+            return;
+        }
+    }
     let statistics = regressor.statistics;
     let statisticsjson = JSON.stringify(statistics, undefined, 4);
     response.write(statisticsjson);
     response.end();
+}
+
+/* Refresh regressor refreshes the regressor :D */
+function refresh_regressor(request, response){
+    regressor = make_regressor();
+    if(regressor == null){
+        response.writeHead(500);
+        response.end();
+        return;
+    }
+    response.writeHead(200);
+    response.end();
+}
+
+function make_regressor(){
+    try {
+        let reg = new regression.Regressor("data/");
+        return reg;
+    }
+    catch (e){
+        console.log(e);
+        return null;
+    }
 }
