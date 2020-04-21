@@ -43,7 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let refreshStatistics = document.getElementById("statisticsRefresh");
     refreshStatistics.addEventListener("click", render_statistics);
 
-    /* The prediction button is setup so that the prediction runs when clicked*/
+    /* The refresh regressor button triggers a refresh of the regressor object on the server */
+    let refreshRegressor = document.getElementById("refreshRegressor");
+    refreshRegressor.addEventListener("click", async () => {
+        let originalText = refreshRegressor.textContent;
+        refreshRegressor.textContent = "Refreshing...";
+        refreshRegressor.disable = true;
+        await refresh_regressor();
+        refreshRegressor.textContent = originalText;
+        refreshRegressor.disable = false;
+    });
+
+    /* The prediction button is setup so that the prediction runs when clicked */
     let predictionButton = document.getElementById("team1vsteam2");
     predictionButton.addEventListener("click", run_prediction);
 })
@@ -175,7 +186,7 @@ async function run_prediction(){
         let result = response.json();
         document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
     }
-}    
+}
 
 async function statistics(){
     let response = await fetch("http://localhost:8090/statistics");
@@ -190,6 +201,7 @@ async function statistics(){
 
 async function render_statistics(){
     /* Change the button text to "refreshing..." and disable it */
+    await refresh_regressor();
     let refreshButton = document.getElementById("statisticsRefresh");
     let originalText = refreshButton.textContent;
     refreshButton.textContent = "refreshing...";
@@ -213,4 +225,10 @@ async function render_statistics(){
 
     refreshButton.textContent = originalText;
     refreshButton.disabled = false;
+}
+
+async function refresh_regressor(){
+    await fetch("http://localhost:8090/refreshRegressor", {
+        method: "POST"
+    });
 }

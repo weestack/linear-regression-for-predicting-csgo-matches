@@ -21,7 +21,8 @@ let mathjs = require("mathjs");
 /* Import the required javascript*/
 let regression = require("../prediction_lib/index.js");
 
-
+/* Global variable which stores the regressor object */
+let regressor = null;
 
 /* Create the http server itself, which will handle incomming HTTP requests on port 8090 */
 let server = http.createServer((request, response) => {
@@ -43,6 +44,9 @@ let server = http.createServer((request, response) => {
     }
     else if(request.url == "/statistics" && request.method == "GET"){
         do_statistics(request, response);
+    }
+    else if(request.url == "/regressorRefresh" && request.method == "POST"){
+        refresh_regressor(request, response);
     }
     /* If none of the specific cases matched, we try to serve a file from the static folder */
     else if(request.method == "GET"){
@@ -265,8 +269,9 @@ function sleep(milliseconds){
 /* Prediction code starts here. Revisit when its ready*/
 
 function do_prediction(request, response){
-    let regressor = new regression.Regressor("data/");
-    console.log(regressor);
+    if (regressor == null) {
+        regressor = new regression.Regressor("data/");
+    }
     let body = [];
     request.on("data", chunk => {
         body.push(chunk);
@@ -288,9 +293,17 @@ function do_prediction(request, response){
 }
 
 function do_statistics(request, response){
-    let regressor = new regression.Regressor("data/");
+    if (regressor == null) {
+        regressor = new regression.Regressor("data/");
+    }
     let statistics = regressor.statistics;
     let statisticsjson = JSON.stringify(statistics, undefined, 4);
     response.write(statisticsjson);
+    response.end();
+}
+
+function refresh_regressor(request, response){
+    regressor = new regression.Regressor("data/");
+    response.writeHead(200);
     response.end();
 }
