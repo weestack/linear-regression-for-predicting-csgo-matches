@@ -188,6 +188,9 @@ async function run_prediction(){
         let result = response.json();
         document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
     }
+    else{
+        document.getElementById("predictionWinner").textContent = "Prediction could not be run. More data may be needed";
+    }
 }
 
 /* The statistics function fetches information about the statistics from the current regressor on the backend */
@@ -212,21 +215,25 @@ async function render_statistics(){
     refreshButton.disabled = true;
 
     let stats = await statistics();
-    let rSquared = document.getElementById("stats_rSquared");
-    let pearson = document.getElementById("stats_pearson");
-    let rss = document.getElementById("stats_rss");
-    let sigma = document.getElementById("stats_sigma");
-    let sxx = document.getElementById("stats_sxx");
-    let sxy = document.getElementById("stats_sxy");
-    let syy = document.getElementById("stats_syy");
-    rSquared.textContent = stats.r_squared.toFixed(3);
-    pearson.textContent = stats.pearsons_coeficcient.toFixed(3);
-    rss.textContent = stats.rss.toFixed(3);
-    sigma.textContent = stats.sigma.toFixed(3);
-    sxx.textContent = stats.summary_statics.sxx.toFixed(3);
-    sxy.textContent = stats.summary_statics.sxy.toFixed(3);
-    syy.textContent = stats.summary_statics.syy.toFixed(3);
-
+    if(stats != null){
+        let rSquared = document.getElementById("stats_rSquared");
+        let pearson = document.getElementById("stats_pearson");
+        let rss = document.getElementById("stats_rss");
+        let sigma = document.getElementById("stats_sigma");
+        let sxx = document.getElementById("stats_sxx");
+        let sxy = document.getElementById("stats_sxy");
+        let syy = document.getElementById("stats_syy");
+        rSquared.textContent = stats.r_squared.toFixed(3);
+        pearson.textContent = stats.pearsons_coeficcient.toFixed(3);
+        rss.textContent = stats.rss.toFixed(3);
+        sigma.textContent = stats.sigma.toFixed(3);
+        sxx.textContent = stats.summary_statics.sxx.toFixed(3);
+        sxy.textContent = stats.summary_statics.sxy.toFixed(3);
+        syy.textContent = stats.summary_statics.syy.toFixed(3);
+    }
+    else{
+        document.getElementById("statisticsError").textContent = "Not enough data";
+    }
     refreshButton.textContent = originalText;
     refreshButton.disabled = false;
 }

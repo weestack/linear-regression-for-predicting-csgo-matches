@@ -284,7 +284,12 @@ function sleep(milliseconds){
  */
 function do_prediction(request, response){
     if (regressor == null) {
-        regressor = new regression.Regressor("data/");
+        regressor = make_regressor();
+        if(regressor == null){
+            response.writeHead(500);
+            response.end();
+            return;
+        }
     }
     let body = [];
     request.on("data", chunk => {
@@ -310,7 +315,12 @@ function do_prediction(request, response){
  */
 function do_statistics(request, response){
     if (regressor == null) {
-        regressor = new regression.Regressor("data/");
+        regressor = make_regressor();
+        if(regressor == null){
+            response.writeHead(500);
+            response.end();
+            return;
+        }
     }
     let statistics = regressor.statistics;
     let statisticsjson = JSON.stringify(statistics, undefined, 4);
@@ -320,7 +330,23 @@ function do_statistics(request, response){
 
 /* Refresh regressor refreshes the regressor :D */
 function refresh_regressor(request, response){
-    regressor = new regression.Regressor("data/");
+    regressor = make_regressor();
+    if(regressor == null){
+        response.writeHead(500);
+        response.end();
+        return;
+    }
     response.writeHead(200);
     response.end();
+}
+
+function make_regressor(){
+    try {
+        let reg = new regression.Regressor("data/");
+        return reg;
+    }
+    catch (e){
+        console.log(e);
+        return null;
+    }
 }
