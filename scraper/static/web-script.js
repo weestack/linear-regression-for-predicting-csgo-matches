@@ -114,14 +114,14 @@ async function render_data_status(){
     }
 
     /* Add all the teams as options to both drop down menus.*/
-    let teams = data.teams.sort();
-    for(let i in teams){
+    let teams = data.teams;
+    for(let teamName in teams) {
         let li = document.createElement("li");
-        li.textContent = teams[i];
+        li.textContent = teamName;
         teamsList.appendChild(li);
         let option = document.createElement("option");
-        option.value = teams[i];
-        option.textContent = teams[i];
+        option.value = teams[teamName];
+        option.textContent = teamName;
         dropDownMenu1.appendChild(option);
         dropDownMenu2.appendChild(option.cloneNode(true));
     }
@@ -185,8 +185,17 @@ async function run_prediction(){
         body: bodyjson
     });
     if(response.status == 200){
-        let result = response.json();
-        document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${result.winner} with a certainty of ${result.probability * 100}%`;
+        let result = await response.json();
+        let selection = null;
+        let winner = null;
+        if (result.winner == team1) {
+            selection = document.getElementById("team1Select");
+        } else {
+            selection = document.getElementById("team2Select");
+        }
+        winner = selection.options[selection.selectedIndex].text;
+
+        document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${winner} with a certainty of ${(result.probability * 100).toFixed(2)}%`;
     }
     else{
         document.getElementById("predictionWinner").textContent = "Prediction could not be run. More data may be needed";
@@ -240,7 +249,7 @@ async function render_statistics(){
 
 /* This function triggers a refresh of the regressor object on the backend. */
 async function refresh_regressor(){
-    await fetch("/refreshRegressor", {
+    return await fetch("/refreshRegressor", {
         method: "POST"
     });
 }

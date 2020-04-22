@@ -239,9 +239,9 @@ class Multi_Linear_Regression extends Regression {
         return math_js.matrix(array);
         /*
         let scalar = (1/(number_of_points - 1));
-        
+
         return math_js.multiply(scalar, output_matrix);
-        */ 
+        */
     }
 
 
@@ -260,7 +260,7 @@ class Multi_Linear_Regression extends Regression {
         let b_b = math_js.multiply(b_ssx, coe);
 
         return math_js.subtract(SYY, b_b);
-        
+
     }
 
     calculate_yi(coeficcients, point){
@@ -290,7 +290,7 @@ class Multi_Linear_Regression extends Regression {
 
             total_sum += (y_array[i][0] - mean_y)**2;
         }
-        
+
         return (total_sum - sum_our_prediction) / total_sum;
     }
 

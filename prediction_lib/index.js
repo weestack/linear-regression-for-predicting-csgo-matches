@@ -12,41 +12,39 @@ class Regressor {
 
     constructor(path_to_data_folder) {
         this.regression_obj = new Multi_Linear_Regression;
-        /* Load in matches, binds them to prediction and independent */
+        /* Load in matches, binds them to prediction and independent.
+         * Also binds the match data to mdata */
         this.load_matches(path_to_data_folder);
-        //console.log(this.independent)
-        //console.log("this is pred! ",this.prediction)
-        //console.log("this is inde", this.independent)
+
         /* Train with the loaded matches */
         this.coefficients = this.train_regressor();
-        this.cleaned_coeficcients = math_js.transpose(this.coefficients).toArray();
+        this.cleaned_coeficcients = math_js.transpose(this.coefficients).toArray()[0];
         /* Init statistics */
         this.bind_statistics();
     }
 
     load_matches(path) {
-        let mdata = new match_data(path)
-        let data = mdata.fitting;
+        let mdata = new match_data(path);
+        this.mdata = mdata;
+
+        let match_results = mdata.match_results;
         this.prediction = Array();
         this.independent = Array();
 
-        for (let i = data.length-1; i >= 0; i--) {
-            let [winner, looser, index] = data[i];
+        for (let i = 0; i < match_results.length; i++) {
+            let [team1, team2, index] = match_results[i];
             this.prediction[i] = [index];
-            let datapoints = mdata.cached_team[winner].length
+            let datapoints = mdata.cached_team[team1].length
             this.independent[i] = Array();
 
             for (let j = 0; j < datapoints; j++) {
-                this.independent[i][j] = mdata.cached_team[winner][j] - mdata.cached_team[looser][j];
-                //console.log("j ", j, "; i ", i, "; winner ", mdata.cached_team[winner][j], "winner_index ",winner, " ;looser ", mdata.cached_team[looser][j],"looser_index ",looser, "; independent ",this.independent[i][j]);
+                this.independent[i][j] = mdata.cached_team[team1][j] - mdata.cached_team[team2][j];
             }
 
         }
-        //console.log(this.prediction)
-        //console.log(this.independent)
+
         this.prediction = math_js.matrix(this.prediction);
         this.independent = math_js.matrix(this.independent);
-
     }
 
     train_regressor() {
@@ -54,19 +52,33 @@ class Regressor {
         return coefficients;
     }
 
-    get_prediction_label(matches) {
-        return math_js.column(matches, 0);
-    }
+    predict_winner(team1, team2) {
+        /* Team_1 and Team_2 are supposed to be the IDs of the teams competing */
+        let team1data = this.mdata.cached_team[team1];
+        let team2data = this.mdata.cached_team[team2];
 
-    get_independent_variables(matches) {
-        let all = math_js.transpose(matches).toArray()
-        all.shift();
-        return math_js.transpose(math_js.matrix(all))
-    }
+        let independent_variables = [];
+        for (let i = 0; i < team1data.length; i++) {
+            independent_variables[i] = team1data[i] - team2data[i];
+        }
 
-    predict_winner(team_1, team_2) {
-        /* Team_1 and Team_2 are supposed to be the string names of the teams competing */
-        return [team_1, 1];
+        let coefficients = this.cleaned_coeficcients;
+        let output = coefficients[0]; /* initialise the prediction to B0 */
+        for (let n = 1; n < coefficients.length; n++) {
+            output += independent_variables[n-1] * coefficients[n];
+        }
+
+        if (output >= 0.5) {
+            return {
+                winner: team1,
+                how_sure: output,
+            }
+        } else {
+            return {
+                winner: team2,
+                how_sure: 1-output,
+            }
+        }
     }
 
     bind_statistics() {
@@ -103,27 +115,46 @@ class Regressor {
         return 1;
 
     }
-
-    calculate_yi(coeficcients, point) {
-        /* use later on, as helper function predict team winner! */
-        let coe = coeficcients.toArray();
-
-        let b_0 = coe.shift()[0];
-
-        let coeffi = math_js.matrix(coe);
-
-        let value_without_b0 = math_js.multiply(point, coeffi).toArray()[0][0];
-
-        return b_0 + value_without_b0;
-    }
-
 }
 
+/* Test code which should be removed */
 let regressor = new Regressor("../scraper/data");
+let coeficcients = regressor.cleaned_coeficcients;
+/*
 console.log("coeficcients", regressor.cleaned_coeficcients)
 console.log("sumary ", regressor.statistics.summary_statics)
 console.log("rss,", regressor.statistics.rss)
 
 console.log("r**", regressor.statistics.r_squared)
 console.log("pearson ", regressor.statistics.pearsons_coeficcient)
+*/
+let match_count = regressor.independent.size()[0];
+let correct = 0;
+let wrong = 0;
+for (let i = 0; i < match_count; i++) {
+	let match = math_js.row(regressor.independent, i).toArray()[0];
+	let real_result = math_js.row(regressor.prediction, i);
+	let calculated_result = coeficcients[0];
+	for (let bn = 1; bn < coeficcients.length; bn++) {
+	    //console.log("Temp: ", calculated_result);
+	    calculated_result += match[bn-1] * coeficcients[bn];
+	}
+	if (calculated_result >= 0.5) {
+	    calculated_result = 1;
+	} else {
+	    calculated_result = 0;
+	}
+
+	if (real_result >= 0.5) {
+	    real_result = 1;
+	} else {
+	    real_result = 0;
+	}
+	if (calculated_result == real_result) {
+	    correct++;
+	} else {
+	    wrong++;
+	}
+}
+console.log(`By testing with all the input data, the program got ${correct} right, and ${wrong} wrong (a rate of ${(correct * 100/ match_count).toFixed(2)}%)`);
 module.exports = {Regressor: Regressor};

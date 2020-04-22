@@ -16,8 +16,10 @@ const csvWriter = createCsvWriter({
    header: [
      {id: 'winner', title: 'winner'},
      {id: 'powerscore_delta', title: 'powerscore_delta'},
-     {id: 'skillset_delta', title: 'skillset_delta'},
      {id: 'win_loose_delta', title: 'win_loose_delta'},
+     {id: 'kda_delta', title: 'kda_delta'},
+     {id: 'headshot_delta', title: 'headshot_delta'},
+     {id: 'time_in_team_delta', title: 'time_in_team_delta'},
    ]
  });
 
@@ -32,9 +34,11 @@ const csv_data = Array(csv_rows);
 for(let i = 0; i < csv_rows; i++){
    csv_data[i] = {
        winner: prediction.subset(math_js.index(i, 0)),
-       powerscore_delta: independt.subset(math_js.index(i, 1 - 1)),
-       skillset_delta: independt.subset(math_js.index(i, 2 - 1)),
-       win_loose_delta: independt.subset(math_js.index(i, 3 - 1)),
+       powerscore_delta: independt.subset(math_js.index(i, 0)),
+       win_loose_delta: independt.subset(math_js.index(i, 1)),
+       kda_delta: independt.subset(math_js.index(i, 2)),
+       headshot_delta: independt.subset(math_js.index(i, 3)),
+       time_in_team_delta: independt.subset(math_js.index(i, 4)),
    }
 }
 

@@ -81,8 +81,7 @@ function data_status(request, response){
         return name.endsWith(".json");
     });
 
-    /* The team names are put into a set so there are no duplicates */
-    let teams = new Set();
+    let teams = {};
     let dataFolderSize = 0;
 
     /* newest and oldest match are set to some initial values which are almost
@@ -96,8 +95,8 @@ function data_status(request, response){
         dataFolderSize += fileStats.size;
         let matchData = fs.readFileSync("data/" + dataFiles[i]);
         let matchJSON = JSON.parse(matchData);
-        teams.add(matchJSON[0].name);
-        teams.add(matchJSON[1].name);
+        teams[matchJSON[0].name] = matchJSON[0].id;
+        teams[matchJSON[1].name] = matchJSON[1].id;
         let matchDate = new Date(matchJSON.date);
         if(matchDate.getTime() > newestMatch.getTime()){
             newestMatch = matchDate;
@@ -115,8 +114,8 @@ function data_status(request, response){
 
     let data = {
         amountOfMatches: dataFiles.length,
-        amountOfTeams: teams.size,
-        teams: Array.from(teams),
+        amountOfTeams: Object.keys(teams).length,
+        teams: teams,
         dataFolderSize: (dataFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
         newestMatch,
         oldestMatch,
@@ -300,10 +299,10 @@ function do_prediction(request, response){
         let bodyjson = JSON.parse(body);
         let team1 = bodyjson.team1;
         let team2 = bodyjson.team2;
-        let [prediction, probability] = regressor.predict_winner(team1, team2);
+        let result = regressor.predict_winner(team1, team2);
         let responseobject = {
-            winner: prediction,
-            probability,
+            winner: result.winner,
+            probability: result.how_sure,
         }
         let responsejson = JSON.stringify(responseobject, undefined, 4);
         response.write(responsejson);

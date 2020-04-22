@@ -91,7 +91,13 @@ function D3(team_id, offset){
                     },
                     winner: {
                         location: "div.team-won",
-                        handle: element => {return element.textContent},
+                        handle: element => {
+                            if (element != null) {
+                                return element.textContent
+                            } else {
+                                return null;
+                            }
+                        },
                     },
                 },
                 handle: element => {
@@ -254,7 +260,12 @@ function D9(player_id, player_name) {
         url: "https://www.hltv.org/player/" + player_id + "/" + player_name + "#tab-teamsBox",
         location: "div.tab-content > div.highlighted-stats-box >div.highlighted-stat:nth-child(2) > div.stat",
         handle: element => {
-            return parseInt(element.textContent);
+            let parsed = parseInt(element.textContent);
+            if (isNaN(parsed)) {
+                throw new Error("Could not parse int");
+            } else {
+                return parsed;
+            }
         },
     }
 }
@@ -288,6 +299,9 @@ function team_players(team_id, team_name){
                 let name = linkParts[0];
                 let id = linkParts[1];
                 players[id] = name;
+            }
+            if (Object.keys(players).length == 0) {
+                throw new Error("No players!");
             }
             return players;
         }
@@ -439,7 +453,7 @@ async function run_scraper(scraper, dom){
                     result[s] = await run_scraper(scrapers[s], elements[i]);
                 } catch (error) {
                     console.log(error);
-                    result[s] = null;
+                    throw error
                 }
             }
             results.push(result);
@@ -457,13 +471,12 @@ async function run_scraper(scraper, dom){
             return scraper.handle(results);
         }
         else {
-
             return scraper.handle(results[0]);
         }
     }
     catch(e){
         console.log(e);
-        return null;
+        throw e;
     }
 }
 
