@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     refreshRegressor.addEventListener("click", async () => {
         let originalText = refreshRegressor.textContent;
         refreshRegressor.textContent = "Refreshing...";
-        refreshRegressor.disable = true;
+        refreshRegressor.disabled = true;
         await refresh_regressor();
         refreshRegressor.textContent = originalText;
-        refreshRegressor.disable = false;
+        refreshRegressor.disabled = false;
     });
 
     /* The prediction button is setup so that the prediction runs when clicked */
@@ -217,11 +217,12 @@ async function statistics(){
 /* Render_statistics renders the statistics on the website. */
 async function render_statistics(){
     /* Change the button text to "refreshing..." and disable it */
-    await refresh_regressor();
     let refreshButton = document.getElementById("statisticsRefresh");
     let originalText = refreshButton.textContent;
     refreshButton.textContent = "refreshing...";
     refreshButton.disabled = true;
+
+    await refresh_regressor();
 
     let stats = await statistics();
     if(stats != null){

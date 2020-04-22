@@ -57,7 +57,7 @@ let server = http.createServer((request, response) => {
     else if(request.url == "/statistics" && request.method == "GET"){
         do_statistics(request, response);
     }
-    else if(request.url == "/regressorRefresh" && request.method == "POST"){
+    else if(request.url == "/refreshRegressor" && request.method == "POST"){
         refresh_regressor(request, response);
     }
     /* If none of the specific cases matched, we try to serve a file from the static folder */
