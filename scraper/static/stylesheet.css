@@ -2,6 +2,16 @@ html {
     height: 100%;
 }
 
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+table{
+    margin-top: 1em;
+}
+
 main {
     width: 100%;
     padding: 2em;
@@ -26,6 +36,11 @@ header {
     font-size: 2em;
     padding-bottom: 7px;
     border-bottom: 2px solid black;
+}
+
+footer {
+    border-top: 2px solid black;
+    text-align: center;
 }
 
 nav {

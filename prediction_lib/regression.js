@@ -200,6 +200,7 @@ class Multi_Linear_Regression extends Regression {
 
     }
     estimate_best_coeficcients(x, y){
+        /* Estimated least squares */
         let decomp_prediction = this.decomposition(y);
         let decomp_independent =  this.decomposition(x);
 
@@ -222,6 +223,7 @@ class Multi_Linear_Regression extends Regression {
     }
 
     summary_statictis(independent, prediction){
+        /* reference page 57 apllied linear algebra */
         let [number_of_points, _] = independent.size()
 
         let decomp_independent = this.decomposition(independent);
@@ -237,9 +239,9 @@ class Multi_Linear_Regression extends Regression {
         return math_js.matrix(array);
         /*
         let scalar = (1/(number_of_points - 1));
-        
+
         return math_js.multiply(scalar, output_matrix);
-        */ 
+        */
     }
 
 
@@ -258,7 +260,7 @@ class Multi_Linear_Regression extends Regression {
         let b_b = math_js.multiply(b_ssx, coe);
 
         return math_js.subtract(SYY, b_b);
-        
+
     }
 
     calculate_yi(coeficcients, point){
@@ -288,7 +290,7 @@ class Multi_Linear_Regression extends Regression {
 
             total_sum += (y_array[i][0] - mean_y)**2;
         }
-        
+
         return (total_sum - sum_our_prediction) / total_sum;
     }
 
@@ -299,7 +301,7 @@ class Multi_Linear_Regression extends Regression {
         return math_js.multiply(sigmoid_squared, math_js.inv(inde_times_inde_trans));
     }
 
-    sigmoid_squared(rss, independent){
+    sigma_squared(rss, independent){
         let [length_of_cases, amount_of_independent_variables] = independent.size();
 
         return rss/(length_of_cases - amount_of_independent_variables);

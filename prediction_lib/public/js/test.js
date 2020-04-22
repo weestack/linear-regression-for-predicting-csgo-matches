@@ -19,7 +19,7 @@ var yAxis = d3.axisLeft()
 
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-d3.csv("data/flowers.csv", function(error, data) {
+d3.csv("data/out.csv", function(error, data) {
     if (error) throw error;
 
     var domainByTrait = {},

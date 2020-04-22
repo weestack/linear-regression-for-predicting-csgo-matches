@@ -18,13 +18,23 @@ let https = require('https');
 let http = require('http');
 let mathjs = require("mathjs");
 
-/* Import the required javascript*/
-let filereader = require("../prediction_lib/FileReader.js");
-let regression = require("../prediction_lib/regression.js");
-let match_data = filereader.match_data;
-let linearRegression = new regression.Multi_Linear_Regression;
+/* Import the required javascript for the regression */
+let regression = require("../prediction_lib/index.js");
 
+/* Global variable which stores the regressor object */
+let regressor = null;
 
+/* Create the data/ and cache/ folders if they dont exist. */
+fs.mkdirSync("./data", {recursive: true}, err => {
+    if(err) {
+        console.log(err);
+    }
+});
+fs.mkdirSync("./cache", {recursive: true}, err => {
+    if(err) {
+        console.log(err);
+    }
+});
 
 /* Create the http server itself, which will handle incomming HTTP requests on port 8090 */
 let server = http.createServer((request, response) => {
@@ -43,6 +53,12 @@ let server = http.createServer((request, response) => {
     }
     else if(request.url == "/prediction" && request.method == "POST"){
         do_prediction(request, response);
+    }
+    else if(request.url == "/statistics" && request.method == "GET"){
+        do_statistics(request, response);
+    }
+    else if(request.url == "/regressorRefresh" && request.method == "POST"){
+        refresh_regressor(request, response);
     }
     /* If none of the specific cases matched, we try to serve a file from the static folder */
     else if(request.method == "GET"){
@@ -65,8 +81,7 @@ function data_status(request, response){
         return name.endsWith(".json");
     });
 
-    /* The team names are put into a set so there are no duplicates */
-    let teams = new Set();
+    let teams = {};
     let dataFolderSize = 0;
 
     /* newest and oldest match are set to some initial values which are almost
@@ -80,8 +95,8 @@ function data_status(request, response){
         dataFolderSize += fileStats.size;
         let matchData = fs.readFileSync("data/" + dataFiles[i]);
         let matchJSON = JSON.parse(matchData);
-        teams.add(matchJSON[0].name);
-        teams.add(matchJSON[1].name);
+        teams[matchJSON[0].name] = matchJSON[0].id;
+        teams[matchJSON[1].name] = matchJSON[1].id;
         let matchDate = new Date(matchJSON.date);
         if(matchDate.getTime() > newestMatch.getTime()){
             newestMatch = matchDate;
@@ -99,8 +114,8 @@ function data_status(request, response){
 
     let data = {
         amountOfMatches: dataFiles.length,
-        amountOfTeams: teams.size,
-        teams: Array.from(teams),
+        amountOfTeams: Object.keys(teams).length,
+        teams: teams,
         dataFolderSize: (dataFolderSize / Math.pow(1024, 2)).toFixed(2) + "MB",
         newestMatch,
         oldestMatch,
@@ -142,7 +157,7 @@ function fetch_website(request, response){
     let body = [];
     request.on("data", chunk => {
         body.push(chunk);
-    })
+    });
     request.on("end", async () => {
         body = Buffer.concat(body).toString();
         /* The actual data from the website is fetched using the get function. */
@@ -155,6 +170,7 @@ function fetch_website(request, response){
         response.end();
     });
 }
+
 /* The serve file function handles all other endpoints by trying to lookup the resource
  * named by the url in the static/ folder. If no file is found, a 404 is returned. */
 function serve_file(request, response){
@@ -254,7 +270,7 @@ function cache_lookup(link){
  * In theory there might be collisions, but in practice there is not.
  */
 function cache_filename(link){
-    return link.replace(/\//g, "_").replace(/:/g, ".").replace(/\?/g, "q").replace(/&/g, "AND")
+    return link.replace(/\//g, "_").replace(/:/g, ".").replace(/\?/g, "q").replace(/&/g, "AND").trim();
 }
 
 /* sleep is a promise which resolves after some milliseconds. It allows us to sleep in async code. */
@@ -262,24 +278,74 @@ function sleep(milliseconds){
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-/* Prediction code starts here. Revisit when its ready*/
-
+/* The do_prediction function handles requests on /prediction, and it tries to predict the winner of two matches
+ * which are given in the request body.
+ */
 function do_prediction(request, response){
+    if (regressor == null) {
+        regressor = make_regressor();
+        if(regressor == null){
+            response.writeHead(500);
+            response.end();
+            return;
+        }
+    }
+    let body = [];
+    request.on("data", chunk => {
+        body.push(chunk);
+    });
+    request.on("end", () => {
+        body = Buffer.concat(body).toString();
+        let bodyjson = JSON.parse(body);
+        let team1 = bodyjson.team1;
+        let team2 = bodyjson.team2;
+        let result = regressor.predict_winner(team1, team2);
+        let responseobject = {
+            winner: result.winner,
+            probability: result.how_sure,
+        }
+        let responsejson = JSON.stringify(responseobject, undefined, 4);
+        response.write(responsejson);
+        response.end();
+    });
+}
 
-    let data = new match_data("data");
-    let [all, test] = data.filter_all_files();
-    all = mathjs.matrix(all);
-    let prediction = mathjs.column(all, 0);
-    all = mathjs.transpose(all).toArray();
-    all.shift();
-    let independt = mathjs.transpose(mathjs.matrix(all));
-    let coefficients = linearRegression.estimate_best_coeficcients(independt, prediction);
-    let coe = coeficcients.toArray();
-    let b_0 = coe.shift()[0];
-    let coeffi = mathjs.matrix(coe);
-    let value_without_b0 = mathjs.multiply(point, coeffi).toArray()[0][0];
-    let result = b_0 + value_without_b0;
+/* The do_statistics function returns the statistics object from the current regressor as JSON.
+ */
+function do_statistics(request, response){
+    if (regressor == null) {
+        regressor = make_regressor();
+        if(regressor == null){
+            response.writeHead(500);
+            response.end();
+            return;
+        }
+    }
+    let statistics = regressor.statistics;
+    let statisticsjson = JSON.stringify(statistics, undefined, 4);
+    response.write(statisticsjson);
+    response.end();
+}
+
+/* Refresh regressor refreshes the regressor :D */
+function refresh_regressor(request, response){
+    regressor = make_regressor();
+    if(regressor == null){
+        response.writeHead(500);
+        response.end();
+        return;
+    }
     response.writeHead(200);
     response.end();
+}
 
+function make_regressor(){
+    try {
+        let reg = new regression.Regressor("data/");
+        return reg;
+    }
+    catch (e){
+        console.log(e);
+        return null;
+    }
 }

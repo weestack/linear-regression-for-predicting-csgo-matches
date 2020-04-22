@@ -6,3 +6,4 @@ scraper/data/*
 prediction_lib/actual_data
 # .DS_Store is a mac file, that automaticly gets added to a folder in use... some caching i guess.
 .DS_Store
+goals
