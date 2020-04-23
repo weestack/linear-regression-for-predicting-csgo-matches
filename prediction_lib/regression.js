@@ -21,7 +21,10 @@ class Regression {
     }
 
     normalize ( column ) {
-        /* normalize = (x - x_min)/(x_max-x_min) */
+        /* normalize = (x - x_min)/(x_max-x_min)
+        * Normalization reduces all datapoints to a number between 0 and 1.
+        * This makes it easier to get an overview from a scatterplot matrix, with multiple data, being with in same range.
+        */
         let new_column = Array();
         let min = Math.min.apply(Math, column);
         let max = Math.max.apply(Math, column);
@@ -34,24 +37,6 @@ class Regression {
 
 
     }
-
-
-    cross_deviation (x, mean_x, y, mean_y) {
-        /* Formula sum(x*y) - n*mean(x)*mean(y) */
-        if (x.length !== y.length) {
-            throw "x, and y should be of same length, error!"
-        }
-
-        let sum_multiply = 0;
-
-        for (let i = 0; i < x.length; i++) {
-            sum_multiply += (x[i] * y[i])
-        }
-
-        return sum_multiply - (x.length * mean_x * mean_y);
-
-    };
-
 
     mean_simple( column ) {
         let sum = 0;
