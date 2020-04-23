@@ -195,7 +195,7 @@ async function run_prediction(){
         }
         winner = selection.options[selection.selectedIndex].text;
 
-        document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${winner} with a certainty of ${(result.probability * 100).toFixed(2)}%`;
+        document.getElementById("predictionWinner").textContent = `The winner is predicted to be ${winner}`;
     }
     else{
         document.getElementById("predictionWinner").textContent = "Prediction could not be run. More data may be needed";
