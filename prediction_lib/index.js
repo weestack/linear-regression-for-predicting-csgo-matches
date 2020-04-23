@@ -117,44 +117,4 @@ class Regressor {
     }
 }
 
-/* Test code which should be removed */
-let regressor = new Regressor("../scraper/data");
-let coeficcients = regressor.cleaned_coeficcients;
-/*
-console.log("coeficcients", regressor.cleaned_coeficcients)
-console.log("sumary ", regressor.statistics.summary_statics)
-console.log("rss,", regressor.statistics.rss)
-
-console.log("r**", regressor.statistics.r_squared)
-console.log("pearson ", regressor.statistics.pearsons_coeficcient)
-*/
-let match_count = regressor.independent.size()[0];
-let correct = 0;
-let wrong = 0;
-for (let i = 0; i < match_count; i++) {
-	let match = math_js.row(regressor.independent, i).toArray()[0];
-	let real_result = math_js.row(regressor.prediction, i);
-	let calculated_result = coeficcients[0];
-	for (let bn = 1; bn < coeficcients.length; bn++) {
-	    //console.log("Temp: ", calculated_result);
-	    calculated_result += match[bn-1] * coeficcients[bn];
-	}
-	if (calculated_result >= 0.5) {
-	    calculated_result = 1;
-	} else {
-	    calculated_result = 0;
-	}
-
-	if (real_result >= 0.5) {
-	    real_result = 1;
-	} else {
-	    real_result = 0;
-	}
-	if (calculated_result == real_result) {
-	    correct++;
-	} else {
-	    wrong++;
-	}
-}
-console.log(`By testing with all the input data, the program got ${correct} right, and ${wrong} wrong (a rate of ${(correct * 100/ match_count).toFixed(2)}%)`);
 module.exports = {Regressor: Regressor};

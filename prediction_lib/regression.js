@@ -20,10 +20,6 @@ class Regression {
 
     }
 
-    standardize () {
-        /*  standardization (or Z-score normalization) means centering the variable at zero and standardizing the variance at 1. */
-    }
-
     normalize ( column ) {
         /* normalize = (x - x_min)/(x_max-x_min) */
         let new_column = Array();
@@ -58,7 +54,6 @@ class Regression {
 
 
     mean_simple( column ) {
-        // TODO: add type checking later
         let sum = 0;
         for (let i = 0; i < column.length; i++) {
             sum += parseFloat(column[i])
@@ -76,8 +71,6 @@ class Regression {
         * p= 0 ingen lineære sammenhæng!
         * */
 
-
-        let pearson_coeficcient = 0;
         X = X.toArray()
         Y = Y.toArray()
         if ( X.length !== Y.length ) {
@@ -102,49 +95,6 @@ class Regression {
 
 
 
-}
-
-class Simple_Linear_regression extends Regression {
-    /* equation to expect from object Y_i = b_0 + b_1*x_i  */
-    estimate_best_coeficcient (x, y) {
-
-
-        /* numeric Length of dataset */
-        let len = y.length;
-
-        /* Mean of both y and x */
-        let x_mean = this.mean(x);
-        let y_mean = this.mean(y);
-
-        /* Cross_deviation and deviation */
-        let ssxy = this.cross_deviation(x, x_mean, y, y_mean);
-        let ssxx = this.cross_deviation(x, x_mean, x, x_mean);
-
-        let ssyy = this.cross_deviation(y, y_mean, y, y_mean);
-
-        /* sdx_square */
-        let sdx_square = ssxx/( len -1 );
-        let sdx = Math.sqrt(sdx_square);
-
-        let sdy_squre = ssyy/( len -1 );
-        let sdy = Math.sqrt(sdx_square);
-
-        let sample_covariance = ssxy/(len - 1);
-        let sample_corrolation = sample_covariance / ( sdx * sdy );
-
-        let intercept = ssxy / ssxx;
-        let slope = y_mean - intercept * x_mean;
-        let _rss = this.rss(slope, intercept, x, y);
-
-        /* slope corrosponds to B_0 nad intercept corrosponds to B_1 */
-        return [slope, intercept, _rss]
-
-
-    }
-
-    estimate_cost() {
-
-    }
 }
 
 class Multi_Linear_Regression extends Regression {
@@ -174,8 +124,6 @@ class Multi_Linear_Regression extends Regression {
 
 
     decomposition( matrix) {
-        //let _ma = math_js.matrix(matrix);
-        //console.log(matrix)
         let [rows, columns ] = matrix.size();
         if (columns === "undefined"){
             columns = 1;
@@ -237,11 +185,6 @@ class Multi_Linear_Regression extends Regression {
         let array = [[point_one_one_raw.subset(math_js.index(0, 0)),point_one_two_raw.subset(math_js.index(0, 0))], [point_two_one_raw.subset(math_js.index(0, 0)), point_two_two_raw.subset(math_js.index(0, 0))]];
 
         return math_js.matrix(array);
-        /*
-        let scalar = (1/(number_of_points - 1));
-
-        return math_js.multiply(scalar, output_matrix);
-        */
     }
 
 
