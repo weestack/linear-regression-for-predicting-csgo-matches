@@ -124,7 +124,8 @@ main#main4 .content_wrapper {
     flex-wrap: wrap;
 }
 
-button#statisticsRefresh {
+.btn {
+
     flex-basis: 100%;
 }
 b#statisticsError {

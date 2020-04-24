@@ -227,14 +227,12 @@ async function render_statistics(){
     let stats = await statistics();
     if(stats != null){
         let rSquared = document.getElementById("stats_rSquared");
-        let pearson = document.getElementById("stats_pearson");
         let rss = document.getElementById("stats_rss");
         let sigma = document.getElementById("stats_sigma");
         let sxx = document.getElementById("stats_sxx");
         let sxy = document.getElementById("stats_sxy");
         let syy = document.getElementById("stats_syy");
         rSquared.textContent = stats.r_squared.toFixed(3);
-        pearson.textContent = stats.pearsons_coeficcient.toFixed(3);
         rss.textContent = stats.rss.toFixed(3);
         sigma.textContent = stats.sigma.toFixed(3);
         sxx.textContent = stats.summary_statics.sxx.toFixed(3);
