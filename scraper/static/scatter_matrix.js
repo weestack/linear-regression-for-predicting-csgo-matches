@@ -21,19 +21,20 @@ let [width, size, padding, x, y, xAxis, yAxis, color] = get_scatter_plot_matrix_
 /* Create D3 with csv. csv takes to inputs 1. csv file, 2 callback function */
 /* If no errors happend while reading in the csv file, then we use to callback */
 /* function to display the scatter matrix */
-d3.csv("data/out.csv", function(error, data) {
+d3.csv("csv_files/regression_data.csv", function(error, data) {
     if (error) throw error;
 
     /* filter out text data, so only integers and floats are used to present the scatterplots */
-    let traits = d3.keys(data[0]).filter(function (data) {
-        return data !== "species";
-    })
+    let traits = d3.keys(data[0])
+    /*let traits = d3.keys(data[0]).filter(function (data) {
+        return data !== "filter_word";
+    })*/
     let n = traits.length;
 
     let domain_by_trait = {};
     /* pack data into domain, by trait */
     traits.forEach(function(trait) {
-        domain_by_trait[trait] = d3.extent(data, function(d) { return d[trait]; });
+        domain_by_trait[trait] = d3.extent(data, function(dat) { return dat[trait]; });
     });
 
     /* Gitter size */
@@ -41,7 +42,7 @@ d3.csv("data/out.csv", function(error, data) {
     yAxis.tickSize(-size * n);
 
     /* Init new svg ob ject */
-    let svg = d3.select("body").append("svg").attr("width", size * n + padding).attr("height", size * n + padding).append("g").attr("transform", "translate(" + padding + "," + padding / 2 + ")");
+    let svg = d3.select("#scatter_matrix").append("svg").attr("width", size * n + padding).attr("height", size * n + padding).append("g").attr("transform", "translate(" + padding + "," + padding / 2 + ")");
 
     svg.selectAll(".x.axis")
         .data(traits)
@@ -64,34 +65,34 @@ d3.csv("data/out.csv", function(error, data) {
         .attr("transform", function(d) { return "translate(" + (n - d.i - 1) * size + "," + d.j * size + ")"; })
         .each(plot);
 
-    // Titles for the diagonal.
+    // Appends title for  i == j, or the diagonal!.
     cell.filter(function(d) { return d.i === d.j; }).append("text")
         .attr("x", padding)
         .attr("y", padding)
         .attr("dy", ".71em")
-        .text(function(d) { return d.x; });
+        .text(function(d) { console.log(d.x); return d.x; });
 
 
     function plot(p) {
-        var cell = d3.select(this);
+        let cell = d3.select(this);
 
         x.domain(domain_by_trait[p.x]);
         y.domain(domain_by_trait[p.y]);
-
+        // Appends reactangle, per dataset
         cell.append("rect")
             .attr("class", "frame")
             .attr("x", padding / 2)
             .attr("y", padding / 2)
             .attr("width", size - padding)
             .attr("height", size - padding);
-
+        // Adds circles/plots to the reactangle
         cell.selectAll("circle")
             .data(data)
             .enter().append("circle")
-            .attr("cx", function(d) { return x(d[p.x]); })
-            .attr("cy", function(d) { return y(d[p.y]); })
+            .attr("cx", function(dat) { return x(dat[p.x]); })
+            .attr("cy", function(dat) { return y(dat[p.y]); })
             .attr("r", 4)
-            .style("fill", function(d) { return color(d.species); });
+            .style("fill", function(dat) { return color(dat); });
     }
 });
 
