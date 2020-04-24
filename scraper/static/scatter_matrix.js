@@ -1,6 +1,6 @@
 function get_scatter_plot_matrix_settings(){
-    let width = 760;
-    let size = 180;
+    let width = 600;
+    let size = 150;
     let padding = 30;
 
     /* d3 scalelinear is used to define the size of the linear boxes

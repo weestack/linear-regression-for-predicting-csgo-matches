@@ -8,128 +8,142 @@
     <script src="https://d3js.org/d3.v4.js"></script>
 </head>
 <body>
-    <header>
-        CS:GO scraper and match predictor
-    </header>
-    <div id="mainContent">
-        <nav>
-            <ul>
-                <li>
-                    Scraper
-                    <ul>
-                        <li class="viewSwitcher" data-view="main1">
-                                Start scraper
-                        </li>
-                        <li class="viewSwitcher" data-view="main2">
-                            Data status
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Prediction
-                    <ul>
-                        <li class="viewSwitcher" data-view="main3">
-                            Team vs team
-                        </li>
-                        <li class="viewSwitcher" data-view="main4">
-                            Statistics
-                        </li>
-                    </ul>
-                </li>
+<header>
+    CS:GO scraper and match predictor
+</header>
+<div id="mainContent">
+    <nav>
+        <ul>
+            <li>
+                Scraper
+                <ul>
+                    <li class="viewSwitcher" data-view="main1">
+                        Start scraper
+                    </li>
+                    <li class="viewSwitcher" data-view="main2">
+                        Data status
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Prediction
+                <ul>
+                    <li class="viewSwitcher" data-view="main3">
+                        Team vs team
+                    </li>
+                    <li class="viewSwitcher" data-view="main4">
+                        Statistics
+                    </li>
+                </ul>
+            </li>
 
-            </ul>
-        </nav>
-        <main id="main1">
-            <label for="matchAmount">Amount of matches</label>
-            <input id="matchAmount" type="number" min="1"></input>
-            <button id="startScraper">Start scraper</button>
+        </ul>
+    </nav>
+    <main id="main1">
+        <label for="matchAmount">Amount of matches</label>
+        <input id="matchAmount" type="number" min="1"></input>
+        <button id="startScraper">Start scraper</button>
 
-            <p>
-                Scraping a total of <span id="matches">0</span> matches (<span id="done_matches">0</span> of them are done).
-                This means that there are potentially <span id="potential_teams">0</span> different teams,
-                but many of them might play in multiple matches, and therefore end up being cached.
-            </p>
-            <p>Due to errors in the scraping (such as missing data points), <span id="skipped_matches">0</span> matches have been skipped.</p>
-            <p>The scraper is currently <span id="current_job">doing nothing</span>.</p>
+        <p>
+            Scraping a total of <span id="matches">0</span> matches (<span id="done_matches">0</span> of them are done).
+            This means that there are potentially <span id="potential_teams">0</span> different teams,
+            but many of them might play in multiple matches, and therefore end up being cached.
+        </p>
+        <p>Due to errors in the scraping (such as missing data points), <span id="skipped_matches">0</span> matches have
+            been skipped.</p>
+        <p>The scraper is currently <span id="current_job">doing nothing</span>.</p>
 
-            <b>Scraping progress:</b> <b id="MatchProgressProcent">0%</b>
-            <div class="progress-bar">
-            	<div class="progress-bar-content" id="match_progress"></div>
-            </div>
+        <b>Scraping progress:</b> <b id="MatchProgressProcent">0%</b>
+        <div class="progress-bar">
+            <div class="progress-bar-content" id="match_progress"></div>
+        </div>
 
-        </main>
-        <main id="main2">
-            <button id="dataStatusRefresh">Refresh &#x27f2;</button>
-            <p id="status_matchAmount"></p>
-            <p id="status_teamAmount"></p>
-            <p id="status_dataFolderSize"></p>
-            <p id="status_cacheFolderSize"></p>
-            <p id="status_newestMatch"></p>
-            <p id="status_oldestMatch"></p>
-            <ul id="status_teamsList">
+    </main>
+    <main id="main2">
+        <button id="dataStatusRefresh">Refresh &#x27f2;</button>
+        <p id="status_matchAmount"></p>
+        <p id="status_teamAmount"></p>
+        <p id="status_dataFolderSize"></p>
+        <p id="status_cacheFolderSize"></p>
+        <p id="status_newestMatch"></p>
+        <p id="status_oldestMatch"></p>
+        <ul id="status_teamsList">
 
-            </ul>
-        </main>
-        <main id="main3">
-            <label for="team1Select">Team 1</label>
-            <select id="team1Select"></select>
-            <label for="team2Select">Team 2</label>
-            <select id="team2Select"></select>
-            <button id="team1vsteam2">Predict winner</button>
-            <button id="refreshRegressor">Refresh the regression model &#x27f2;</button>
-            <h2 id="predictionWinner"></h2>
-        </main>
-        <main id="main4">
+        </ul>
+    </main>
+    <main id="main3">
+        <label for="team1Select">Team 1</label>
+        <select id="team1Select"></select>
+        <label for="team2Select">Team 2</label>
+        <select id="team2Select"></select>
+        <button id="team1vsteam2">Predict winner</button>
+        <button id="refreshRegressor">Refresh the regression model &#x27f2;</button>
+        <h2 id="predictionWinner"></h2>
+    </main>
+    <main id="main4">
+        <div class="content_wrapper">
             <button id="statisticsRefresh">Refresh &#x27f2;</button>
             <b id="statisticsError"></b>
-            <table id="statisticsTable">
-                <tr>
-                    <th>Statistics</th>
-                    <th>Value</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>R&sup2;</td>
-                    <td id="stats_rSquared"></td>
-                    <td>Description</td>
-                </tr>
-                <tr>
-                    <td>Pearsons-coefficient</td>
-                    <td id="stats_pearson"></td>
-                    <td>Description</td>
-                </tr>
-                <tr>
-                    <td>RSS</td>
-                    <td id="stats_rss"></td>
-                    <td>Description</td>
-                </tr>
-                <tr>
-                    <td>Sigma &sigma;</td>
-                    <td id="stats_sigma"></td>
-                    <td>Description</td>
-                </tr>
-                <tr>
-                    <td>Summary SXX</td>
-                    <td id="stats_sxx"></td>
-                    <td>Description</td>
-                </tr>
-                <tr>
-                    <td>Summary SXY</td>
-                    <td id="stats_sxy"></td>
-                    <td>Description</td>
-                </tr>
-                <tr>
-                    <td>Summary SYY</td>
-                    <td id="stats_syy"></td>
-                    <td>Description</td>
-                </tr>
-            </table>
+            <div class="statistics_tables">
 
+
+                <table id="coeficcients">
+
+                    <tr class="head">
+                        <th>Coeficcient</th>
+                        <th>Pearson Corrolation</th>
+                    </tr>
+
+
+                    <tr class="tail">
+                        <td colspan="2"> Lorem ipsum, super nice desc for pearson corrolation, WUUUUU!</td>
+                    </tr>
+                </table>
+
+                <table id="statisticsTable">
+                    <tr>
+                        <th>Statistics</th>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>R&sup2;</td>
+                        <td id="stats_rSquared"></td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>RSS</td>
+                        <td id="stats_rss"></td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Sigma &sigma;</td>
+                        <td id="stats_sigma"></td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Summary SXX</td>
+                        <td id="stats_sxx"></td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Summary SXY</td>
+                        <td id="stats_sxy"></td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Summary SYY</td>
+                        <td id="stats_syy"></td>
+                        <td>Description</td>
+                    </tr>
+                </table>
+
+            </div>
             <div id="scatter_matrix"></div>
-        </main>
-    </div>
+        </div>
+    </main>
     <footer>
-            Aalborg university group DAT2 C1-20 ©
+        Aalborg university group DAT2 C1-20 ©
     </footer>
     <script type="text/javascript" src="scatter_matrix.js"></script>
 </body>

@@ -116,3 +116,34 @@ circle.hidden {
     fill-opacity: .125;
     stroke: #fff;
 }
+/* statistics page */
+main#main4 .content_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button#statisticsRefresh {
+    flex-basis: 100%;
+}
+b#statisticsError {
+    flex-basis: 100%;
+    margin: 30px;
+}
+.statistics_tables {
+    flex: 45% 1 1;
+    max-width: 440px;
+}
+
+div#scatter_matrix {
+    flex: 45% 1 1;
+    display: flex;
+}
+div#scatter_matrix svg {
+    margin-left: auto;
+}
+
+#coeficcients {
+    margin-bottom: 50px;
+}
