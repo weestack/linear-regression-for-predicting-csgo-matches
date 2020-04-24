@@ -221,24 +221,10 @@ function D6(player_id, player_name) {
     }
 }
 
-/* Returns the number of first kills that each team got in a match*/
-function D7(match_id, match_name) {
-    return {
-        url: "https://www.hltv.org/stats/matches/mapstatsid/" + match_id + "/" + match_name,
-        location: "div.match-info-row:nth-child(6) > div.right",
-        handle: element => {
-            let textParts = element.textContent.split(" : ");
-            let result = {
-                team1: parseInt(textParts[0]),
-                team2: parseInt(textParts[1]),
-            };
-            return result;
-        },
-    }
-}
+
 
 /* Returns the date of the team's last match as a Date object */
-function D8(team_id) {
+function D7(team_id) {
     return {
         url: "https://www.hltv.org/results?team=" + team_id,
         location: "div.results-sublist:nth-child(1) > .standard-headline",
@@ -255,7 +241,7 @@ function D8(team_id) {
 }
 
 /* Returns the number of days that the player has been his the current team */
-function D9(player_id, player_name) {
+function D8(player_id, player_name) {
     return {
         url: "https://www.hltv.org/player/" + player_id + "/" + player_name + "#tab-teamsBox",
         location: "div.tab-content > div.highlighted-stats-box >div.highlighted-stat:nth-child(2) > div.stat",
@@ -271,7 +257,7 @@ function D9(player_id, player_name) {
 }
 
 /* Returns the kill to death ratio of the player */
-function D10(player_id, player_name) {
+function D9(player_id, player_name) {
     return {
         url: "https://www.hltv.org/stats/players/" + player_id + "/" + player_name,
         location: "div.stats-rows:nth-child(1) > div.stats-row:nth-child(4) >span:nth-child(2)",
@@ -480,7 +466,7 @@ async function run_scraper(scraper, dom){
     }
 }
 
-/* Team info used in D1, D2, D3, D8 */
+/* Team info used in D1, D2, D3, D7 */
 async function scrape_team(team_id, team_name) {
     try {
         if (team_id in team_cache) {
@@ -503,7 +489,7 @@ async function scrape_team(team_id, team_name) {
                 last_matches = last_matches.concat(matches);
             }
         }
-        let last_match_date = await run_scraper(D8(team_id));
+        let last_match_date = await run_scraper(D7(team_id));
         let players = await run_scraper(team_players(team_id, team_name));
         let player_data = {};
         for(let player_id in players){
@@ -525,14 +511,13 @@ async function scrape_team(team_id, team_name) {
     }
 }
 
-/* Match info used in D5, D7 */
+/* Match info used in D5 */
 async function scrape_match(match_id, match_name) {
     try {
         status_current_job = "scraping match " + match_name;
         update_html_status();
         let teams = await run_scraper(match_teams(match_id, match_name));
         let team_kills = await run_scraper(D5(match_id, match_name));
-        let first_kills = await run_scraper(D7(match_id, match_name));
         let winnerData = await run_scraper(match_winner(match_id, match_name));
 
         /* The data for both of the teams is added. */
@@ -547,11 +532,9 @@ async function scrape_match(match_id, match_name) {
             }
         }
 
-        /* The data from team_kills and first_kills is combined with the team names. */
+        /* The data from team_kills */
         teams[0].kills = team_kills.team1;
         teams[1].kills = team_kills.team2;
-        teams[0].first_kills = first_kills.team1;
-        teams[1].first_kills = first_kills.team2;
 
         /* The winner data is also added. */
         teams.winner = winnerData.winner;
@@ -566,13 +549,13 @@ async function scrape_match(match_id, match_name) {
     }
 }
 
-/* Player info used in D4, D6, D9, D10. KDA = Kills/Deaths/Assist */
+/* Player info used in D4, D6, D8, D9. KDA = Kills/Deaths/Assist */
 async function scrape_player(player_id, player_name){
     try {
         let most_used_weapons = await run_scraper(D4(player_id, player_name));
         let headshots = await run_scraper(D6(player_id, player_name));
-        let days_in_team = await run_scraper(D9(player_id, player_name));
-        let kda = await run_scraper(D10(player_id, player_name));
+        let days_in_team = await run_scraper(D8(player_id, player_name));
+        let kda = await run_scraper(D9(player_id, player_name));
         return {
             most_used_weapons,
             headshots,

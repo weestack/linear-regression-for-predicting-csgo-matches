@@ -21,7 +21,7 @@ let [width, size, padding, x, y, xAxis, yAxis, color] = get_scatter_plot_matrix_
 /* Create D3 with csv. csv takes to inputs 1. csv file, 2 callback function */
 /* If no errors happend while reading in the csv file, then we use to callback */
 /* function to display the scatter matrix */
-d3.csv("data/flowers.csv", function(error, data) {
+d3.csv("data/out.csv", function(error, data) {
     if (error) throw error;
 
     /* filter out text data, so only integers and floats are used to present the scatterplots */
@@ -36,16 +36,12 @@ d3.csv("data/flowers.csv", function(error, data) {
         domain_by_trait[trait] = d3.extent(data, function(d) { return d[trait]; });
     });
 
-
+    /* Gitter size */
     xAxis.tickSize(size * n);
     yAxis.tickSize(-size * n);
 
-
-    let svg = d3.select("body").append("svg")
-        .attr("width", size * n + padding)
-        .attr("height", size * n + padding)
-        .append("g")
-        .attr("transform", "translate(" + padding + "," + padding / 2 + ")");
+    /* Init new svg ob ject */
+    let svg = d3.select("body").append("svg").attr("width", size * n + padding).attr("height", size * n + padding).append("g").attr("transform", "translate(" + padding + "," + padding / 2 + ")");
 
     svg.selectAll(".x.axis")
         .data(traits)

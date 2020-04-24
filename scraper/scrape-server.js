@@ -12,11 +12,9 @@
  */
 
 /* Import the required modules */
-let url = require('url');
 let fs = require('fs');
 let https = require('https');
 let http = require('http');
-let mathjs = require("mathjs");
 
 /* Import the required javascript for the regression */
 let regression = require("../prediction_lib/index.js");
