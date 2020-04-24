@@ -16,6 +16,8 @@ let fs = require('fs');
 let https = require('https');
 let http = require('http');
 
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const math_js = require("mathjs");
 /* Import the required javascript for the regression */
 let regression = require("../prediction_lib/index.js");
 
@@ -54,6 +56,9 @@ let server = http.createServer((request, response) => {
     }
     else if(request.url == "/statistics" && request.method == "GET"){
         do_statistics(request, response);
+    }
+    else if (request.url == "/coeficcients" && request.method == "GET"){
+        get_coeficcients(request, response);
     }
     else if(request.url == "/refreshRegressor" && request.method == "POST"){
         refresh_regressor(request, response);
@@ -325,6 +330,25 @@ function do_statistics(request, response){
     response.end();
 }
 
+
+function get_coeficcients(request, response){
+    if (regressor == null) {
+        regressor = make_regressor();
+        if (regressor == null) {
+            response.writeHead(500);
+            response.end();
+            return;
+        }
+    }
+        let responseobject = {
+            coeficcients: regressor.cleaned_coeficcients,
+            pearson_coeficcients: regressor.statistics.pearsons_coeficcients,
+        }
+        let responsejson = JSON.stringify(responseobject, undefined, 4);
+        response.write(responsejson);
+        response.end();
+}
+
 /* Refresh regressor refreshes the regressor :D */
 function refresh_regressor(request, response){
     regressor = make_regressor();
@@ -333,8 +357,43 @@ function refresh_regressor(request, response){
         response.end();
         return;
     }
+    update_csv_file();
     response.writeHead(200);
     response.end();
+}
+
+function update_csv_file(){
+    const csvWriter = createCsvWriter({
+        path: 'static/csv_files/regression_data.csv',
+        header: [
+            {id: 'winner', title: 'winner'},
+            {id: 'powerscore_delta', title: 'powerscore_delta'},
+            {id: 'win_loose_delta', title: 'win_loose_delta'},
+            {id: 'kda_delta', title: 'kda_delta'},
+            {id: 'headshot_delta', title: 'headshot_delta'},
+            {id: 'time_in_team_delta', title: 'time_in_team_delta'},
+        ]
+    });
+
+    let prediction = regressor.prediction
+    let independent = regressor.normalized_independent;
+
+    let [csv_rows, csv_columns] = independent.size();
+
+    const csv_data = Array(csv_rows);
+
+    for(let i = 0; i < csv_rows; i++){
+        csv_data[i] = {
+            winner: prediction.subset(math_js.index(i, 0)),
+            powerscore_delta: independent.subset(math_js.index(i, 0)),
+            win_loose_delta: independent.subset(math_js.index(i, 1)),
+            kda_delta: independent.subset(math_js.index(i, 2)),
+            headshot_delta: independent.subset(math_js.index(i, 3)),
+            time_in_team_delta: independent.subset(math_js.index(i, 4)),
+        }
+    }
+
+    csvWriter.writeRecords(csv_data).then(() => console.log('The CSV file was written successfully'));
 }
 
 function make_regressor(){

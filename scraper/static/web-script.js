@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switch_view("main1");
     render_data_status();
     render_statistics();
+    render_coefficients();
 
     /* Here we add actions to all the page links on the left. They don't actually goto a new page,
      * they just switch the view
@@ -214,6 +215,15 @@ async function statistics(){
     }
 }
 
+async function get_coeficcients(){
+    let response = await fetch("/coeficcients");
+    if (response.status == 200) {
+        let data = await response.json();
+        return data;
+    }
+    return null;
+}
+
 /* Render_statistics renders the statistics on the website. */
 async function render_statistics(){
     /* Change the button text to "refreshing..." and disable it */
@@ -244,6 +254,27 @@ async function render_statistics(){
     }
     refreshButton.textContent = originalText;
     refreshButton.disabled = false;
+}
+
+
+async function render_coefficients(){
+    /* populate table with coeficcients and pearson corrilation values */
+    let coeficcients = await get_coeficcients();
+    let n = coeficcients.coeficcients.length;
+    let pearson_coeficcients = [0].concat(coeficcients.pearson_coeficcients);
+    // Find a <table> element with id="myTable":
+    var table = document.getElementById("coeficcients");
+    console.log(coeficcients)
+    for (let i = 0; i < n; i++){
+        var table_row = table.insertRow(i+1);
+        var cell_coeficcient = table_row.insertCell(0);
+        cell_coeficcient.innerHTML = coeficcients.coeficcients[i];
+        var cell_pearson = table_row.insertCell(1);
+        cell_pearson.innerHTML = pearson_coeficcients[i];
+
+    }
+
+
 }
 
 /* This function triggers a refresh of the regressor object on the backend. */

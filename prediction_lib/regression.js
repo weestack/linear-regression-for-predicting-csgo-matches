@@ -46,8 +46,19 @@ class Regression {
         return sum / column.length
     }
 
+    pearson_corrolations(independent, prediction){
 
-    pearson_corrolations(X, Y) {
+
+        let coeficcients = Array();
+        let [rows, columns] = independent.size();
+        for (let column = 0; column < columns; column++){
+            coeficcients[column] = this.get_pearson_corrolation(math_js.column(independent, column), prediction );
+        }
+        return coeficcients;
+
+    }
+
+    get_pearson_corrolation(X, Y) {
         /*
         * p = -1 stærk, negativ graf, (linear afhængig)
         * -1 < p < 0 - Nogen lunde linear sammenhæng, jo tættere på 0, jo dårligere sammenhæng.

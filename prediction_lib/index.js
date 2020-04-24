@@ -21,13 +21,24 @@ class Regressor {
          * Also binds the match data to mdata */
         this.load_matches(path_to_data_folder);
 
+        this.bind_to_normalized_data();
+
         /* calculate coeficcients */
         this.coefficients = this.calculate_coeficcients();
         this.cleaned_coeficcients = math_js.transpose(this.coefficients).toArray()[0];
         /* Init statistics */
         this.bind_statistics();
     }
+    bind_to_normalized_data(){
 
+        let [rows, columns] = this.independent.size();
+        let normalized_independt = Array();
+        for (let column = 0; column < columns; column++ ){
+            normalized_independt[column] = this.regression_obj.normalize(math_js.column(this.independent, column).toArray());
+        }
+        this.normalized_independent = math_js.transpose( math_js.matrix(normalized_independt));
+
+    }
     load_matches(path) {
         /* Load all the matches into two seperate matrixes, Outcome and Indepedent variables */
         let all_data = new match_data(path);
@@ -101,8 +112,7 @@ class Regressor {
         let r_squared = this.regression_obj.r_squared(this.coefficients, independent, prediction);
         let sigma = this.regression_obj.sigma_squared(rss.subset(math_js.index(0, 0)), independent);
         let varians = this.regression_obj.variance(sigma, independent);
-        let pearsons_coeficcient = this.regression_obj.pearson_corrolations(math_js.column(independent, 1), prediction);
-
+        let pearsons_coeficcients = this.regression_obj.pearson_corrolations(this.independent, prediction);
         /* bind the raw value rather than matrix obj */
         rss = rss.subset(math_js.index(0, 0))
         /* bind the raw values of summary, ranther than using matrix obj */
@@ -118,7 +128,7 @@ class Regressor {
             r_squared: r_squared,
             sigma: sigma,
             varians: varians,
-            pearsons_coeficcient: pearsons_coeficcient
+            pearsons_coeficcients: pearsons_coeficcients
         };
     }
 }

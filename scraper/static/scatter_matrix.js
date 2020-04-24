@@ -9,15 +9,14 @@ function get_scatter_plot_matrix_settings(){
     let y = d3.scaleLinear().range( [size-(padding/2), padding/2 ] )
 
     /* density off gitter */
-    let xAxis = d3.axisBottom().scale(x).ticks(10);
-    let yAxis = d3.axisLeft().scale(y).ticks(10);
+    let xAxis = d3.axisBottom().scale(x).ticks(5);
+    let yAxis = d3.axisLeft().scale(y).ticks(5);
 
     /* color scheme to display residuals */
     var color = d3.scaleOrdinal(d3.schemeCategory10);
     return [width, size, padding, x, y, xAxis, yAxis, color]
 }
 let [width, size, padding, x, y, xAxis, yAxis, color] = get_scatter_plot_matrix_settings();
-
 /* Create D3 with csv. csv takes to inputs 1. csv file, 2 callback function */
 /* If no errors happend while reading in the csv file, then we use to callback */
 /* function to display the scatter matrix */
