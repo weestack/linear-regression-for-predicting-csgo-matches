@@ -165,6 +165,7 @@ function update_html_status() {
     document.getElementById("done_matches").textContent = status_done_matches;
     document.getElementById("current_job").textContent = status_current_job;
     document.getElementById("skipped_matches").textContent = status_skipped_matches;
+    document.getElementById("potential_teams").textContent = status_total_matches * 2;
     let match_progress = 100 * status_done_matches / status_total_matches;
     document.getElementById("match_progress").style.width = `${match_progress}%`;
     document.getElementById("MatchProgressProcent").textContent = `${match_progress.toFixed(2)}%`;
