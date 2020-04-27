@@ -231,8 +231,15 @@ async function render_statistics(){
     let originalText = refreshButton.textContent;
     refreshButton.textContent = "refreshing...";
     refreshButton.disabled = true;
-
-    await refresh_regressor();
+    /* on render statistics refresh regressor and then reload scatter plot matrix */
+    await refresh_regressor().then(() => {
+        /* If scatter plot matrix already exists, then delete it, to avid dublicate svg's */
+        let element = document.querySelector("#scatter_matrix svg");
+        if (element !== null && element !== 'undefined'){
+            element.remove();
+        }
+        create_svg_scatter_matrix();
+    });
 
     let stats = await statistics();
     if(stats != null){
@@ -264,7 +271,6 @@ async function render_coefficients(){
     let pearson_coeficcients = [0].concat(coeficcients.pearson_coeficcients);
     // Find a <table> element with id="myTable":
     var table = document.getElementById("coeficcients");
-    console.log(coeficcients)
     for (let i = 0; i < n; i++){
         var table_row = table.insertRow(i+1);
         var cell_coeficcient = table_row.insertCell(0);

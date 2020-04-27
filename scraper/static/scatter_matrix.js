@@ -20,7 +20,8 @@ let [width, size, padding, x, y, xAxis, yAxis, color] = get_scatter_plot_matrix_
 /* Create D3 with csv. csv takes to inputs 1. csv file, 2 callback function */
 /* If no errors happend while reading in the csv file, then we use to callback */
 /* function to display the scatter matrix */
-d3.csv("csv_files/regression_data.csv", function(error, data) {
+
+function draw_scatter_matrix(error, data) {
     if (error) throw error;
 
     /* filter out text data, so only integers and floats are used to present the scatterplots */
@@ -93,7 +94,12 @@ d3.csv("csv_files/regression_data.csv", function(error, data) {
             .attr("r", 4)
             .style("fill", function(dat) { return color(dat); });
     }
-});
+}
+
+function create_svg_scatter_matrix(){
+    d3.csv("csv_files/regression_data.csv", draw_scatter_matrix);
+}
+
 
 function cross(a, b) {
     var c = [], n = a.length, m = b.length, i, j;

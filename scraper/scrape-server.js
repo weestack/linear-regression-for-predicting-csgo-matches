@@ -393,7 +393,7 @@ function update_csv_file(){
         }
     }
 
-    csvWriter.writeRecords(csv_data).then(() => console.log('The CSV file was written successfully'));
+    csvWriter.writeRecords(csv_data);
 }
 
 function make_regressor(){
