@@ -267,15 +267,19 @@ async function render_statistics(){
 async function render_coefficients(){
     /* populate table with coeficcients and pearson corrilation values */
     let coeficcients = await get_coeficcients();
+    console.log(coeficcients)
     let n = coeficcients.coeficcients.length;
     let pearson_coeficcients = [0].concat(coeficcients.pearson_coeficcients);
+    let header = coeficcients.header;
     // Find a <table> element with id="myTable":
-    var table = document.getElementById("coeficcients");
+    let table = document.getElementById("coeficcients");
     for (let i = 0; i < n; i++){
-        var table_row = table.insertRow(i+1);
-        var cell_coeficcient = table_row.insertCell(0);
+        let table_row = table.insertRow(i+1);
+        let coeficcient_meaning = table_row.insertCell(0);
+        coeficcient_meaning.innerHTML = (i > 0) ? header[i].title : "Intercept";
+        let cell_coeficcient = table_row.insertCell(1);
         cell_coeficcient.innerHTML = coeficcients.coeficcients[i];
-        var cell_pearson = table_row.insertCell(1);
+        let cell_pearson = table_row.insertCell(2);
         cell_pearson.innerHTML = pearson_coeficcients[i];
 
     }

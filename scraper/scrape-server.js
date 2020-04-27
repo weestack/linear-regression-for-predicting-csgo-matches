@@ -343,6 +343,7 @@ function get_coeficcients(request, response){
         let responseobject = {
             coeficcients: regressor.cleaned_coeficcients,
             pearson_coeficcients: regressor.statistics.pearsons_coeficcients,
+            header: regressor.header
         }
         let responsejson = JSON.stringify(responseobject, undefined, 4);
         response.write(responsejson);
@@ -365,14 +366,7 @@ function refresh_regressor(request, response){
 function update_csv_file(){
     const csvWriter = createCsvWriter({
         path: 'static/csv_files/regression_data.csv',
-        header: [
-            {id: 'winner', title: 'winner'},
-            {id: 'powerscore_delta', title: 'powerscore_delta'},
-            {id: 'win_loose_delta', title: 'win_loose_delta'},
-            {id: 'kda_delta', title: 'kda_delta'},
-            {id: 'headshot_delta', title: 'headshot_delta'},
-            {id: 'time_in_team_delta', title: 'time_in_team_delta'},
-        ]
+        header: regressor.header
     });
 
     let prediction = regressor.prediction

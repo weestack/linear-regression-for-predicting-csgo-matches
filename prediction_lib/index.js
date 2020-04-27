@@ -62,6 +62,7 @@ class Regressor {
 
         this.prediction = math_js.matrix(this.prediction);
         this.independent = math_js.matrix(this.independent);
+        this.header = all_data.header;
     }
 
     calculate_coeficcients() {

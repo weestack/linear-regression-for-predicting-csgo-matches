@@ -20,11 +20,27 @@ class match_data {
 
         let raw_data = this.read_in_data(files);
         this.match_results = this.process_raw_data(raw_data);
+
+        /* set data header */
+        this.set_header();
     }
 
     read_in_files() {
         let directory = this.path;
         return fs.readdirSync(directory, {"encoding":"utf-8"});
+    }
+
+    set_header(){
+
+        this.header = [
+            {id: 'winner', title: 'winner'},
+            {id: 'powerscore_delta', title: 'powerscore_delta'},
+            {id: 'win_loose_delta', title: 'win_loose_delta'},
+            {id: 'kda_delta', title: 'kda_delta'},
+            {id: 'headshot_delta', title: 'headshot_delta'},
+            {id: 'time_in_team_delta', title: 'time_in_team_delta'},
+        ]
+
     }
 
     read_in_data(files){
@@ -82,6 +98,7 @@ class match_data {
 
     get_team_info(team){
         let data = [];
+
         data[0] = this.experience_score(team);
         data[1] = this.win_loose_ratio(team);
         data[2] = this.kda(team);
