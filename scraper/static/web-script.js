@@ -268,7 +268,6 @@ async function render_statistics(){
 async function render_coefficients(){
     /* populate table with coeficcients and pearson corrilation values */
     let coeficcients = await get_coeficcients();
-    console.log(coeficcients)
     let n = coeficcients.coeficcients.length;
     let pearson_coeficcients = [0].concat(coeficcients.pearson_coeficcients);
     let header = coeficcients.header;
