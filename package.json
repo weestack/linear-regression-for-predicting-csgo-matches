@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --silent"
+    "test": "jest --silent",
+    "start": "node ./scraper/scrape-server.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,7 @@
   "dependencies": {
     "csv-writer": "^1.6.0",
     "d3": "^5.15.1",
-    "express": "^4.17.1",
-    "jest-puppeteer": "^4.4.0",
-    "jsdom": "^16.2.2",
-    "mathjs": "^6.6.2",
-    "puppeteer": "^3.0.2"
+    "mathjs": "^6.6.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -32,6 +29,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^25.4.0"
+    "jest": "^25.4.0",
+    "puppeteer": "^3.0.2"
   }
 }
