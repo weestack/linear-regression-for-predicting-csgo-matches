@@ -33,12 +33,12 @@ class match_data {
     set_header(){
 
         this.header = [
-            {id: 'winner', title: 'winner'},
-            {id: 'powerscore_delta', title: 'powerscore_delta'},
-            {id: 'win_loose_delta', title: 'win_loose_delta'},
-            {id: 'kda_delta', title: 'kda_delta'},
-            {id: 'headshot_delta', title: 'headshot_delta'},
-            {id: 'time_in_team_delta', title: 'time_in_team_delta'},
+            {id: 'winner', title: 'Winner'},
+            {id: 'powerscore_delta', title: 'Experince'},
+            {id: 'win_loose_delta', title: 'Win Loose Ratio'},
+            {id: 'kda_delta', title: 'Kill Death Ratio'},
+            {id: 'headshot_delta', title: 'Mean Headshots'},
+            {id: 'time_in_team_delta', title: 'Experince as a team'},
         ]
 
     }
