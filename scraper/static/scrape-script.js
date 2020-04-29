@@ -473,7 +473,7 @@ async function scrape_team(team_id, team_name) {
             return team_cache[team_id]; /* Return early if the team has already been scraped */
         }
 
-        let win_lose_ratio = await run_scraper(D1(team_id, team_name));
+        let win_loose_ratio = await run_scraper(D1(team_id, team_name));
         let best_maps = await run_scraper(D2(team_id, team_name));
 
         /* Run D3 in a loop to get all the last matches. */
@@ -498,7 +498,7 @@ async function scrape_team(team_id, team_name) {
             player_data[player_id] = await scrape_player(player_id, players[player_id]);
         }
         let teamData = {
-            win_lose_ratio,
+            win_loose_ratio,
             best_maps,
             last_matches,
             last_match_date,
