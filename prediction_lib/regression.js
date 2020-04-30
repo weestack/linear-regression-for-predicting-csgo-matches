@@ -8,18 +8,6 @@ class Regression {
     * Multi variable regression
     */
 
-
-    rss(coe0, coe1, x, y ){
-        let sum = 0;
-        for (let i = 0; i < y.length; i++){
-            sum += (y[i] - (coe0 + coe1*x[i]))**2
-        }
-        return sum;
-
-
-
-    }
-
     normalize ( column ) {
         /* normalize = (x - x_min)/(x_max-x_min)
         * Normalization reduces all datapoints to a number between 0 and 1.
@@ -37,13 +25,16 @@ class Regression {
 
 
     }
-
-    mean_simple( column ) {
+    mean(matrix_column) {
+        let matrix = math_js.matrix(matrix_column);
         let sum = 0;
-        for (let i = 0; i < column.length; i++) {
-            sum += parseFloat(column[i])
-        }
-        return sum / column.length
+        let length = 0;
+        matrix.map((value) => {
+            sum += value;
+            length++
+        })
+
+        return sum / length
     }
 
     pearson_corrolations(independent, prediction){
@@ -77,8 +68,8 @@ class Regression {
         let delta_x_square = 0;
         let delta_y_square = 0;
 
-        let mean_x = this.mean_simple(X);
-        let mean_y = this.mean_simple(Y);
+        let mean_x = this.mean(X);
+        let mean_y = this.mean(Y);
 
         for (let i =0; i < X.length; i++){
             denomenator += (X[i] - mean_x) * (Y[i] - mean_y );
@@ -96,16 +87,6 @@ class Regression {
 class Multi_Linear_Regression extends Regression {
     /* equation to expect from object Y_i = b_0 + b_1*x_i + ... b_n*x_i */
 
-    mean(matrix_column) {
-        let matrix = math_js.matrix(matrix_column);
-        let sum = 0;
-        let length = 0;
-        matrix.map( (value) => {sum += value; length++} )
-
-        return sum / length
-
-
-    }
     mean_vector( matrix ) {
         let [rows, columns] = matrix.size();
         let means = math_js.matrix();
@@ -168,8 +149,6 @@ class Multi_Linear_Regression extends Regression {
 
     summary_statictis(independent, prediction){
         /* reference page 57 apllied linear algebra */
-        let [number_of_points, _] = independent.size()
-
         let decomp_independent = this.decomposition(independent);
         let decomp_prediction  = this.decomposition(prediction);
 
@@ -242,7 +221,6 @@ class Multi_Linear_Regression extends Regression {
 
     sigma_squared(rss, independent){
         let [length_of_cases, amount_of_independent_variables] = independent.size();
-
         return rss/(length_of_cases - amount_of_independent_variables);
     }
 }

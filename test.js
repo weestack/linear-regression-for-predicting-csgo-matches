@@ -3,11 +3,28 @@ let http = require("http");
 let puppeteer = require("puppeteer");
 let scrapeScript = require("./scraper/static/scrape-script.js");
 
+let regression = require("./prediction_lib/regression");
+let linear_regression = new regression.Multi_Linear_Regression;
+/* index 0 is Y, index 1 is x input */
+let small_dataset_for_regression = [
+    [1, 2],
+    [2, 4],
+    [4, 8],
+    [8, 16]
+];
+
+
+let math_js = require("mathjs");
+
+
 
 let browser = undefined;
 let page = undefined;
 let matchData = undefined; /* Data for a scraped match */
 let players = [];
+
+
+
 
 beforeAll(async () => {
     browser = await puppeteer.launch({
@@ -140,4 +157,117 @@ describe("Website tests", () => {
         });
         expect(pct).toMatch("100.00%");
     }, 5 * 60 * 1000);
+});
+
+
+/* tests for Prediction */
+describe("Testing methods in linear regression objects", () => {
+    test("Test basic regression", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let coe = linear_regression.estimate_best_coeficcients(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0))
+        let intercept = coe.subset(math_js.index(0, 0));
+        let slope = coe.subset(math_js.index(1, 0));
+        /* match the coeficcients for linear output stated at index 0 in variable arr */
+        for (let i = 0; i < small_dataset_for_regression.length; i++) {
+            expect(small_dataset_for_regression[i][0] === (intercept + (slope * small_dataset_for_regression[i][1]))).toBeTruthy();
+        }
+    });
+
+    test("Test for correct SXX, SXY and SYY values", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let summary_statistic = linear_regression.summary_statictis(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0));
+
+        let mean_x = small_dataset_for_regression.reduce((val, itt) => val + itt[1], 0) / small_dataset_for_regression.length;
+        let mean_y = small_dataset_for_regression.reduce((val, itt) => val + itt[0], 0) / small_dataset_for_regression.length;
+        /* 𝑆𝑥𝑥=Σ(𝑥−𝑥_mean)(𝑥−𝑥⎯_mean) */
+        let sxx = summary_statistic.subset(math_js.index(0, 0));
+        let calculated_sxx = 0;
+        for (let i = 0; i < small_dataset_for_regression.length; i++) {
+            calculated_sxx += (small_dataset_for_regression[i][1] - mean_x) ** 2;
+        }
+        expect(sxx).toEqual(calculated_sxx);
+
+        /* 𝑆𝑥𝑦=Σ(𝑥−𝑥_mean)(𝑦−𝑦_mean) */
+        let sxy = summary_statistic.subset(math_js.index(1, 0));
+        let calculated_sxy = 0;
+        for (let i = 0; i < small_dataset_for_regression.length; i++) {
+            calculated_sxy += (small_dataset_for_regression[i][1] - mean_x) * (small_dataset_for_regression[i][0] - mean_y);
+        }
+        expect(sxy).toEqual(calculated_sxy);
+        /* 𝑆yy=Σ(y−y_mean)(y−y⎯_mean) */
+        let syy = summary_statistic.subset(math_js.index(1, 1));
+        let calculated_syy = 0;
+        for (let i = 0; i < small_dataset_for_regression.length; i++) {
+            calculated_syy += (small_dataset_for_regression[i][0] - mean_y) ** 2;
+        }
+        expect(syy).toEqual(syy);
+    });
+
+
+    test("Test for correct mean calculations! ", () => {
+        /* Mean is calculated by summing up a column and divide by number of elements */
+        let test_column = math_js.transpose(math_js.matrix(small_dataset_for_regression)).toArray()[1];
+        let mean = linear_regression.mean(test_column)
+        let calculated_mean = small_dataset_for_regression.reduce((val, itt) => val + itt[1], 0) / small_dataset_for_regression.length;
+        expect(mean).toEqual(calculated_mean);
+    });
+
+    test("create mean vector from matrix ", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let mean_vec = linear_regression.mean_vector(test_matrix).toArray();
+
+        let calculated_mean_x = small_dataset_for_regression.reduce((val, itt) => val + itt[1], 0) / small_dataset_for_regression.length;
+        let calculated_mean_y = small_dataset_for_regression.reduce((val, itt) => val + itt[0], 0) / small_dataset_for_regression.length;
+
+        expect(mean_vec[1]).toEqual(calculated_mean_x)
+        expect(mean_vec[0]).toEqual(calculated_mean_y)
+
+    });
+
+    test("Test rss from linear regression obj ", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression)
+        let summary = linear_regression.summary_statictis(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0))
+        let SXX = summary.subset(math_js.index(0, 0));
+        let SYY = summary.subset(math_js.index(1, 1));
+        let coe = linear_regression.estimate_best_coeficcients(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0));
+        let rss = linear_regression.rss(SYY, SXX, coe);
+        expect(rss.subset(math_js.index(0, 0))).toBe(0);
+    });
+    ;
+
+
+    test("r_squared from linear regression", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let coe = linear_regression.estimate_best_coeficcients(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0));
+        let r_squared = linear_regression.r_squared(coe, math_js.column(test_matrix, 1), math_js.column(test_matrix, 0));
+        expect(r_squared).toBe(1);
+    });
+
+    test("Pearson_corrolation between dependent and independent variable linear regression", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let pearson = linear_regression.pearson_corrolations(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0))
+        expect(pearson[0]).toBeGreaterThanOrEqual(1);
+    });
+
+    test("sigma_squared ", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let summary = linear_regression.summary_statictis(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0))
+        let SXX = summary.subset(math_js.index(0, 0));
+        let SYY = summary.subset(math_js.index(1, 1));
+        let coe = linear_regression.estimate_best_coeficcients(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0));
+        let rss = linear_regression.rss(SYY, SXX, coe);
+        let sigma_squared = linear_regression.sigma_squared(rss.subset(math_js.index(0, 0)), math_js.column(test_matrix, 1));
+        expect(sigma_squared).toEqual(0);
+    });
+    test("Variance from linear regrssion ", () => {
+        let test_matrix = math_js.matrix(small_dataset_for_regression);
+        let summary = linear_regression.summary_statictis(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0))
+        let SXX = summary.subset(math_js.index(0, 0));
+        let SYY = summary.subset(math_js.index(1, 1));
+        let coe = linear_regression.estimate_best_coeficcients(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0));
+        let rss = linear_regression.rss(SYY, SXX, coe);
+        let sigma_squared = linear_regression.sigma_squared(rss.subset(math_js.index(0, 0)), math_js.column(test_matrix, 1));
+        let variance = linear_regression.variance(sigma_squared, math_js.column(test_matrix, 1));
+        expect(variance.subset(math_js.index(0, 0))).toEqual(0);
+    })
 });
