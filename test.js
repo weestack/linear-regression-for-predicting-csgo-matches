@@ -139,5 +139,5 @@ describe("Website tests", () => {
             return document.getElementById("MatchProgressProcent").textContent;
         });
         expect(pct).toMatch("100.00%");
-    });
+    }, 5 * 60 * 1000);
 });
