@@ -179,7 +179,7 @@ describe("Testing methods in linear regression objects", () => {
 
         let mean_x = small_dataset_for_regression.reduce((val, itt) => val + itt[1], 0) / small_dataset_for_regression.length;
         let mean_y = small_dataset_for_regression.reduce((val, itt) => val + itt[0], 0) / small_dataset_for_regression.length;
-        /* 𝑆𝑥𝑥=Σ(𝑥−𝑥_mean)(𝑥−𝑥⎯_mean) */
+        /* SXX=sum((x−x_mean)(x−x⎯_mean)) */
         let sxx = summary_statistic.subset(math_js.index(0, 0));
         let calculated_sxx = 0;
         for (let i = 0; i < small_dataset_for_regression.length; i++) {
@@ -187,14 +187,14 @@ describe("Testing methods in linear regression objects", () => {
         }
         expect(sxx).toEqual(calculated_sxx);
 
-        /* 𝑆𝑥𝑦=Σ(𝑥−𝑥_mean)(𝑦−𝑦_mean) */
+        /* SXY=sum((x−x_mean)(y−y_mean)) */
         let sxy = summary_statistic.subset(math_js.index(1, 0));
         let calculated_sxy = 0;
         for (let i = 0; i < small_dataset_for_regression.length; i++) {
             calculated_sxy += (small_dataset_for_regression[i][1] - mean_x) * (small_dataset_for_regression[i][0] - mean_y);
         }
         expect(sxy).toEqual(calculated_sxy);
-        /* 𝑆yy=Σ(y−y_mean)(y−y⎯_mean) */
+        /* SYY=sum((y−y_mean)(y−y⎯_mean)) */
         let syy = summary_statistic.subset(math_js.index(1, 1));
         let calculated_syy = 0;
         for (let i = 0; i < small_dataset_for_regression.length; i++) {
