@@ -14,6 +14,7 @@ let small_dataset_for_regression = [
 ];
 
 
+let fileReader = require("./prediction_lib/FileReader")
 let math_js = require("mathjs");
 
 
@@ -22,7 +23,6 @@ let browser = undefined;
 let page = undefined;
 let matchData = undefined; /* Data for a scraped match */
 let players = [];
-
 
 
 
@@ -39,6 +39,7 @@ afterAll(async () => {
 });
 
 /* Test to see if the GET endpoints on the backend are available. */
+
 describe("Backend connection test", () => {
     test("index.html exists", done => {
         http.get("http://localhost:8090/index.html", (response) => {
@@ -270,4 +271,57 @@ describe("Testing methods in linear regression objects", () => {
         let variance = linear_regression.variance(sigma_squared, math_js.column(test_matrix, 1));
         expect(variance.subset(math_js.index(0, 0))).toEqual(0);
     })
+});
+
+/* Tests for filereader */
+describe("Testing methods defined in the filereader", () => {
+
+    /* init test filereader */
+    let directory = "./test_files/";
+    let match_data = new fileReader.match_data(directory);
+
+
+    test("Read in files from a directory", () => {
+        /* we know there are 12 json files in ./test_files/ */
+        let files = match_data.read_in_files();
+        expect(files.length).toEqual(12)
+
+    });
+
+    test ("Check that header is valid!", () => {
+        let header = match_data.header
+        /* testing ids */
+        expect(header[0].id).toEqual("winner")
+        expect(header[1].id).toEqual("powerscore_delta")
+        expect(header[2].id).toEqual("win_loose_delta")
+        expect(header[3].id).toEqual("kda_delta")
+        expect(header[4].id).toEqual("headshot_delta")
+        expect(header[5].id).toEqual("time_in_team_delta")
+        /* check length */
+        expect(header.length).toEqual(6)
+    });
+
+    test("Validate data readin from file and test output of data processing", () => {
+        let file = "";
+        let files = match_data.read_in_files();
+        for (let f in files){
+            if (files[f] === "92595.json"){
+                file = files[f];
+            }
+        }
+        expect(file).toEqual("92595.json");
+
+        let data = match_data.read_in_data([file])
+        /* 0 means team 1 wins */
+        let winner_id = data[0].winner;
+        expect(winner_id).toEqual(0)
+        /* by this, it can be confimed that the reader has read in the file corretly! */
+
+
+        let match_results = match_data.process_raw_data(data);
+        /* winner id is always at first index, then the losing id is always the second */
+        let winner = match_results[0][0];
+        expect(winner).toEqual(data[0][winner_id]["id"])
+    });
+
 });

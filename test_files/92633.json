@@ -1,0 +1,1462 @@
+{
+    "0": {
+        "name": "OneThree",
+        "id": "10022",
+        "win_lose_ratio": 0.875,
+        "best_maps": {
+            "Inferno": 57.1,
+            "Overpass": 55.6,
+            "Dust2": 53.3,
+            "Mirage": 50,
+            "Nuke": 35.7,
+            "Train": 26.7
+        },
+        "last_matches": [
+            {
+                "team1": "OneThree",
+                "team2": "JiJieHao",
+                "winner": "JiJieHao",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "EHOME",
+                "winner": "EHOME",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Invictus",
+                "winner": "OneThree",
+                "date": "2020-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "TYLOO",
+                "winner": "TYLOO",
+                "date": "2020-01-07T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Alpha Red",
+                "winner": "OneThree",
+                "date": "2020-01-06T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "AUGUST",
+                "winner": "AUGUST",
+                "date": "2020-01-06T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Aster",
+                "winner": "Aster",
+                "date": "2019-12-28T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "In Young Ren",
+                "winner": "OneThree",
+                "date": "2019-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Lynn Vision",
+                "winner": "Lynn Vision",
+                "date": "2019-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "ahq",
+                "winner": "OneThree",
+                "date": "2019-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "4Bowie",
+                "winner": "OneThree",
+                "date": "2019-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "TYLOO",
+                "winner": "TYLOO",
+                "date": "2019-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "EHOME",
+                "winner": "OneThree",
+                "date": "2019-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "L9L",
+                "winner": "L9L",
+                "date": "2019-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "ViCi",
+                "winner": "ViCi",
+                "date": "2019-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Alpha Red",
+                "winner": "OneThree",
+                "date": "2019-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "EHOME",
+                "winner": "OneThree",
+                "date": "2019-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "TYLOO",
+                "winner": "TYLOO",
+                "date": "2019-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Lynn Vision",
+                "winner": "OneThree",
+                "date": "2019-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Invictus",
+                "winner": "OneThree",
+                "date": "2019-11-26T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "TYLOO",
+                "winner": "TYLOO",
+                "date": "2019-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "BTRG",
+                "winner": "OneThree",
+                "date": "2019-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "EHOME",
+                "winner": "EHOME",
+                "date": "2019-11-12T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Lynn Vision",
+                "winner": "OneThree",
+                "date": "2019-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "EHOME",
+                "winner": "EHOME",
+                "date": "2019-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "5POWER",
+                "winner": "5POWER",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "5POWER",
+                "winner": "OneThree",
+                "date": "2019-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Invictus",
+                "winner": "OneThree",
+                "date": "2019-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "TYLOO",
+                "winner": "TYLOO",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "EHOME",
+                "winner": "EHOME",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Invictus",
+                "winner": "Invictus",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Rstar",
+                "winner": "OneThree",
+                "date": "2019-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "SJ",
+                "winner": "SJ",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "SKADE",
+                "winner": "OneThree",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "SJ",
+                "winner": "SJ",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "SKADE",
+                "winner": "OneThree",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "adwokacik",
+                "winner": "OneThree",
+                "date": "2019-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Copenhagen Flames",
+                "winner": "OneThree",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "Lynn Vision",
+                "winner": "Lynn Vision",
+                "date": "2019-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "5POWER",
+                "winner": "5POWER",
+                "date": "2019-08-07T22:00:00.000Z"
+            },
+            {
+                "team1": "OneThree",
+                "team2": "BOOT",
+                "winner": "BOOT",
+                "date": "2019-07-25T22:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-03-06T23:00:00.000Z",
+        "player_data": {
+            "7026": {
+                "most_used_weapons": {
+                    "ak47": 6254,
+                    "m4a1": 2654,
+                    "m4a1_silencer": 1581,
+                    "cz75a": 767,
+                    "famas": 619,
+                    "ump45": 618,
+                    "usp_silencer": 595,
+                    "glock": 488,
+                    "awp": 409,
+                    "sg556": 303,
+                    "galilar": 255,
+                    "tec9": 251,
+                    "p250": 197,
+                    "deagle": 145,
+                    "aug": 86,
+                    "mp9": 80,
+                    "hegrenade": 73,
+                    "mac10": 71,
+                    "fiveseven": 66,
+                    "p90": 62,
+                    "inferno": 58,
+                    "hkp2000": 57,
+                    "mp7": 44,
+                    "scar20": 27,
+                    "ssg08": 23,
+                    "mag7": 17,
+                    "bizon": 9,
+                    "elite": 7,
+                    "mp5sd": 3,
+                    "world": 2,
+                    "molotov_projectile": 1,
+                    "xm1014": 1,
+                    "molotov": 0,
+                    "knife_push": 0,
+                    "knife_skeleton": 0,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "m4a1_silencer_off": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "revolver": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_falchion": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0,
+                    "negev": 0
+                },
+                "headshots": 42.2,
+                "days_in_team": 225,
+                "kda": 1.11
+            },
+            "8599": {
+                "most_used_weapons": {
+                    "ak47": 2299,
+                    "m4a1": 1697,
+                    "cz75a": 471,
+                    "famas": 379,
+                    "sg556": 371,
+                    "ump45": 336,
+                    "glock": 258,
+                    "usp_silencer": 253,
+                    "m4a1_silencer": 225,
+                    "p250": 143,
+                    "galilar": 114,
+                    "mac10": 90,
+                    "deagle": 89,
+                    "mp9": 56,
+                    "tec9": 52,
+                    "inferno": 52,
+                    "awp": 50,
+                    "hkp2000": 44,
+                    "fiveseven": 40,
+                    "hegrenade": 29,
+                    "mp7": 25,
+                    "p90": 17,
+                    "scar20": 5,
+                    "ssg08": 3,
+                    "nova": 1,
+                    "mp5sd": 1,
+                    "molotov": 0,
+                    "knife_skeleton": 0,
+                    "sawedoff": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "m249": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "xm1014": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "aug": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "elite": 0,
+                    "knife_falchion": 0,
+                    "world": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 48.5,
+                "days_in_team": 225,
+                "kda": 0.97
+            },
+            "16008": {
+                "most_used_weapons": {
+                    "ak47": 817,
+                    "m4a1": 503,
+                    "deagle": 170,
+                    "usp_silencer": 126,
+                    "glock": 93,
+                    "awp": 58,
+                    "ump45": 55,
+                    "aug": 34,
+                    "galilar": 31,
+                    "cz75a": 28,
+                    "famas": 28,
+                    "m4a1_silencer": 25,
+                    "mp9": 22,
+                    "mac10": 16,
+                    "p250": 13,
+                    "hegrenade": 11,
+                    "inferno": 8,
+                    "sg556": 7,
+                    "mp7": 6,
+                    "ssg08": 5,
+                    "xm1014": 5,
+                    "hkp2000": 5,
+                    "taser": 4,
+                    "mag7": 3,
+                    "p90": 2,
+                    "molotov": 0,
+                    "fiveseven": 0,
+                    "knife_skeleton": 0,
+                    "tec9": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "world": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0,
+                    "knife_butterfly": 0,
+                    "knife_flip": 0,
+                    "knife_widowmaker": 0
+                },
+                "headshots": 58.2,
+                "days_in_team": 103,
+                "kda": 0.99
+            },
+            "16768": {
+                "most_used_weapons": {
+                    "awp": 860,
+                    "ak47": 805,
+                    "m4a1": 199,
+                    "usp_silencer": 191,
+                    "sg556": 183,
+                    "cz75a": 130,
+                    "glock": 103,
+                    "m4a1_silencer": 94,
+                    "deagle": 72,
+                    "mac10": 46,
+                    "ump45": 41,
+                    "aug": 40,
+                    "famas": 32,
+                    "p250": 28,
+                    "mp9": 18,
+                    "ssg08": 17,
+                    "inferno": 13,
+                    "galilar": 9,
+                    "scar20": 8,
+                    "hegrenade": 7,
+                    "xm1014": 6,
+                    "fiveseven": 2,
+                    "hkp2000": 2,
+                    "world": 1,
+                    "mp7": 1,
+                    "knife_widowmaker": 1,
+                    "molotov": 0,
+                    "taser": 0,
+                    "p90": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_skeleton": 0,
+                    "tec9": 0,
+                    "elite": 0,
+                    "m249": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "usp_silencer_off": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0,
+                    "knife_butterfly": 0,
+                    "knife_flip": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "knife_ursus": 0,
+                    "knife_t": 0
+                },
+                "headshots": 45.3,
+                "days_in_team": 212,
+                "kda": 1.07
+            }
+        },
+        "kills": {
+            "ak47": 34,
+            "deagle": 2,
+            "mac10": 4,
+            "sg556": 12,
+            "m4a1_silencer": 8,
+            "cz75a": 6,
+            "p250": 2,
+            "mp9": 4,
+            "awp": 2,
+            "m4a1": 10,
+            "usp_silencer": 7,
+            "glock": 3,
+            "ump45": 1,
+            "famas": 1,
+            "fiveseven": 1,
+            "galilar": 2
+        },
+        "first_kills": 11
+    },
+    "1": {
+        "name": "SKADE",
+        "id": "10386",
+        "win_lose_ratio": 1.3267326732673268,
+        "best_maps": {
+            "Inferno": 77.2,
+            "Overpass": 68,
+            "Mirage": 59.4,
+            "Dust2": 56.2,
+            "Train": 45.7,
+            "Nuke": 34.9
+        },
+        "last_matches": [
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2020-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2020-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Gambit Youngsters",
+                "winner": "SKADE",
+                "date": "2020-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Endpoint",
+                "winner": "Endpoint",
+                "date": "2020-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2020-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Ambush",
+                "winner": "SKADE",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Salamander",
+                "winner": "SKADE",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "FATE",
+                "winner": "SKADE",
+                "date": "2020-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Endpoint",
+                "winner": "SKADE",
+                "date": "2020-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "AGO",
+                "winner": "SKADE",
+                "date": "2020-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Singularity",
+                "winner": "SKADE",
+                "date": "2020-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nemiga",
+                "winner": "SKADE",
+                "date": "2020-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Espada",
+                "winner": "SKADE",
+                "date": "2020-04-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Tricked",
+                "winner": "SKADE",
+                "date": "2020-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Pompa",
+                "winner": "SKADE",
+                "date": "2020-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Salamander",
+                "winner": "Salamander",
+                "date": "2020-03-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Prima",
+                "winner": "SKADE",
+                "date": "2020-03-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2020-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Turkey5",
+                "winner": "SKADE",
+                "date": "2020-03-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Tricked",
+                "winner": "SKADE",
+                "date": "2020-03-23T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Pompa",
+                "winner": "SKADE",
+                "date": "2020-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Endpoint",
+                "winner": "Endpoint",
+                "date": "2020-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Juggernauts",
+                "winner": "SKADE",
+                "date": "2020-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "HellRaisers",
+                "winner": "SKADE",
+                "date": "2020-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Spirit",
+                "winner": "SKADE",
+                "date": "2020-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "AVEZ",
+                "winner": "AVEZ",
+                "date": "2020-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Copenhagen Flames",
+                "winner": "SKADE",
+                "date": "2020-02-15T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "SKADE",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "pro100",
+                "winner": "SKADE",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Singularity",
+                "winner": "SKADE",
+                "date": "2020-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Illuminar",
+                "winner": "Illuminar",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "TheDabers",
+                "winner": "SKADE",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "KOVA",
+                "winner": "KOVA",
+                "date": "2020-02-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Demolition Crew",
+                "winner": "SKADE",
+                "date": "2020-02-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Complexity",
+                "winner": "Complexity",
+                "date": "2020-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "FiveG",
+                "winner": "SKADE",
+                "date": "2020-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2020-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2020-01-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "SKADE",
+                "date": "2020-01-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2020-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2020-01-18T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "cisbots",
+                "winner": "SKADE",
+                "date": "2020-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Gambit Youngsters",
+                "winner": "SKADE",
+                "date": "2020-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "MeAndTheBoys",
+                "winner": "SKADE",
+                "date": "2020-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nexus",
+                "winner": "SKADE",
+                "date": "2020-01-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "MAD Lions",
+                "winner": "MAD Lions",
+                "date": "2020-01-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "AVEZ",
+                "winner": "SKADE",
+                "date": "2020-01-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Avengers",
+                "winner": "SKADE",
+                "date": "2020-01-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "OG",
+                "winner": "OG",
+                "date": "2020-01-07T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2020-01-03T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "FATE",
+                "winner": "SKADE",
+                "date": "2020-01-03T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Ambush",
+                "winner": "SKADE",
+                "date": "2020-01-02T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Brute",
+                "winner": "SKADE",
+                "date": "2020-01-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Akatsuki",
+                "winner": "SKADE",
+                "date": "2019-12-30T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Phoenix",
+                "winner": "Phoenix",
+                "date": "2019-12-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Unique",
+                "winner": "SKADE",
+                "date": "2019-12-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "PACT",
+                "winner": "SKADE",
+                "date": "2019-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Ambush",
+                "winner": "SKADE",
+                "date": "2019-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "DreamEaters",
+                "winner": "SKADE",
+                "date": "2019-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "SJ",
+                "winner": "SKADE",
+                "date": "2019-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "SG.pro",
+                "winner": "SKADE",
+                "date": "2019-12-26T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Project X",
+                "winner": "SKADE",
+                "date": "2019-12-26T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Phoenix",
+                "winner": "Phoenix",
+                "date": "2019-12-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Ambush",
+                "winner": "SKADE",
+                "date": "2019-12-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "DreamEaters",
+                "winner": "SKADE",
+                "date": "2019-12-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "FATE",
+                "winner": "FATE",
+                "date": "2019-12-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nexus",
+                "winner": "SKADE",
+                "date": "2019-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2019-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-12-17T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Project X",
+                "winner": "Project X",
+                "date": "2019-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nordavind",
+                "winner": "SKADE",
+                "date": "2019-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "MAJESTY",
+                "winner": "SKADE",
+                "date": "2019-12-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2019-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Virtus.pro",
+                "winner": "SKADE",
+                "date": "2019-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Illuminar",
+                "winner": "Illuminar",
+                "date": "2019-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Aristocracy",
+                "winner": "Aristocracy",
+                "date": "2019-11-26T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "AGO",
+                "winner": "SKADE",
+                "date": "2019-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Pompa",
+                "winner": "SKADE",
+                "date": "2019-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "SKADE",
+                "date": "2019-11-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nordavind",
+                "winner": "SKADE",
+                "date": "2019-11-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Izako Boars",
+                "winner": "SKADE",
+                "date": "2019-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Espada",
+                "winner": "SKADE",
+                "date": "2019-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Espada",
+                "winner": "Espada",
+                "date": "2019-10-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Phoenix",
+                "winner": "SKADE",
+                "date": "2019-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "HAVU",
+                "winner": "SKADE",
+                "date": "2019-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "SMASH",
+                "winner": "SMASH",
+                "date": "2019-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "pro100",
+                "winner": "SKADE",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "SKADE",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-10-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2019-10-05T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "OneThree",
+                "winner": "OneThree",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Se7en",
+                "winner": "SKADE",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "OneThree",
+                "winner": "OneThree",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Se7en",
+                "winner": "SKADE",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Espada",
+                "winner": "SKADE",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Se7en",
+                "winner": "Se7en",
+                "date": "2019-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "SKADE",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Heretics",
+                "winner": "SKADE",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "adwokacik",
+                "winner": "SKADE",
+                "date": "2019-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "ex-Epsilon",
+                "winner": "ex-Epsilon",
+                "date": "2019-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "SKADE",
+                "team2": "Nordavind",
+                "winner": "SKADE",
+                "date": "2019-09-03T22:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-19T22:00:00.000Z",
+        "player_data": {
+            "10762": {
+                "most_used_weapons": {
+                    "ak47": 5325,
+                    "m4a1": 2432,
+                    "m4a1_silencer": 1016,
+                    "usp_silencer": 727,
+                    "glock": 514,
+                    "ump45": 393,
+                    "famas": 295,
+                    "galilar": 258,
+                    "cz75a": 250,
+                    "deagle": 245,
+                    "mac10": 214,
+                    "awp": 180,
+                    "tec9": 159,
+                    "mp9": 129,
+                    "fiveseven": 124,
+                    "aug": 121,
+                    "hegrenade": 111,
+                    "sg556": 107,
+                    "p250": 104,
+                    "inferno": 70,
+                    "hkp2000": 67,
+                    "ssg08": 20,
+                    "p90": 12,
+                    "mp7": 10,
+                    "mp5sd": 7,
+                    "mag7": 7,
+                    "world": 6,
+                    "knife_karambit": 5,
+                    "scar20": 4,
+                    "xm1014": 4,
+                    "knife_m9_bayonet": 2,
+                    "bizon": 1,
+                    "knife_t": 1,
+                    "taser": 1,
+                    "knife_butterfly": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_tactical": 0,
+                    "m4a1_silencer_off": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "knife_survival_bowie": 0,
+                    "elite": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "g3sg1": 0,
+                    "negev": 0
+                },
+                "headshots": 55.5,
+                "days_in_team": 208,
+                "kda": 0.95
+            },
+            "11217": {
+                "most_used_weapons": {
+                    "ak47": 5743,
+                    "m4a1": 2192,
+                    "awp": 1922,
+                    "m4a1_silencer": 1393,
+                    "sg556": 1144,
+                    "ump45": 1070,
+                    "usp_silencer": 975,
+                    "mac10": 785,
+                    "aug": 622,
+                    "glock": 575,
+                    "famas": 449,
+                    "deagle": 372,
+                    "galilar": 307,
+                    "cz75a": 267,
+                    "p250": 246,
+                    "mp9": 217,
+                    "tec9": 191,
+                    "hegrenade": 171,
+                    "inferno": 171,
+                    "ssg08": 167,
+                    "fiveseven": 156,
+                    "hkp2000": 28,
+                    "bizon": 24,
+                    "mp7": 18,
+                    "knife_karambit": 17,
+                    "xm1014": 16,
+                    "mag7": 8,
+                    "knife_m9_bayonet": 5,
+                    "world": 4,
+                    "p90": 3,
+                    "nova": 3,
+                    "taser": 3,
+                    "usp_silencer_off": 2,
+                    "knife_stiletto": 2,
+                    "knife_widowmaker": 2,
+                    "bayonet": 2,
+                    "knife_butterfly": 2,
+                    "knife_flip": 1,
+                    "sawedoff": 0,
+                    "m4a1_silencer_off": 0,
+                    "knife_tactical": 0,
+                    "scar20": 0,
+                    "incgrenade": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "knife_default_ct": 0,
+                    "mp5sd": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0,
+                    "negev": 0
+                },
+                "headshots": 40.7,
+                "days_in_team": 178,
+                "kda": 1.01
+            },
+            "13466": {
+                "most_used_weapons": {
+                    "awp": 2793,
+                    "ak47": 816,
+                    "sg556": 758,
+                    "usp_silencer": 343,
+                    "m4a1": 293,
+                    "glock": 204,
+                    "deagle": 135,
+                    "aug": 127,
+                    "p250": 107,
+                    "mac10": 105,
+                    "ssg08": 81,
+                    "cz75a": 76,
+                    "mp9": 69,
+                    "m4a1_silencer": 57,
+                    "famas": 56,
+                    "galilar": 50,
+                    "ump45": 32,
+                    "hegrenade": 27,
+                    "inferno": 22,
+                    "tec9": 14,
+                    "fiveseven": 12,
+                    "hkp2000": 6,
+                    "world": 2,
+                    "taser": 1,
+                    "sawedoff": 1,
+                    "knife_karambit": 1,
+                    "knife_butterfly": 1,
+                    "p90": 0,
+                    "elite": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "knife_stiletto": 0,
+                    "xm1014": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0,
+                    "knife_flip": 0,
+                    "mp7": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "negev": 0,
+                    "knife_t": 0
+                },
+                "headshots": 32.3,
+                "days_in_team": 208,
+                "kda": 1.11
+            },
+            "16412": {
+                "most_used_weapons": {
+                    "ak47": 2339,
+                    "m4a1": 1600,
+                    "sg556": 345,
+                    "usp_silencer": 338,
+                    "mp9": 277,
+                    "glock": 207,
+                    "mac10": 196,
+                    "deagle": 188,
+                    "cz75a": 108,
+                    "galilar": 99,
+                    "famas": 82,
+                    "m4a1_silencer": 64,
+                    "p250": 50,
+                    "inferno": 33,
+                    "awp": 28,
+                    "hegrenade": 26,
+                    "fiveseven": 17,
+                    "aug": 11,
+                    "ump45": 6,
+                    "hkp2000": 3,
+                    "xm1014": 2,
+                    "knife_butterfly": 2,
+                    "elite": 1,
+                    "world": 1,
+                    "knife_karambit": 1,
+                    "mp7": 1,
+                    "taser": 0,
+                    "ssg08": 0,
+                    "p90": 0,
+                    "tec9": 0,
+                    "sawedoff": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "scar20": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "knife_stiletto": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "negev": 0,
+                    "knife_t": 0
+                },
+                "headshots": 53,
+                "days_in_team": 208,
+                "kda": 0.93
+            },
+            "17145": {
+                "most_used_weapons": {
+                    "ak47": 1353,
+                    "sg556": 964,
+                    "m4a1": 828,
+                    "usp_silencer": 337,
+                    "m4a1_silencer": 332,
+                    "awp": 254,
+                    "glock": 235,
+                    "deagle": 215,
+                    "mac10": 139,
+                    "mp9": 119,
+                    "famas": 108,
+                    "galilar": 73,
+                    "aug": 60,
+                    "cz75a": 57,
+                    "ump45": 49,
+                    "p250": 34,
+                    "inferno": 30,
+                    "hegrenade": 26,
+                    "fiveseven": 13,
+                    "ssg08": 10,
+                    "elite": 2,
+                    "world": 2,
+                    "knife_m9_bayonet": 2,
+                    "mp5sd": 2,
+                    "taser": 1,
+                    "tec9": 1,
+                    "knife_karambit": 1,
+                    "xm1014": 1,
+                    "bayonet": 1,
+                    "mp7": 1,
+                    "p90": 0,
+                    "sawedoff": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "knife_stiletto": 0,
+                    "hkp2000": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0
+                },
+                "headshots": 44.8,
+                "days_in_team": 208,
+                "kda": 1.07
+            }
+        },
+        "kills": {
+            "ak47": 21,
+            "deagle": 3,
+            "m4a1": 20,
+            "galilar": 2,
+            "aug": 1,
+            "ump45": 1,
+            "mac10": 6,
+            "sg556": 6,
+            "m4a1_silencer": 9,
+            "glock": 2,
+            "mp9": 2,
+            "awp": 8,
+            "cz75a": 2,
+            "usp_silencer": 3,
+            "p250": 1
+        },
+        "first_kills": 16
+    },
+    "winner": 0,
+    "team1Rounds": 16,
+    "team2Rounds": 11,
+    "id": "92633",
+    "date": "2019-09-28T22:00:00.000Z"
+}

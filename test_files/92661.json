@@ -1,0 +1,4721 @@
+{
+    "0": {
+        "name": "Astralis",
+        "id": "6665",
+        "win_lose_ratio": 2.1908127208480566,
+        "best_maps": {
+            "Inferno": 75,
+            "Nuke": 75,
+            "Vertigo": 73.3,
+            "Mirage": 69.2,
+            "Overpass": 67.1,
+            "Train": 65.2,
+            "Dust2": 64.5,
+            "Cache": 59.3,
+            "Cobblestone": 20
+        },
+        "last_matches": [
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2020-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OG",
+                "winner": "Astralis",
+                "date": "2020-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2020-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2020-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2020-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Vitality",
+                "winner": "Astralis",
+                "date": "2020-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Spirit",
+                "winner": "Astralis",
+                "date": "2020-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "Astralis",
+                "date": "2020-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2020-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2020-03-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2020-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2020-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Vitality",
+                "winner": "Astralis",
+                "date": "2020-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2020-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2020-02-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Complexity",
+                "winner": "Complexity",
+                "date": "2020-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2019-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2019-12-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Renegades",
+                "winner": "Astralis",
+                "date": "2019-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-12-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Evil Geniuses",
+                "winner": "Astralis",
+                "date": "2019-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2019-11-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Sharks",
+                "winner": "Astralis",
+                "date": "2019-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "100 Thieves",
+                "winner": "Astralis",
+                "date": "2019-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2019-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "100 Thieves",
+                "winner": "Astralis",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ViCi",
+                "winner": "Astralis",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2019-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2019-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": null,
+                "date": "2019-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2019-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2019-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "Astralis",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2019-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "m1x",
+                "winner": "Astralis",
+                "date": "2019-10-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Aristocracy",
+                "winner": "Astralis",
+                "date": "2019-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2019-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Vitality",
+                "winner": "Astralis",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Evil Geniuses",
+                "winner": "Evil Geniuses",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Evil Geniuses",
+                "winner": "Evil Geniuses",
+                "date": "2019-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2019-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "AVANGAR",
+                "winner": "Astralis",
+                "date": "2019-09-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "Astralis",
+                "date": "2019-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CR4ZY",
+                "winner": "Astralis",
+                "date": "2019-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "NRG",
+                "date": "2019-08-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2019-08-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "DreamEaters",
+                "winner": "Astralis",
+                "date": "2019-08-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Vitality",
+                "winner": "Vitality",
+                "date": "2019-07-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-07-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2019-07-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "Astralis",
+                "date": "2019-07-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2019-06-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "NRG",
+                "date": "2019-06-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2019-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2019-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FURIA",
+                "winner": "FURIA",
+                "date": "2019-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FURIA",
+                "winner": "FURIA",
+                "date": "2019-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2019-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2019-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2019-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2019-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Giants",
+                "winner": "Astralis",
+                "date": "2019-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "Astralis",
+                "date": "2019-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2019-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ex-3DMAX",
+                "winner": "Astralis",
+                "date": "2019-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "MIBR",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2019-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-03-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "Astralis",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "AVANGAR",
+                "winner": "Astralis",
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2019-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "Astralis",
+                "date": "2019-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2019-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2019-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Renegades",
+                "winner": "Astralis",
+                "date": "2019-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Complexity",
+                "winner": "Astralis",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2019-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Ghost",
+                "winner": "Astralis",
+                "date": "2019-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2019-01-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Complexity",
+                "winner": "Astralis",
+                "date": "2019-01-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2018-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2018-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-12-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2018-12-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ViCi",
+                "winner": "Astralis",
+                "date": "2018-12-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "MIBR",
+                "date": "2018-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2018-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "AGO",
+                "winner": "Astralis",
+                "date": "2018-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2018-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MVP PK",
+                "winner": "Astralis",
+                "date": "2018-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Cloud9",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2018-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "North",
+                "date": "2018-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Windigo",
+                "winner": "Astralis",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Windigo",
+                "winner": "Astralis",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2018-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2018-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2018-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2018-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2018-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2018-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2018-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2018-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-10-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-10-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ex-Space Soldiers",
+                "winner": "ex-Space Soldiers",
+                "date": "2018-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ex-Space Soldiers",
+                "winner": "Astralis",
+                "date": "2018-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "BIG",
+                "date": "2018-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "Astralis",
+                "date": "2018-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Space Soldiers",
+                "winner": "Astralis",
+                "date": "2018-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2018-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2018-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2018-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Vega Squadron",
+                "winner": "Astralis",
+                "date": "2018-09-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2018-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Spirit",
+                "winner": "Astralis",
+                "date": "2018-09-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2018-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Rogue",
+                "winner": "Astralis",
+                "date": "2018-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Complexity",
+                "winner": "Astralis",
+                "date": "2018-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "North",
+                "date": "2018-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "MIBR",
+                "winner": "Astralis",
+                "date": "2018-08-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "TYLOO",
+                "winner": "Astralis",
+                "date": "2018-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "North",
+                "date": "2018-08-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Grayhound",
+                "winner": "Astralis",
+                "date": "2018-08-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-07-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-07-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-07-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "Astralis",
+                "date": "2018-07-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-06-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-06-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2018-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-05-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2018-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2018-05-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Astralis",
+                "date": "2018-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Astralis",
+                "date": "2018-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2018-05-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-05-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "Astralis",
+                "date": "2018-04-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2018-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2018-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2018-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2018-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2018-04-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-04-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-04-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Space Soldiers",
+                "winner": "Astralis",
+                "date": "2018-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Space Soldiers",
+                "winner": "Astralis",
+                "date": "2018-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Space Soldiers",
+                "winner": "Astralis",
+                "date": "2018-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2018-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "AGO",
+                "winner": "Astralis",
+                "date": "2018-04-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2018-04-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2018-03-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Astralis",
+                "date": "2018-03-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HOLLYWOOD",
+                "winner": "Astralis",
+                "date": "2018-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2018-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2018-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2018-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2018-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2018-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2018-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Renegades",
+                "winner": "Astralis",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-02-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2018-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Astralis",
+                "date": "2018-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2018-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2018-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2018-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2018-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2018-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2018-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2018-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2018-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2018-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Cloud9",
+                "date": "2018-01-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2018-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2018-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2018-01-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2017-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2017-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2017-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2017-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Luminosity",
+                "winner": "Astralis",
+                "date": "2017-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2017-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2017-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2017-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": null,
+                "date": "2017-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2017-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2017-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2017-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2017-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2017-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "TheMongolz",
+                "winner": "Astralis",
+                "date": "2017-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2017-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2017-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Cloud9",
+                "date": "2017-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2017-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2017-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2017-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2017-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2017-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2017-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-10-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2017-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2017-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2017-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2017-10-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2017-10-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2017-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2017-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2017-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2017-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Astralis",
+                "date": "2017-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2017-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2017-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-10-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2017-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2017-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "Astralis",
+                "date": "2017-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "BIG",
+                "winner": "BIG",
+                "date": "2017-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2017-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2017-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2017-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2017-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2017-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "GODSENT",
+                "date": "2017-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2017-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-09-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-09-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Gambit",
+                "date": "2017-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Renegades",
+                "winner": "Astralis",
+                "date": "2017-08-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-08-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-08-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Gambit",
+                "date": "2017-07-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2017-07-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2017-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-07-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2017-07-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Immortals",
+                "winner": "Astralis",
+                "date": "2017-07-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2017-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2017-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Cloud9",
+                "date": "2017-06-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2017-06-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2017-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-05-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-05-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2017-05-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2017-05-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2017-05-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-05-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2017-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2017-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2017-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2017-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2017-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2017-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-05-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Renegades",
+                "winner": "Astralis",
+                "date": "2017-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2017-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Chiefs",
+                "winner": "Astralis",
+                "date": "2017-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2017-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2017-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2017-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2017-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2017-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2017-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2017-04-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2017-04-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2017-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2017-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2017-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2017-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2017-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "North",
+                "date": "2017-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2017-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Kinguin",
+                "winner": "Astralis",
+                "date": "2017-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Kinguin",
+                "winner": "Astralis",
+                "date": "2017-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-03-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-03-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "Astralis",
+                "date": "2017-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "North",
+                "winner": "North",
+                "date": "2017-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2017-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2017-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Astralis",
+                "date": "2017-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Immortals",
+                "winner": "Astralis",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Immortals",
+                "winner": "Immortals",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2017-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2017-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "LDLC",
+                "winner": "Astralis",
+                "date": "2017-02-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2017-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2017-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2017-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Complexity",
+                "winner": "Astralis",
+                "date": "2017-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2017-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2017-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2017-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2017-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2017-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2017-01-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2017-01-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2017-01-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2017-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2017-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "GODSENT",
+                "date": "2017-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2016-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-12-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "Astralis",
+                "date": "2016-12-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2016-12-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2016-11-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2016-11-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "Astralis",
+                "date": "2016-11-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2016-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2016-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2016-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2016-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2016-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2016-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2016-11-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "TYLOO",
+                "winner": "Astralis",
+                "date": "2016-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Immortals",
+                "winner": "Astralis",
+                "date": "2016-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2016-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Liquid",
+                "winner": "Astralis",
+                "date": "2016-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2016-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Astralis",
+                "date": "2016-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2016-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2016-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2016-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2016-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2016-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2016-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2016-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2016-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "GODSENT",
+                "winner": "GODSENT",
+                "date": "2016-10-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2016-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "dd",
+                "winner": "Astralis",
+                "date": "2016-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fish123",
+                "winner": "Astralis",
+                "date": "2016-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Astralis",
+                "date": "2016-10-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2016-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2016-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2016-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2016-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2016-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NewStyle",
+                "winner": "Astralis",
+                "date": "2016-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Tricked",
+                "winner": "Astralis",
+                "date": "2016-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2016-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "PENTA",
+                "winner": "Astralis",
+                "date": "2016-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "PENTA",
+                "winner": "PENTA",
+                "date": "2016-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2016-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "HellRaisers",
+                "winner": "Astralis",
+                "date": "2016-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2016-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "Astralis",
+                "date": "2016-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "TYLOO",
+                "winner": "Astralis",
+                "date": "2016-09-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2016-09-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2016-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-09-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2016-09-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-09-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2016-08-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Wizards",
+                "winner": "Astralis",
+                "date": "2016-08-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2016-08-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Rogue",
+                "winner": "Astralis",
+                "date": "2016-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Tricked",
+                "winner": "Astralis",
+                "date": "2016-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2016-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2016-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FlipSid3",
+                "winner": "Astralis",
+                "date": "2016-08-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FlipSid3",
+                "winner": "Astralis",
+                "date": "2016-08-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2016-08-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2016-08-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2016-08-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2016-08-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2016-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2016-07-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Gambit",
+                "date": "2016-07-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Cloud9",
+                "winner": "Cloud9",
+                "date": "2016-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "TSM",
+                "winner": "TSM",
+                "date": "2016-06-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-06-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ENCE",
+                "winner": "Astralis",
+                "date": "2016-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2016-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "Astralis",
+                "date": "2016-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "SK",
+                "date": "2016-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2016-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2016-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "Astralis",
+                "date": "2016-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "Astralis",
+                "date": "2016-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2016-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-05-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-05-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Luminosity",
+                "winner": "Luminosity",
+                "date": "2016-05-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2016-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2016-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-04-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2016-04-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2016-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2016-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CSGL",
+                "winner": "Astralis",
+                "date": "2016-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2016-04-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "Astralis",
+                "date": "2016-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2016-03-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Gambit",
+                "winner": "Astralis",
+                "date": "2016-03-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2016-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2016-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "NRG",
+                "winner": "Astralis",
+                "date": "2016-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Torpedo",
+                "winner": "Astralis",
+                "date": "2016-03-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "SK",
+                "winner": "Astralis",
+                "date": "2016-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2016-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2016-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Tempo Storm",
+                "winner": "Astralis",
+                "date": "2016-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FaZe",
+                "winner": "Astralis",
+                "date": "2016-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "E-frag.net",
+                "winner": "Astralis",
+                "date": "2016-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2016-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2016-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2016-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Virtus.pro",
+                "winner": "Astralis",
+                "date": "2016-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2016-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2016-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Astralis",
+                "date": "2016-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "x6tence",
+                "winner": "Astralis",
+                "date": "2016-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FlipSid3",
+                "winner": "Astralis",
+                "date": "2016-02-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "FlipSid3",
+                "winner": "Astralis",
+                "date": "2016-02-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2016-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2016-02-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Natus Vincere",
+                "winner": "Astralis",
+                "date": "2016-02-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "CLG",
+                "winner": "Astralis",
+                "date": "2016-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Envy",
+                "winner": "Envy",
+                "date": "2016-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "G2",
+                "winner": "Astralis",
+                "date": "2016-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Method",
+                "winner": "Astralis",
+                "date": "2016-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Astralis",
+                "date": "2016-01-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Luminosity",
+                "winner": "Luminosity",
+                "date": "2016-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "mousesports",
+                "winner": "Astralis",
+                "date": "2016-01-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Astralis",
+                "team2": "Dignitas",
+                "winner": "Astralis",
+                "date": "2016-01-21T23:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-10T22:00:00.000Z",
+        "player_data": {
+            "4954": {
+                "most_used_weapons": {
+                    "ak47": 11712,
+                    "m4a1": 6210,
+                    "m4a1_silencer": 1650,
+                    "glock": 1071,
+                    "usp_silencer": 940,
+                    "famas": 840,
+                    "sg556": 756,
+                    "ump45": 668,
+                    "cz75a": 604,
+                    "p250": 509,
+                    "galilar": 508,
+                    "aug": 457,
+                    "hegrenade": 420,
+                    "hkp2000": 367,
+                    "fiveseven": 305,
+                    "tec9": 273,
+                    "deagle": 226,
+                    "inferno": 216,
+                    "mp9": 195,
+                    "mac10": 153,
+                    "awp": 127,
+                    "p90": 113,
+                    "mp7": 98,
+                    "ssg08": 91,
+                    "mag7": 61,
+                    "scar20": 46,
+                    "bizon": 25,
+                    "elite": 11,
+                    "xm1014": 10,
+                    "sawedoff": 7,
+                    "knife_flip": 7,
+                    "nova": 3,
+                    "mp5sd": 3,
+                    "negev": 3,
+                    "world": 2,
+                    "g3sg1": 2,
+                    "knife_m9_bayonet": 1,
+                    "usp_silencer_off": 1,
+                    "molotov_projectile": 1,
+                    "knife": 1,
+                    "knife_survival_bowie": 1,
+                    "flashbang": 0,
+                    "knife_push": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "gallil": 0,
+                    "knife_gut": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0
+                },
+                "headshots": 41.4,
+                "days_in_team": 1541,
+                "kda": 1.1
+            },
+            "7398": {
+                "most_used_weapons": {
+                    "ak47": 11358,
+                    "m4a1": 4726,
+                    "m4a1_silencer": 4120,
+                    "usp_silencer": 1506,
+                    "awp": 1357,
+                    "glock": 1199,
+                    "deagle": 1020,
+                    "ump45": 635,
+                    "p250": 613,
+                    "cz75a": 540,
+                    "famas": 404,
+                    "mac10": 355,
+                    "mp9": 326,
+                    "galilar": 314,
+                    "fiveseven": 257,
+                    "p90": 255,
+                    "aug": 230,
+                    "tec9": 204,
+                    "hegrenade": 182,
+                    "mp7": 180,
+                    "sg556": 149,
+                    "mag7": 139,
+                    "hkp2000": 138,
+                    "inferno": 81,
+                    "ssg08": 61,
+                    "mp5sd": 55,
+                    "usp_silencer_off": 31,
+                    "scar20": 28,
+                    "nova": 10,
+                    "xm1014": 10,
+                    "bizon": 8,
+                    "elite": 5,
+                    "bayonet": 5,
+                    "negev": 5,
+                    "knife_karambit": 4,
+                    "knife_flip": 3,
+                    "sawedoff": 2,
+                    "m249": 2,
+                    "taser": 2,
+                    "world": 2,
+                    "knife_m9_bayonet": 1,
+                    "knife_tactical": 1,
+                    "knife_stiletto": 1,
+                    "knife": 1,
+                    "knife_butterfly": 1,
+                    "flashbang": 0,
+                    "knife_push": 0,
+                    "revolver": 0,
+                    "molotov_projectile": 0,
+                    "gallil": 0,
+                    "knife_gut": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "g3sg1": 0
+                },
+                "headshots": 50.5,
+                "days_in_team": 1541,
+                "kda": 1.15
+            },
+            "7412": {
+                "most_used_weapons": {
+                    "ak47": 7992,
+                    "m4a1": 6605,
+                    "ump45": 1440,
+                    "m4a1_silencer": 949,
+                    "usp_silencer": 930,
+                    "glock": 724,
+                    "awp": 618,
+                    "cz75a": 581,
+                    "p250": 501,
+                    "famas": 330,
+                    "hkp2000": 315,
+                    "fiveseven": 270,
+                    "tec9": 268,
+                    "hegrenade": 266,
+                    "sg556": 240,
+                    "deagle": 190,
+                    "inferno": 166,
+                    "galilar": 164,
+                    "bizon": 153,
+                    "aug": 147,
+                    "mp9": 87,
+                    "mac10": 78,
+                    "p90": 58,
+                    "ssg08": 58,
+                    "mp7": 30,
+                    "mag7": 17,
+                    "scar20": 6,
+                    "xm1014": 4,
+                    "mp5sd": 3,
+                    "nova": 2,
+                    "elite": 2,
+                    "g3sg1": 2,
+                    "flashbang": 1,
+                    "molotov_projectile": 1,
+                    "knife": 1,
+                    "world": 1,
+                    "knife_default_ct": 1,
+                    "bayonet": 1,
+                    "sawedoff": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "m4a1_silencer_off": 0,
+                    "usp_silencer_off": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife_gut": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_butterfly": 0
+                },
+                "headshots": 46.7,
+                "days_in_team": 1256,
+                "kda": 1.03
+            },
+            "7592": {
+                "most_used_weapons": {
+                    "awp": 9493,
+                    "ak47": 6577,
+                    "m4a1": 2296,
+                    "m4a1_silencer": 2077,
+                    "usp_silencer": 1330,
+                    "cz75a": 937,
+                    "glock": 891,
+                    "deagle": 786,
+                    "p250": 766,
+                    "ump45": 593,
+                    "tec9": 543,
+                    "famas": 481,
+                    "sg556": 464,
+                    "hkp2000": 279,
+                    "ssg08": 275,
+                    "hegrenade": 266,
+                    "aug": 256,
+                    "galilar": 252,
+                    "mac10": 241,
+                    "p90": 231,
+                    "mp9": 186,
+                    "fiveseven": 159,
+                    "mp7": 113,
+                    "inferno": 96,
+                    "scar20": 56,
+                    "elite": 45,
+                    "mag7": 35,
+                    "bizon": 30,
+                    "nova": 14,
+                    "mp5sd": 14,
+                    "usp_silencer_off": 13,
+                    "knife_butterfly": 9,
+                    "xm1014": 8,
+                    "knife_m9_bayonet": 5,
+                    "negev": 5,
+                    "sawedoff": 3,
+                    "knife_karambit": 3,
+                    "knife_flip": 2,
+                    "world": 2,
+                    "m249": 1,
+                    "m4a1_silencer_off": 1,
+                    "knife_stiletto": 1,
+                    "zeus": 1,
+                    "taser": 1,
+                    "bayonet": 1,
+                    "flashbang": 0,
+                    "knife_push": 0,
+                    "knife_tactical": 0,
+                    "revolver": 0,
+                    "molotov_projectile": 0,
+                    "gallil": 0,
+                    "knife": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "g3sg1": 0
+                },
+                "headshots": 35,
+                "days_in_team": 1541,
+                "kda": 1.26
+            },
+            "9032": {
+                "most_used_weapons": {
+                    "ak47": 7645,
+                    "m4a1": 3874,
+                    "m4a1_silencer": 1460,
+                    "usp_silencer": 1062,
+                    "sg556": 866,
+                    "glock": 799,
+                    "deagle": 623,
+                    "aug": 611,
+                    "ump45": 525,
+                    "famas": 445,
+                    "p250": 348,
+                    "awp": 325,
+                    "cz75a": 320,
+                    "galilar": 310,
+                    "mac10": 204,
+                    "hegrenade": 180,
+                    "tec9": 156,
+                    "inferno": 103,
+                    "fiveseven": 98,
+                    "mp9": 96,
+                    "mp7": 75,
+                    "hkp2000": 49,
+                    "ssg08": 28,
+                    "mp5sd": 24,
+                    "xm1014": 8,
+                    "mag7": 6,
+                    "p90": 5,
+                    "world": 4,
+                    "usp_silencer_off": 1,
+                    "scar20": 1,
+                    "knife_survival_bowie": 1,
+                    "knife_default_ct": 1,
+                    "bayonet": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "m4a1_silencer_off": 0,
+                    "nova": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "molotov_projectile": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "negev": 0
+                },
+                "headshots": 47.6,
+                "days_in_team": 788,
+                "kda": 1.18
+            }
+        },
+        "kills": {
+            "ak47": 19,
+            "deagle": 5,
+            "usp_silencer": 3,
+            "glock": 3,
+            "p250": 1,
+            "ump45": 1,
+            "m4a1": 1,
+            "sg556": 10,
+            "mp9": 4,
+            "inferno": 1
+        },
+        "first_kills": 8
+    },
+    "1": {
+        "name": "Evil Geniuses",
+        "id": "10399",
+        "win_lose_ratio": 1.3773584905660377,
+        "best_maps": {
+            "Mirage": 70.6,
+            "Inferno": 66.7,
+            "Dust2": 56,
+            "Nuke": 53.8,
+            "Vertigo": 50,
+            "Train": 46.2,
+            "Overpass": 42.9
+        },
+        "last_matches": [
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2020-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "FURIA",
+                "winner": "Evil Geniuses",
+                "date": "2020-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2020-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "MIBR",
+                "winner": "Evil Geniuses",
+                "date": "2020-04-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "FURIA",
+                "winner": "Evil Geniuses",
+                "date": "2020-04-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Swole Patrol",
+                "winner": "Evil Geniuses",
+                "date": "2020-03-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "100 Thieves",
+                "winner": "100 Thieves",
+                "date": "2020-03-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "100 Thieves",
+                "winner": "100 Thieves",
+                "date": "2020-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2020-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "MAD Lions",
+                "winner": "Evil Geniuses",
+                "date": "2020-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "OG",
+                "winner": "OG",
+                "date": "2020-02-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "100 Thieves",
+                "winner": "Evil Geniuses",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "OG",
+                "winner": "OG",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2019-12-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Natus Vincere",
+                "winner": "Evil Geniuses",
+                "date": "2019-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-12-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2019-12-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "forZe",
+                "winner": "Evil Geniuses",
+                "date": "2019-12-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2019-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2019-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "100 Thieves",
+                "winner": "Evil Geniuses",
+                "date": "2019-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "fnatic",
+                "winner": "Evil Geniuses",
+                "date": "2019-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Astralis",
+                "winner": "Astralis",
+                "date": "2019-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "NiP",
+                "winner": "Evil Geniuses",
+                "date": "2019-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Liquid",
+                "winner": "Liquid",
+                "date": "2019-11-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "AVANGAR",
+                "winner": "Evil Geniuses",
+                "date": "2019-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2019-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "G2",
+                "winner": "Evil Geniuses",
+                "date": "2019-11-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "MIBR",
+                "winner": "MIBR",
+                "date": "2019-11-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "TYLOO",
+                "winner": "Evil Geniuses",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "fnatic",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "fnatic",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Renegades",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "NiP",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "FURIA",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Heroic",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2019-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "5POWER",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Cloud9",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Complexity",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "ex-Singularity",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Cloud9",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Complexity",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "eUnited",
+                "winner": "Evil Geniuses",
+                "date": "2019-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "mousesports",
+                "winner": "mousesports",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Astralis",
+                "winner": "Evil Geniuses",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "G2",
+                "winner": "Evil Geniuses",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "Astralis",
+                "winner": "Evil Geniuses",
+                "date": "2019-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Evil Geniuses",
+                "team2": "FaZe",
+                "winner": "Evil Geniuses",
+                "date": "2019-09-25T22:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-12T22:00:00.000Z",
+        "player_data": {
+            "8507": {
+                "most_used_weapons": {
+                    "ak47": 6026,
+                    "m4a1": 3133,
+                    "m4a1_silencer": 1427,
+                    "ump45": 1283,
+                    "usp_silencer": 998,
+                    "sg556": 706,
+                    "glock": 646,
+                    "p250": 638,
+                    "awp": 501,
+                    "cz75a": 450,
+                    "famas": 445,
+                    "tec9": 241,
+                    "galilar": 233,
+                    "mp9": 214,
+                    "aug": 200,
+                    "hegrenade": 187,
+                    "deagle": 157,
+                    "fiveseven": 135,
+                    "mac10": 130,
+                    "p90": 126,
+                    "inferno": 126,
+                    "mp7": 80,
+                    "hkp2000": 51,
+                    "mag7": 49,
+                    "mp5sd": 43,
+                    "ssg08": 35,
+                    "elite": 20,
+                    "scar20": 19,
+                    "nova": 8,
+                    "bizon": 6,
+                    "xm1014": 6,
+                    "knife_falchion": 3,
+                    "knife_m9_bayonet": 2,
+                    "world": 2,
+                    "knife_karambit": 1,
+                    "knife_stiletto": 1,
+                    "knife": 1,
+                    "knife_t": 1,
+                    "taser": 1,
+                    "knife_default_ct": 1,
+                    "g3sg1": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_tactical": 0,
+                    "usp_silencer_off": 0,
+                    "revolver": 0,
+                    "molotov_projectile": 0,
+                    "knife_flip": 0,
+                    "incgrenade": 0,
+                    "knife_survival_bowie": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "negev": 0
+                },
+                "headshots": 47.8,
+                "days_in_team": 199,
+                "kda": 1
+            },
+            "8523": {
+                "most_used_weapons": {
+                    "ak47": 7761,
+                    "m4a1": 3828,
+                    "m4a1_silencer": 2335,
+                    "awp": 1872,
+                    "usp_silencer": 1277,
+                    "glock": 832,
+                    "p250": 689,
+                    "galilar": 645,
+                    "famas": 617,
+                    "sg556": 528,
+                    "aug": 493,
+                    "cz75a": 462,
+                    "deagle": 394,
+                    "fiveseven": 347,
+                    "tec9": 308,
+                    "ump45": 289,
+                    "ssg08": 245,
+                    "mp9": 193,
+                    "inferno": 123,
+                    "mac10": 120,
+                    "hegrenade": 84,
+                    "hkp2000": 46,
+                    "mp7": 41,
+                    "mag7": 36,
+                    "knife_karambit": 26,
+                    "taser": 20,
+                    "p90": 11,
+                    "bayonet": 5,
+                    "knife_m9_bayonet": 4,
+                    "scar20": 4,
+                    "knife_default_ct": 4,
+                    "mp5sd": 4,
+                    "xm1014": 3,
+                    "knife_flip": 3,
+                    "world": 3,
+                    "knife_t": 2,
+                    "elite": 2,
+                    "knife_survival_bowie": 1,
+                    "knife_butterfly": 1,
+                    "g3sg1": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "molotov_projectile": 0,
+                    "knife_stiletto": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_falchion": 0,
+                    "negev": 0
+                },
+                "headshots": 37.2,
+                "days_in_team": 199,
+                "kda": 1.06
+            },
+            "9136": {
+                "most_used_weapons": {
+                    "ak47": 7306,
+                    "m4a1": 3234,
+                    "sg556": 1474,
+                    "usp_silencer": 924,
+                    "deagle": 743,
+                    "aug": 558,
+                    "glock": 552,
+                    "famas": 540,
+                    "m4a1_silencer": 505,
+                    "p250": 390,
+                    "ump45": 278,
+                    "cz75a": 253,
+                    "galilar": 250,
+                    "awp": 189,
+                    "mac10": 163,
+                    "tec9": 150,
+                    "mp9": 128,
+                    "hkp2000": 121,
+                    "fiveseven": 104,
+                    "inferno": 65,
+                    "ssg08": 53,
+                    "hegrenade": 36,
+                    "mag7": 10,
+                    "mp7": 7,
+                    "scar20": 5,
+                    "p90": 4,
+                    "mp5sd": 4,
+                    "knife_karambit": 3,
+                    "xm1014": 3,
+                    "world": 3,
+                    "bayonet": 2,
+                    "knife_push": 1,
+                    "knife_m9_bayonet": 1,
+                    "elite": 1,
+                    "knife_butterfly": 1,
+                    "m249": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "g3sg1": 0,
+                    "negev": 0
+                },
+                "headshots": 52,
+                "days_in_team": 199,
+                "kda": 1.16
+            },
+            "10671": {
+                "most_used_weapons": {
+                    "ak47": 6293,
+                    "m4a1": 3252,
+                    "usp_silencer": 835,
+                    "sg556": 685,
+                    "glock": 610,
+                    "famas": 581,
+                    "m4a1_silencer": 545,
+                    "aug": 499,
+                    "deagle": 465,
+                    "ump45": 349,
+                    "galilar": 312,
+                    "cz75a": 307,
+                    "mac10": 277,
+                    "mp9": 276,
+                    "p250": 275,
+                    "awp": 265,
+                    "tec9": 149,
+                    "fiveseven": 116,
+                    "inferno": 83,
+                    "hegrenade": 66,
+                    "hkp2000": 56,
+                    "ssg08": 44,
+                    "mag7": 11,
+                    "bayonet": 6,
+                    "mp7": 5,
+                    "scar20": 4,
+                    "world": 4,
+                    "xm1014": 3,
+                    "p90": 2,
+                    "knife_karambit": 2,
+                    "molotov_projectile": 1,
+                    "elite": 1,
+                    "mp5sd": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "negev": 0
+                },
+                "headshots": 49.4,
+                "days_in_team": 199,
+                "kda": 1.09
+            },
+            "11219": {
+                "most_used_weapons": {
+                    "awp": 9910,
+                    "ak47": 2416,
+                    "usp_silencer": 1070,
+                    "glock": 682,
+                    "m4a1": 614,
+                    "cz75a": 524,
+                    "sg556": 435,
+                    "m4a1_silencer": 418,
+                    "tec9": 295,
+                    "p250": 264,
+                    "ump45": 250,
+                    "mac10": 228,
+                    "ssg08": 204,
+                    "deagle": 193,
+                    "aug": 161,
+                    "famas": 160,
+                    "galilar": 121,
+                    "mp9": 111,
+                    "inferno": 59,
+                    "hegrenade": 44,
+                    "fiveseven": 30,
+                    "mp5sd": 11,
+                    "knife_m9_bayonet": 10,
+                    "elite": 4,
+                    "mp7": 4,
+                    "hkp2000": 3,
+                    "p90": 2,
+                    "knife_karambit": 2,
+                    "bizon": 2,
+                    "world": 1,
+                    "mag7": 1,
+                    "taser": 0,
+                    "m249": 0,
+                    "m4a1_silencer_off": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "xm1014": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "g3sg1": 0,
+                    "negev": 0,
+                    "knife_t": 0
+                },
+                "headshots": 27.5,
+                "days_in_team": 199,
+                "kda": 1.21
+            }
+        },
+        "kills": {
+            "ak47": 11,
+            "m4a1": 22,
+            "glock": 5,
+            "galilar": 2,
+            "mp9": 7,
+            "sg556": 6,
+            "usp_silencer": 8,
+            "awp": 11,
+            "m4a1_silencer": 3,
+            "inferno": 1,
+            "cz75a": 1,
+            "famas": 2,
+            "aug": 2
+        },
+        "first_kills": 11
+    },
+    "winner": 1,
+    "team1Rounds": 3,
+    "team2Rounds": 16,
+    "id": "92661",
+    "date": "2019-09-28T22:00:00.000Z"
+}

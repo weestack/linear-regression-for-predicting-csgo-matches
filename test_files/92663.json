@@ -1,0 +1,4762 @@
+{
+    "0": {
+        "name": "pro100",
+        "id": "7898",
+        "win_lose_ratio": 1,
+        "best_maps": {
+            "Cobblestone": 60,
+            "Vertigo": 58.3,
+            "Mirage": 56.2,
+            "Cache": 50.8,
+            "Train": 48.6,
+            "Inferno": 47.7,
+            "Overpass": 47.7,
+            "Dust2": 44.3,
+            "Nuke": 42.6
+        },
+        "last_matches": [
+            {
+                "team1": "pro100",
+                "team2": "1WIN",
+                "winner": "pro100",
+                "date": "2020-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "pro100",
+                "date": "2020-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2020-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2020-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Japaleno",
+                "winner": "Japaleno",
+                "date": "2020-03-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Singularity",
+                "winner": "Singularity",
+                "date": "2020-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sprout",
+                "winner": "pro100",
+                "date": "2020-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2020-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Illuminar",
+                "winner": "pro100",
+                "date": "2020-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PACT",
+                "winner": "pro100",
+                "date": "2020-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HellRaisers",
+                "winner": "pro100",
+                "date": "2020-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GamerLegion",
+                "winner": "GamerLegion",
+                "date": "2020-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2020-03-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Wisla Krakow",
+                "winner": "pro100",
+                "date": "2020-03-08T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2020-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "SG.pro",
+                "winner": "pro100",
+                "date": "2020-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Espada",
+                "winner": "Espada",
+                "date": "2020-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2020-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Japaleno",
+                "winner": "pro100",
+                "date": "2020-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2020-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nordavind",
+                "winner": "pro100",
+                "date": "2020-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "BIG",
+                "winner": "pro100",
+                "date": "2020-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unicorns of Love",
+                "winner": "pro100",
+                "date": "2020-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "pro100",
+                "date": "2020-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Demolition Crew",
+                "winner": "pro100",
+                "date": "2020-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "SKADE",
+                "winner": "SKADE",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "SMASH",
+                "winner": "pro100",
+                "date": "2020-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2020-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2020-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Espada",
+                "winner": "pro100",
+                "date": "2020-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2020-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EURONICS",
+                "winner": "pro100",
+                "date": "2020-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Copenhagen Flames",
+                "winner": "pro100",
+                "date": "2019-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Juggernauts",
+                "winner": "pro100",
+                "date": "2019-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Copenhagen Flames",
+                "winner": "pro100",
+                "date": "2019-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HellRaisers",
+                "winner": "pro100",
+                "date": "2019-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Yalla",
+                "winner": "pro100",
+                "date": "2019-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Goliath",
+                "winner": "pro100",
+                "date": "2019-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "5orgless",
+                "winner": null,
+                "date": "2019-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "2115",
+                "winner": "2115",
+                "date": "2019-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nordavind",
+                "winner": "Nordavind",
+                "date": "2019-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EXTREMUM",
+                "winner": "pro100",
+                "date": "2019-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Wisla Krakow",
+                "winner": "pro100",
+                "date": "2019-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PACT",
+                "winner": "pro100",
+                "date": "2019-11-19T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2019-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "hREDS",
+                "winner": "pro100",
+                "date": "2019-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Wisla Krakow",
+                "winner": "Wisla Krakow",
+                "date": "2019-11-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "pro100",
+                "date": "2019-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "pro100",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "pro100",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "pro100",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Demise",
+                "winner": "pro100",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Heretics",
+                "winner": "pro100",
+                "date": "2019-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GamerLegion",
+                "winner": "pro100",
+                "date": "2019-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PACT",
+                "winner": "pro100",
+                "date": "2019-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-10-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Illuminar",
+                "winner": "Illuminar",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Japaleno",
+                "winner": "pro100",
+                "date": "2019-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2019-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Ancient",
+                "winner": "Ancient",
+                "date": "2019-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Heretics",
+                "winner": "pro100",
+                "date": "2019-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "SKADE",
+                "winner": "SKADE",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "pro100",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Virtus.pro",
+                "winner": "pro100",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Heroic",
+                "winner": "Heroic",
+                "date": "2019-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2019-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "pro100",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Espada",
+                "winner": "pro100",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "pro100",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Heretics",
+                "winner": "pro100",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Phoenix",
+                "winner": "pro100",
+                "date": "2019-09-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2019-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "One More Time",
+                "winner": "pro100",
+                "date": "2019-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Lyngby Vikings",
+                "winner": "pro100",
+                "date": "2019-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2019-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "NewBALLS",
+                "winner": "pro100",
+                "date": "2019-09-16T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2019-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Se7en",
+                "winner": "pro100",
+                "date": "2019-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Warthox",
+                "winner": "pro100",
+                "date": "2019-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "NewBALLS",
+                "winner": "NewBALLS",
+                "date": "2019-09-14T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unicorns of Love",
+                "winner": "Unicorns of Love",
+                "date": "2019-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "One More Time",
+                "winner": "pro100",
+                "date": "2019-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "raregods",
+                "winner": "raregods",
+                "date": "2019-08-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "KAV0",
+                "winner": "pro100",
+                "date": "2019-08-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2019-08-04T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2019-08-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "NewBALLS",
+                "winner": "pro100",
+                "date": "2019-08-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2019-08-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Vega Squadron",
+                "winner": "pro100",
+                "date": "2019-07-31T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-07-30T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Ha MaSSe",
+                "winner": "pro100",
+                "date": "2019-07-29T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Espada",
+                "winner": "Espada",
+                "date": "2019-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "struggletony",
+                "winner": "pro100",
+                "date": "2019-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Espada",
+                "winner": "pro100",
+                "date": "2019-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "pro100",
+                "date": "2019-06-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2019-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "expert",
+                "winner": "pro100",
+                "date": "2019-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Izako Boars",
+                "winner": "pro100",
+                "date": "2019-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Se7en",
+                "winner": "Se7en",
+                "date": "2019-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2019-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-06-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Warthox",
+                "winner": "pro100",
+                "date": "2019-05-24T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Se7en",
+                "winner": "pro100",
+                "date": "2019-05-24T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "x-kom",
+                "winner": "x-kom",
+                "date": "2019-05-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2019-05-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2019-05-14T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Vitality",
+                "winner": "Vitality",
+                "date": "2019-05-14T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "expert",
+                "winner": "pro100",
+                "date": "2019-05-13T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-05-13T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "pro100",
+                "date": "2019-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GamerLegion",
+                "winner": "GamerLegion",
+                "date": "2019-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sprout",
+                "winner": "pro100",
+                "date": "2019-05-06T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2019-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2019-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GamerLegion",
+                "winner": "GamerLegion",
+                "date": "2019-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ex-Fragsters",
+                "winner": "pro100",
+                "date": "2019-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "LDLC",
+                "winner": "pro100",
+                "date": "2019-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Berzerk",
+                "winner": "pro100",
+                "date": "2019-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Giants",
+                "winner": "Giants",
+                "date": "2019-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ex-3DMAX",
+                "winner": "ex-3DMAX",
+                "date": "2019-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "x-kom",
+                "winner": "pro100",
+                "date": "2019-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "pro100",
+                "date": "2019-04-02T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Salamander",
+                "winner": "pro100",
+                "date": "2019-04-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Monolith",
+                "winner": "pro100",
+                "date": "2019-03-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2019-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "2019",
+                "winner": "pro100",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "devils.one",
+                "winner": "devils.one",
+                "date": "2019-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "NoChance",
+                "winner": "NoChance",
+                "date": "2019-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2019-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "x6tence Galaxy",
+                "winner": "x6tence Galaxy",
+                "date": "2019-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2019-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "volgare",
+                "winner": "pro100",
+                "date": "2019-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "devils.one",
+                "winner": "pro100",
+                "date": "2019-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2019-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nexus",
+                "winner": "pro100",
+                "date": "2019-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "SJ",
+                "winner": "SJ",
+                "date": "2019-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Heavy KnockOut",
+                "winner": "pro100",
+                "date": "2019-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2019-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Uruguay",
+                "winner": "Uruguay",
+                "date": "2019-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "pro100",
+                "date": "2019-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unicorns of Love",
+                "winner": "Unicorns of Love",
+                "date": "2019-02-07T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2019-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "x-kom",
+                "winner": "pro100",
+                "date": "2019-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "x-kom",
+                "winner": "x-kom",
+                "date": "2019-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2019-02-03T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "pro100",
+                "date": "2019-02-03T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-02-02T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Vitality",
+                "winner": "Vitality",
+                "date": "2019-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Kinguin",
+                "winner": "pro100",
+                "date": "2019-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2019-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Kinguin",
+                "winner": "pro100",
+                "date": "2019-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-01-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Runtime",
+                "winner": "pro100",
+                "date": "2019-01-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2018-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "DreamEaters",
+                "winner": "pro100",
+                "date": "2018-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "pro100",
+                "date": "2018-12-26T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2018-12-25T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "pro100",
+                "date": "2018-12-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "pro100",
+                "date": "2018-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-12-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gambit",
+                "winner": "pro100",
+                "date": "2018-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "pro100",
+                "date": "2018-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Virtus.pro",
+                "winner": "pro100",
+                "date": "2018-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2018-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-12-01T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoldenGitte",
+                "winner": "GoldenGitte",
+                "date": "2018-11-28T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2018-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "TYLOO",
+                "winner": "TYLOO",
+                "date": "2018-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "5POWER",
+                "winner": null,
+                "date": "2018-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "MVP PK",
+                "winner": null,
+                "date": "2018-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Kinguin",
+                "winner": "pro100",
+                "date": "2018-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Heroic",
+                "winner": null,
+                "date": "2018-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "pro100",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "MOLLIHblE",
+                "winner": "pro100",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "RAVE",
+                "winner": "RAVE",
+                "date": "2018-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "pro100",
+                "date": "2018-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "pro100",
+                "date": "2018-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "pro100",
+                "date": "2018-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Atlants",
+                "winner": "pro100",
+                "date": "2018-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-09-18T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "pro100",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tempo Storm",
+                "winner": "Tempo Storm",
+                "date": "2018-09-10T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "WINside",
+                "winner": "pro100",
+                "date": "2018-09-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2018-08-26T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2018-08-18T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "WINside",
+                "winner": "WINside",
+                "date": "2018-08-17T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2018-08-16T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "pro100",
+                "date": "2018-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Monolith",
+                "winner": "Monolith",
+                "date": "2018-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "WINside",
+                "winner": "pro100",
+                "date": "2018-08-13T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Monolith",
+                "winner": "pro100",
+                "date": "2018-08-13T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "5balls",
+                "winner": "pro100",
+                "date": "2018-08-13T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Unique",
+                "winner": "pro100",
+                "date": "2018-08-13T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-08-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "pro100",
+                "date": "2018-08-11T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "pro100",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EURONICS",
+                "winner": "EURONICS",
+                "date": "2018-08-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Quantum Bellator Fire",
+                "winner": "pro100",
+                "date": "2018-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "pro100",
+                "date": "2018-08-07T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "pro100",
+                "date": "2018-08-07T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "pro100",
+                "date": "2018-08-06T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "pro100",
+                "date": "2018-08-06T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sharks",
+                "winner": "Sharks",
+                "date": "2018-08-04T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "DreamEaters",
+                "winner": "pro100",
+                "date": "2018-08-04T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2018-08-02T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "pro100",
+                "date": "2018-08-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2018-07-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "pro100",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2018-07-26T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2018-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "pro100",
+                "date": "2018-07-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2018-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "pro100",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PLINK",
+                "winner": "pro100",
+                "date": "2018-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PLINK",
+                "winner": "PLINK",
+                "date": "2018-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gucci Squad",
+                "winner": "pro100",
+                "date": "2018-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "5balls",
+                "winner": "pro100",
+                "date": "2018-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "eL'quvet",
+                "winner": "pro100",
+                "date": "2018-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2018-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Syman",
+                "winner": "pro100",
+                "date": "2018-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HOLLYWOOD",
+                "winner": "pro100",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2018-05-22T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "pro100",
+                "date": "2018-05-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2018-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HOLLYWOOD",
+                "winner": "pro100",
+                "date": "2018-05-19T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Red Reserve",
+                "winner": "Red Reserve",
+                "date": "2018-05-04T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Imperial",
+                "winner": "Imperial",
+                "date": "2018-04-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "pro100",
+                "date": "2018-04-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Movistar Riders",
+                "winner": "pro100",
+                "date": "2018-04-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "EPG",
+                "date": "2018-04-20T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Space Jam",
+                "winner": "Space Jam",
+                "date": "2018-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2018-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-03-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "DIVIZON",
+                "winner": "DIVIZON",
+                "date": "2018-03-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "SJ",
+                "winner": "SJ",
+                "date": "2018-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "pro100",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EnVyUs Academy",
+                "winner": "pro100",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "pro100",
+                "date": "2018-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "North Academy",
+                "winner": "pro100",
+                "date": "2018-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Red Reserve",
+                "winner": "pro100",
+                "date": "2018-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "pro100",
+                "date": "2018-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Imperial",
+                "winner": "pro100",
+                "date": "2018-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Space Jam",
+                "winner": "pro100",
+                "date": "2018-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "pro100",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2018-02-22T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "l4nd0dg3",
+                "winner": "pro100",
+                "date": "2018-02-21T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Espada",
+                "winner": "pro100",
+                "date": "2018-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "pro100",
+                "date": "2018-02-15T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "eXtatus",
+                "winner": "eXtatus",
+                "date": "2018-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "pro100",
+                "date": "2018-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-02-02T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "LDLC",
+                "winner": "pro100",
+                "date": "2018-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Conquer",
+                "winner": "pro100",
+                "date": "2018-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HEY",
+                "winner": "HEY",
+                "date": "2018-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "pro100",
+                "date": "2018-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2017-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nexus",
+                "winner": "Nexus",
+                "date": "2017-12-19T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AGO",
+                "winner": "pro100",
+                "date": "2017-12-17T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2017-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "pro100",
+                "date": "2017-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2017-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "pro100",
+                "date": "2017-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2017-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "EPG",
+                "date": "2017-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "DeepDarkDanger",
+                "winner": "pro100",
+                "date": "2017-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Seed",
+                "winner": "Seed",
+                "date": "2017-12-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2017-12-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Seed",
+                "winner": "pro100",
+                "date": "2017-12-08T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "spray'n'pray",
+                "winner": "pro100",
+                "date": "2017-12-08T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "pro100",
+                "date": "2017-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "pro100",
+                "date": "2017-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2017-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Quantum Bellator Fire",
+                "winner": "pro100",
+                "date": "2017-12-03T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "pro100",
+                "date": "2017-11-30T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "pro100",
+                "date": "2017-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit Academy",
+                "winner": "pro100",
+                "date": "2017-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Bpro",
+                "winner": "pro100",
+                "date": "2017-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Seed",
+                "winner": "pro100",
+                "date": "2017-11-28T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tricked",
+                "winner": "pro100",
+                "date": "2017-11-18T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EPG",
+                "winner": "EPG",
+                "date": "2017-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EnVyUs Academy",
+                "winner": "pro100",
+                "date": "2017-11-12T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "VenatoreS",
+                "winner": "pro100",
+                "date": "2017-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Fantazeri",
+                "winner": "pro100",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2017-10-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Quantum Bellator Fire",
+                "winner": "Quantum Bellator Fire",
+                "date": "2017-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spirit",
+                "winner": "pro100",
+                "date": "2017-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nemiga",
+                "winner": "pro100",
+                "date": "2017-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Fantazeri",
+                "winner": "pro100",
+                "date": "2017-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "hateMania",
+                "winner": "pro100",
+                "date": "2017-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2017-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "VITALIS",
+                "winner": "VITALIS",
+                "date": "2017-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "1337HUANIA",
+                "winner": "pro100",
+                "date": "2017-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Ukraine",
+                "winner": "Ukraine",
+                "date": "2017-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Leny4evateli",
+                "winner": "pro100",
+                "date": "2017-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": null,
+                "date": "2017-09-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "pro100",
+                "date": "2017-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "teamasd",
+                "winner": "pro100",
+                "date": "2017-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "BX3",
+                "winner": "BX3",
+                "date": "2017-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "undefined",
+                "winner": "undefined",
+                "date": "2017-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "forZe",
+                "winner": "pro100",
+                "date": "2017-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "BX3",
+                "winner": "BX3",
+                "date": "2017-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "eXtatus",
+                "winner": "pro100",
+                "date": "2017-09-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "GoodJob",
+                "winner": "GoodJob",
+                "date": "2017-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "NOXXE",
+                "winner": "pro100",
+                "date": "2017-09-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2017-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Quantum Bellator Fire",
+                "winner": "Quantum Bellator Fire",
+                "date": "2017-09-02T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Dream",
+                "winner": "pro100",
+                "date": "2017-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "eXtatus",
+                "winner": "eXtatus",
+                "date": "2017-08-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2017-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spartak",
+                "winner": "Spartak",
+                "date": "2017-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Red Reserve",
+                "winner": "Red Reserve",
+                "date": "2017-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PRIDE",
+                "winner": "pro100",
+                "date": "2017-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "EnVyUs Academy",
+                "winner": "EnVyUs Academy",
+                "date": "2017-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PRIDE",
+                "winner": "pro100",
+                "date": "2017-08-21T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "PENTA",
+                "winner": "PENTA",
+                "date": "2017-07-30T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "FlipSid3",
+                "winner": "FlipSid3",
+                "date": "2017-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "VITALIS",
+                "winner": "VITALIS",
+                "date": "2017-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "undefined",
+                "winner": "undefined",
+                "date": "2017-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Nexus",
+                "winner": "Nexus",
+                "date": "2017-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Bpro",
+                "winner": "Bpro",
+                "date": "2017-07-19T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Space Soldiers",
+                "winner": "Space Soldiers",
+                "date": "2017-07-19T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "iGame.com",
+                "winner": "pro100",
+                "date": "2017-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Kinguin",
+                "winner": "Kinguin",
+                "date": "2017-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Team123",
+                "winner": "pro100",
+                "date": "2017-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gux & Friends",
+                "winner": "pro100",
+                "date": "2017-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "fnatic Academy",
+                "winner": "fnatic Academy",
+                "date": "2017-07-05T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Epsilon",
+                "winner": "pro100",
+                "date": "2017-06-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Gambit",
+                "winner": "Gambit",
+                "date": "2017-06-28T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "KlikTech",
+                "winner": "pro100",
+                "date": "2017-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Playing Ducks",
+                "winner": "Playing Ducks",
+                "date": "2017-06-26T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "iGame.com",
+                "winner": "iGame.com",
+                "date": "2017-06-23T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Vega Squadron",
+                "winner": "Vega Squadron",
+                "date": "2017-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Quantum Bellator Fire",
+                "winner": "pro100",
+                "date": "2017-06-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Vega Squadron",
+                "winner": "Vega Squadron",
+                "date": "2017-06-09T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spartak",
+                "winner": "pro100",
+                "date": "2017-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Quantum Bellator Fire",
+                "winner": "Quantum Bellator Fire",
+                "date": "2017-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Spartak",
+                "winner": "pro100",
+                "date": "2017-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "LOG",
+                "winner": "pro100",
+                "date": "2017-05-18T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "Tengri",
+                "winner": "Tengri",
+                "date": "2017-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "pro100",
+                "team2": "zARLANS",
+                "winner": "pro100",
+                "date": "2017-05-15T22:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-15T22:00:00.000Z",
+        "player_data": {
+            "7403": {
+                "most_used_weapons": {
+                    "awp": 12384,
+                    "ak47": 3292,
+                    "usp_silencer": 1244,
+                    "m4a1_silencer": 997,
+                    "glock": 914,
+                    "p250": 828,
+                    "m4a1": 707,
+                    "deagle": 670,
+                    "ump45": 525,
+                    "hkp2000": 367,
+                    "ssg08": 351,
+                    "tec9": 279,
+                    "famas": 276,
+                    "sg556": 220,
+                    "cz75a": 216,
+                    "galilar": 191,
+                    "mac10": 173,
+                    "hegrenade": 147,
+                    "aug": 139,
+                    "fiveseven": 135,
+                    "mp7": 127,
+                    "mp9": 114,
+                    "inferno": 93,
+                    "mp5sd": 48,
+                    "p90": 32,
+                    "mag7": 20,
+                    "nova": 16,
+                    "bizon": 15,
+                    "usp_silencer_off": 12,
+                    "taser": 11,
+                    "elite": 9,
+                    "bayonet": 7,
+                    "knife_karambit": 6,
+                    "xm1014": 5,
+                    "knife_m9_bayonet": 4,
+                    "knife_t": 3,
+                    "scar20": 2,
+                    "world": 2,
+                    "knife_butterfly": 2,
+                    "knife_widowmaker": 1,
+                    "knife_default_ct": 1,
+                    "negev": 1,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "smokegrenade": 0,
+                    "m4a1_silencer_off": 0,
+                    "knife_tactical": 0,
+                    "revolver": 0,
+                    "molotov_projectile": 0,
+                    "gallil": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 27.9,
+                "days_in_team": 278,
+                "kda": 1.11
+            },
+            "7796": {
+                "most_used_weapons": {
+                    "ak47": 4587,
+                    "m4a1": 2798,
+                    "hkp2000": 674,
+                    "m4a1_silencer": 519,
+                    "glock": 481,
+                    "famas": 475,
+                    "deagle": 463,
+                    "aug": 367,
+                    "galilar": 351,
+                    "sg556": 276,
+                    "mp9": 247,
+                    "ump45": 239,
+                    "awp": 172,
+                    "tec9": 167,
+                    "fiveseven": 164,
+                    "p250": 157,
+                    "usp_silencer": 115,
+                    "mac10": 108,
+                    "hegrenade": 93,
+                    "inferno": 78,
+                    "mp7": 75,
+                    "cz75a": 56,
+                    "elite": 37,
+                    "mp5sd": 35,
+                    "taser": 21,
+                    "bizon": 17,
+                    "knife_m9_bayonet": 12,
+                    "mag7": 11,
+                    "p90": 9,
+                    "ssg08": 7,
+                    "nova": 6,
+                    "xm1014": 6,
+                    "scar20": 4,
+                    "revolver": 3,
+                    "knife_default_t": 2,
+                    "knife": 2,
+                    "world": 1,
+                    "g3sg1": 1,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "knife_karambit": 0,
+                    "smokegrenade": 0,
+                    "m4a1_silencer_off": 0,
+                    "knife_tactical": 0,
+                    "usp_silencer_off": 0,
+                    "knife_flip": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "negev": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 51.7,
+                "days_in_team": 278,
+                "kda": 0.89
+            },
+            "11498": {
+                "most_used_weapons": {
+                    "ak47": 4251,
+                    "m4a1": 2016,
+                    "awp": 582,
+                    "m4a1_silencer": 479,
+                    "ump45": 471,
+                    "aug": 424,
+                    "sg556": 406,
+                    "deagle": 395,
+                    "usp_silencer": 386,
+                    "glock": 354,
+                    "p250": 264,
+                    "mp9": 262,
+                    "hkp2000": 256,
+                    "cz75a": 238,
+                    "mac10": 232,
+                    "hegrenade": 194,
+                    "famas": 169,
+                    "galilar": 114,
+                    "inferno": 86,
+                    "ssg08": 44,
+                    "tec9": 37,
+                    "fiveseven": 11,
+                    "nova": 9,
+                    "mp7": 9,
+                    "p90": 7,
+                    "knife_butterfly": 4,
+                    "g3sg1": 4,
+                    "knife_m9_bayonet": 3,
+                    "mag7": 2,
+                    "flashbang": 1,
+                    "taser": 1,
+                    "mp5sd": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "m4a1_silencer_off": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "xm1014": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "world": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_ursus": 0,
+                    "negev": 0
+                },
+                "headshots": 40.6,
+                "days_in_team": 379,
+                "kda": 1.01
+            },
+            "13780": {
+                "most_used_weapons": {
+                    "ak47": 4341,
+                    "m4a1": 2094,
+                    "sg556": 566,
+                    "usp_silencer": 495,
+                    "glock": 335,
+                    "cz75a": 318,
+                    "famas": 258,
+                    "mac10": 246,
+                    "m4a1_silencer": 219,
+                    "p250": 216,
+                    "deagle": 214,
+                    "mp9": 187,
+                    "ump45": 168,
+                    "galilar": 162,
+                    "aug": 82,
+                    "awp": 79,
+                    "inferno": 56,
+                    "fiveseven": 55,
+                    "hegrenade": 47,
+                    "tec9": 21,
+                    "scar20": 9,
+                    "xm1014": 9,
+                    "ssg08": 7,
+                    "mag7": 5,
+                    "hkp2000": 4,
+                    "knife_butterfly": 3,
+                    "g3sg1": 3,
+                    "world": 2,
+                    "mp7": 2,
+                    "sawedoff": 1,
+                    "knife_m9_bayonet": 1,
+                    "nova": 1,
+                    "taser": 0,
+                    "p90": 0,
+                    "flashbang": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "knife_karambit": 0,
+                    "knife_default_ct": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0
+                },
+                "headshots": 48.5,
+                "days_in_team": 198,
+                "kda": 1.06
+            },
+            "13915": {
+                "most_used_weapons": {
+                    "ak47": 5568,
+                    "m4a1": 2381,
+                    "awp": 987,
+                    "usp_silencer": 817,
+                    "deagle": 577,
+                    "aug": 514,
+                    "sg556": 482,
+                    "glock": 448,
+                    "m4a1_silencer": 419,
+                    "mp9": 302,
+                    "mac10": 255,
+                    "cz75a": 146,
+                    "ump45": 145,
+                    "p250": 137,
+                    "famas": 100,
+                    "ssg08": 96,
+                    "galilar": 77,
+                    "inferno": 74,
+                    "hegrenade": 60,
+                    "mp5sd": 38,
+                    "fiveseven": 22,
+                    "xm1014": 19,
+                    "hkp2000": 12,
+                    "mag7": 9,
+                    "knife_m9_bayonet": 5,
+                    "taser": 5,
+                    "knife_widowmaker": 3,
+                    "knife_karambit": 2,
+                    "knife_tactical": 2,
+                    "knife_flip": 2,
+                    "knife_t": 2,
+                    "tec9": 2,
+                    "scar20": 1,
+                    "bizon": 1,
+                    "knife": 1,
+                    "world": 1,
+                    "knife_default_ct": 1,
+                    "mp7": 1,
+                    "negev": 1,
+                    "p90": 0,
+                    "flashbang": 0,
+                    "sawedoff": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "knife_gut": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 58.2,
+                "days_in_team": 527,
+                "kda": 1.08
+            }
+        },
+        "kills": {
+            "ak47": 38,
+            "m4a1_silencer": 4,
+            "hkp2000": 1,
+            "galilar": 2,
+            "mp9": 6,
+            "mac10": 7,
+            "m4a1": 7,
+            "cz75a": 1,
+            "usp_silencer": 4,
+            "glock": 2,
+            "sg556": 6,
+            "hegrenade": 2,
+            "p250": 3,
+            "awp": 9
+        },
+        "first_kills": 9
+    },
+    "1": {
+        "name": "Movistar Riders",
+        "id": "7718",
+        "win_lose_ratio": 1.0806451612903225,
+        "best_maps": {
+            "Inferno": 62.1,
+            "Overpass": 57.4,
+            "Vertigo": 54.5,
+            "Train": 48.6,
+            "Mirage": 46.3,
+            "Nuke": 45.6,
+            "Cache": 36.4,
+            "Dust2": 33.3,
+            "Cobblestone": 0
+        },
+        "last_matches": [
+            {
+                "team1": "Movistar Riders",
+                "team2": "AVEZ",
+                "winner": "AVEZ",
+                "date": "2020-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2020-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Movistar Riders",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2020-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Japaleno",
+                "winner": "Japaleno",
+                "date": "2020-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Hard Legion",
+                "winner": "Movistar Riders",
+                "date": "2020-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "NAVI Junior",
+                "winner": "Movistar Riders",
+                "date": "2020-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nordavind",
+                "winner": "Nordavind",
+                "date": "2020-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "Movistar Riders",
+                "date": "2020-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2020-03-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2020-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2020-03-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "BIG",
+                "winner": "Movistar Riders",
+                "date": "2020-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "SMASH",
+                "winner": "Movistar Riders",
+                "date": "2020-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Singularity",
+                "winner": "Movistar Riders",
+                "date": "2020-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Illuminar",
+                "winner": "Movistar Riders",
+                "date": "2020-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2020-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PACT",
+                "winner": "Movistar Riders",
+                "date": "2020-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "Movistar Riders",
+                "date": "2020-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Japaleno",
+                "winner": "Japaleno",
+                "date": "2020-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Demolition Crew",
+                "winner": "Demolition Crew",
+                "date": "2020-02-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nordavind",
+                "winner": "Movistar Riders",
+                "date": "2020-02-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Endpoint",
+                "winner": "Movistar Riders",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Cream",
+                "winner": "Movistar Riders",
+                "date": "2020-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nemiga",
+                "winner": "Movistar Riders",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2020-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Wisla Krakow",
+                "winner": "Wisla Krakow",
+                "date": "2020-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GamerLegion",
+                "winner": "GamerLegion",
+                "date": "2020-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Unicorns of Love",
+                "winner": "Movistar Riders",
+                "date": "2020-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AVEZ",
+                "winner": "AVEZ",
+                "date": "2020-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "BIG",
+                "winner": "Movistar Riders",
+                "date": "2019-12-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "KPI",
+                "winner": "Movistar Riders",
+                "date": "2019-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2019-12-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Owned",
+                "winner": "Movistar Riders",
+                "date": "2019-12-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "FURIA",
+                "winner": "FURIA",
+                "date": "2019-12-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ENCE",
+                "winner": "Movistar Riders",
+                "date": "2019-12-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2019-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "North",
+                "winner": "North",
+                "date": "2019-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "BIG",
+                "winner": "Movistar Riders",
+                "date": "2019-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "OFFSET",
+                "winner": "Movistar Riders",
+                "date": "2019-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Owned",
+                "winner": "Owned",
+                "date": "2019-12-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2019-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "DETONA",
+                "winner": "DETONA",
+                "date": "2019-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Movistar Riders",
+                "date": "2019-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ex-Windigo",
+                "winner": "Movistar Riders",
+                "date": "2019-11-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GODSENT",
+                "winner": "Movistar Riders",
+                "date": "2019-11-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2019-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "OFFSET",
+                "winner": "Movistar Riders",
+                "date": "2019-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Cream",
+                "winner": "Movistar Riders",
+                "date": "2019-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "MAD Lions",
+                "winner": "Movistar Riders",
+                "date": "2019-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "FATE",
+                "winner": "Movistar Riders",
+                "date": "2019-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LDLC",
+                "winner": "Movistar Riders",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nemiga",
+                "winner": "Movistar Riders",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Baecon",
+                "winner": "Movistar Riders",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Virtus.pro",
+                "winner": "Movistar Riders",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AGO",
+                "winner": "Movistar Riders",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "FATE",
+                "winner": "FATE",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Phoenix",
+                "winner": "Movistar Riders",
+                "date": "2019-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PACT",
+                "winner": "Movistar Riders",
+                "date": "2019-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Illuminar",
+                "winner": "Movistar Riders",
+                "date": "2019-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "CR4ZY",
+                "winner": "Movistar Riders",
+                "date": "2019-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GamerLegion",
+                "winner": "Movistar Riders",
+                "date": "2019-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2019-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Illuminar",
+                "winner": "Illuminar",
+                "date": "2019-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Movistar Riders",
+                "date": "2019-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Japaleno",
+                "winner": "Movistar Riders",
+                "date": "2019-10-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Copenhagen Flames",
+                "winner": "Movistar Riders",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Movistar Riders",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Movistar Riders",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2019-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Aristocracy",
+                "winner": "Aristocracy",
+                "date": "2019-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Movistar Riders",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Virtus.pro",
+                "winner": "Movistar Riders",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "SMASH",
+                "winner": "SMASH",
+                "date": "2019-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "MAD Lions",
+                "winner": "Movistar Riders",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GamerLegion",
+                "winner": "GamerLegion",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nordavind",
+                "winner": "Nordavind",
+                "date": "2019-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2019-09-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2019-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2019-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Movistar Riders",
+                "date": "2019-09-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Demise",
+                "winner": "Movistar Riders",
+                "date": "2019-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Se7en",
+                "winner": "Se7en",
+                "date": "2019-09-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GamerLegion",
+                "winner": "GamerLegion",
+                "date": "2019-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Salamander",
+                "winner": "Movistar Riders",
+                "date": "2019-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2019-09-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Ancient",
+                "winner": "Movistar Riders",
+                "date": "2019-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Copenhagen Flames",
+                "winner": "Movistar Riders",
+                "date": "2019-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2019-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "NoChance",
+                "winner": "NoChance",
+                "date": "2019-06-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "piratesports",
+                "winner": "Movistar Riders",
+                "date": "2019-06-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Dragons",
+                "winner": "Movistar Riders",
+                "date": "2019-06-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Movistar Riders",
+                "date": "2019-06-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-06-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-06-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Chaos",
+                "winner": "Movistar Riders",
+                "date": "2019-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2019-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "G2",
+                "winner": "G2",
+                "date": "2019-06-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Vitality",
+                "winner": "Movistar Riders",
+                "date": "2019-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2019-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Movistar Riders",
+                "date": "2019-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2019-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Izako Boars",
+                "winner": "Movistar Riders",
+                "date": "2019-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2019-06-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nordavind",
+                "winner": "Nordavind",
+                "date": "2019-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "SJ",
+                "winner": "Movistar Riders",
+                "date": "2019-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "expert",
+                "winner": "Movistar Riders",
+                "date": "2019-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Movistar Riders",
+                "date": "2019-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GamerLegion",
+                "winner": "Movistar Riders",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Chaos",
+                "winner": "Movistar Riders",
+                "date": "2019-05-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HAVU",
+                "winner": "Movistar Riders",
+                "date": "2019-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "Movistar Riders",
+                "date": "2019-05-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Movistar Riders",
+                "date": "2019-05-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Giants",
+                "date": "2019-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "x-kom",
+                "winner": "Movistar Riders",
+                "date": "2019-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ENCE",
+                "winner": "Movistar Riders",
+                "date": "2019-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Ambush",
+                "winner": "Movistar Riders",
+                "date": "2019-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Movistar Riders",
+                "date": "2019-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2019-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Copenhagen Flames",
+                "winner": "Movistar Riders",
+                "date": "2019-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Monarchs",
+                "winner": "Movistar Riders",
+                "date": "2019-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Bitfix",
+                "winner": "Movistar Riders",
+                "date": "2019-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "expert",
+                "winner": "expert",
+                "date": "2019-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Movistar Riders",
+                "date": "2019-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "OFFSET",
+                "winner": "Movistar Riders",
+                "date": "2019-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2019-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Akopalipsa",
+                "winner": "Movistar Riders",
+                "date": "2019-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "MAJESTY",
+                "winner": "Movistar Riders",
+                "date": "2019-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Akopalipsa",
+                "winner": "Akopalipsa",
+                "date": "2019-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Movistar Riders",
+                "date": "2019-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2019-03-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2019-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2019-03-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Windigo",
+                "winner": "Movistar Riders",
+                "date": "2019-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "fnatic",
+                "winner": null,
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Chaos",
+                "winner": "Movistar Riders",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Vitality",
+                "winner": "Vitality",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Winstrike",
+                "winner": "Movistar Riders",
+                "date": "2019-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LDLC",
+                "winner": "Movistar Riders",
+                "date": "2019-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Movistar Riders",
+                "date": "2019-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2019-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ex-Fragsters",
+                "winner": "Movistar Riders",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Izako Boars",
+                "winner": "Movistar Riders",
+                "date": "2019-02-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Throw Potential",
+                "winner": "Movistar Riders",
+                "date": "2019-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "Movistar Riders",
+                "date": "2019-02-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Chaos",
+                "winner": "Movistar Riders",
+                "date": "2019-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Unicorns of Love",
+                "winner": "Movistar Riders",
+                "date": "2019-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AGO",
+                "winner": "Movistar Riders",
+                "date": "2019-02-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Uruguay",
+                "winner": "Movistar Riders",
+                "date": "2019-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ENCE",
+                "winner": "Movistar Riders",
+                "date": "2019-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "expert",
+                "winner": "Movistar Riders",
+                "date": "2019-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Valiance",
+                "winner": "Movistar Riders",
+                "date": "2019-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Giants",
+                "date": "2018-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "unknown",
+                "winner": "Movistar Riders",
+                "date": "2018-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "maquinas",
+                "winner": "Movistar Riders",
+                "date": "2018-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nemiga",
+                "winner": "Movistar Riders",
+                "date": "2018-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2018-11-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Minttu",
+                "winner": "Movistar Riders",
+                "date": "2018-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Slovakia",
+                "winner": "Movistar Riders",
+                "date": "2018-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "3DMAX",
+                "winner": "Movistar Riders",
+                "date": "2018-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2018-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Movistar Riders",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Windigo Academy",
+                "winner": "Movistar Riders",
+                "date": "2018-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tricked",
+                "winner": "Movistar Riders",
+                "date": "2018-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Movistar Riders",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Hungary",
+                "winner": "Movistar Riders",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "expert",
+                "winner": "Movistar Riders",
+                "date": "2018-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-10-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "x6tence Galaxy",
+                "winner": "Movistar Riders",
+                "date": "2018-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tempo Storm",
+                "winner": "Movistar Riders",
+                "date": "2018-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LDLC",
+                "winner": "Movistar Riders",
+                "date": "2018-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Complexity",
+                "winner": "Complexity",
+                "date": "2018-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tempo Storm",
+                "winner": "Tempo Storm",
+                "date": "2018-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Windigo",
+                "winner": "Movistar Riders",
+                "date": "2018-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2018-09-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-09-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "forZe",
+                "winner": "Movistar Riders",
+                "date": "2018-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Equals",
+                "winner": "Equals",
+                "date": "2018-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Izako Boars",
+                "winner": "Movistar Riders",
+                "date": "2018-08-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "fightclub",
+                "winner": "Movistar Riders",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "FriendlyFire",
+                "winner": "Movistar Riders",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2018-08-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "sweaty in the fridge",
+                "winner": "Movistar Riders",
+                "date": "2018-08-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Red Reserve",
+                "winner": "Red Reserve",
+                "date": "2018-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PACT",
+                "winner": "Movistar Riders",
+                "date": "2018-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Kinguin",
+                "winner": "Kinguin",
+                "date": "2018-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Singularity",
+                "winner": "Movistar Riders",
+                "date": "2018-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2018-07-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PAPERPLANES",
+                "winner": "Movistar Riders",
+                "date": "2018-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2018-07-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Wind and Rain",
+                "winner": "Wind and Rain",
+                "date": "2018-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Não Tem Como",
+                "winner": "Não Tem Como",
+                "date": "2018-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ENCE",
+                "winner": "Movistar Riders",
+                "date": "2018-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Vexed",
+                "winner": "Vexed",
+                "date": "2018-06-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "SJ",
+                "winner": "Movistar Riders",
+                "date": "2018-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "tomorrow",
+                "winner": "tomorrow",
+                "date": "2018-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Movistar Riders",
+                "date": "2018-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Movistar Riders",
+                "date": "2018-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Squared",
+                "winner": "Squared",
+                "date": "2018-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Royal Bandits",
+                "winner": "Royal Bandits",
+                "date": "2018-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Winstrike",
+                "winner": "Winstrike",
+                "date": "2018-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "iGame.com",
+                "winner": "Movistar Riders",
+                "date": "2018-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2018-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "DESTRUCTORS",
+                "winner": "Movistar Riders",
+                "date": "2018-05-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2018-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Movistar Riders",
+                "date": "2018-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2018-04-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "SJ",
+                "winner": "SJ",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "GODSENT",
+                "winner": "GODSENT",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Singularity",
+                "winner": "Singularity",
+                "date": "2018-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "Movistar Riders",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Enyoy",
+                "winner": "Movistar Riders",
+                "date": "2018-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "PRIDE",
+                "winner": "Movistar Riders",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "BIG",
+                "winner": "Movistar Riders",
+                "date": "2018-03-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Gambit",
+                "winner": "Movistar Riders",
+                "date": "2018-03-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2018-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Property",
+                "winner": "Movistar Riders",
+                "date": "2018-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "EnVyUs Academy",
+                "winner": "Movistar Riders",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2018-02-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "eXtatus",
+                "winner": "eXtatus",
+                "date": "2018-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Sprout",
+                "winner": "Movistar Riders",
+                "date": "2018-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2018-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nemiga",
+                "winner": "Movistar Riders",
+                "date": "2018-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2018-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Reason",
+                "winner": "Reason",
+                "date": "2018-01-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2017-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "BRIEF",
+                "winner": "Movistar Riders",
+                "date": "2017-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2017-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2017-12-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Tricked",
+                "winner": "Movistar Riders",
+                "date": "2017-12-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "KPI",
+                "winner": "KPI",
+                "date": "2017-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LANg0ds",
+                "winner": "Movistar Riders",
+                "date": "2017-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "LANg0ds",
+                "winner": "Movistar Riders",
+                "date": "2017-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Movistar Riders",
+                "date": "2017-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Epsilon",
+                "winner": "Movistar Riders",
+                "date": "2017-12-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2017-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2017-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Singularity",
+                "winner": "Singularity",
+                "date": "2017-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Singularity",
+                "winner": "Movistar Riders",
+                "date": "2017-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "KPI",
+                "winner": "Movistar Riders",
+                "date": "2017-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Movistar Riders",
+                "date": "2017-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Orion",
+                "winner": "Orion",
+                "date": "2017-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "WASD",
+                "winner": "WASD",
+                "date": "2017-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Nice",
+                "winner": "Movistar Riders",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Spotnet",
+                "winner": "Movistar Riders",
+                "date": "2017-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Kinguin",
+                "winner": "Kinguin",
+                "date": "2017-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "ex-Outlaws",
+                "winner": "Movistar Riders",
+                "date": "2017-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "KPI",
+                "winner": "Movistar Riders",
+                "date": "2017-10-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Giants",
+                "winner": "Giants",
+                "date": "2017-10-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "EURONICS",
+                "winner": "EURONICS",
+                "date": "2017-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "eSuba",
+                "winner": null,
+                "date": "2017-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "HellRaisers",
+                "winner": "HellRaisers",
+                "date": "2017-08-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "EPG",
+                "winner": "Movistar Riders",
+                "date": "2017-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "x6tence",
+                "winner": "x6tence",
+                "date": "2017-07-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Baskonia",
+                "winner": "Baskonia",
+                "date": "2017-06-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "x6tence",
+                "winner": "x6tence",
+                "date": "2017-06-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "G2V",
+                "winner": "G2V",
+                "date": "2017-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Movistar Riders",
+                "team2": "Bpro",
+                "winner": "Bpro",
+                "date": "2017-04-17T22:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-16T22:00:00.000Z",
+        "player_data": {
+            "3997": {
+                "most_used_weapons": {
+                    "ak47": 6425,
+                    "m4a1_silencer": 2386,
+                    "m4a1": 1865,
+                    "usp_silencer": 847,
+                    "aug": 626,
+                    "glock": 593,
+                    "sg556": 520,
+                    "famas": 493,
+                    "deagle": 483,
+                    "ump45": 434,
+                    "p250": 412,
+                    "mac10": 280,
+                    "galilar": 262,
+                    "awp": 253,
+                    "cz75a": 248,
+                    "mp9": 230,
+                    "tec9": 222,
+                    "fiveseven": 197,
+                    "hkp2000": 114,
+                    "hegrenade": 97,
+                    "inferno": 86,
+                    "mp7": 49,
+                    "ssg08": 43,
+                    "p90": 18,
+                    "world": 7,
+                    "usp_silencer_off": 5,
+                    "knife_m9_bayonet": 4,
+                    "taser": 3,
+                    "mag7": 3,
+                    "nova": 2,
+                    "knife_butterfly": 2,
+                    "knife_karambit": 1,
+                    "bizon": 1,
+                    "knife_default_t": 1,
+                    "xm1014": 1,
+                    "elite": 1,
+                    "knife_falchion": 1,
+                    "g3sg1": 1,
+                    "knife_ursus": 1,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "smokegrenade": 0,
+                    "knife_tactical": 0,
+                    "m4a1_silencer_off": 0,
+                    "scar20": 0,
+                    "molotov_projectile": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0
+                },
+                "headshots": 47.2,
+                "days_in_team": 175,
+                "kda": 1.11
+            },
+            "4373": {
+                "most_used_weapons": {
+                    "awp": 3427,
+                    "ak47": 553,
+                    "usp_silencer": 328,
+                    "m4a1": 196,
+                    "deagle": 179,
+                    "sg556": 169,
+                    "glock": 168,
+                    "p250": 154,
+                    "mp9": 119,
+                    "mac10": 105,
+                    "ssg08": 82,
+                    "m4a1_silencer": 75,
+                    "ump45": 73,
+                    "famas": 65,
+                    "galilar": 52,
+                    "cz75a": 41,
+                    "tec9": 30,
+                    "hegrenade": 29,
+                    "inferno": 28,
+                    "mp5sd": 23,
+                    "hkp2000": 16,
+                    "aug": 11,
+                    "mp7": 5,
+                    "mag7": 3,
+                    "fiveseven": 2,
+                    "world": 2,
+                    "xm1014": 2,
+                    "p90": 1,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "elite": 0,
+                    "m249": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_karambit": 0,
+                    "smokegrenade": 0,
+                    "m4a1_silencer_off": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "knife_flip": 0,
+                    "g3sg1": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0
+                },
+                "headshots": 28.2,
+                "days_in_team": 265,
+                "kda": 1.1
+            },
+            "7382": {
+                "most_used_weapons": {
+                    "ak47": 6648,
+                    "m4a1": 4248,
+                    "ump45": 747,
+                    "sg556": 720,
+                    "glock": 689,
+                    "cz75a": 672,
+                    "usp_silencer": 563,
+                    "aug": 469,
+                    "m4a1_silencer": 445,
+                    "famas": 370,
+                    "deagle": 319,
+                    "awp": 260,
+                    "p250": 258,
+                    "hkp2000": 242,
+                    "galilar": 238,
+                    "mac10": 237,
+                    "tec9": 184,
+                    "mp9": 177,
+                    "inferno": 120,
+                    "hegrenade": 102,
+                    "mag7": 63,
+                    "mp7": 62,
+                    "p90": 59,
+                    "mp5sd": 42,
+                    "fiveseven": 39,
+                    "nova": 23,
+                    "knife_m9_bayonet": 12,
+                    "scar20": 12,
+                    "xm1014": 8,
+                    "ssg08": 8,
+                    "sawedoff": 7,
+                    "world": 6,
+                    "usp_silencer_off": 5,
+                    "knife_t": 5,
+                    "bizon": 4,
+                    "g3sg1": 3,
+                    "knife": 2,
+                    "elite": 2,
+                    "flashbang": 1,
+                    "m4a1_silencer_off": 1,
+                    "knife_flip": 1,
+                    "knife_survival_bowie": 1,
+                    "knife_default_ct": 1,
+                    "bayonet": 1,
+                    "knife_butterfly": 1,
+                    "m249": 0,
+                    "knife_karambit": 0,
+                    "smokegrenade": 0,
+                    "knife_tactical": 0,
+                    "revolver": 0,
+                    "incgrenade": 0,
+                    "taser": 0,
+                    "negev": 0,
+                    "knife_css": 0
+                },
+                "headshots": 40.5,
+                "days_in_team": 175,
+                "kda": 0.99
+            },
+            "8371": {
+                "most_used_weapons": {
+                    "ak47": 4755,
+                    "m4a1": 1882,
+                    "m4a1_silencer": 974,
+                    "sg556": 948,
+                    "awp": 882,
+                    "usp_silencer": 730,
+                    "aug": 460,
+                    "glock": 451,
+                    "ump45": 421,
+                    "deagle": 387,
+                    "famas": 322,
+                    "cz75a": 291,
+                    "p250": 273,
+                    "mac10": 196,
+                    "mp9": 161,
+                    "galilar": 145,
+                    "fiveseven": 118,
+                    "tec9": 107,
+                    "inferno": 95,
+                    "hegrenade": 94,
+                    "hkp2000": 74,
+                    "ssg08": 70,
+                    "mp7": 55,
+                    "p90": 42,
+                    "knife_m9_bayonet": 3,
+                    "scar20": 3,
+                    "world": 3,
+                    "elite": 2,
+                    "mag7": 2,
+                    "knife_karambit": 1,
+                    "nova": 1,
+                    "usp_silencer_off": 1,
+                    "mp5sd": 1,
+                    "molotov": 0,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "m4a1_silencer_off": 0,
+                    "knife_tactical": 0,
+                    "bizon": 0,
+                    "molotov_projectile": 0,
+                    "xm1014": 0,
+                    "knife_flip": 0,
+                    "incgrenade": 0,
+                    "knife_gut": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "negev": 0
+                },
+                "headshots": 44.5,
+                "days_in_team": 621,
+                "kda": 1.07
+            },
+            "9254": {
+                "most_used_weapons": {
+                    "ak47": 3636,
+                    "m4a1": 2156,
+                    "mp9": 718,
+                    "mac10": 458,
+                    "deagle": 428,
+                    "hkp2000": 334,
+                    "glock": 324,
+                    "aug": 322,
+                    "famas": 303,
+                    "sg556": 280,
+                    "awp": 220,
+                    "galilar": 215,
+                    "usp_silencer": 172,
+                    "cz75a": 157,
+                    "ump45": 156,
+                    "m4a1_silencer": 134,
+                    "p250": 104,
+                    "ssg08": 72,
+                    "inferno": 60,
+                    "hegrenade": 42,
+                    "xm1014": 41,
+                    "mp7": 37,
+                    "tec9": 33,
+                    "fiveseven": 22,
+                    "knife_m9_bayonet": 12,
+                    "taser": 10,
+                    "mag7": 10,
+                    "p90": 9,
+                    "world": 5,
+                    "bizon": 2,
+                    "mp5sd": 1,
+                    "molotov": 0,
+                    "sawedoff": 0,
+                    "m249": 0,
+                    "knife_karambit": 0,
+                    "m4a1_silencer_off": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "molotov_projectile": 0,
+                    "knife_flip": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "elite": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0
+                },
+                "headshots": 50.5,
+                "days_in_team": 964,
+                "kda": 0.98
+            }
+        },
+        "kills": {
+            "ak47": 10,
+            "deagle": 9,
+            "m4a1": 5,
+            "usp_silencer": 5,
+            "aug": 8,
+            "inferno": 1,
+            "sg556": 7,
+            "galilar": 1,
+            "mac10": 1,
+            "glock": 2,
+            "awp": 12,
+            "mp9": 3,
+            "cz75a": 1
+        },
+        "first_kills": 12
+    },
+    "winner": 0,
+    "team1Rounds": 16,
+    "team2Rounds": 5,
+    "id": "92663",
+    "date": "2019-09-28T22:00:00.000Z"
+}

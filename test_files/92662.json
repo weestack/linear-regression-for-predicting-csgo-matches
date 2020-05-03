@@ -1,0 +1,3540 @@
+{
+    "0": {
+        "name": "Syman",
+        "id": "8772",
+        "win_lose_ratio": 0.9640718562874252,
+        "best_maps": {
+            "Train": 53,
+            "Inferno": 51.7,
+            "Mirage": 50.7,
+            "Cache": 50,
+            "Dust2": 49,
+            "Overpass": 45.9,
+            "Nuke": 35.3,
+            "Vertigo": 33.3
+        },
+        "last_matches": [
+            {
+                "team1": "Syman",
+                "team2": "SMASH",
+                "winner": "SMASH",
+                "date": "2020-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Endpoint",
+                "winner": "Syman",
+                "date": "2020-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Dignitas",
+                "winner": "Dignitas",
+                "date": "2020-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Syman",
+                "date": "2020-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nordavind",
+                "winner": "Syman",
+                "date": "2020-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Heretics",
+                "winner": "Heretics",
+                "date": "2020-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "SMASH",
+                "winner": "Syman",
+                "date": "2020-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2020-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "BIG",
+                "winner": "BIG",
+                "date": "2020-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Hard Legion",
+                "winner": "Syman",
+                "date": "2020-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "fbg",
+                "winner": "Syman",
+                "date": "2020-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nexus",
+                "winner": "Syman",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Hard Legion",
+                "winner": "Syman",
+                "date": "2020-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HellRaisers",
+                "winner": "Syman",
+                "date": "2020-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Salamander",
+                "winner": "Salamander",
+                "date": "2020-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "cisbots",
+                "winner": "cisbots",
+                "date": "2020-01-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "TYLOO",
+                "winner": "Syman",
+                "date": "2019-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "BTRG",
+                "winner": "Syman",
+                "date": "2019-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "TYLOO",
+                "winner": "Syman",
+                "date": "2019-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2019-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "AVANGAR",
+                "winner": "Syman",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Uzbekistan",
+                "winner": "Syman",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Project Major",
+                "winner": "Syman",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Galkynysh",
+                "winner": "Syman",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Revolution",
+                "winner": "Syman",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2019-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "Syman",
+                "date": "2019-10-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Winstrike",
+                "winner": "Syman",
+                "date": "2019-10-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2019-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "SMASH",
+                "winner": "SMASH",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Copenhagen Flames",
+                "winner": "Syman",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Ancient",
+                "winner": "Ancient",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "Syman",
+                "date": "2019-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "OG GANG SQUAD\t",
+                "winner": "Syman",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Se7en",
+                "winner": "Syman",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "OG GANG SQUAD\t",
+                "winner": "OG GANG SQUAD\t",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Winstrike",
+                "winner": "Syman",
+                "date": "2019-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HellRaisers",
+                "winner": "Syman",
+                "date": "2019-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Illuminar",
+                "winner": "Illuminar",
+                "date": "2019-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Heretics",
+                "winner": "Syman",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "SKADE",
+                "winner": "Syman",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "OneWay",
+                "winner": "Syman",
+                "date": "2019-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Ancient",
+                "winner": "Ancient",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Syman",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "SJ",
+                "winner": "Syman",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nordavind",
+                "winner": "Syman",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "SJ",
+                "winner": "SJ",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nordavind",
+                "winner": "Syman",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "SMASH",
+                "winner": "SMASH",
+                "date": "2019-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nemiga",
+                "winner": "Syman",
+                "date": "2019-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Aristocracy",
+                "winner": "Aristocracy",
+                "date": "2019-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2019-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2019-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "FURIA",
+                "winner": "Syman",
+                "date": "2019-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "NRG",
+                "winner": "NRG",
+                "date": "2019-08-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "North",
+                "winner": "North",
+                "date": "2019-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Vitality",
+                "winner": "Syman",
+                "date": "2019-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-08-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "eL'quvet",
+                "winner": "Syman",
+                "date": "2019-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "raregods",
+                "winner": "raregods",
+                "date": "2019-08-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "OneWay",
+                "winner": "OneWay",
+                "date": "2019-07-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2019-07-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "buaksib",
+                "winner": "buaksib",
+                "date": "2019-07-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "Syman",
+                "date": "2019-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-07-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "Syman",
+                "date": "2019-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Gambit Youngsters",
+                "winner": "Syman",
+                "date": "2019-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Syman",
+                "date": "2019-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-07-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-07-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Winstrike",
+                "winner": "Syman",
+                "date": "2019-07-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-07-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "bootcampPARTY",
+                "winner": "Syman",
+                "date": "2019-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2019-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Syman",
+                "date": "2019-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2019-07-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Espada",
+                "winner": "Espada",
+                "date": "2019-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "NONAME",
+                "winner": "Syman",
+                "date": "2019-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Winstrike",
+                "winner": "Syman",
+                "date": "2019-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "Syman",
+                "date": "2019-06-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unicorns of Love",
+                "winner": "Unicorns of Love",
+                "date": "2019-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "FrenchFrogs",
+                "winner": "FrenchFrogs",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "expert",
+                "winner": "expert",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Ancient",
+                "winner": "Ancient",
+                "date": "2019-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "Syman",
+                "date": "2019-05-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2019-05-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2019-05-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Gambit Youngsters",
+                "winner": "Syman",
+                "date": "2019-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "STEP",
+                "winner": "Syman",
+                "date": "2019-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unicorns of Love",
+                "winner": "Syman",
+                "date": "2019-04-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2019-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "NoChance",
+                "winner": "NoChance",
+                "date": "2019-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Syman",
+                "date": "2019-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2019-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "FASTLOSE",
+                "winner": "Syman",
+                "date": "2019-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Movistar Riders",
+                "winner": "Syman",
+                "date": "2019-03-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2019-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "Syman",
+                "date": "2019-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2019-02-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2019-02-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nemiga",
+                "winner": "Nemiga",
+                "date": "2019-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Syman",
+                "date": "2019-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "Syman",
+                "date": "2019-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HOLLYWOOD",
+                "winner": "Syman",
+                "date": "2019-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2019-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "5balls",
+                "winner": "Syman",
+                "date": "2019-01-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Gambit",
+                "winner": "Gambit",
+                "date": "2019-01-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Gambit",
+                "winner": "Syman",
+                "date": "2019-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2018-12-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2018-12-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nemiga",
+                "winner": "Syman",
+                "date": "2018-12-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HOLLYWOOD",
+                "winner": "Syman",
+                "date": "2018-12-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2018-12-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "RAVE",
+                "winner": "Syman",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HOLLYWOOD",
+                "winner": "Syman",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2018-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Underdogs",
+                "winner": "Syman",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "Syman",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "x6tence Galaxy",
+                "winner": "x6tence Galaxy",
+                "date": "2018-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "AGO",
+                "winner": "Syman",
+                "date": "2018-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "ex-Space Soldiers",
+                "winner": "Syman",
+                "date": "2018-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Vitality",
+                "winner": "Syman",
+                "date": "2018-10-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pSlayers",
+                "winner": "Syman",
+                "date": "2018-10-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2018-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Unique",
+                "winner": "Syman",
+                "date": "2018-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "unknown",
+                "winner": "unknown",
+                "date": "2018-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Izako Boars",
+                "winner": "Izako Boars",
+                "date": "2018-09-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Bpro",
+                "winner": "Bpro",
+                "date": "2018-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Imperial",
+                "winner": "Imperial",
+                "date": "2018-08-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "PLINK",
+                "winner": "PLINK",
+                "date": "2018-08-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2018-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Underdogs",
+                "winner": "Syman",
+                "date": "2018-08-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "warmup",
+                "winner": "Syman",
+                "date": "2018-08-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Quantum Bellator Fire",
+                "winner": "Syman",
+                "date": "2018-08-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Underdogs",
+                "winner": "Underdogs",
+                "date": "2018-08-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "forZe",
+                "winner": "Syman",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "5balls",
+                "winner": "Syman",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2018-07-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Nemiga",
+                "winner": "Syman",
+                "date": "2018-07-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "GoodJob",
+                "winner": "Syman",
+                "date": "2018-07-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Quantum Bellator Fire",
+                "winner": "Syman",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "EPG",
+                "winner": "Syman",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-07-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HOLLYWOOD",
+                "winner": "HOLLYWOOD",
+                "date": "2018-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "FlipSid3",
+                "winner": "Syman",
+                "date": "2018-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "EPG",
+                "winner": "EPG",
+                "date": "2018-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "FLuffy Gangsters",
+                "winner": "Syman",
+                "date": "2018-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "pro100",
+                "winner": "pro100",
+                "date": "2018-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Windigo Academy",
+                "winner": "Syman",
+                "date": "2018-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Evolution",
+                "winner": "Syman",
+                "date": "2018-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "HOLLYWOOD",
+                "winner": "HOLLYWOOD",
+                "date": "2018-05-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-04-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Izako Boars",
+                "winner": "Izako Boars",
+                "date": "2018-04-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Vexed",
+                "winner": "Syman",
+                "date": "2018-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "EURONICS",
+                "winner": "EURONICS",
+                "date": "2018-04-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Enyoy",
+                "winner": "Enyoy",
+                "date": "2018-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Syman",
+                "team2": "Kungar",
+                "winner": "Kungar",
+                "date": "2018-02-02T23:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-18T22:00:00.000Z",
+        "player_data": {
+            "964": {
+                "most_used_weapons": {
+                    "awp": 9850,
+                    "ak47": 2434,
+                    "usp_silencer": 1176,
+                    "m4a1_silencer": 874,
+                    "glock": 668,
+                    "m4a1": 545,
+                    "ssg08": 504,
+                    "tec9": 468,
+                    "galilar": 445,
+                    "cz75a": 441,
+                    "famas": 348,
+                    "p250": 345,
+                    "deagle": 245,
+                    "mac10": 244,
+                    "hegrenade": 216,
+                    "mp9": 150,
+                    "ump45": 110,
+                    "sg556": 85,
+                    "inferno": 75,
+                    "hkp2000": 65,
+                    "fiveseven": 49,
+                    "aug": 31,
+                    "p90": 30,
+                    "mp7": 28,
+                    "mag7": 25,
+                    "scar20": 16,
+                    "knife_m9_bayonet": 7,
+                    "nova": 5,
+                    "knife_karambit": 4,
+                    "elite": 4,
+                    "bizon": 3,
+                    "molotov_projectile": 3,
+                    "usp_silencer_off": 2,
+                    "world": 2,
+                    "knife_default_ct": 2,
+                    "g3sg1": 2,
+                    "sawedoff": 1,
+                    "xm1014": 1,
+                    "knife_falchion": 1,
+                    "bayonet": 1,
+                    "mp5sd": 1,
+                    "knife_push": 0,
+                    "m249": 0,
+                    "knife_tactical": 0,
+                    "revolver": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_butterfly": 0
+                },
+                "headshots": 28.7,
+                "days_in_team": 65,
+                "kda": 1.09
+            },
+            "9911": {
+                "most_used_weapons": {
+                    "ak47": 2041,
+                    "m4a1": 922,
+                    "awp": 331,
+                    "usp_silencer": 277,
+                    "sg556": 265,
+                    "aug": 254,
+                    "cz75a": 205,
+                    "mac10": 187,
+                    "mp9": 177,
+                    "glock": 176,
+                    "deagle": 172,
+                    "famas": 87,
+                    "p250": 87,
+                    "ump45": 85,
+                    "m4a1_silencer": 65,
+                    "hegrenade": 45,
+                    "tec9": 34,
+                    "inferno": 33,
+                    "p90": 30,
+                    "galilar": 20,
+                    "ssg08": 19,
+                    "mp7": 15,
+                    "xm1014": 13,
+                    "fiveseven": 12,
+                    "mp5sd": 4,
+                    "knife_butterfly": 2,
+                    "elite": 1,
+                    "world": 1,
+                    "m249": 1,
+                    "knife_karambit": 1,
+                    "knife_m9_bayonet": 1,
+                    "knife": 1,
+                    "knife_t": 1,
+                    "taser": 0,
+                    "flashbang": 0,
+                    "sawedoff": 0,
+                    "knife_default_ct": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "scar20": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "molotov_projectile": 0,
+                    "hkp2000": 0,
+                    "bayonet": 0,
+                    "knife_flip": 0,
+                    "g3sg1": 0,
+                    "mag7": 0
+                },
+                "headshots": 47.1,
+                "days_in_team": 65,
+                "kda": 1.06
+            },
+            "11940": {
+                "most_used_weapons": {
+                    "ak47": 2485,
+                    "m4a1": 1488,
+                    "sg556": 792,
+                    "deagle": 446,
+                    "usp_silencer": 374,
+                    "aug": 368,
+                    "glock": 249,
+                    "mp9": 188,
+                    "m4a1_silencer": 168,
+                    "mac10": 146,
+                    "famas": 142,
+                    "ump45": 133,
+                    "p250": 123,
+                    "awp": 106,
+                    "cz75a": 103,
+                    "galilar": 70,
+                    "tec9": 47,
+                    "inferno": 40,
+                    "hegrenade": 28,
+                    "hkp2000": 25,
+                    "fiveseven": 22,
+                    "ssg08": 19,
+                    "xm1014": 10,
+                    "knife_m9_bayonet": 7,
+                    "scar20": 7,
+                    "knife_t": 4,
+                    "world": 3,
+                    "mp5sd": 3,
+                    "knife_butterfly": 3,
+                    "mag7": 3,
+                    "p90": 2,
+                    "taser": 2,
+                    "bayonet": 2,
+                    "mp7": 2,
+                    "knife_karambit": 1,
+                    "usp_silencer_off": 1,
+                    "knife_default_ct": 1,
+                    "knife_css": 1,
+                    "molotov": 0,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "bizon": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "knife_widowmaker": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "g3sg1": 0
+                },
+                "headshots": 54.4,
+                "days_in_team": 806,
+                "kda": 0.93
+            },
+            "15117": {
+                "most_used_weapons": {
+                    "ak47": 877,
+                    "sg556": 686,
+                    "m4a1": 642,
+                    "awp": 376,
+                    "usp_silencer": 192,
+                    "deagle": 179,
+                    "glock": 179,
+                    "aug": 126,
+                    "mp9": 90,
+                    "famas": 71,
+                    "cz75a": 62,
+                    "galilar": 58,
+                    "ump45": 50,
+                    "p250": 45,
+                    "mac10": 41,
+                    "hegrenade": 37,
+                    "m4a1_silencer": 32,
+                    "inferno": 27,
+                    "mp5sd": 12,
+                    "ssg08": 11,
+                    "tec9": 6,
+                    "hkp2000": 5,
+                    "fiveseven": 4,
+                    "knife_karambit": 3,
+                    "xm1014": 2,
+                    "g3sg1": 1,
+                    "mag7": 1,
+                    "taser": 0,
+                    "p90": 0,
+                    "elite": 0,
+                    "world": 0,
+                    "knife_m9_bayonet": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "mp7": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_css": 0
+                },
+                "headshots": 51.8,
+                "days_in_team": 396,
+                "kda": 0.94
+            },
+            "16612": {
+                "most_used_weapons": {
+                    "ak47": 2635,
+                    "m4a1": 1104,
+                    "aug": 594,
+                    "awp": 569,
+                    "sg556": 534,
+                    "deagle": 415,
+                    "usp_silencer": 378,
+                    "m4a1_silencer": 336,
+                    "glock": 286,
+                    "mp9": 192,
+                    "mac10": 162,
+                    "cz75a": 136,
+                    "p250": 114,
+                    "famas": 107,
+                    "ump45": 60,
+                    "galilar": 57,
+                    "inferno": 35,
+                    "hegrenade": 28,
+                    "ssg08": 24,
+                    "tec9": 17,
+                    "fiveseven": 16,
+                    "mp7": 15,
+                    "hkp2000": 12,
+                    "taser": 11,
+                    "mp5sd": 6,
+                    "mag7": 6,
+                    "xm1014": 5,
+                    "knife_m9_bayonet": 4,
+                    "scar20": 4,
+                    "knife_karambit": 3,
+                    "world": 3,
+                    "bayonet": 3,
+                    "nova": 2,
+                    "knife_push": 1,
+                    "knife_survival_bowie": 1,
+                    "elite": 1,
+                    "knife_butterfly": 1,
+                    "p90": 0,
+                    "sawedoff": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "knife_t": 0,
+                    "knife_default_ct": 0,
+                    "g3sg1": 0,
+                    "negev": 0,
+                    "knife_ursus": 0,
+                    "knife_css": 0
+                },
+                "headshots": 48.5,
+                "days_in_team": 199,
+                "kda": 1
+            }
+        },
+        "kills": {
+            "deagle": 3,
+            "usp_silencer": 4,
+            "awp": 11,
+            "ak47": 8,
+            "mac10": 1,
+            "m4a1": 15,
+            "sg556": 21,
+            "glock": 3,
+            "aug": 1,
+            "mp7": 1,
+            "mp9": 2,
+            "hegrenade": 1,
+            "m4a1_silencer": 6,
+            "cz75a": 5,
+            "p250": 2,
+            "mp5sd": 2,
+            "ump45": 2
+        },
+        "first_kills": 17
+    },
+    "1": {
+        "name": "SJ",
+        "id": "8504",
+        "win_lose_ratio": 0.8971631205673759,
+        "best_maps": {
+            "Cobblestone": 55.6,
+            "Train": 54.1,
+            "Inferno": 52.3,
+            "Nuke": 50.8,
+            "Cache": 50,
+            "Mirage": 43.2,
+            "Dust2": 42.9,
+            "Vertigo": 38.5,
+            "Overpass": 25
+        },
+        "last_matches": [
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2020-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2020-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2020-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "KOVA",
+                "winner": "SJ",
+                "date": "2020-02-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2020-02-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "hREDS",
+                "winner": "SJ",
+                "date": "2020-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FATE",
+                "winner": "FATE",
+                "date": "2020-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "hREDS",
+                "winner": "SJ",
+                "date": "2020-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Singularity",
+                "winner": "Singularity",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2020-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "SKADE",
+                "winner": "SKADE",
+                "date": "2019-12-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Ambush",
+                "winner": "Ambush",
+                "date": "2019-12-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nordavind",
+                "winner": "Nordavind",
+                "date": "2019-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-12-09T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Unique",
+                "winner": "SJ",
+                "date": "2019-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Secret",
+                "winner": "SJ",
+                "date": "2019-12-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "GODSENT",
+                "winner": "GODSENT",
+                "date": "2019-11-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Heroic",
+                "winner": "SJ",
+                "date": "2019-11-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-11-26T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2019-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Wisla Krakow",
+                "winner": "Wisla Krakow",
+                "date": "2019-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Unicorns of Love",
+                "winner": "Unicorns of Love",
+                "date": "2019-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Hard Legion",
+                "winner": "SJ",
+                "date": "2019-11-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Hard Legion",
+                "winner": "SJ",
+                "date": "2019-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "hREDS",
+                "winner": "hREDS",
+                "date": "2019-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HellRaisers",
+                "winner": "SJ",
+                "date": "2019-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nemiga",
+                "winner": "SJ",
+                "date": "2019-11-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "hREDS",
+                "winner": "SJ",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "KOVA",
+                "winner": "SJ",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "hREDS",
+                "winner": "SJ",
+                "date": "2019-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Giants",
+                "winner": "Giants",
+                "date": "2019-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Illuminar",
+                "winner": "SJ",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Aristocracy",
+                "winner": "Aristocracy",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Syman",
+                "winner": "Syman",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "OneThree",
+                "winner": "SJ",
+                "date": "2019-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "OneThree",
+                "winner": "SJ",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Unique",
+                "winner": "Unique",
+                "date": "2019-09-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Syman",
+                "winner": "SJ",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Se7en",
+                "winner": "SJ",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "adwokacik",
+                "winner": "SJ",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "adwokacik",
+                "winner": "SJ",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "SJ",
+                "date": "2019-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "adwokacik",
+                "winner": "adwokacik",
+                "date": "2019-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "SJ",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nemiga",
+                "winner": "SJ",
+                "date": "2019-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "SJ",
+                "date": "2019-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "SJ",
+                "date": "2019-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Lyngby Vikings",
+                "winner": "SJ",
+                "date": "2019-09-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nordavind",
+                "winner": "SJ",
+                "date": "2019-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "CR4ZY",
+                "winner": "CR4ZY",
+                "date": "2019-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2019-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "SMASH",
+                "winner": "SMASH",
+                "date": "2019-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Izako Boars",
+                "winner": "SJ",
+                "date": "2019-09-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "SJ",
+                "date": "2019-09-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "SJ",
+                "date": "2019-08-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "hREDS",
+                "winner": "SJ",
+                "date": "2019-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "KOVA",
+                "winner": "KOVA",
+                "date": "2019-08-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Youngsters",
+                "winner": "Youngsters",
+                "date": "2019-07-21T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "BLUEJAYS",
+                "winner": "BLUEJAYS",
+                "date": "2019-07-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2019-07-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Fierce",
+                "winner": "SJ",
+                "date": "2019-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Lyngby Vikings",
+                "winner": "SJ",
+                "date": "2019-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Vexed",
+                "winner": "SJ",
+                "date": "2019-07-14T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FPL-CTalents",
+                "winner": "FPL-CTalents",
+                "date": "2019-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Turkey5",
+                "winner": "Turkey5",
+                "date": "2019-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AGF",
+                "winner": "SJ",
+                "date": "2019-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Fierce",
+                "winner": "Fierce",
+                "date": "2019-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2019-07-08T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "SJ",
+                "date": "2019-07-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "SJ",
+                "date": "2019-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FrenchFrogs",
+                "winner": "SJ",
+                "date": "2019-06-23T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "GameAgents",
+                "winner": "SJ",
+                "date": "2019-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "KOVA",
+                "winner": "SJ",
+                "date": "2019-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2019-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-06-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2019-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2019-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Ancient",
+                "winner": "Ancient",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2019-05-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "x-kom",
+                "winner": "x-kom",
+                "date": "2019-05-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2019-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nordavind",
+                "winner": "Nordavind",
+                "date": "2019-05-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LPSP",
+                "winner": "LPSP",
+                "date": "2019-05-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2019-05-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "SJ",
+                "date": "2019-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Unicorns of Love",
+                "winner": "SJ",
+                "date": "2019-05-14T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Izako Boars",
+                "winner": "SJ",
+                "date": "2019-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "x-kom",
+                "winner": "SJ",
+                "date": "2019-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "Copenhagen Flames",
+                "date": "2019-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Ambush",
+                "winner": "SJ",
+                "date": "2019-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "London",
+                "winner": "SJ",
+                "date": "2019-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AGO",
+                "winner": "SJ",
+                "date": "2019-04-28T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "OwmS",
+                "winner": "SJ",
+                "date": "2019-04-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NoChance",
+                "winner": "NoChance",
+                "date": "2019-04-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2019-04-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NoChance",
+                "winner": "NoChance",
+                "date": "2019-04-21T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2019-04-21T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AGF",
+                "winner": "AGF",
+                "date": "2019-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "POWEROUTAGE",
+                "winner": "SJ",
+                "date": "2019-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Gambit Youngsters",
+                "winner": "Gambit Youngsters",
+                "date": "2019-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked Academy",
+                "winner": "SJ",
+                "date": "2019-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nordavind",
+                "winner": "SJ",
+                "date": "2019-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2019-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "x-kom",
+                "winner": "SJ",
+                "date": "2019-04-05T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2019-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FrenchFrogs",
+                "winner": "FrenchFrogs",
+                "date": "2019-04-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HoP",
+                "winner": "SJ",
+                "date": "2019-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2019-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "SJ",
+                "date": "2019-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "devils.one",
+                "winner": "devils.one",
+                "date": "2019-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2019-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Unicorns of Love",
+                "winner": "Unicorns of Love",
+                "date": "2019-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2019-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Copenhagen Flames",
+                "winner": "SJ",
+                "date": "2019-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Squared",
+                "winner": "SJ",
+                "date": "2019-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2019-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Squared",
+                "winner": "SJ",
+                "date": "2019-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Heavy KnockOut",
+                "winner": "SJ",
+                "date": "2019-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "volgare",
+                "winner": "SJ",
+                "date": "2019-02-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Akopalipsa",
+                "winner": "SJ",
+                "date": "2019-02-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "pro100",
+                "winner": "SJ",
+                "date": "2019-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "GamePub",
+                "winner": "SJ",
+                "date": "2019-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "expert",
+                "winner": "expert",
+                "date": "2019-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "SJ",
+                "date": "2019-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2019-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "repskops",
+                "winner": "SJ",
+                "date": "2019-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "DreamEaters",
+                "winner": "DreamEaters",
+                "date": "2019-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2019-01-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Vega Squadron",
+                "winner": "SJ",
+                "date": "2019-01-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ViCi",
+                "winner": "SJ",
+                "date": "2019-01-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2019-01-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NoChance",
+                "winner": "NoChance",
+                "date": "2018-12-17T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Bpro",
+                "winner": "SJ",
+                "date": "2018-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "cats",
+                "winner": "cats",
+                "date": "2018-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-12-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "forZe",
+                "winner": "forZe",
+                "date": "2018-11-27T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-11-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "2019",
+                "winner": "2019",
+                "date": "2018-11-24T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Vexed",
+                "winner": "Vexed",
+                "date": "2018-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2018-11-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ENCE",
+                "winner": "SJ",
+                "date": "2018-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Vitality",
+                "winner": "Vitality",
+                "date": "2018-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ENCE",
+                "winner": "SJ",
+                "date": "2018-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "x6tence Galaxy",
+                "winner": "SJ",
+                "date": "2018-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Smoke Criminals",
+                "winner": "Smoke Criminals",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2018-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "EURONICS",
+                "winner": "EURONICS",
+                "date": "2018-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "3DMAX",
+                "winner": "SJ",
+                "date": "2018-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "SkitLite",
+                "winner": "SJ",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2018-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Reseaux",
+                "winner": "SJ",
+                "date": "2018-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PACT",
+                "winner": "SJ",
+                "date": "2018-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2018-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Bpro",
+                "winner": "Bpro",
+                "date": "2018-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Endpoint",
+                "winner": "SJ",
+                "date": "2018-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "TV stars",
+                "winner": "SJ",
+                "date": "2018-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "SJ",
+                "date": "2018-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Bpro",
+                "winner": "Bpro",
+                "date": "2018-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Minttu",
+                "winner": "Minttu",
+                "date": "2018-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "kalajarnot",
+                "winner": "SJ",
+                "date": "2018-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PACT",
+                "winner": "PACT",
+                "date": "2018-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "aAa",
+                "winner": "SJ",
+                "date": "2018-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Red Reserve",
+                "winner": "Red Reserve",
+                "date": "2018-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Izako Boars",
+                "winner": "SJ",
+                "date": "2018-10-06T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Endpoint",
+                "winner": "SJ",
+                "date": "2018-10-05T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2018-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2018-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Flow",
+                "winner": "SJ",
+                "date": "2018-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2018-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "fnatic Academy",
+                "winner": "fnatic Academy",
+                "date": "2018-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Endpoint",
+                "winner": "SJ",
+                "date": "2018-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Minttu",
+                "winner": "SJ",
+                "date": "2018-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "WASD",
+                "winner": "SJ",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2018-09-08T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "EURONICS",
+                "winner": "SJ",
+                "date": "2018-09-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AGF",
+                "winner": "SJ",
+                "date": "2018-09-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Hobro Vikings",
+                "winner": "SJ",
+                "date": "2018-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "United",
+                "winner": "SJ",
+                "date": "2018-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Squared",
+                "winner": "Squared",
+                "date": "2018-09-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FCDB",
+                "winner": "FCDB",
+                "date": "2018-09-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "EURONICS",
+                "winner": "EURONICS",
+                "date": "2018-08-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2018-08-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "SJ",
+                "date": "2018-08-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "unknown",
+                "winner": "SJ",
+                "date": "2018-08-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-08-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NYYRIKKI",
+                "winner": "SJ",
+                "date": "2018-08-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2018-08-01T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "fnatic Academy",
+                "winner": "fnatic Academy",
+                "date": "2018-07-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "x-kom",
+                "winner": "x-kom",
+                "date": "2018-07-28T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Wind and Rain",
+                "winner": "SJ",
+                "date": "2018-07-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Smoke Criminals",
+                "winner": "SJ",
+                "date": "2018-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FriendlyFire",
+                "winner": "SJ",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-07-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NYYRIKKI",
+                "winner": "SJ",
+                "date": "2018-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ACES",
+                "winner": "SJ",
+                "date": "2018-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Boys in Blue",
+                "winner": "Boys in Blue",
+                "date": "2018-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Vexed",
+                "winner": "SJ",
+                "date": "2018-07-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "3DMAX",
+                "winner": "3DMAX",
+                "date": "2018-07-03T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PRIDE",
+                "winner": "SJ",
+                "date": "2018-06-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "iGame.com",
+                "winner": "iGame.com",
+                "date": "2018-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-06-26T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Gambit",
+                "winner": "SJ",
+                "date": "2018-06-26T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2018-06-19T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Sprout",
+                "winner": "Sprout",
+                "date": "2018-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Movistar Riders",
+                "winner": "Movistar Riders",
+                "date": "2018-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epsilon",
+                "winner": "SJ",
+                "date": "2018-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PAPERPLANES",
+                "winner": "SJ",
+                "date": "2018-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "tomorrow",
+                "winner": "tomorrow",
+                "date": "2018-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2018-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-05-30T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "x-kom",
+                "winner": "x-kom",
+                "date": "2018-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Valiance",
+                "winner": "Valiance",
+                "date": "2018-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Singularity",
+                "winner": "SJ",
+                "date": "2018-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Chaos",
+                "winner": "Chaos",
+                "date": "2018-05-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Royal Bandits",
+                "winner": "Royal Bandits",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "EURONICS",
+                "winner": "EURONICS",
+                "date": "2018-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FlipSid3",
+                "winner": "SJ",
+                "date": "2018-05-13T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nemiga",
+                "winner": "SJ",
+                "date": "2018-05-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "DreamEaters",
+                "winner": "SJ",
+                "date": "2018-05-04T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epiphany Bolt",
+                "winner": "SJ",
+                "date": "2018-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Property",
+                "winner": "Property",
+                "date": "2018-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NOREG",
+                "winner": "NOREG",
+                "date": "2018-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Quantum Bellator Fire",
+                "winner": "Quantum Bellator Fire",
+                "date": "2018-03-25T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "pro100",
+                "winner": "SJ",
+                "date": "2018-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Kinguin",
+                "winner": "Kinguin",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Movistar Riders",
+                "winner": "SJ",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Asterion",
+                "winner": "Asterion",
+                "date": "2018-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "EPG",
+                "winner": "EPG",
+                "date": "2018-03-16T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "aAa",
+                "winner": "aAa",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Red Reserve",
+                "winner": "SJ",
+                "date": "2018-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Imperial",
+                "winner": "Imperial",
+                "date": "2018-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Windigo",
+                "winner": "SJ",
+                "date": "2018-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Royal Bandits",
+                "winner": "SJ",
+                "date": "2018-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Tricked",
+                "winner": "Tricked",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Windigo",
+                "winner": "Windigo",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AVANGAR",
+                "winner": "AVANGAR",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nemiga",
+                "winner": "SJ",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Singularity",
+                "winner": "Singularity",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "iGame.com",
+                "winner": "iGame.com",
+                "date": "2018-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2018-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "NYYRIKKI",
+                "winner": "SJ",
+                "date": "2018-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FC Lahti Menace",
+                "winner": "SJ",
+                "date": "2018-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "HAVU",
+                "winner": "HAVU",
+                "date": "2018-03-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "SEAL",
+                "winner": "SEAL",
+                "date": "2018-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2018-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Izako Boars",
+                "winner": "SJ",
+                "date": "2018-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "eXtatus",
+                "winner": "SJ",
+                "date": "2018-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nemiga",
+                "winner": "SJ",
+                "date": "2018-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "GODSENT",
+                "winner": "GODSENT",
+                "date": "2018-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Viral",
+                "winner": "SJ",
+                "date": "2018-02-17T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "EnVyUs Academy",
+                "winner": "EnVyUs Academy",
+                "date": "2018-02-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Singularity",
+                "winner": "SJ",
+                "date": "2018-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Gambit",
+                "winner": "SJ",
+                "date": "2018-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Refuse",
+                "winner": "SJ",
+                "date": "2018-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "ALTERNATE aTTaX",
+                "date": "2018-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nexus",
+                "winner": "SJ",
+                "date": "2018-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Conquer",
+                "winner": "SJ",
+                "date": "2018-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LDLC",
+                "winner": "LDLC",
+                "date": "2018-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Wind and Rain",
+                "winner": "SJ",
+                "date": "2018-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Unity",
+                "winner": "Unity",
+                "date": "2018-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Enyoy",
+                "winner": "SJ",
+                "date": "2018-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2018-01-24T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "LPSP",
+                "winner": "LPSP",
+                "date": "2017-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Kinguin",
+                "winner": "Kinguin",
+                "date": "2017-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "aAa",
+                "winner": "aAa",
+                "date": "2017-12-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "AGO",
+                "winner": "SJ",
+                "date": "2017-12-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Red Reserve",
+                "winner": "SJ",
+                "date": "2017-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PoKeMoN FAN CLUB",
+                "winner": "SJ",
+                "date": "2017-11-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Singularity",
+                "winner": "SJ",
+                "date": "2017-11-18T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Virtus.pro",
+                "winner": "Virtus.pro",
+                "date": "2017-11-13T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Conquer",
+                "winner": "Conquer",
+                "date": "2017-11-12T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "MANS NOT HOT",
+                "winner": "MANS NOT HOT",
+                "date": "2017-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FlipSid3",
+                "winner": "SJ",
+                "date": "2017-11-11T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Valiance",
+                "winner": "SJ",
+                "date": "2017-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "FlipSid3",
+                "winner": "SJ",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Space Soldiers",
+                "winner": "Space Soldiers",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "PRIDE",
+                "winner": "SJ",
+                "date": "2017-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "TEAM5",
+                "winner": "SJ",
+                "date": "2017-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Next Generation",
+                "winner": "Next Generation",
+                "date": "2017-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Nexus",
+                "winner": "SJ",
+                "date": "2017-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Crowns",
+                "winner": "SJ",
+                "date": "2017-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "aAa",
+                "winner": "aAa",
+                "date": "2017-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "CHAOS",
+                "winner": "SJ",
+                "date": "2017-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Singularity",
+                "winner": "Singularity",
+                "date": "2017-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Spirit",
+                "winner": "SJ",
+                "date": "2017-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Fragsters",
+                "winner": "Fragsters",
+                "date": "2017-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Endpoint",
+                "winner": "Endpoint",
+                "date": "2017-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Red Reserve",
+                "winner": "SJ",
+                "date": "2017-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Epsilon",
+                "winner": "Epsilon",
+                "date": "2017-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "ALTERNATE aTTaX",
+                "winner": "SJ",
+                "date": "2017-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "Not Academy",
+                "winner": "SJ",
+                "date": "2017-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "SJ",
+                "team2": "aAa",
+                "winner": "aAa",
+                "date": "2017-09-27T22:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-03-21T23:00:00.000Z",
+        "player_data": {
+            "971": {
+                "most_used_weapons": {
+                    "ak47": 5611,
+                    "m4a1_silencer": 2240,
+                    "m4a1": 1814,
+                    "glock": 584,
+                    "usp_silencer": 544,
+                    "cz75a": 405,
+                    "famas": 324,
+                    "p250": 282,
+                    "mac10": 209,
+                    "fiveseven": 196,
+                    "ump45": 155,
+                    "galilar": 147,
+                    "mp9": 144,
+                    "tec9": 121,
+                    "hegrenade": 120,
+                    "hkp2000": 118,
+                    "aug": 107,
+                    "p90": 91,
+                    "deagle": 80,
+                    "awp": 72,
+                    "inferno": 70,
+                    "mp7": 37,
+                    "sg556": 33,
+                    "mag7": 27,
+                    "ssg08": 21,
+                    "xm1014": 16,
+                    "nova": 8,
+                    "bizon": 6,
+                    "mp5sd": 6,
+                    "scar20": 4,
+                    "usp_silencer_off": 3,
+                    "knife_flip": 2,
+                    "knife_t": 2,
+                    "negev": 2,
+                    "knife_push": 1,
+                    "sawedoff": 1,
+                    "elite": 1,
+                    "world": 1,
+                    "knife_default_ct": 1,
+                    "bayonet": 1,
+                    "knife_karambit": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_gut": 0,
+                    "knife_widowmaker": 0,
+                    "taser": 0,
+                    "knife_falchion": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 47.8,
+                "days_in_team": 515,
+                "kda": 0.99
+            },
+            "5478": {
+                "most_used_weapons": {
+                    "ak47": 1183,
+                    "m4a1": 413,
+                    "m4a1_silencer": 297,
+                    "famas": 130,
+                    "glock": 129,
+                    "usp_silencer": 126,
+                    "cz75a": 103,
+                    "sg556": 85,
+                    "deagle": 78,
+                    "aug": 53,
+                    "galilar": 50,
+                    "mp9": 36,
+                    "awp": 33,
+                    "hkp2000": 28,
+                    "tec9": 26,
+                    "fiveseven": 18,
+                    "mac10": 12,
+                    "p250": 12,
+                    "inferno": 10,
+                    "hegrenade": 6,
+                    "ssg08": 5,
+                    "ump45": 4,
+                    "p90": 2,
+                    "knife_default_ct": 1,
+                    "mag7": 1,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "elite": 0,
+                    "world": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "xm1014": 0,
+                    "mp5sd": 0,
+                    "knife_butterfly": 0,
+                    "mp7": 0,
+                    "negev": 0,
+                    "knife_t": 0
+                },
+                "headshots": 52,
+                "days_in_team": 97,
+                "kda": 1.03
+            },
+            "7537": {
+                "most_used_weapons": {
+                    "ak47": 5256,
+                    "awp": 2166,
+                    "m4a1": 1895,
+                    "m4a1_silencer": 915,
+                    "ump45": 708,
+                    "usp_silencer": 659,
+                    "glock": 568,
+                    "sg556": 505,
+                    "famas": 460,
+                    "deagle": 432,
+                    "aug": 368,
+                    "p250": 367,
+                    "hkp2000": 268,
+                    "ssg08": 237,
+                    "hegrenade": 205,
+                    "tec9": 182,
+                    "cz75a": 176,
+                    "galilar": 164,
+                    "inferno": 156,
+                    "fiveseven": 129,
+                    "mac10": 89,
+                    "mp9": 48,
+                    "p90": 42,
+                    "bizon": 39,
+                    "mp7": 24,
+                    "scar20": 23,
+                    "mag7": 23,
+                    "mp5sd": 19,
+                    "xm1014": 10,
+                    "knife_karambit": 2,
+                    "nova": 2,
+                    "sawedoff": 1,
+                    "knife_m9_bayonet": 1,
+                    "taser": 1,
+                    "elite": 1,
+                    "g3sg1": 1,
+                    "knife_push": 0,
+                    "knife_tactical": 0,
+                    "usp_silencer_off": 0,
+                    "revolver": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "knife_gut": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_falchion": 0,
+                    "world": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "negev": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 37.3,
+                "days_in_team": 515,
+                "kda": 0.93
+            },
+            "9325": {
+                "most_used_weapons": {
+                    "ak47": 5191,
+                    "m4a1": 1765,
+                    "m4a1_silencer": 1213,
+                    "usp_silencer": 659,
+                    "ump45": 513,
+                    "glock": 410,
+                    "cz75a": 379,
+                    "aug": 294,
+                    "sg556": 246,
+                    "deagle": 224,
+                    "mac10": 159,
+                    "famas": 154,
+                    "p250": 149,
+                    "galilar": 119,
+                    "mp9": 102,
+                    "inferno": 79,
+                    "hegrenade": 63,
+                    "awp": 63,
+                    "tec9": 41,
+                    "mp5sd": 33,
+                    "fiveseven": 21,
+                    "knife_butterfly": 10,
+                    "mp7": 7,
+                    "hkp2000": 6,
+                    "p90": 4,
+                    "ssg08": 4,
+                    "knife_flip": 3,
+                    "world": 3,
+                    "xm1014": 2,
+                    "nova": 1,
+                    "bizon": 1,
+                    "knife_falchion": 1,
+                    "elite": 1,
+                    "mag7": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_karambit": 0,
+                    "knife_m9_bayonet": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "g3sg1": 0,
+                    "negev": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 44.6,
+                "days_in_team": 874,
+                "kda": 0.94
+            },
+            "15563": {
+                "most_used_weapons": {
+                    "ak47": 2761,
+                    "m4a1": 1428,
+                    "sg556": 786,
+                    "usp_silencer": 418,
+                    "aug": 389,
+                    "glock": 281,
+                    "cz75a": 237,
+                    "deagle": 231,
+                    "ump45": 207,
+                    "mac10": 192,
+                    "mp9": 167,
+                    "m4a1_silencer": 110,
+                    "famas": 106,
+                    "galilar": 98,
+                    "p250": 87,
+                    "awp": 71,
+                    "inferno": 64,
+                    "hegrenade": 53,
+                    "ssg08": 45,
+                    "mp5sd": 22,
+                    "elite": 20,
+                    "xm1014": 14,
+                    "fiveseven": 11,
+                    "mp7": 11,
+                    "hkp2000": 6,
+                    "p90": 4,
+                    "knife_t": 3,
+                    "knife_m9_bayonet": 2,
+                    "tec9": 2,
+                    "knife_karambit": 1,
+                    "knife_widowmaker": 1,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "knife": 0,
+                    "knife_flip": 0,
+                    "knife_gut": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "world": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "negev": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 49.3,
+                "days_in_team": 746,
+                "kda": 0.95
+            }
+        },
+        "kills": {
+            "ak47": 10,
+            "hegrenade": 2,
+            "deagle": 6,
+            "m4a1": 10,
+            "sg556": 13,
+            "m4a1_silencer": 22,
+            "usp_silencer": 4,
+            "hkp2000": 3,
+            "ssg08": 1,
+            "mp9": 5,
+            "awp": 19,
+            "cz75a": 1,
+            "glock": 1,
+            "tec9": 4,
+            "famas": 2,
+            "inferno": 1
+        },
+        "first_kills": 11
+    },
+    "winner": 1,
+    "team1Rounds": 12,
+    "team2Rounds": 16,
+    "id": "92662",
+    "date": "2019-09-28T22:00:00.000Z"
+}

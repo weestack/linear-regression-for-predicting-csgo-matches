@@ -1,0 +1,5897 @@
+{
+    "0": {
+        "name": "Chiefs",
+        "id": "6010",
+        "win_lose_ratio": 1.777027027027027,
+        "best_maps": {
+            "Train": 68.1,
+            "Cache": 68,
+            "Overpass": 66.3,
+            "Nuke": 65.9,
+            "Mirage": 62.9,
+            "Inferno": 62.8,
+            "Vertigo": 60,
+            "Cobblestone": 58.6,
+            "Dust2": 50
+        },
+        "last_matches": [
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Chiefs",
+                "date": "2020-04-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Chiefs",
+                "date": "2020-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Rooster",
+                "date": "2020-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2020-03-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2020-03-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2020-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2020-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "i sleep",
+                "winner": "Chiefs",
+                "date": "2020-03-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Rooster",
+                "date": "2020-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Skyfire",
+                "winner": "Chiefs",
+                "date": "2020-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Paradox",
+                "date": "2020-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "PC419",
+                "winner": "Chiefs",
+                "date": "2020-03-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Chiefs",
+                "date": "2020-03-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-03-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2020-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2020-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2020-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Skyfire",
+                "winner": "Chiefs",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Rooster",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Eimi Fukada FC",
+                "winner": "Chiefs",
+                "date": "2020-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Airborne",
+                "winner": "Chiefs",
+                "date": "2020-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ROCK CANDY",
+                "winner": "Chiefs",
+                "date": "2020-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2020-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Incept",
+                "winner": "Chiefs",
+                "date": "2020-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "FURY",
+                "winner": "Chiefs",
+                "date": "2020-02-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MC",
+                "winner": "Chiefs",
+                "date": "2020-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Formidable",
+                "winner": "Chiefs",
+                "date": "2020-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "TRIDENT",
+                "date": "2020-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Esper",
+                "winner": "Chiefs",
+                "date": "2020-01-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2019-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Chiefs",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "PC419",
+                "winner": "Chiefs",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ZOOWEEMAMA",
+                "winner": "Chiefs",
+                "date": "2019-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Buckets",
+                "winner": "Chiefs",
+                "date": "2019-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2019-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "madlikewizards",
+                "winner": "Chiefs",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MC",
+                "winner": "Chiefs",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "really weird",
+                "winner": "Chiefs",
+                "date": "2019-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Bizarre",
+                "winner": "Chiefs",
+                "date": "2019-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-10-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "catman",
+                "winner": "Chiefs",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Jade",
+                "winner": "Chiefs",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Genuine",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "PC419",
+                "winner": "Chiefs",
+                "date": "2019-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2019-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "FURY",
+                "winner": "Chiefs",
+                "date": "2019-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Genuine",
+                "date": "2019-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2019-09-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Bizarre",
+                "winner": "Chiefs",
+                "date": "2019-09-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dippers",
+                "winner": "Chiefs",
+                "date": "2019-09-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "FURIA",
+                "winner": "FURIA",
+                "date": "2019-07-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ATK",
+                "winner": "Chiefs",
+                "date": "2019-07-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "FURIA",
+                "winner": "FURIA",
+                "date": "2019-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Chiefs",
+                "date": "2019-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-07-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Genuine",
+                "date": "2019-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-06-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Chiefs",
+                "date": "2019-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "rewound",
+                "winner": "Chiefs",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "DINQ",
+                "winner": "Chiefs",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Justice",
+                "winner": "Chiefs",
+                "date": "2019-06-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Chiefs",
+                "date": "2019-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Downfall",
+                "winner": "Chiefs",
+                "date": "2019-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Jade",
+                "winner": "Chiefs",
+                "date": "2019-05-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Athletico",
+                "winner": "Chiefs",
+                "date": "2019-05-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-05-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-05-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Fanta",
+                "winner": "Chiefs",
+                "date": "2019-05-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MC",
+                "winner": "Chiefs",
+                "date": "2019-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2019-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ViCi",
+                "winner": "Chiefs",
+                "date": "2019-04-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2019-04-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-04-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-04-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2019-04-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2019-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2019-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2019-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2019-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Fighting 4 Freedom",
+                "winner": "Chiefs",
+                "date": "2019-03-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2019-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2019-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-03-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-03-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Surge",
+                "winner": "Chiefs",
+                "date": "2019-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Viva Algeria",
+                "winner": "Viva Algeria",
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Altima",
+                "winner": "Chiefs",
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Alpha Red",
+                "winner": null,
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "PC419",
+                "winner": "Chiefs",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Genuine",
+                "winner": "Chiefs",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2019-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Caladrius",
+                "winner": "Chiefs",
+                "date": "2019-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2019-02-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2019-02-27T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Paradox",
+                "date": "2019-02-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rooster",
+                "winner": "Chiefs",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Off The Grid",
+                "winner": "Chiefs",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ICON",
+                "winner": "Chiefs",
+                "date": "2019-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2019-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2019-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2019-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Skyfire",
+                "winner": "Chiefs",
+                "date": "2019-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2019-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ICON",
+                "winner": "Chiefs",
+                "date": "2019-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "R!OT",
+                "winner": "Chiefs",
+                "date": "2019-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2019-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Astral Influence",
+                "winner": "Chiefs",
+                "date": "2019-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Content",
+                "winner": "Chiefs",
+                "date": "2019-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-11-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Roar",
+                "winner": "Chiefs",
+                "date": "2018-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Deceptors",
+                "winner": "Chiefs",
+                "date": "2018-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2018-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2018-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2018-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "madlikewizards",
+                "winner": "Chiefs",
+                "date": "2018-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2018-11-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Chiefs",
+                "date": "2018-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2018-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "seadoggs",
+                "winner": "seadoggs",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2018-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Vizard",
+                "winner": "Chiefs",
+                "date": "2018-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Formidable",
+                "winner": "Chiefs",
+                "date": "2018-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Paradox",
+                "winner": "Paradox",
+                "date": "2018-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dynasty",
+                "winner": "Chiefs",
+                "date": "2018-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exsto",
+                "winner": "Chiefs",
+                "date": "2018-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "NASR",
+                "winner": "NASR",
+                "date": "2018-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Flash",
+                "winner": "Chiefs",
+                "date": "2018-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Sad Story",
+                "winner": "Chiefs",
+                "date": "2018-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "madlikewizards",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Chiefs Academy",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MongrelMob",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "madlikewizards",
+                "winner": "Chiefs",
+                "date": "2018-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2018-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Breakaway",
+                "winner": "Chiefs",
+                "date": "2018-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2018-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-AVANT",
+                "winner": "Chiefs",
+                "date": "2018-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MC",
+                "winner": "Chiefs",
+                "date": "2018-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-09-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2018-09-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2018-09-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2018-09-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-08-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2018-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dynasty",
+                "winner": "Chiefs",
+                "date": "2018-08-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dynasty",
+                "winner": "Chiefs",
+                "date": "2018-08-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-08-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-08-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-08-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rise and Grind",
+                "winner": "Chiefs",
+                "date": "2018-08-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-08-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-08-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2018-08-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-07-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-07-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dynasty",
+                "winner": "Chiefs",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "madlikewizards",
+                "winner": "Chiefs",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rise and Grind",
+                "winner": "Chiefs",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-07-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-07-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-07-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-07-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Conspiracy",
+                "winner": "Chiefs",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-07-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "seadoggs",
+                "winner": "Chiefs",
+                "date": "2018-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2018-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Downfall",
+                "winner": "Chiefs",
+                "date": "2018-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-07-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-07-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "SYF",
+                "date": "2018-06-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2018-06-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-06-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rise and Grind",
+                "winner": "Chiefs",
+                "date": "2018-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "seadoggs",
+                "winner": "seadoggs",
+                "date": "2018-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-06-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2018-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2018-06-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-06-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-06-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-06-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-06-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2018-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2018-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Formidable",
+                "winner": "Chiefs",
+                "date": "2018-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Control",
+                "winner": "Chiefs",
+                "date": "2018-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rise and Grind",
+                "winner": "Chiefs",
+                "date": "2018-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rise and Grind",
+                "winner": "Chiefs",
+                "date": "2018-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Deceptors",
+                "winner": "Chiefs",
+                "date": "2018-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "SYF",
+                "date": "2018-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Roar",
+                "winner": "Roar",
+                "date": "2018-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-05-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "baldkrew",
+                "winner": "Chiefs",
+                "date": "2018-05-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Carnage",
+                "winner": "Chiefs",
+                "date": "2018-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Carnage",
+                "winner": "Chiefs",
+                "date": "2018-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MVP PK",
+                "winner": "MVP PK",
+                "date": "2018-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "fnatic",
+                "winner": "fnatic",
+                "date": "2018-04-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2018-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-04-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-04-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Lucky7",
+                "winner": "Chiefs",
+                "date": "2018-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Lucky7",
+                "winner": "Chiefs",
+                "date": "2018-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-04-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2018-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-04-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-03-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-03-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "R!OT",
+                "winner": "Chiefs",
+                "date": "2018-03-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "R!OT",
+                "winner": "Chiefs",
+                "date": "2018-03-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-03-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-03-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2018-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "ORDER",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Taboo",
+                "date": "2018-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taboo",
+                "winner": "Chiefs",
+                "date": "2018-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "STREAMLINE",
+                "winner": "STREAMLINE",
+                "date": "2018-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "STREAMLINE",
+                "winner": "STREAMLINE",
+                "date": "2018-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Athletico",
+                "winner": "Chiefs",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Athletico",
+                "winner": "Chiefs",
+                "date": "2018-03-12T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Athletico",
+                "winner": "Chiefs",
+                "date": "2018-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Athletico",
+                "winner": "Chiefs",
+                "date": "2018-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "seadoggs",
+                "winner": "Chiefs",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Athletico",
+                "winner": "Chiefs",
+                "date": "2018-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ground Zero",
+                "winner": "Chiefs",
+                "date": "2018-03-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Control",
+                "winner": "Chiefs",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Corvidae",
+                "date": "2018-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Lucky7",
+                "winner": "Chiefs",
+                "date": "2018-02-24T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ex-Riotous Academy",
+                "winner": "Chiefs",
+                "date": "2018-02-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2018-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2018-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MC",
+                "winner": "Chiefs",
+                "date": "2018-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2018-02-13T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2018-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Dark Sided",
+                "date": "2018-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ORDER",
+                "winner": "Chiefs",
+                "date": "2018-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-01-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Carnage",
+                "winner": "Chiefs",
+                "date": "2018-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Lucky7",
+                "winner": "Chiefs",
+                "date": "2018-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2018-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2018-01-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Space Soldiers",
+                "winner": "Space Soldiers",
+                "date": "2018-01-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Rise Nation",
+                "winner": "Chiefs",
+                "date": "2018-01-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AGO",
+                "winner": "AGO",
+                "date": "2018-01-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-12-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-12-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-11-22T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Chiefs",
+                "date": "2017-11-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-11-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ViCi",
+                "winner": "ViCi",
+                "date": "2017-11-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Ardeont Academy",
+                "winner": "Chiefs",
+                "date": "2017-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Nexus",
+                "winner": "Nexus",
+                "date": "2017-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Berzerk",
+                "winner": "Berzerk",
+                "date": "2017-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Uniquestars",
+                "winner": "Chiefs",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MiTH",
+                "winner": "Chiefs",
+                "date": "2017-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Masterminds",
+                "winner": "Masterminds",
+                "date": "2017-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Noxide",
+                "winner": "Chiefs",
+                "date": "2017-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Chiefs",
+                "date": "2017-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Riotous",
+                "winner": "Chiefs",
+                "date": "2017-11-01T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "seadoggs",
+                "winner": "Chiefs",
+                "date": "2017-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2017-10-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-10-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Funkd",
+                "winner": "Chiefs",
+                "date": "2017-10-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-10-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-10-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2017-10-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SIN",
+                "winner": "Chiefs",
+                "date": "2017-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2017-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2017-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Kings",
+                "date": "2017-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Kings",
+                "date": "2017-09-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Conspiracy",
+                "winner": "Chiefs",
+                "date": "2017-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TheMongolz",
+                "winner": "TheMongolz",
+                "date": "2017-09-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Invictus",
+                "winner": "Chiefs",
+                "date": "2017-09-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "EXM",
+                "winner": "Chiefs",
+                "date": "2017-09-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SIN",
+                "winner": "Chiefs",
+                "date": "2017-09-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SIN",
+                "winner": "Chiefs",
+                "date": "2017-09-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Chiefs",
+                "date": "2017-09-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-09-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2017-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2017-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2017-09-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Kings",
+                "date": "2017-09-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "deStiny & co.",
+                "winner": "Chiefs",
+                "date": "2017-09-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2017-08-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2017-08-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Kings",
+                "winner": "Kings",
+                "date": "2017-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-08-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-08-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "BRB20",
+                "winner": "Chiefs",
+                "date": "2017-08-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-08-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Cortex Red",
+                "winner": "Chiefs",
+                "date": "2017-08-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-08-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Funkd",
+                "winner": "Chiefs",
+                "date": "2017-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "BOOT-d[S]",
+                "winner": "Chiefs",
+                "date": "2017-08-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "BOOT-d[S]",
+                "winner": "Chiefs",
+                "date": "2017-08-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TheMongolz",
+                "winner": "Chiefs",
+                "date": "2017-07-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-07-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "BOOT-d[S]",
+                "winner": "Chiefs",
+                "date": "2017-07-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MVP Project",
+                "winner": "Chiefs",
+                "date": "2017-07-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "7642",
+                "winner": "Chiefs",
+                "date": "2017-07-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TheMongolz",
+                "winner": "Chiefs",
+                "date": "2017-07-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Recca",
+                "winner": "Recca",
+                "date": "2017-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "NSPR",
+                "winner": "Chiefs",
+                "date": "2017-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Signature",
+                "winner": "Chiefs",
+                "date": "2017-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2017-07-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Funkd",
+                "winner": "Chiefs",
+                "date": "2017-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-07-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2017-07-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Riotous Raccoons",
+                "winner": "Chiefs",
+                "date": "2017-07-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Masterminds",
+                "winner": "Chiefs",
+                "date": "2017-07-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Funky Monkeys",
+                "winner": "Chiefs",
+                "date": "2017-07-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Chiefs",
+                "date": "2017-07-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-07-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SMC",
+                "winner": "Chiefs",
+                "date": "2017-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2017-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2017-06-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": null,
+                "date": "2017-06-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Astral Influence",
+                "winner": "Chiefs",
+                "date": "2017-06-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2017-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT Storm",
+                "winner": "Chiefs",
+                "date": "2017-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Skyfire",
+                "winner": "Chiefs",
+                "date": "2017-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Node",
+                "winner": "Chiefs",
+                "date": "2017-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": null,
+                "date": "2017-06-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Funky Monkeys",
+                "winner": "Chiefs",
+                "date": "2017-05-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2017-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": null,
+                "date": "2017-05-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2017-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "North",
+                "winner": "Chiefs",
+                "date": "2017-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "OpTic",
+                "winner": "OpTic",
+                "date": "2017-05-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Renegades",
+                "winner": "Chiefs",
+                "date": "2017-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Astralis",
+                "winner": "Astralis",
+                "date": "2017-05-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2017-04-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-04-29T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Funky Monkeys",
+                "winner": "Chiefs",
+                "date": "2017-04-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-04-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2017-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Dark Sided",
+                "date": "2017-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-04-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2017-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2017-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-04-07T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2017-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-04-01T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2017-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "JAM",
+                "winner": "Chiefs",
+                "date": "2017-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2017-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2017-03-28T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2017-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Tainted Minds",
+                "winner": "Chiefs",
+                "date": "2017-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": null,
+                "date": "2017-03-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Dark Sided",
+                "date": "2017-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Dark Sided",
+                "date": "2017-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Alpha Sydney",
+                "winner": "Chiefs",
+                "date": "2017-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2017-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2017-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2017-03-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2017-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Corvidae",
+                "winner": "Chiefs",
+                "date": "2017-02-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Cypher",
+                "winner": null,
+                "date": "2017-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2017-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Dark Sided",
+                "winner": "Chiefs",
+                "date": "2017-01-11T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "VG.CyberZen",
+                "winner": "VG.CyberZen",
+                "date": "2016-12-02T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Winterfox",
+                "winner": "Chiefs",
+                "date": "2016-11-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Chiefs",
+                "date": "2016-11-19T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Chiefs",
+                "date": "2016-11-18T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2016-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SYF",
+                "winner": "Chiefs",
+                "date": "2016-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Risky",
+                "winner": "Risky",
+                "date": "2016-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Taiwan Z",
+                "winner": "Chiefs",
+                "date": "2016-11-10T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Leapfrog",
+                "winner": "Leapfrog",
+                "date": "2016-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2016-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Chiefs",
+                "date": "2016-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Exile5",
+                "date": "2016-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Cypher",
+                "winner": "Chiefs",
+                "date": "2016-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Chiefs",
+                "date": "2016-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Parallax",
+                "date": "2016-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": null,
+                "date": "2016-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2016-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "onestop",
+                "winner": "onestop",
+                "date": "2016-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "onestop",
+                "winner": "Chiefs",
+                "date": "2016-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2016-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2016-09-13T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2016-09-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2016-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2016-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2016-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Chiefs",
+                "date": "2016-09-06T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": null,
+                "date": "2016-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2016-08-30T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ENCE",
+                "winner": "ENCE",
+                "date": "2016-08-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Echo Fox",
+                "winner": "Echo Fox",
+                "date": "2016-08-26T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Exile5",
+                "date": "2016-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Exile5",
+                "date": "2016-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Parallax",
+                "date": "2016-08-19T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "ASDF",
+                "winner": "ASDF",
+                "date": "2016-08-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2016-08-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Skyfire",
+                "winner": "Chiefs",
+                "date": "2016-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "SSU Black",
+                "winner": "Chiefs",
+                "date": "2016-08-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Parallax",
+                "date": "2016-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2016-07-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Parallax",
+                "winner": "Parallax",
+                "date": "2016-07-23T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Chiefs",
+                "date": "2016-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Chiefs",
+                "date": "2016-07-18T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Athletico",
+                "winner": "Athletico",
+                "date": "2016-07-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "GUTS",
+                "winner": "GUTS",
+                "date": "2016-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Skyfire",
+                "winner": "Skyfire",
+                "date": "2016-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Legacy",
+                "date": "2016-04-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TheMongolz",
+                "winner": "TheMongolz",
+                "date": "2016-01-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Risky",
+                "winner": "Chiefs",
+                "date": "2016-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "CyberZen",
+                "winner": "CyberZen",
+                "date": "2016-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "MVP.karnal",
+                "winner": "Chiefs",
+                "date": "2016-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2016-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Alpha Sydney",
+                "winner": "Chiefs",
+                "date": "2016-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Legacy",
+                "winner": "Legacy",
+                "date": "2015-12-08T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Chiefs",
+                "date": "2015-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Vox Eminor",
+                "winner": "Vox Eminor",
+                "date": "2015-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2015-12-06T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2015-11-30T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Chiefs",
+                "date": "2015-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Exile5",
+                "winner": "Exile5",
+                "date": "2015-10-17T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Animal Squad",
+                "winner": "Chiefs",
+                "date": "2015-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Renegades",
+                "winner": "Renegades",
+                "date": "2015-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Renegades",
+                "winner": "Renegades",
+                "date": "2015-10-08T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2015-10-03T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "fSociety",
+                "winner": "fSociety",
+                "date": "2015-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Control.VP",
+                "winner": "Chiefs",
+                "date": "2015-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2015-09-20T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2015-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2015-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Sneaky Assasins",
+                "winner": "Chiefs",
+                "date": "2015-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "STREAMLINE",
+                "winner": "STREAMLINE",
+                "date": "2015-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "VB Mate",
+                "winner": "Chiefs",
+                "date": "2015-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "AVANT",
+                "winner": "Chiefs",
+                "date": "2015-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "TRIDENT",
+                "winner": "Chiefs",
+                "date": "2015-03-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Vox Eminor",
+                "winner": "Chiefs",
+                "date": "2015-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "STREAMLINE",
+                "winner": "Chiefs",
+                "date": "2015-02-28T23:00:00.000Z"
+            },
+            {
+                "team1": "Chiefs",
+                "team2": "Immunity",
+                "winner": "Immunity",
+                "date": "2015-02-21T23:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-19T22:00:00.000Z",
+        "player_data": {
+            "11538": {
+                "most_used_weapons": {
+                    "ak47": 2593,
+                    "m4a1": 1210,
+                    "deagle": 498,
+                    "usp_silencer": 384,
+                    "sg556": 321,
+                    "glock": 309,
+                    "famas": 237,
+                    "galilar": 236,
+                    "aug": 203,
+                    "m4a1_silencer": 190,
+                    "mp9": 166,
+                    "p250": 97,
+                    "ump45": 86,
+                    "cz75a": 75,
+                    "mac10": 68,
+                    "inferno": 52,
+                    "hegrenade": 33,
+                    "fiveseven": 26,
+                    "awp": 25,
+                    "tec9": 18,
+                    "hkp2000": 18,
+                    "mp5sd": 8,
+                    "xm1014": 4,
+                    "world": 3,
+                    "mp7": 3,
+                    "mag7": 3,
+                    "knife_karambit": 1,
+                    "p90": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "scar20": 0,
+                    "usp_silencer_off": 0,
+                    "knife_gypsy_jackknife": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "ssg08": 0,
+                    "knife_survival_bowie": 0,
+                    "elite": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 52.8,
+                "days_in_team": 69,
+                "kda": 1.05
+            },
+            "12086": {
+                "most_used_weapons": {
+                    "ak47": 3107,
+                    "m4a1": 1616,
+                    "sg556": 758,
+                    "usp_silencer": 535,
+                    "aug": 365,
+                    "awp": 327,
+                    "glock": 317,
+                    "deagle": 293,
+                    "mp9": 227,
+                    "cz75a": 214,
+                    "ump45": 201,
+                    "m4a1_silencer": 198,
+                    "p250": 168,
+                    "galilar": 141,
+                    "mac10": 107,
+                    "hegrenade": 83,
+                    "famas": 78,
+                    "tec9": 64,
+                    "fiveseven": 45,
+                    "inferno": 45,
+                    "mp7": 28,
+                    "hkp2000": 22,
+                    "ssg08": 17,
+                    "mp5sd": 14,
+                    "bizon": 9,
+                    "revolver": 7,
+                    "p90": 3,
+                    "world": 3,
+                    "knife_tactical": 1,
+                    "knife_gypsy_jackknife": 1,
+                    "taser": 1,
+                    "knife_butterfly": 1,
+                    "mag7": 1,
+                    "molotov": 0,
+                    "knife_push": 0,
+                    "knife_karambit": 0,
+                    "knife_m9_bayonet": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "knife_stiletto": 0,
+                    "xm1014": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 49.9,
+                "days_in_team": 69,
+                "kda": 1.02
+            },
+            "12872": {
+                "most_used_weapons": {
+                    "awp": 2020,
+                    "ak47": 1491,
+                    "m4a1": 702,
+                    "sg556": 490,
+                    "usp_silencer": 426,
+                    "glock": 271,
+                    "deagle": 201,
+                    "p250": 163,
+                    "mac10": 156,
+                    "cz75a": 152,
+                    "aug": 120,
+                    "mp9": 120,
+                    "m4a1_silencer": 112,
+                    "famas": 98,
+                    "hegrenade": 71,
+                    "ump45": 67,
+                    "inferno": 63,
+                    "galilar": 53,
+                    "ssg08": 48,
+                    "tec9": 19,
+                    "fiveseven": 15,
+                    "hkp2000": 11,
+                    "mp5sd": 5,
+                    "mag7": 3,
+                    "scar20": 2,
+                    "bizon": 2,
+                    "revolver": 2,
+                    "knife_stiletto": 2,
+                    "mp7": 2,
+                    "p90": 1,
+                    "knife_m9_bayonet": 1,
+                    "xm1014": 1,
+                    "knife_survival_bowie": 1,
+                    "elite": 1,
+                    "world": 1,
+                    "bayonet": 1,
+                    "g3sg1": 1,
+                    "molotov": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "knife_gypsy_jackknife": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_default_ct": 0,
+                    "knife_butterfly": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 35,
+                "days_in_team": 69,
+                "kda": 0.97
+            },
+            "14290": {
+                "most_used_weapons": {
+                    "ak47": 2266,
+                    "m4a1": 1238,
+                    "awp": 751,
+                    "sg556": 377,
+                    "usp_silencer": 280,
+                    "glock": 278,
+                    "ump45": 260,
+                    "m4a1_silencer": 235,
+                    "mac10": 225,
+                    "galilar": 217,
+                    "mp9": 212,
+                    "famas": 198,
+                    "aug": 197,
+                    "cz75a": 196,
+                    "deagle": 154,
+                    "p250": 111,
+                    "hkp2000": 99,
+                    "inferno": 60,
+                    "hegrenade": 54,
+                    "ssg08": 35,
+                    "tec9": 29,
+                    "fiveseven": 25,
+                    "mag7": 21,
+                    "mp5sd": 13,
+                    "knife_m9_bayonet": 7,
+                    "usp_silencer_off": 5,
+                    "world": 4,
+                    "g3sg1": 3,
+                    "bizon": 2,
+                    "xm1014": 2,
+                    "molotov": 1,
+                    "p90": 1,
+                    "knife_t": 1,
+                    "elite": 1,
+                    "mp7": 1,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "scar20": 0,
+                    "knife_gypsy_jackknife": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 42,
+                "days_in_team": 69,
+                "kda": 0.9
+            },
+            "14957": {
+                "most_used_weapons": {
+                    "ak47": 1742,
+                    "m4a1": 962,
+                    "sg556": 684,
+                    "usp_silencer": 336,
+                    "awp": 257,
+                    "aug": 236,
+                    "deagle": 210,
+                    "glock": 207,
+                    "cz75a": 162,
+                    "m4a1_silencer": 110,
+                    "ump45": 98,
+                    "famas": 93,
+                    "mp9": 71,
+                    "p250": 58,
+                    "mac10": 51,
+                    "inferno": 39,
+                    "galilar": 37,
+                    "hegrenade": 33,
+                    "mp5sd": 27,
+                    "ssg08": 6,
+                    "p90": 5,
+                    "fiveseven": 3,
+                    "xm1014": 3,
+                    "hkp2000": 3,
+                    "knife_butterfly": 3,
+                    "knife_karambit": 1,
+                    "mp7": 1,
+                    "molotov": 0,
+                    "m249": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "scar20": 0,
+                    "usp_silencer_off": 0,
+                    "knife_gypsy_jackknife": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife_flip": 0,
+                    "knife": 0,
+                    "knife_gut": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "tec9": 0,
+                    "elite": 0,
+                    "world": 0,
+                    "bayonet": 0,
+                    "g3sg1": 0,
+                    "mag7": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 49,
+                "days_in_team": 69,
+                "kda": 0.97
+            }
+        },
+        "kills": {
+            "ak47": 21,
+            "hegrenade": 1,
+            "m4a1": 22,
+            "fiveseven": 1,
+            "usp_silencer": 2,
+            "glock": 3,
+            "p250": 3,
+            "deagle": 2,
+            "famas": 1,
+            "awp": 11,
+            "mac10": 1,
+            "mp9": 1,
+            "sg556": 4
+        },
+        "first_kills": 10
+    },
+    "1": {
+        "name": "ORDER",
+        "id": "8668",
+        "win_lose_ratio": 2.198717948717949,
+        "best_maps": {
+            "Vertigo": 91.7,
+            "Cache": 75,
+            "Train": 73.4,
+            "Inferno": 72.2,
+            "Mirage": 68.7,
+            "Dust2": 61.5,
+            "Overpass": 60.7,
+            "Nuke": 60.5,
+            "Cobblestone": 0
+        },
+        "last_matches": [
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2020-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2020-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2020-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Rooster",
+                "winner": "ORDER",
+                "date": "2020-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2020-03-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2020-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2020-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ROCK CANDY",
+                "winner": "ORDER",
+                "date": "2020-03-09T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2020-03-08T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2020-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Renegades",
+                "winner": "Renegades",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Rooster",
+                "winner": "ORDER",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Skyfire",
+                "winner": "ORDER",
+                "date": "2020-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Skyfire",
+                "winner": "ORDER",
+                "date": "2020-03-02T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Esper",
+                "winner": "ORDER",
+                "date": "2020-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "PC419",
+                "winner": "ORDER",
+                "date": "2020-02-25T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2020-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Rooster",
+                "winner": "ORDER",
+                "date": "2020-02-23T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2020-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Formidable",
+                "winner": "ORDER",
+                "date": "2020-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "TRIDENT",
+                "winner": "ORDER",
+                "date": "2020-02-09T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MC",
+                "winner": "ORDER",
+                "date": "2020-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Skyfire",
+                "winner": "ORDER",
+                "date": "2020-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Incept",
+                "winner": "ORDER",
+                "date": "2020-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Airborne",
+                "winner": "ORDER",
+                "date": "2020-01-26T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2020-01-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "FURY",
+                "winner": "ORDER",
+                "date": "2020-01-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Genuine",
+                "winner": "ex-Genuine",
+                "date": "2020-01-15T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Renegades",
+                "winner": "Renegades",
+                "date": "2020-01-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2020-01-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Genuine",
+                "winner": "ORDER",
+                "date": "2020-01-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "INTZ",
+                "winner": "INTZ",
+                "date": "2019-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Triumph",
+                "winner": "ORDER",
+                "date": "2019-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "INTZ",
+                "winner": "INTZ",
+                "date": "2019-12-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2019-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "ORDER",
+                "date": "2019-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "PC419",
+                "winner": "ORDER",
+                "date": "2019-11-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "catman",
+                "winner": "ORDER",
+                "date": "2019-11-05T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "SYF",
+                "winner": "ORDER",
+                "date": "2019-10-29T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ZOOWEEMAMA",
+                "winner": "ORDER",
+                "date": "2019-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-10-25T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2019-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "Genuine",
+                "date": "2019-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2019-10-19T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-10-18T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "catman",
+                "winner": "ORDER",
+                "date": "2019-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-10-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "really weird",
+                "winner": "ORDER",
+                "date": "2019-10-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2019-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Buckets",
+                "winner": "ORDER",
+                "date": "2019-10-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "madlikewizards",
+                "winner": "ORDER",
+                "date": "2019-10-02T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "PC419",
+                "winner": "ORDER",
+                "date": "2019-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-09-28T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2019-09-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Bizarre",
+                "winner": "ORDER",
+                "date": "2019-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2019-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "ORDER",
+                "date": "2019-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "madlikewizards",
+                "winner": "ORDER",
+                "date": "2019-09-21T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MC",
+                "winner": "ORDER",
+                "date": "2019-09-18T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Jade",
+                "winner": "Jade",
+                "date": "2019-09-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "Genuine",
+                "date": "2019-09-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Jade",
+                "winner": "ORDER",
+                "date": "2019-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Dippers",
+                "winner": "ORDER",
+                "date": "2019-09-09T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-07-24T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2019-07-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-07-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Fighting 4 Freedom",
+                "winner": "ORDER",
+                "date": "2019-07-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Justice",
+                "winner": "ORDER",
+                "date": "2019-07-09T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "ORDER",
+                "date": "2019-06-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Fighting 4 Freedom",
+                "winner": "ORDER",
+                "date": "2019-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "ORDER",
+                "date": "2019-06-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Jade",
+                "winner": "ORDER",
+                "date": "2019-06-09T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2019-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Downfall",
+                "winner": "ORDER",
+                "date": "2019-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Rooster",
+                "winner": "ORDER",
+                "date": "2019-06-05T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "DINQ",
+                "winner": "ORDER",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Fanta",
+                "winner": "ORDER",
+                "date": "2019-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2019-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "rewound",
+                "winner": "ORDER",
+                "date": "2019-06-02T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "ORDER",
+                "date": "2019-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2019-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2019-05-31T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Athletico",
+                "winner": "ORDER",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "rewound",
+                "winner": "ORDER",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Genuine",
+                "winner": "ORDER",
+                "date": "2019-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-05-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-05-20T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2019-05-18T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MC",
+                "winner": "ORDER",
+                "date": "2019-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Athletico",
+                "winner": "ORDER",
+                "date": "2019-05-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "SYF",
+                "winner": "ORDER",
+                "date": "2019-05-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Justice",
+                "winner": "ORDER",
+                "date": "2019-04-29T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Jade",
+                "winner": "ORDER",
+                "date": "2019-04-28T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "ORDER",
+                "date": "2019-04-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Athletico",
+                "winner": "ORDER",
+                "date": "2019-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Astral Influence",
+                "winner": "ORDER",
+                "date": "2019-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2019-04-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2019-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2019-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2019-03-27T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Surge",
+                "winner": "ORDER",
+                "date": "2019-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "ORDER",
+                "date": "2019-03-26T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Athletico",
+                "winner": "ORDER",
+                "date": "2019-03-23T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "Breakaway",
+                "date": "2019-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Skyfire",
+                "winner": "ORDER",
+                "date": "2019-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Fighting 4 Freedom",
+                "winner": "ORDER",
+                "date": "2019-03-11T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2019-03-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "Paradox",
+                "date": "2019-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Astral Influence",
+                "winner": "ORDER",
+                "date": "2019-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Content",
+                "winner": "ORDER",
+                "date": "2019-03-03T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2019-02-27T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2019-02-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "ORDER",
+                "date": "2019-02-17T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Off The Grid",
+                "winner": "ORDER",
+                "date": "2019-02-12T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Caladrius",
+                "winner": "ORDER",
+                "date": "2019-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ICON",
+                "winner": "ORDER",
+                "date": "2019-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "R!OT",
+                "winner": "ORDER",
+                "date": "2019-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2019-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MC",
+                "winner": "ORDER",
+                "date": "2019-01-28T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "PC419",
+                "winner": "ORDER",
+                "date": "2019-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Rooster",
+                "winner": "ORDER",
+                "date": "2019-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Athletico",
+                "winner": "ORDER",
+                "date": "2019-01-16T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-12-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2018-12-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ghost",
+                "winner": "Ghost",
+                "date": "2018-12-04T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Natus Vincere",
+                "winner": "Natus Vincere",
+                "date": "2018-12-03T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-11-30T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2018-11-23T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-11-18T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "madlikewizards",
+                "winner": "ORDER",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-11-17T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "Ground Zero",
+                "date": "2018-11-16T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "ORDER",
+                "date": "2018-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-11-15T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Deceptors",
+                "winner": "ORDER",
+                "date": "2018-11-09T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "Breakaway",
+                "date": "2018-11-08T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "Paradox",
+                "date": "2018-11-04T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-11-03T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Roar",
+                "winner": "ORDER",
+                "date": "2018-11-02T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Paradox",
+                "winner": "ORDER",
+                "date": "2018-10-31T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-10-30T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-10-28T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Formidable",
+                "winner": "ORDER",
+                "date": "2018-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "Breakaway",
+                "date": "2018-10-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-10-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-10-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MC",
+                "winner": "ORDER",
+                "date": "2018-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-10-21T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Dynasty",
+                "winner": "ORDER",
+                "date": "2018-10-16T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-10-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-10-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "ORDER",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs Academy",
+                "winner": "ORDER",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MongrelMob",
+                "winner": "ORDER",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-10-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "madlikewizards",
+                "winner": "ORDER",
+                "date": "2018-10-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-10-07T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-10-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Exsto",
+                "winner": "ORDER",
+                "date": "2018-09-30T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "TRIDENT",
+                "winner": "ORDER",
+                "date": "2018-09-25T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "seadoggs",
+                "winner": "ORDER",
+                "date": "2018-09-24T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Vizard",
+                "winner": "ORDER",
+                "date": "2018-09-17T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "madlikewizards",
+                "winner": "madlikewizards",
+                "date": "2018-09-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "madlikewizards",
+                "winner": "madlikewizards",
+                "date": "2018-09-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Carnage",
+                "winner": "ORDER",
+                "date": "2018-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Carnage",
+                "winner": "ORDER",
+                "date": "2018-09-05T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-08-31T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-08-24T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Dynasty",
+                "winner": "ORDER",
+                "date": "2018-08-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Emprox",
+                "winner": "ORDER",
+                "date": "2018-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Emprox",
+                "winner": "ORDER",
+                "date": "2018-08-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "ORDER",
+                "date": "2018-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Breakaway",
+                "winner": "ORDER",
+                "date": "2018-08-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-08-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-AVANT",
+                "winner": "ORDER",
+                "date": "2018-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-AVANT",
+                "winner": "ORDER",
+                "date": "2018-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-08-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Corvidae",
+                "winner": "ORDER",
+                "date": "2018-08-05T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Animal Squad",
+                "winner": "ORDER",
+                "date": "2018-08-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Animal Squad",
+                "winner": "ORDER",
+                "date": "2018-08-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-07-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "NASR",
+                "winner": "ORDER",
+                "date": "2018-07-26T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-07-13T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Corvidae",
+                "winner": "ORDER",
+                "date": "2018-07-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Downfall",
+                "winner": "ORDER",
+                "date": "2018-07-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Roar",
+                "winner": "ORDER",
+                "date": "2018-07-06T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Surge",
+                "winner": "ORDER",
+                "date": "2018-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Control",
+                "winner": "ORDER",
+                "date": "2018-07-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-06-29T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Rise and Grind",
+                "winner": "ORDER",
+                "date": "2018-06-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-06-26T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Taboo",
+                "winner": "ORDER",
+                "date": "2018-06-25T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-06-24T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "TRIDENT",
+                "winner": "ORDER",
+                "date": "2018-06-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-06-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-06-22T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-06-20T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Dark Sided",
+                "winner": "ORDER",
+                "date": "2018-06-20T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-06-16T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Roar",
+                "winner": "ORDER",
+                "date": "2018-06-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-06-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Dark Sided",
+                "winner": "ORDER",
+                "date": "2018-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-06-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-06-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Formidable",
+                "winner": "ORDER",
+                "date": "2018-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-06-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "AVANT",
+                "winner": "AVANT",
+                "date": "2018-06-08T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MVP PK",
+                "winner": "MVP PK",
+                "date": "2018-06-06T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "EMC",
+                "winner": "ORDER",
+                "date": "2018-06-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Deceptors",
+                "winner": "ORDER",
+                "date": "2018-06-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-05-30T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "SYF",
+                "winner": "ORDER",
+                "date": "2018-05-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-05-26T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-05-25T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "seadoggs",
+                "winner": "ORDER",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Conspiracy",
+                "winner": "ORDER",
+                "date": "2018-05-23T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "R!OT",
+                "winner": "R!OT",
+                "date": "2018-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "R!OT",
+                "winner": "ORDER",
+                "date": "2018-05-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Spirit",
+                "winner": "Spirit",
+                "date": "2018-05-11T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Swole Patrol",
+                "winner": "ORDER",
+                "date": "2018-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "BIG",
+                "winner": "BIG",
+                "date": "2018-05-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "STREAMLINE",
+                "winner": "ORDER",
+                "date": "2018-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "STREAMLINE",
+                "winner": "ORDER",
+                "date": "2018-05-07T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Cloud9",
+                "winner": "Cloud9",
+                "date": "2018-05-01T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-04-30T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2018-04-30T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "Grayhound",
+                "date": "2018-04-21T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MVP PK",
+                "winner": "ORDER",
+                "date": "2018-04-20T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Signature",
+                "winner": "ORDER",
+                "date": "2018-04-20T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-04-16T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-04-15T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-04-14T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Taboo",
+                "winner": "ORDER",
+                "date": "2018-04-12T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Carnage",
+                "winner": "ORDER",
+                "date": "2018-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Carnage",
+                "winner": "ORDER",
+                "date": "2018-04-10T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-04-04T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Lucky7",
+                "winner": "ORDER",
+                "date": "2018-04-03T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-03-31T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-03-30T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Corvidae",
+                "winner": "ORDER",
+                "date": "2018-03-29T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Lucky7",
+                "winner": "ORDER",
+                "date": "2018-03-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Lucky7",
+                "winner": "ORDER",
+                "date": "2018-03-27T22:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Carnage",
+                "winner": "ORDER",
+                "date": "2018-03-24T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Lucky7",
+                "winner": "ORDER",
+                "date": "2018-03-21T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "ORDER",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Athletico",
+                "winner": "ORDER",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Athletico",
+                "winner": "ORDER",
+                "date": "2018-03-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Space Soldiers",
+                "winner": "Space Soldiers",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Bravado",
+                "winner": "ORDER",
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "TeamOne",
+                "winner": null,
+                "date": "2018-03-14T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MAX",
+                "winner": "ORDER",
+                "date": "2018-03-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "seadoggs",
+                "winner": "ORDER",
+                "date": "2018-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-03-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-03-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "NiP",
+                "winner": "NiP",
+                "date": "2018-02-27T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "FaZe",
+                "winner": "FaZe",
+                "date": "2018-02-26T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MC",
+                "winner": "ORDER",
+                "date": "2018-02-11T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Ground Zero",
+                "winner": "ORDER",
+                "date": "2018-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Control",
+                "winner": "ORDER",
+                "date": "2018-02-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "TRIDENT",
+                "winner": "ORDER",
+                "date": "2018-02-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Athletico",
+                "winner": "ORDER",
+                "date": "2018-02-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "ex-Riotous Academy",
+                "winner": "ORDER",
+                "date": "2018-02-07T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Dark Sided",
+                "winner": "ORDER",
+                "date": "2018-02-06T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chiefs",
+                "winner": "Chiefs",
+                "date": "2018-02-05T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Legacy",
+                "winner": "ORDER",
+                "date": "2018-02-04T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Azure",
+                "winner": "ORDER",
+                "date": "2018-01-29T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Corvidae",
+                "winner": "ORDER",
+                "date": "2018-01-27T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "ORDER",
+                "date": "2018-01-24T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-01-23T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Tainted Minds",
+                "winner": "Tainted Minds",
+                "date": "2018-01-22T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Grayhound",
+                "winner": "ORDER",
+                "date": "2018-01-20T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Athletico",
+                "winner": "ORDER",
+                "date": "2018-01-19T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MVP PK",
+                "winner": "ORDER",
+                "date": "2018-01-13T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "NSPR",
+                "winner": "ORDER",
+                "date": "2018-01-12T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MAX",
+                "winner": "ORDER",
+                "date": "2018-01-12T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "LEOPARD",
+                "winner": "ORDER",
+                "date": "2018-01-12T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "MVP PK",
+                "winner": "MVP PK",
+                "date": "2018-01-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Fire Dragoon",
+                "winner": "ORDER",
+                "date": "2018-01-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Chosen5",
+                "winner": "ORDER",
+                "date": "2018-01-10T23:00:00.000Z"
+            },
+            {
+                "team1": "ORDER",
+                "team2": "Portal",
+                "winner": "ORDER",
+                "date": "2018-01-10T23:00:00.000Z"
+            }
+        ],
+        "last_match_date": "2020-04-04T22:00:00.000Z",
+        "player_data": {
+            "8745": {
+                "most_used_weapons": {
+                    "awp": 3068,
+                    "ak47": 3048,
+                    "m4a1": 841,
+                    "usp_silencer": 717,
+                    "m4a1_silencer": 541,
+                    "deagle": 449,
+                    "p250": 384,
+                    "glock": 341,
+                    "ump45": 318,
+                    "famas": 290,
+                    "sg556": 288,
+                    "aug": 226,
+                    "galilar": 224,
+                    "tec9": 112,
+                    "mp9": 98,
+                    "hegrenade": 96,
+                    "fiveseven": 81,
+                    "mac10": 75,
+                    "ssg08": 55,
+                    "inferno": 55,
+                    "cz75a": 50,
+                    "mp7": 40,
+                    "taser": 31,
+                    "scar20": 26,
+                    "xm1014": 6,
+                    "world": 4,
+                    "knife_m9_bayonet": 3,
+                    "hkp2000": 3,
+                    "mp5sd": 3,
+                    "g3sg1": 3,
+                    "mag7": 3,
+                    "nova": 2,
+                    "knife_t": 2,
+                    "knife_default_ct": 1,
+                    "p90": 0,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_karambit": 0,
+                    "knife_tactical": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_flip": 0,
+                    "knife_widowmaker": 0,
+                    "knife_survival_bowie": 0,
+                    "elite": 0,
+                    "bayonet": 0,
+                    "knife_butterfly": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 38.7,
+                "days_in_team": 82,
+                "kda": 1.1
+            },
+            "8771": {
+                "most_used_weapons": {
+                    "ak47": 6000,
+                    "m4a1": 2837,
+                    "m4a1_silencer": 889,
+                    "usp_silencer": 753,
+                    "glock": 539,
+                    "ump45": 537,
+                    "cz75a": 321,
+                    "mac10": 286,
+                    "deagle": 245,
+                    "p250": 226,
+                    "famas": 193,
+                    "sg556": 189,
+                    "p90": 163,
+                    "galilar": 159,
+                    "mp7": 148,
+                    "tec9": 146,
+                    "awp": 125,
+                    "mp9": 107,
+                    "fiveseven": 89,
+                    "inferno": 85,
+                    "hegrenade": 57,
+                    "hkp2000": 19,
+                    "aug": 17,
+                    "mag7": 15,
+                    "ssg08": 14,
+                    "world": 3,
+                    "scar20": 2,
+                    "knife_karambit": 1,
+                    "nova": 1,
+                    "knife_flip": 1,
+                    "knife_butterfly": 1,
+                    "sawedoff": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "xm1014": 0,
+                    "knife": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_falchion": 0,
+                    "elite": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "mp5sd": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0,
+                    "negev": 0
+                },
+                "headshots": 45.4,
+                "days_in_team": 208,
+                "kda": 1.01
+            },
+            "11139": {
+                "most_used_weapons": {
+                    "awp": 4662,
+                    "ak47": 3483,
+                    "m4a1": 1182,
+                    "usp_silencer": 693,
+                    "ump45": 444,
+                    "glock": 440,
+                    "p250": 370,
+                    "deagle": 362,
+                    "mp9": 281,
+                    "m4a1_silencer": 239,
+                    "sg556": 226,
+                    "tec9": 210,
+                    "cz75a": 165,
+                    "ssg08": 154,
+                    "famas": 137,
+                    "aug": 131,
+                    "inferno": 127,
+                    "hkp2000": 108,
+                    "fiveseven": 98,
+                    "galilar": 79,
+                    "mac10": 74,
+                    "mp5sd": 69,
+                    "hegrenade": 62,
+                    "mp7": 19,
+                    "xm1014": 16,
+                    "knife_m9_bayonet": 13,
+                    "elite": 13,
+                    "p90": 8,
+                    "usp_silencer_off": 5,
+                    "world": 4,
+                    "smokegrenade": 3,
+                    "scar20": 3,
+                    "g3sg1": 3,
+                    "mag7": 2,
+                    "bizon": 1,
+                    "knife_stiletto": 1,
+                    "knife_flip": 1,
+                    "knife_butterfly": 1,
+                    "molotov": 0,
+                    "knife_push": 0,
+                    "sawedoff": 0,
+                    "knife_karambit": 0,
+                    "nova": 0,
+                    "revolver": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "negev": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 35.9,
+                "days_in_team": 806,
+                "kda": 1.15
+            },
+            "12593": {
+                "most_used_weapons": {
+                    "ak47": 2756,
+                    "m4a1": 1282,
+                    "awp": 725,
+                    "usp_silencer": 387,
+                    "aug": 226,
+                    "p250": 202,
+                    "m4a1_silencer": 194,
+                    "famas": 182,
+                    "sg556": 180,
+                    "glock": 172,
+                    "mac10": 167,
+                    "deagle": 166,
+                    "ump45": 161,
+                    "mp9": 121,
+                    "galilar": 109,
+                    "cz75a": 99,
+                    "fiveseven": 94,
+                    "ssg08": 75,
+                    "inferno": 46,
+                    "hegrenade": 35,
+                    "tec9": 22,
+                    "mag7": 18,
+                    "p90": 11,
+                    "mp5sd": 7,
+                    "nova": 5,
+                    "knife_m9_bayonet": 4,
+                    "taser": 4,
+                    "world": 4,
+                    "mp7": 4,
+                    "xm1014": 3,
+                    "elite": 2,
+                    "knife_butterfly": 2,
+                    "hkp2000": 1,
+                    "sawedoff": 0,
+                    "knife_karambit": 0,
+                    "scar20": 0,
+                    "usp_silencer_off": 0,
+                    "bizon": 0,
+                    "revolver": 0,
+                    "knife_stiletto": 0,
+                    "knife": 0,
+                    "incgrenade": 0,
+                    "knife_widowmaker": 0,
+                    "knife_t": 0,
+                    "knife_survival_bowie": 0,
+                    "knife_falchion": 0,
+                    "knife_default_ct": 0,
+                    "bayonet": 0,
+                    "g3sg1": 0,
+                    "knife_ursus": 0,
+                    "negev": 0
+                },
+                "headshots": 44.9,
+                "days_in_team": 45,
+                "kda": 1.02
+            },
+            "16323": {
+                "most_used_weapons": {
+                    "ak47": 1471,
+                    "m4a1": 883,
+                    "sg556": 649,
+                    "aug": 467,
+                    "usp_silencer": 274,
+                    "deagle": 252,
+                    "glock": 209,
+                    "awp": 184,
+                    "famas": 129,
+                    "mp9": 98,
+                    "p250": 94,
+                    "galilar": 82,
+                    "ump45": 72,
+                    "cz75a": 65,
+                    "hkp2000": 45,
+                    "m4a1_silencer": 43,
+                    "mac10": 39,
+                    "hegrenade": 31,
+                    "inferno": 30,
+                    "ssg08": 20,
+                    "fiveseven": 13,
+                    "mp5sd": 13,
+                    "tec9": 6,
+                    "mag7": 4,
+                    "elite": 3,
+                    "world": 3,
+                    "p90": 2,
+                    "taser": 0,
+                    "knife_survival_bowie": 0,
+                    "sawedoff": 0,
+                    "knife_karambit": 0,
+                    "knife_m9_bayonet": 0,
+                    "knife_tactical": 0,
+                    "nova": 0,
+                    "usp_silencer_off": 0,
+                    "scar20": 0,
+                    "bizon": 0,
+                    "knife_stiletto": 0,
+                    "xm1014": 0,
+                    "knife_butterfly": 0,
+                    "knife": 0,
+                    "g3sg1": 0,
+                    "mp7": 0,
+                    "knife_widowmaker": 0,
+                    "knife_ursus": 0
+                },
+                "headshots": 50.1,
+                "days_in_team": 270,
+                "kda": 1.09
+            }
+        },
+        "kills": {
+            "ak47": 34,
+            "hegrenade": 3,
+            "m4a1": 17,
+            "usp_silencer": 6,
+            "glock": 2,
+            "elite": 3,
+            "mp9": 5,
+            "ump45": 3,
+            "awp": 5,
+            "inferno": 1,
+            "mac10": 1
+        },
+        "first_kills": 12
+    },
+    "winner": 1,
+    "team1Rounds": 7,
+    "team2Rounds": 16,
+    "id": "92612",
+    "date": "2019-09-28T22:00:00.000Z"
+}
