@@ -89,15 +89,9 @@ class Regressor {
         }
 
         if (output >= 0.5) {
-            return {
-                winner: team1,
-                how_sure: output,
-            }
+            return team1;
         } else {
-            return {
-                winner: team2,
-                how_sure: 1-output,
-            }
+            return team2;
         }
     }
 

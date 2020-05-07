@@ -303,12 +303,7 @@ function do_prediction(request, response){
         let team1 = bodyjson.team1;
         let team2 = bodyjson.team2;
         let result = regressor.predict_winner(team1, team2);
-        let responseobject = {
-            winner: result.winner,
-            probability: result.how_sure,
-        }
-        let responsejson = JSON.stringify(responseobject, undefined, 4);
-        response.write(responsejson);
+        response.write(result);
         response.end();
     });
 }

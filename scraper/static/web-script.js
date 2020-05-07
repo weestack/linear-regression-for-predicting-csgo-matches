@@ -187,10 +187,10 @@ async function run_prediction(){
         body: bodyjson
     });
     if(response.status == 200){
-        let result = await response.json();
+        let result = await response.text();
         let selection = null;
         let winner = null;
-        if (result.winner == team1) {
+        if (result == team1) {
             selection = document.getElementById("team1Select");
         } else {
             selection = document.getElementById("team2Select");
