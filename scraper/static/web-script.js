@@ -216,8 +216,8 @@ async function statistics(){
     }
 }
 
-async function get_coeficcients(){
-    let response = await fetch("/coeficcients");
+async function get_coefficients(){
+    let response = await fetch("/coefficients");
     if (response.status == 200) {
         let data = await response.json();
         return data;
@@ -247,15 +247,9 @@ async function render_statistics(){
         let rSquared = document.getElementById("stats_rSquared");
         let rss = document.getElementById("stats_rss");
         let sigma = document.getElementById("stats_sigma");
-        let sxx = document.getElementById("stats_sxx");
-        let sxy = document.getElementById("stats_sxy");
-        let syy = document.getElementById("stats_syy");
         rSquared.textContent = stats.r_squared.toFixed(3);
         rss.textContent = stats.rss.toFixed(3);
         sigma.textContent = stats.sigma.toFixed(3);
-        sxx.textContent = stats.summary_statics.sxx.toFixed(3);
-        sxy.textContent = stats.summary_statics.sxy.toFixed(3);
-        syy.textContent = stats.summary_statics.syy.toFixed(3);
     }
     else{
         document.getElementById("statisticsError").textContent = "Not enough data";
@@ -266,22 +260,22 @@ async function render_statistics(){
 
 
 async function render_coefficients(){
-    /* populate table with coeficcients and pearson corrilation values */
-    let coeficcients = await get_coeficcients();
-    if (coeficcients != null) {
-        let n = coeficcients.coeficcients.length;
-        let pearson_coeficcients = [0].concat(coeficcients.pearson_coeficcients);
-        let header = coeficcients.header;
+    /* populate table with coefficients and pearson corrilation values */
+    let coefficients = await get_coefficients();
+    if (coefficients != null) {
+        let n = coefficients.coefficients.length;
+        let pearson_coefficients = [0].concat(coefficients.pearson_coefficients);
+        let header = coefficients.header;
         // Find a <table> element with id="myTable":
-        let table = document.getElementById("coeficcients");
+        let table = document.getElementById("coefficients");
         for (let i = 0; i < n; i++){
             let table_row = table.insertRow(i+1);
-            let coeficcient_meaning = table_row.insertCell(0);
-            coeficcient_meaning.innerHTML = (i > 0) ? header[i].title : "Intercept";
-            let cell_coeficcient = table_row.insertCell(1);
-            cell_coeficcient.innerHTML = coeficcients.coeficcients[i];
+            let coefficient_meaning = table_row.insertCell(0);
+            coefficient_meaning.innerHTML = (i > 0) ? header[i].title : "Intercept";
+            let cell_coefficient = table_row.insertCell(1);
+            cell_coefficient.innerHTML = coefficients.coefficients[i];
             let cell_pearson = table_row.insertCell(2);
-            cell_pearson.innerHTML = pearson_coeficcients[i];
+            cell_pearson.innerHTML = pearson_coefficients[i];
         }
     }
 }

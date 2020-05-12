@@ -24,9 +24,9 @@ class Regressor {
 
         this.bind_to_normalized_data();
 
-        /* calculate coeficcients */
-        this.coefficients = this.calculate_coeficcients();
-        this.cleaned_coeficcients = math_js.transpose(this.coefficients).toArray()[0];
+        /* calculate coefficients */
+        this.coefficients = this.calculate_coefficients();
+        this.cleaned_coefficients = math_js.transpose(this.coefficients).toArray()[0];
         /* Init statistics */
         this.bind_statistics();
     }
@@ -66,9 +66,9 @@ class Regressor {
         this.header = all_data.header;
     }
 
-    calculate_coeficcients() {
-        /* Wrapeper that calls regression obj for coeficcients calculation */
-        let coefficients = this.regression_obj.estimate_best_coeficcients(this.independent, this.prediction)
+    calculate_coefficients() {
+        /* Wrapper that calls regression obj for coefficients calculation */
+        let coefficients = this.regression_obj.estimate_best_coefficients(this.independent, this.prediction)
         return coefficients;
     }
 
@@ -82,7 +82,7 @@ class Regressor {
             independent_variables[i] = team1data[i] - team2data[i];
         }
 
-        let coefficients = this.cleaned_coeficcients;
+        let coefficients = this.cleaned_coefficients;
         let output = coefficients[0]; /* initialise the prediction to B0 */
         for (let n = 1; n < coefficients.length; n++) {
             output += independent_variables[n-1] * coefficients[n];
@@ -102,29 +102,18 @@ class Regressor {
         let independent = this.independent;
         let prediction = this.prediction;
 
-        let summary_statics = this.regression_obj.summary_statictis(independent, prediction)
         /* rss returns singular value */
-        let rss = this.regression_obj.rss(summary_statics.subset(math_js.index(1, 1)), summary_statics.subset(math_js.index(0, 0)), this.coefficients);
+        let rss = this.regression_obj.rss(independent, prediction, this.coefficients);
         let r_squared = this.regression_obj.r_squared(this.coefficients, independent, prediction);
-        let sigma = this.regression_obj.sigma_squared(rss.subset(math_js.index(0, 0)), independent);
-        let varians = this.regression_obj.variance(sigma, independent);
-        let pearsons_coeficcients = this.regression_obj.pearson_corrolations(this.independent, prediction);
-        /* bind the raw value rather than matrix obj */
-        rss = rss.subset(math_js.index(0, 0))
-        /* bind the raw values of summary, ranther than using matrix obj */
-        summary_statics = {
-            sxx: summary_statics.subset(math_js.index(0, 0)),
-            syy: summary_statics.subset(math_js.index(1, 1)),
-            sxy: summary_statics.subset(math_js.index(0, 1))
-        }
+        let sigma = Math.sqrt(this.regression_obj.sigma_squared(rss, independent));
+        let pearsons_coefficients = this.regression_obj.pearson_correlations(this.independent, prediction);
+
         /* bind the calculated statistics to the object */
         this.statistics = {
-            summary_statics: summary_statics,
             rss: rss,
             r_squared: r_squared,
             sigma: sigma,
-            varians: varians,
-            pearsons_coeficcients: pearsons_coeficcients
+            pearsons_coefficients: pearsons_coefficients
         };
     }
 }

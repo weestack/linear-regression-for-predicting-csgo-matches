@@ -1,14 +1,8 @@
 "use strict";
 const math_js = require("mathjs");
 
-class Regression {
-    /*
-    * Base object, packed with methods both for:
-    * Linear regression
-    * Multi variable regression
-    */
-
-    normalize ( column ) {
+class Multi_Linear_Regression {
+	normalize (column) {
         /* normalize = (x - x_min)/(x_max-x_min)
         * Normalization reduces all datapoints to a number between 0 and 1.
         * This makes it easier to get an overview from a scatterplot matrix, with multiple data, being with in same range.
@@ -22,9 +16,8 @@ class Regression {
         }
 
         return new_column
-
-
     }
+
     mean(matrix_column) {
         let matrix = math_js.matrix(matrix_column);
         let sum = 0;
@@ -37,19 +30,28 @@ class Regression {
         return sum / length
     }
 
-    pearson_corrolations(independent, prediction){
-
-
-        let coeficcients = Array();
-        let [rows, columns] = independent.size();
-        for (let column = 0; column < columns; column++){
-            coeficcients[column] = this.get_pearson_corrolation(math_js.column(independent, column), prediction );
+    mean_vector( matrix ) {
+        let [rows, columns] = matrix.size();
+        let means = math_js.matrix();
+        for (let i=0; i < columns; i++) {
+            means.subset(
+                math_js.index(i), // grab the value at the i'th place
+                this.mean( math_js.column( matrix, i ) ) // pass in the i'th column to the mean function
+            )
         }
-        return coeficcients;
-
+        return means;
     }
 
-    get_pearson_corrolation(X, Y) {
+    pearson_correlations(independent, prediction){
+    	let correlations = Array();
+        let [rows, columns] = independent.size();
+        for (let column = 0; column < columns; column++){
+            correlations[column] = this.get_pearson_correlation(math_js.column(independent, column), prediction);
+        }
+        return correlations;
+    }
+
+    get_pearson_correlation(X, Y) {
         /*
         * p = -1 stærk, negativ graf, (linear afhængig)
         * -1 < p < 0 - Nogen lunde linear sammenhæng, jo tættere på 0, jo dårligere sammenhæng.
@@ -80,36 +82,19 @@ class Regression {
         return (denomenator) / (Math.sqrt(delta_x_square) * Math.sqrt(delta_y_square) )
     }
 
-
-
-}
-
-class Multi_Linear_Regression extends Regression {
-    /* equation to expect from object Y_i = b_0 + b_1*x_i + ... b_n*x_i */
-
-    mean_vector( matrix ) {
-        let [rows, columns] = matrix.size();
-        let means = math_js.matrix();
-        for (let i=0; i < columns; i++) {
-            means.subset(
-                math_js.index(i), // grap the value at the i'th place
-                this.mean( math_js.column( matrix, i ) ) // pass in the i'th column to the mean function
-            )
-        }
-        return means;
-    }
-
-
-    decomposition( matrix) {
+    decomposition(matrix) {
+    	/* This decomposition is described in the book Applied linear regression on page 56. */
         let [rows, columns ] = matrix.size();
         if (columns === "undefined"){
             columns = 1;
         }
-        let means = [];
+
         /* get all the means */
+        let means = [];
         for (let column = 0; column < columns; column++){
             means[column] = this.mean(math_js.column(matrix, column))
         }
+
         /* compute the new column values */
         let new_matrix = math_js.matrix();
         for (let column = 0; column < columns; column++){
@@ -119,70 +104,53 @@ class Multi_Linear_Regression extends Regression {
                 new_matrix.subset(math_js.index(row, column),   ij_val)
             }
         }
-
-
         return new_matrix;
-
     }
-    estimate_best_coeficcients(x, y){
-        /* Estimated least squares */
+
+    estimate_best_coefficients(x, y){
+        /* Calculate the best coefficients using the OLS equation from the book at page 57 */
         let decomp_prediction = this.decomposition(y);
         let decomp_independent =  this.decomposition(x);
 
-        /* block for calculating b_1 ... b_n coeficcients */
+        /* code for calculating b_1 ... b_n coefficients */
         let transpose_independent = math_js.transpose(decomp_independent);
         let independent_times_transpose_ind = math_js.multiply(transpose_independent, decomp_independent);
         let inverse_times_trans_ind = math_js.inv(independent_times_transpose_ind);
         let x_y = math_js.multiply(transpose_independent, decomp_prediction);
-        let ceoficcients = math_js.multiply(inverse_times_trans_ind, x_y);
-        /* block to calculate B_0 */
-        /* formula mean_y - transpose(ceoficcients)* mean_x_vec */
+        let coefficients = math_js.multiply(inverse_times_trans_ind, x_y);
+
+        /* code to calculate B_0 */
+        /* formula mean_y - transpose(coefficients)* mean_x_vec */
         let mean_y = this.mean(y);
         let means_x = this.mean_vector(x);
-        let placeholder = math_js.multiply( math_js.transpose(ceoficcients), means_x  );
-        let intercept = math_js.subtract( mean_y,  placeholder);
+        let placeholder = math_js.multiply(math_js.transpose(coefficients), means_x);
+        let intercept = math_js.subtract(mean_y, placeholder);
 
-        let coefi = math_js.matrix([intercept.toArray(), ... ceoficcients.toArray()]);
-        return coefi;
-
+        return math_js.matrix([intercept.toArray(), ... coefficients.toArray()]);
     }
 
-    summary_statictis(independent, prediction){
-        /* reference page 57 apllied linear algebra */
-        let decomp_independent = this.decomposition(independent);
-        let decomp_prediction  = this.decomposition(prediction);
+    rss(independent, prediction, coefficients){
+    	/* add a column of ones to create a full X matrix */
+    	let independent_rows = independent.toArray();
+    	independent_rows.map(row => {
+    		return row.unshift(1);
+    	});
 
-        let point_one_one_raw = math_js.multiply(math_js.transpose(decomp_independent), decomp_independent);
-        let point_one_two_raw = math_js.multiply(math_js.transpose(decomp_independent), decomp_prediction);
-        let point_two_one_raw = math_js.multiply(math_js.transpose(decomp_prediction), decomp_independent);
-        let point_two_two_raw = math_js.multiply(math_js.transpose(decomp_prediction), decomp_prediction);
+    	let X = math_js.matrix(independent_rows);
+    	let Y = prediction;
+    	let B = coefficients;
 
-        let array = [[point_one_one_raw.subset(math_js.index(0, 0)),point_one_two_raw.subset(math_js.index(0, 0))], [point_two_one_raw.subset(math_js.index(0, 0)), point_two_two_raw.subset(math_js.index(0, 0))]];
+    	let calculated_Y = math_js.multiply(X, B);
+    	let residuals = math_js.subtract(Y, calculated_Y);
+    	let residuals_transposed = math_js.transpose(residuals);
+    	let rss_matrix = math_js.multiply(residuals_transposed, residuals);
 
-        return math_js.matrix(array);
+    	let rss = rss_matrix.subset(math_js.index(0, 0));
+    	return rss;
     }
 
-
-    rss(SYY, SXX, coeficcients){
-        /* convert to array, to remove B_0 */
-        let coe = coeficcients.toArray();
-        coe.shift();
-        /* beta star */
-        coe =  math_js.matrix(coe);
-        /* transposed beta star */
-        let transpose_coe = math_js.transpose( coe  );
-
-        /* trans posed beta star * SXX */
-        let b_ssx = math_js.multiply(transpose_coe, SXX);
-        /* b_ssx * beta */
-        let b_b = math_js.multiply(b_ssx, coe);
-
-        return math_js.subtract(SYY, b_b);
-
-    }
-
-    calculate_yi(coeficcients, point){
-        let coe = coeficcients.toArray();
+    calculate_yi(coefficients, point){
+        let coe = coefficients.toArray();
 
         let b_0 = coe.shift()[0];
 
@@ -210,13 +178,6 @@ class Multi_Linear_Regression extends Regression {
         }
 
         return (total_sum - sum_our_prediction) / total_sum;
-    }
-
-    variance(sigmoid_squared, independent){
-        let indepen_trans = math_js.transpose(independent);
-        let inde_times_inde_trans = math_js.multiply(indepen_trans, independent);
-
-        return math_js.multiply(sigmoid_squared, math_js.inv(inde_times_inde_trans));
     }
 
     sigma_squared(rss, independent){

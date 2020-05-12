@@ -57,8 +57,8 @@ let server = http.createServer((request, response) => {
     else if(request.url == "/statistics" && request.method == "GET"){
         do_statistics(request, response);
     }
-    else if (request.url == "/coeficcients" && request.method == "GET"){
-        get_coeficcients(request, response);
+    else if (request.url == "/coefficients" && request.method == "GET"){
+        get_coefficients(request, response);
     }
     else if(request.url == "/refreshRegressor" && request.method == "POST"){
         refresh_regressor(request, response);
@@ -326,7 +326,7 @@ function do_statistics(request, response){
 }
 
 
-function get_coeficcients(request, response){
+function get_coefficients(request, response){
     if (regressor == null) {
         regressor = make_regressor();
         if (regressor == null) {
@@ -336,8 +336,8 @@ function get_coeficcients(request, response){
         }
     }
         let responseobject = {
-            coeficcients: regressor.cleaned_coeficcients,
-            pearson_coeficcients: regressor.statistics.pearsons_coeficcients,
+            coefficients: regressor.cleaned_coefficients,
+            pearson_coefficients: regressor.statistics.pearsons_coefficients,
             header: regressor.header
         }
         let responsejson = JSON.stringify(responseobject, undefined, 4);

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "cd scraper && node scrape-server.js",
-    "prediction-rate": "node prediction-rate-test.js" 
+    "quality-check": "node quality-check.js"
   },
   "repository": {
     "type": "git",
