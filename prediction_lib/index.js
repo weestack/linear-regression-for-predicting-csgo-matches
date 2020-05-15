@@ -31,7 +31,7 @@ class Regressor {
         this.bind_statistics();
     }
     bind_to_normalized_data(){
-
+        /* normalize the independent columns and bind them, for use in scatter plot later on */
         let [rows, columns] = this.independent.size();
         let normalized_independt = Array();
         for (let column = 0; column < columns; column++ ){
@@ -68,8 +68,7 @@ class Regressor {
 
     calculate_coefficients() {
         /* Wrapper that calls regression obj for coefficients calculation */
-        let coefficients = this.regression_obj.estimate_best_coefficients(this.independent, this.prediction)
-        return coefficients;
+        return this.regression_obj.estimate_best_coefficients(this.independent, this.prediction)
     }
 
     predict_winner(team1, team2) {

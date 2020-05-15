@@ -19,6 +19,7 @@ class Multi_Linear_Regression {
     }
 
     mean(matrix_column) {
+	    /* Calculates the mean of a matrix column */
         let matrix = math_js.matrix(matrix_column);
         let sum = 0;
         let length = 0;
@@ -31,6 +32,8 @@ class Multi_Linear_Regression {
     }
 
     mean_vector( matrix ) {
+	    /* Calculates the mean of each colum and creates a vector with an entrace
+	    for each column with its respective mean value */
         let [rows, columns] = matrix.size();
         let means = math_js.matrix();
         for (let i=0; i < columns; i++) {
@@ -43,6 +46,8 @@ class Multi_Linear_Regression {
     }
 
     pearson_correlations(independent, prediction){
+	    /* Takes in all dependent and independent row and calculates the pearson correlation between
+	    * The dependent and each independt column! */
     	let correlations = Array();
         let [rows, columns] = independent.size();
         for (let column = 0; column < columns; column++){
@@ -52,7 +57,7 @@ class Multi_Linear_Regression {
     }
 
     get_pearson_correlation(X, Y) {
-        /*
+        /* Calculates the correlation between two columns.
         * p = -1 stærk, negativ graf, (linear afhængig)
         * -1 < p < 0 - Nogen lunde linear sammenhæng, jo tættere på 0, jo dårligere sammenhæng.
         * 0 < p < 1 - Jo tættere på 1 jo bedre sammenhæng, hvis p=0, er der 100% inden lineære sammenhæng
@@ -149,15 +154,15 @@ class Multi_Linear_Regression {
     	return rss;
     }
 
-    calculate_yi(coefficients, point){
+    calculate_yi(coefficients, independent_row){
+	    /* Calulates Y with a respective row eg:
+	    * yi = B_0 + B_1*x1 ... B_n*xn */
         let coe = coefficients.toArray();
 
         let b_0 = coe.shift()[0];
-
         let coeffi = math_js.matrix(coe);
 
-        let value_without_b0 = math_js.multiply(point, coeffi).toArray()[0][0];
-
+        let value_without_b0 = math_js.multiply(independent_row, coeffi).toArray()[0][0];
         return b_0 + value_without_b0;
     }
 

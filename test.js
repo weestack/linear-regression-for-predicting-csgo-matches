@@ -58,8 +58,6 @@ describe("Scraper code in browser", () => {
             return data;
         });
 
-        let players1 = matchData["0"].player_data;
-        let players2 = matchData["1"].player_data;
         for (let team = 0; team < 2; team++) {
             for (let playerName in matchData[team].player_data) {
                 players.push([team, playerName]);
