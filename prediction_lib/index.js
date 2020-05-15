@@ -31,7 +31,7 @@ class Regressor {
     }
     bind_to_normalized_data(){
         /* normalize the independent columns and bind them, for use in scatter plot later on */
-        this.normalized_independent = this.regression_obj(this.independent)
+        this.normalized_independent = this.regression_obj.normalize(this.independent)
 
     }
     load_matches(path) {

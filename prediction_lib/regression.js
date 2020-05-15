@@ -213,6 +213,6 @@ class Multi_Linear_Regression {
 }
 
 module.exports = {
-    Multi_Linear_Rengression: Multi_Linear_Regression,
+    Multi_Linear_Regression: Multi_Linear_Regression,
 }
 
