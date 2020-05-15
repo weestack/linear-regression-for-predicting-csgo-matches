@@ -31,7 +31,7 @@ class match_data {
     }
 
     set_header(){
-
+        /* Header obj, for uniform titles and id's across the code! */
         this.header = [
             {id: 'winner', title: 'Winner'},
             {id: 'powerscore_delta', title: 'Experince'},

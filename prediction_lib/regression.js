@@ -2,20 +2,41 @@
 const math_js = require("mathjs");
 
 class Multi_Linear_Regression {
-	normalize (column) {
+	normalize (matrix) {
         /* normalize = (x - x_min)/(x_max-x_min)
         * Normalization reduces all datapoints to a number between 0 and 1.
         * This makes it easier to get an overview from a scatterplot matrix, with multiple data, being with in same range.
         */
-        let new_column = Array();
-        let min = Math.min.apply(Math, column);
-        let max = Math.max.apply(Math, column);
+        /* Features decides the range for the nomalization! */
+        let feature_max = 1;
+        let feature_min = 0;
+        let [rows, columns] = matrix.size();
+        let norm_matrix = Array(columns)
 
-        for (let i = 0; i < column.length; i++) {
-            new_column.push( (column[i]-min)/(max-min) )
+        for (let column = 0; column < columns; column++){
+
+        let xcol = math_js.column(matrix, column).toArray();
+
+        let xmin = Infinity;
+        let xmax = -Infinity;
+        xcol.map(x_i => {
+            /* asumes that the matrix is only 2d! */
+            if (xmin > x_i) {
+                xmin = x_i
+            }
+            if (xmax < x_i) {
+                xmax = x_i
+            }
+
+        })
+        norm_matrix[column] = xcol.map( x_i =>  {
+            let X = (x_i-xmin)/(xmax - xmin)
+            return X*(feature_max - feature_min) + feature_min
+            }
+        )
         }
 
-        return new_column
+        return math_js.transpose(math_js.matrix(norm_matrix))
     }
 
     mean(matrix_column) {
@@ -191,8 +212,7 @@ class Multi_Linear_Regression {
     }
 }
 
-
 module.exports = {
-    Multi_Linear_Regression: Multi_Linear_Regression,
+    Multi_Linear_Rengression: Multi_Linear_Regression,
 }
 

@@ -6,8 +6,7 @@ let filereader = require(path.resolve(__dirname, "./FileReader.js"))
 let match_data = filereader.match_data;
 
 let regression = require(path.resolve(__dirname, "./regression.js"));
-let Multi_Linear_Regression = regression.Multi_Linear_Regression;
-
+let Multi_Linear_Regression =  regression.Multi_Linear_Regression;
 
 class Regressor {
 
@@ -32,12 +31,7 @@ class Regressor {
     }
     bind_to_normalized_data(){
         /* normalize the independent columns and bind them, for use in scatter plot later on */
-        let [rows, columns] = this.independent.size();
-        let normalized_independt = Array();
-        for (let column = 0; column < columns; column++ ){
-            normalized_independt[column] = this.regression_obj.normalize(math_js.column(this.independent, column).toArray());
-        }
-        this.normalized_independent = math_js.transpose( math_js.matrix(normalized_independt));
+        this.normalized_independent = this.regression_obj(this.independent)
 
     }
     load_matches(path) {
