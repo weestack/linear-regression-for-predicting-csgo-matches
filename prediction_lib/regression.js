@@ -228,6 +228,10 @@ class Multi_Linear_Regression {
     }
 }
 
+let arr = math_js.matrix([[-1, 2], [-0.5, 6], [0, 10], [1, 18]]);
+let reg = new Multi_Linear_Regression
+console.log(reg.normalize(arr))
+
 module.exports = {
     Multi_Linear_Regression: Multi_Linear_Regression,
 }
