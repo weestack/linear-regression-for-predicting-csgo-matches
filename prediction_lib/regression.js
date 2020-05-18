@@ -11,48 +11,41 @@ class Multi_Linear_Regression {
         let feature_max = 1;
         let feature_min = 0;
         let [rows, columns] = matrix.size();
-        let norm_matrix = Array(columns)
+        let norm_matrix = Array(columns);
 
         for (let column = 0; column < columns; column++){
-
-        let xcol = math_js.column(matrix, column).toArray();
-
-        let xmin = Infinity;
-        let xmax = -Infinity;
-        xcol.map(x_i => {
-            /* asumes that the matrix is only 2d! */
-            if (xmin > x_i) {
-                xmin = x_i
-            }
-            if (xmax < x_i) {
-                xmax = x_i
-            }
-
-        })
-        norm_matrix[column] = xcol.map( x_i =>  {
-            let X = (x_i-xmin)/(xmax - xmin)
-            return X*(feature_max - feature_min) + feature_min
-            }
-        )
+            let xcol = math_js.column(matrix, column).toArray();
+            let xmin = Infinity;
+            let xmax = -Infinity;
+            xcol.map(x_i => {
+                /* asumes that the matrix is only 2d! */
+                if (xmin > x_i) {
+                    xmin = x_i
+                }
+                if (xmax < x_i) {
+                    xmax = x_i
+                }
+            })
+            norm_matrix[column] = xcol.map( x_i =>  {
+                let X = (x_i - xmin) / (xmax - xmin);
+                return X*(feature_max - feature_min) + feature_min
+                }
+            )
         }
-
         return math_js.transpose(math_js.matrix(norm_matrix))
     }
-
     mean(matrix_column) {
 	    /* Calculates the mean of a matrix column */
-        let matrix = math_js.matrix(matrix_column);
         let sum = 0;
         let length = 0;
-        matrix.map((value) => {
+        matrix_column.map((value) => {
             sum += value;
             length++
         })
-
         return sum / length
     }
 
-    mean_vector( matrix ) {
+    mean_vector(matrix) {
 	    /* Calculates the mean of each colum and creates a vector with an entrace
 	    for each column with its respective mean value */
         let [rows, columns] = matrix.size();
@@ -85,7 +78,6 @@ class Multi_Linear_Regression {
         * p = 1 100% lineære sammenhæng
         * p= 0 ingen lineære sammenhæng!
         * */
-
         X = X.toArray()
         Y = Y.toArray()
         if ( X.length !== Y.length ) {
@@ -95,39 +87,32 @@ class Multi_Linear_Regression {
         let denomenator = 0;
         let delta_x_square = 0;
         let delta_y_square = 0;
-
         let mean_x = this.mean(X);
         let mean_y = this.mean(Y);
 
-        for (let i =0; i < X.length; i++){
-            denomenator += (X[i] - mean_x) * (Y[i] - mean_y );
+        for (let i = 0; i < X.length; i++){
+            denomenator += (X[i] - mean_x) * (Y[i] - mean_y);
             delta_x_square += (X[i] - mean_x)**2
             delta_y_square += (Y[i] - mean_y)**2
         }
 
-        return (denomenator) / (Math.sqrt(delta_x_square) * Math.sqrt(delta_y_square) )
+        return denomenator / (Math.sqrt(delta_x_square) * Math.sqrt(delta_y_square) )
     }
 
     decomposition(matrix) {
     	/* This decomposition is described in the book Applied linear regression on page 56. */
         let [rows, columns ] = matrix.size();
-        if (columns === "undefined"){
-            columns = 1;
-        }
 
         /* get all the means */
-        let means = [];
-        for (let column = 0; column < columns; column++){
-            means[column] = this.mean(math_js.column(matrix, column))
-        }
+        let means = this.mean_vector(matrix);
 
         /* compute the new column values */
         let new_matrix = math_js.matrix();
         for (let column = 0; column < columns; column++){
             for (let row = 0; row < rows; row ++){
-                let ij_val = matrix.subset(math_js.index( row,column  ))
+                let ij_val = matrix.subset(math_js.index(row, column));
                 ij_val = ij_val - [means[column]];
-                new_matrix.subset(math_js.index(row, column),   ij_val)
+                new_matrix.subset(math_js.index(row, column), ij_val);
             }
         }
         return new_matrix;
@@ -178,28 +163,29 @@ class Multi_Linear_Regression {
     calculate_yi(coefficients, independent_row){
 	    /* Calulates Y with a respective row eg:
 	    * yi = B_0 + B_1*x1 ... B_n*xn */
-        let coe = coefficients.toArray();
+        if(typeof(independent_row) !== typeof(Array())){
+            independent_row = [1, independent_row];
+        }
+        else{
+            independent_row = independent_row.toArray();
+            independent_row[0].unshift(1);
+        }
+        independent_row = math_js.matrix(independent_row);
 
-        let b_0 = coe.shift()[0];
-        let coeffi = math_js.matrix(coe);
-
-        let value_without_b0 = math_js.multiply(independent_row, coeffi).toArray()[0][0];
-        return b_0 + value_without_b0;
+        return math_js.multiply(independent_row, coefficients).toArray().flat()[0];
+        
     }
 
     r_squared(coefficients, independent, prediction){
         let mean_y = this.mean(prediction);
         let y_array = prediction.toArray();
-
         let y_current_guess;
         let sum_our_prediction = 0;
         let total_sum = 0;
 
         for(let i = 0; i < y_array.length; i++){
             y_current_guess = this.calculate_yi(coefficients, math_js.row(independent, i));
-
             sum_our_prediction += (y_array[i][0] - y_current_guess)**2;
-
             total_sum += (y_array[i][0] - mean_y)**2;
         }
 
@@ -208,7 +194,7 @@ class Multi_Linear_Regression {
 
     sigma_squared(rss, independent){
         let [length_of_cases, amount_of_independent_variables] = independent.size();
-        return rss/(length_of_cases - amount_of_independent_variables);
+        return rss/(length_of_cases - amount_of_independent_variables - 1);
     }
 }
 

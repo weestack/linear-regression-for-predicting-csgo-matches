@@ -214,7 +214,8 @@ describe("Testing methods in linear regression objects", () => {
     test("Pearson_correlation between dependent and independent variable linear regression", () => {
         let test_matrix = math_js.matrix(small_dataset_for_regression);
         let pearson = linear_regression.pearson_correlations(math_js.column(test_matrix, 1), math_js.column(test_matrix, 0))
-        expect(pearson[0]).toBeGreaterThanOrEqual(1);
+        expect(pearson[0]).toBeGreaterThanOrEqual(0.999);
+        /*Pas på afrundsingsfejl hehe*/
     });
 
     test("sigma_squared ", () => {
