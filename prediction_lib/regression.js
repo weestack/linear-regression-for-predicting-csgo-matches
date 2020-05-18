@@ -2,7 +2,7 @@
 const math_js = require("mathjs");
 
 class Multi_Linear_Regression {
-	normalize (matrix) {
+    normalize (matrix) {
         /* normalize = (x - x_min)/(x_max-x_min)
         * Normalization reduces all datapoints to a number between 0 and 1.
         * This makes it easier to get an overview from a scatterplot matrix, with multiple data, being with in same range.
@@ -14,7 +14,12 @@ class Multi_Linear_Regression {
         let norm_matrix = Array(columns);
 
         for (let column = 0; column < columns; column++){
-            let xcol = math_js.column(matrix, column).toArray();
+            let xcol = math_js.column(matrix, column);
+            if (typeof(xcol) === typeof(0)) {
+                xcol = [xcol];
+            } else {
+                xcol = xcol.toArray();
+            }
             let xmin = Infinity;
             let xmax = -Infinity;
             xcol.map(x_i => {
@@ -35,7 +40,10 @@ class Multi_Linear_Regression {
         return math_js.transpose(math_js.matrix(norm_matrix))
     }
     mean(matrix_column) {
-	    /* Calculates the mean of a matrix column */
+        /* Calculates the mean of a matrix column */
+        if (typeof(matrix_column) === typeof(0)) {
+            matrix_column = [matrix_column];
+        }
         let sum = 0;
         let length = 0;
         matrix_column.map((value) => {
@@ -46,8 +54,8 @@ class Multi_Linear_Regression {
     }
 
     mean_vector(matrix) {
-	    /* Calculates the mean of each colum and creates a vector with an entrace
-	    for each column with its respective mean value */
+        /* Calculates the mean of each colum and creates a vector with an entrace
+        for each column with its respective mean value */
         let [rows, columns] = matrix.size();
         let means = math_js.matrix();
         for (let i=0; i < columns; i++) {
@@ -60,9 +68,9 @@ class Multi_Linear_Regression {
     }
 
     pearson_correlations(independent, prediction){
-	    /* Takes in all dependent and independent row and calculates the pearson correlation between
-	    * The dependent and each independt column! */
-    	let correlations = Array();
+        /* Takes in all dependent and independent row and calculates the pearson correlation between
+        * The dependent and each independt column! */
+        let correlations = Array();
         let [rows, columns] = independent.size();
         for (let column = 0; column < columns; column++){
             correlations[column] = this.get_pearson_correlation(math_js.column(independent, column), prediction);
@@ -78,8 +86,18 @@ class Multi_Linear_Regression {
         * p = 1 100% lineære sammenhæng
         * p= 0 ingen lineære sammenhæng!
         * */
-        X = X.toArray()
-        Y = Y.toArray()
+        if (typeof(X) === typeof(0)) {
+            X = [X];
+        } else {
+            X = X.toArray();
+        }
+
+        if (typeof(Y) === typeof(0)) {
+            Y = [Y];
+        } else {
+            Y = Y.toArray();
+        }
+
         if ( X.length !== Y.length ) {
             return 0;
         }
@@ -100,7 +118,7 @@ class Multi_Linear_Regression {
     }
 
     decomposition(matrix) {
-    	/* This decomposition is described in the book Applied linear regression on page 56. */
+        /* This decomposition is described in the book Applied linear regression on page 56. */
         let [rows, columns ] = matrix.size();
 
         /* get all the means */
@@ -141,40 +159,40 @@ class Multi_Linear_Regression {
     }
 
     rss(independent, prediction, coefficients){
-    	/* add a column of ones to create a full X matrix */
-    	let independent_rows = independent.toArray();
-    	independent_rows.map(row => {
-    		return row.unshift(1);
-    	});
+        /* add a column of ones to create a full X matrix */
+        let independent_rows = independent.toArray();
+        independent_rows.map(row => {
+            return row.unshift(1);
+        });
 
-    	let X = math_js.matrix(independent_rows);
-    	let Y = prediction;
-    	let B = coefficients;
+        let X = math_js.matrix(independent_rows);
+        let Y = prediction;
+        let B = coefficients;
 
-    	let calculated_Y = math_js.multiply(X, B);
-    	let residuals = math_js.subtract(Y, calculated_Y);
-    	let residuals_transposed = math_js.transpose(residuals);
-    	let rss_matrix = math_js.multiply(residuals_transposed, residuals);
+        let calculated_Y = math_js.multiply(X, B);
+        let residuals = math_js.subtract(Y, calculated_Y);
+        let residuals_transposed = math_js.transpose(residuals);
+        let rss_matrix = math_js.multiply(residuals_transposed, residuals);
 
-    	let rss = rss_matrix.subset(math_js.index(0, 0));
-    	return rss;
+        let rss = rss_matrix.subset(math_js.index(0, 0));
+        return rss;
     }
 
-	flatten(array){
-		let output = [];
-		array.map(item => {
-			if (typeof(item) === typeof(Array())) {
-				output.concat(item);
-			} else {
-				output.concat([item]);
-			}
-		});
-		return output;
-	}
+    flatten(array){
+        let output = [];
+        array.map(item => {
+            if (typeof(item) === typeof(Array())) {
+                output = output.concat(item);
+            } else {
+                output = output.concat([item]);
+            }
+        });
+        return output;
+    }
 
     calculate_yi(coefficients, independent_row){
-	    /* Calulates Y with a respective row eg:
-	    * yi = B_0 + B_1*x1 ... B_n*xn */
+        /* Calulates Y with a respective row eg:
+        * yi = B_0 + B_1*x1 ... B_n*xn */
         if(typeof(independent_row) !== typeof(Array())){
             independent_row = [1, independent_row];
         }
