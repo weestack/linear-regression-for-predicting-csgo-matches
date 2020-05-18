@@ -80,9 +80,7 @@ server.listen(8090);
  */
 function data_status(request, response){
 	/* Find all filenames which are actual json files */
-    let dataFiles = fs.readdirSync("data/").filter(name => {
-        return name.endsWith(".json");
-    });
+    let dataFiles = fs.readdirSync("data/");
 
     let teams = {};
     let dataFolderSize = 0;
@@ -373,11 +371,11 @@ function update_csv_file(){
 
     for(let i = 0; i < csv_rows; i++){
         csv_data[i] = {
-            winner: prediction.subset(math_js.index(i, 0)),
-            powerscore_delta: independent.subset(math_js.index(i, 0)),
-            win_loose_delta: independent.subset(math_js.index(i, 1)),
-            kda_delta: independent.subset(math_js.index(i, 2)),
-            headshot_delta: independent.subset(math_js.index(i, 3)),
+            winner:             prediction.subset(math_js.index(i, 0)),
+            powerscore_delta:   independent.subset(math_js.index(i, 0)),
+            win_loose_delta:    independent.subset(math_js.index(i, 1)),
+            kda_delta:          independent.subset(math_js.index(i, 2)),
+            headshot_delta:     independent.subset(math_js.index(i, 3)),
             time_in_team_delta: independent.subset(math_js.index(i, 4)),
         }
     }
