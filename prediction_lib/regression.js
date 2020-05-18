@@ -160,6 +160,18 @@ class Multi_Linear_Regression {
     	return rss;
     }
 
+	flatten(array){
+		let output = [];
+		array.map(item => {
+			if (typeof(item) === typeof(Array())) {
+				output.concat(item);
+			} else {
+				output.concat([item]);
+			}
+		});
+		return output;
+	}
+
     calculate_yi(coefficients, independent_row){
 	    /* Calulates Y with a respective row eg:
 	    * yi = B_0 + B_1*x1 ... B_n*xn */
@@ -172,8 +184,8 @@ class Multi_Linear_Regression {
         }
         independent_row = math_js.matrix(independent_row);
 
-        return math_js.multiply(independent_row, coefficients).toArray().flat()[0];
-        
+        let values = this.flatten(math_js.multiply(independent_row, coefficients).toArray());
+        return values[0];
     }
 
     r_squared(coefficients, independent, prediction){
