@@ -10,32 +10,31 @@ class Multi_Linear_Regression {
         /* Features decides the range for the nomalization! */
         let feature_max = 1;
         let feature_min = 0;
+
+        let xmax;
+        let xmin;
         let [rows, columns] = matrix.size();
         let norm_matrix = Array(columns);
 
         for (let column = 0; column < columns; column++){
+
             let xcol = math_js.column(matrix, column);
+
             if (typeof(xcol) === typeof(0)) {
                 xcol = [xcol];
             } else {
                 xcol = xcol.toArray();
             }
-            let xmin = Infinity;
-            let xmax = -Infinity;
-            xcol.map(x_i => {
-                /* asumes that the matrix is only 2d! */
-                if (xmin > x_i) {
-                    xmin = x_i
-                }
-                if (xmax < x_i) {
-                    xmax = x_i
-                }
-            })
+
+            xmax = Math.max(...xcol);
+            xmin = Math.min(...xcol);
+
             norm_matrix[column] = xcol.map( x_i =>  {
-                let X = (x_i - xmin) / (xmax - xmin);
-                return X*(feature_max - feature_min) + feature_min
+                return (x_i - xmin) / (xmax - xmin);
                 }
+
             )
+
         }
         return math_js.transpose(math_js.matrix(norm_matrix))
     }
@@ -227,11 +226,6 @@ class Multi_Linear_Regression {
         return rss/(length_of_cases - amount_of_independent_variables - 1);
     }
 }
-
-let arr = math_js.matrix([[-1, 2], [-0.5, 6], [0, 10], [1, 18]]);
-let reg = new Multi_Linear_Regression
-console.log(reg.normalize(arr))
-
 module.exports = {
     Multi_Linear_Regression: Multi_Linear_Regression,
 }
