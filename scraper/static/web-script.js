@@ -1,5 +1,4 @@
 "use strict"
-
 /* This file contains the code that adds functionality to the website. */
 
 let scraperIsRunning = false;
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* The prediction button is setup so that the prediction runs when clicked */
     let predictionButton = document.getElementById("team1vsteam2");
     predictionButton.addEventListener("click", run_prediction);
-})
+});
 
 /* Try to warn the user when he tries to exit the page while the scraper is running. */
 window.addEventListener("beforeunload", (event) => {
