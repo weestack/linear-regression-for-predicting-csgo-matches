@@ -1,0 +1,17 @@
+Guide for running the project:
+
+To install the dependencies, run:
+	npm install
+
+To run the scrape server, run:
+	npm start
+
+To use the program, open a web browser and go to
+	http://localhost:8090
+
+To run the tests, make sure the scrape server is running, and then run:
+	npm run test
+
+To view the prediction rate of the collected data, run:
+	npm run quality-check
+
