@@ -92,7 +92,7 @@ describe("Scraper code in browser", () => {
                 return false;
             }
         });
-        expect(result).toBeFalsy();
+        expect(result).toBeTruthy();
     }, 2 * 60 * 1000); // give it two minutes
 
     test.each([
